@@ -513,12 +513,12 @@ guiTypes = {
 			}
 		}
 		ButtonType = {
-			name = "youtube_button"
+			name = "tg_button"
 			position = { x=100 y=0 }
-			quadTextureSprite ="youtube"
+			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"
-			web_link = "https://www.youtube.com/@clr-62"
+			web_link = "https://t.me/TN89_hoi4"
 			scale = 0.9
 		}
 	}
