@@ -802,7 +802,7 @@ focus_tree = {
 	focus = {
 		id = BTK_antihesus
 		icon = GFX_BTK_antihesus
-		cost = 0.1
+		cost = 0
 		prerequisite = {
 			focus = BTK_army_uchenia
 		}
@@ -818,7 +818,7 @@ focus_tree = {
 	focus = {
 		id = BTK_anti_clown
 		icon = GFX_BTK_anticlown
-		cost = 0.1
+		cost = 0
 		prerequisite = {
 			focus = BTK_army_uchenia
 		}
@@ -834,7 +834,7 @@ focus_tree = {
 	focus = {
 		id = BTK_morale_preserve
 		icon = GFX_BTK_morale
-		cost = 0.1
+		cost = 0
 		prerequisite = {
 			focus = BTK_army_uchenia
 		}
@@ -850,7 +850,7 @@ focus_tree = {
 	focus = {
 		id = BTK_anti_evelone
 		icon = GFX_BTK_antievelone
-		cost = 0.1
+		cost = 0
 		prerequisite = {
 			focus = BTK_army_uchenia
 		}

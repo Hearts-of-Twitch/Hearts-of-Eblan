@@ -23,6 +23,61 @@ ideas = {
 				war_support_factor = -0.5
 			}
 		}
+		BTK_test_1= {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_people_support_low
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.5
+			}
+		}
+		BTK_test_2= {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_people_support_low
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.5
+			}
+		}
+		BTK_test_3= {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_people_support_low
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.5
+			}
+		}
+		BTK_test_4= {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_people_support_low
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.5
+			}
+		}
+		BTK_test_5= {
+		
+			removal_cost = -1
+
+			picture = GFX_idea_people_support_low
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.5
+			}
+		}
 		
 	}
 	

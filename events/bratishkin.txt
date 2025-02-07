@@ -647,7 +647,7 @@ country_event = {
 		custom_effect_tooltip = BTK_89_nach_tt
 	}
 }
-
+#тестовый только для теста
 country_event = {
 	id = btk.11
 	title = btk.9.t
@@ -665,6 +665,7 @@ country_event = {
 		
 	}
 }
+#Решение о тактике борьбы
 country_event = {
 	id = btk.10
 	title = btk.0.t
