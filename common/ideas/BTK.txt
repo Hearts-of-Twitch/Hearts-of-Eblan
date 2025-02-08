@@ -3,7 +3,7 @@ ideas = {
 		BTK_parlament = {
 			removal_cost = -1
 
-			picture = GFX_idea_BTK_bad_government
+			picture = BTK_parl
 
 			modifier = {
 				democratic_drift = 0.05
@@ -11,74 +11,176 @@ ideas = {
 				hypecratia_drift = 0.05
 				stability_weekly = 0.05
 			}
+			cancel = {
+				has_completed_focus = BTK_nach_89
+			}
+			on_remove = {
+				news_event = squad_news.92
+			}
 		}
 		BTK_bad_government = {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_BTK_bad_government
+			picture = BTK_bad_government
 
 			modifier = {
 				stability_factor = -0.15
 				war_support_factor = -0.5
+				
 			}
 		}
-		BTK_test_1= {
+		BTK_eblan_protector= {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_people_support_low
+			picture = BTK_protectorat
 
-			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.5
+			targeted_modifier = {
+				tag = BTK
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
+			modifier = {
+				surrender_limit = 0.15	
+				political_power_gain = 0.3
+			}
+			
 		}
-		BTK_test_2= {
+		BTK_army_0= {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_people_support_low
+			picture = BTK_test
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.5
+				defence = -0.5
+				offence = -0.5
+				army_speed_factor = -0.5
+				breakthrough_factor = -0.5
+				experience_gain_air_factor = -0.25
+				experience_gain_navy_factor = -0.25
+				experience_gain_army_factor = -0.25
+				initiative_factor = -0.5
+				max_planning_factor = -0.5
 			}
-		}
-		BTK_test_3= {
+		} 
+		BTK_debarmy_1= {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_people_support_low
+			picture = BTK_test
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.5
+				defence = -0.35
+				offence = -0.35
+				army_speed_factor = -0.35
+				breakthrough_factor = -0.35
+				experience_gain_air_factor = -0.15
+				experience_gain_navy_factor = -0.15
+				experience_gain_army_factor = -0.15
+				initiative_factor = -0.35
+				max_planning_factor = -0.35
 			}
 		}
-		BTK_test_4= {
+		BTK_debarmy_2= {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_people_support_low
+			picture = BTK_test
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.5
+				defence = -0.15
+				offence = -0.15
+				army_speed_factor = -0.15
+				breakthrough_factor = -0.15
+				experience_gain_air_factor = -0.05
+				experience_gain_navy_factor = -0.05
+				experience_gain_army_factor = -0.05
+				initiative_factor = -0.15
+				max_planning_factor = -0.15
 			}
 		}
-		BTK_test_5= {
+		BTK_debarmy_3= {
 		
 			removal_cost = -1
 
-			picture = GFX_idea_people_support_low
+			picture = BTK_test
 
 			modifier = {
-				stability_factor = -0.15
-				war_support_factor = -0.5
+				defence = 0
+				offence = 0
+				army_speed_factor = 0
+				breakthrough_factor = 0
+				experience_gain_air_factor = 0
+				experience_gain_navy_factor = 0
+				experience_gain_army_factor = 0
+				initiative_factor = 0
+				max_planning_factor = 0
 			}
 		}
+		BTK_army = {
 		
+			removal_cost = -1
+
+			picture = BTK_army
+
+			modifier = {
+				#
+			}
+		}
+		BTK_naval = {
+		
+			removal_cost = -1
+
+			picture = BTK_naval
+
+			modifier = {
+				#
+			}
+		}
+		BTK_air = {
+		
+			removal_cost = -1
+
+			picture = BTK_air
+
+			modifier = {
+				#
+			}
+		}
+		BTK_good_goverment = {
+		
+			removal_cost = -1
+
+			picture = BTK_government
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.25
+				
+			}
+		}
+		BTK_pobeda = {
+		
+			removal_cost = -1
+
+			picture = BTK_pobeda
+
+			modifier = {
+				stability_factor = 0.25
+			}
+		}
+
+		BTK_dead_economy = {
+			removal_cost = -1
+
+			picture = BTK_test
+
+			modifier = {
+				#
+			}
+		}
 	}
 	
 }

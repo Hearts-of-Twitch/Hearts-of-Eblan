@@ -18,6 +18,10 @@ spriteTypes = {
 		name = "GFX_decision_acf_gon"
 		texturefile = "gfx/interface/decisions/category_acf_gon.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_BTK_parl"
+		texturefile = "gfx/interface/ideas/BTK_parl_dec.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_decision_eblan_empire"

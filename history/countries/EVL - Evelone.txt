@@ -29,6 +29,9 @@ set_politics = {
 	election_frequency = 34
 	elections_allowed = no
 }
+add_ideas = {
+	BTK_eblan_protector
+}
 
 
 create_country_leader = {

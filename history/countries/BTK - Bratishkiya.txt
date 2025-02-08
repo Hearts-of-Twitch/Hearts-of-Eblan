@@ -9,9 +9,9 @@ recruit_character =kulina_advisor
 
 add_ideas = {
 	BTK_bad_government
-	slay_2023_king
-	demografic_problems
 	BTK_parlament
+	slay_2023_king
+	BTK_army_0
 }
 
 # Starting tech

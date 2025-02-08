@@ -1,7 +1,7 @@
 add_namespace = btk
 #КОнтент для других стран
 country_event = {
-	id = btk.1
+	id = btk.21
 	title = btk.0.t
 	desc = btk.0.d
 	picture = GFX_report_event_picture_BTK_4
@@ -35,7 +35,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = btk.2
+	id = btk.22
 	title = btk.0.t
 	desc = btk.0.d
 	picture = GFX_report_event_picture_BTK_4
@@ -69,7 +69,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = btk.3
+	id = btk.23
 	title = btk.0.t
 	desc = btk.0.d
 	picture = GFX_report_event_picture_BTK_4
@@ -118,6 +118,74 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = btk.24
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = SHD
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = SHD
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = btk.25
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				declare_war_on = {
+					target = ST9
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = btk.0.b
+		
+		hidden_effect = {
+			BTK = {
+				annex_country = {
+					target = ST9
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
 
 #Внутренний конфликт
 country_event = {
@@ -135,6 +203,7 @@ country_event = {
 			communism > 0.44
 		}
 		hidden_effect = {
+			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
 			retire_ideology_leader = neutrality
 			retire_ideology_leader = fascism
@@ -204,6 +273,7 @@ country_event = {
 			democratic > 0.44
 		}
 		hidden_effect = {
+			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
 			retire_ideology_leader = neutrality
 			retire_ideology_leader = fascism
@@ -261,6 +331,7 @@ country_event = {
 		}
 		
 		hidden_effect = {
+			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
 			retire_ideology_leader = democratic
 			retire_ideology_leader = fascism
@@ -331,6 +402,7 @@ country_event = {
 			fascism > 0.44
 		}
 		hidden_effect = {
+			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
 			retire_ideology_leader = democratic
 			retire_ideology_leader = neutrality
@@ -388,6 +460,7 @@ country_event = {
 			hypecratia > 0.9
 		}
 		hidden_effect = {
+			remove_ideas = BTK_parlament
 			mark_focus_tree_layout_dirty = yes
 			set_political_party = {
 				ideology = hypecratia
@@ -659,10 +732,25 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = btk.0.a
-		set_technology = {
-			improved_infantry_weapons = 1
-		}
-		
+		add_ideas = BTK_test_2
+		add_ideas = BTK_test_3
+		add_ideas = BTK_test_4
+		add_ideas = BTK_test_5
+		add_ideas = BTK_pobeda
+		add_ideas = BTK_good_goverment
+		add_ideas = BTK_naval
+		add_ideas = BTK_air
+	}
+	option = {
+		name = btk.0.b
+		remove_ideas = BTK_test_2
+		remove_ideas = BTK_test_3
+		remove_ideas = BTK_test_4
+		remove_ideas = BTK_test_5
+		remove_ideas = BTK_air
+		remove_ideas = BTK_naval
+		remove_ideas = BTK_pobeda
+		remove_ideas = BTK_good_goverment
 	}
 }
 #Решение о тактике борьбы
@@ -677,8 +765,15 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = btk.0.a
-		
 		hidden_effect = {
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
 			complete_national_focus = BTK_antihesus
 		}
 	}
@@ -686,18 +781,42 @@ country_event = {
 		name = btk.0.b
 		hidden_effect = {
 			complete_national_focus = BTK_anti_clown
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
 		}
 	}
 	option = {
 		name = btk.0.c
 		hidden_effect = {
 			complete_national_focus = BTK_morale_preserve
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
 		}
 	}
 	option = {
 		name = btk.0.e
 		hidden_effect = {
 			complete_national_focus = BTK_anti_evelone
+			add_ideas = {
+				BTK_naval
+				BTK_air
+			}
+			swap_ideas = {
+				remove_idea = BTK_debarmy_3	
+				add_idea = BTK_army
+			}
 		}
 	}
 }

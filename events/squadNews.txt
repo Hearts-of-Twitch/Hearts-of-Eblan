@@ -203,7 +203,7 @@ news_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = news.2.a
+		name = squad_news.92.a
 		
 		hidden_effect = {
 		

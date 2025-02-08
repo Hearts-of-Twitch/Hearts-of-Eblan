@@ -71,8 +71,8 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				BTK_bad_government
+				BTK_parlament
 				slay_2023_king
-				demografic_problems
 			}
 			focuses = {
 				BTK_restart_89_squad

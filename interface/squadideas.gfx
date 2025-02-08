@@ -169,4 +169,36 @@ spriteTypes = {
         name = "GFX_idea_BTK_bad_government"
         texturefile = "gfx/interface/ideas/bad_government.dds"
     }  
+    spriteType = {
+        name = "GFX_idea_BTK_protectorat"
+        texturefile = "gfx/interface/ideas/BTK_protectorat.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_test"
+        texturefile = "gfx/interface/ideas/BTK_test.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_army"
+        texturefile = "gfx/interface/ideas/BTK_army.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_parl"
+        texturefile = "gfx/interface/ideas/BTK_parl.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_naval"
+        texturefile = "gfx/interface/ideas/BTK_naval.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_air"
+        texturefile = "gfx/interface/ideas/BTK_air.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_government"
+        texturefile = "gfx/interface/ideas/BTK_goverment.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_pobeda"
+        texturefile = "gfx/interface/ideas/BTK_pobeda.dds"
+    }
 }

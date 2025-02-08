@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 2850 y = 0 }
+	continuous_focus_position = { x = 2850 y = 1520 }
 	initial_show_position = {
 		focus = BTK_nach_89
 	}
@@ -35,8 +35,8 @@ focus_tree = {
 	focus = {
 		id = BTK_nachalo_army
 		icon = GFX_BTK_army
-		cost = 4.00 
-		x = 23
+		cost = 1.00 
+		x =30
 		y = 0
 			allow_branch = {
 					has_completed_focus = BTK_nach_89
@@ -55,11 +55,56 @@ focus_tree = {
 
 	}
 	focus = {
+		id = BTK_start_politkill
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BTK_new_goverment
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = BTK_reichzakon
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BTK_new_goverment
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = BTK_new_goverment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BTK_internal_politiks
+		}
+		x = 16
+		y = 5
+		
+
+	}
+	focus = {
+		id = BTK_rashir_soyuz
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = BTK_internal_politiks
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
 		id = BTK_polit
 		icon = GFX_BTK_polit
 		cost = 1.00
-		x = 12
-		y = 9
+		x = 16
+		y = 3
 			allow_branch = {
 					has_completed_focus = BTK_nach_89
 				}
@@ -92,18 +137,18 @@ focus_tree = {
 		id = BTK_89_idea
 		icon = GFX_goal_unknown
 		cost = 9.00
-		x = 12
-		y = 13
-			allow_branch = {
-					has_cosmetic_tag = BTK_89
-				}
+		x = 16
+		y = 9
+		allow_branch = {
+				has_cosmetic_tag = BTK_89
+			}
 
 	}
 	focus = {
 		id = BTK_mirniy_atom
 		icon = GFX_focus_wonderweapons
 		cost = 10.00
-		x = 23
+		x = 30
 		y = 7
 		allow_branch = {
 			has_completed_focus = BTK_nach_89
@@ -396,12 +441,12 @@ focus_tree = {
 	focus = {
 		id = BTK_restart_89_squad
 		icon = GFX_BTK_restart_89
-		cost = 2.00
+		cost = 5.00
 		prerequisite = {
-			focus = BTK_polit
-		} 
-		x = 12
-		y = 10
+			focus = BTK_internal_politiks
+		}
+		x = 13
+		y = 5
 			completion_reward = {
 					custom_effect_tooltip = BTK_restart_89_squad_tt
 					
@@ -411,48 +456,54 @@ focus_tree = {
 	focus = {
 		id = BTK_internal_politiks
 		icon = GFX_BTK_internal
-		cost = 2.00
 		prerequisite = {
-			focus = BTK_restart_89_squad
+			focus = BTK_polit
 		}
-		x = 8
-		y = 11
+		cost = 2.00
+		x = 16
+		y = 4
 
 	}
 	focus = {
 		id = BTK_old_conflickt
 		icon = GFX_goal_unknown
-		cost = 4.00
 		prerequisite = {
-			focus = BTK_internal_politiks
+			focus = BTK_restart_89_squad
 		}
-		x = 6
-		y = 12
+		cost = 5.00
+		x = 13
+		y = 6
+		
+		
 
 	}
 	focus = {
 		id = BTK_gensyxa
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 5.00
 		prerequisite = {
 			focus = BTK_old_conflickt
 		}
+		relative_position_id = BTK_old_conflickt
 		completion_reward = {
-			GNS = { country_event = btk.2 }
+			GNS = { country_event = btk.22 }
 		}
-		x = 4
-		y = 13
+		x = -3
+		y = 1
 
 	}
 	focus = {
 		id = BTK_razvitie_botov
 		icon = GFX_goal_unknown
-		cost = 4.00
 		prerequisite = {
-			focus = BTK_internal_politiks
+			focus = BTK_reichzakon
 		}
-		x = 8
-		y = 12
+		prerequisite = {
+			focus = BTK_start_politkill
+		}
+		cost = 4.00
+		x = 16
+		y = 7
 
 	}
 	focus = {
@@ -462,8 +513,14 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_razvitie_botov
 		}
-		x = 8
-		y = 13
+		x = 16
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BTK_bad_government
+				add_idea = BTK_good_goverment
+			}
+		}
 
 	}
 	focus = {
@@ -473,8 +530,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_89_idea
 		}
-		x = 11
-		y = 14
+		relative_position_id = BTK_89_idea
+		x = -1
+		y = 1
 
 	}
 	focus = {
@@ -484,8 +542,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_priglos_stint
 		}
-		x = 9
-		y = 15
+		relative_position_id = BTK_priglos_stint
+		x = -2
+		y = 1
 
 	}
 	focus = {
@@ -517,8 +576,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_priglos_stint
 		}
-		x = 11
-		y = 15
+		relative_position_id = BTK_priglos_stint
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -563,23 +623,27 @@ focus_tree = {
 	focus = {
 		id = BTK_vspomnit_druzey
 		icon = GFX_BTK_druz
-		cost = 1.00
 		prerequisite = {
-			focus = BTK_restart_89_squad
+			focus = BTK_rashir_soyuz
 		}
-		x = 12
-		y = 11
+		cost = 1.00
+		x = 19
+		y = 6
 
 	}
 	focus = {
 		id = BTK_stasyan
 		icon = GFX_BTK_sts9
-		cost = 1.00
+		cost = 5.00
+		relative_position_id = BTK_old_conflickt
 		prerequisite = {
-			focus = BTK_vspomnit_druzey
+			focus = BTK_old_conflickt
 		}
-		x = 12
-		y = 12
+		completion_reward = {
+			ST9 = { country_event = btk.25 }
+		}
+		x = 0
+		y = 2
 
 	}
 	focus = {
@@ -589,8 +653,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_89_idea
 		}
-		x = 13
-		y = 14
+		relative_position_id = BTK_89_idea
+		x = 1
+		y = 1
 
 	}
 	focus = {
@@ -600,14 +665,15 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_priglos_eblanov
 		}
-		x = 13
-		y = 15
+		relative_position_id = BTK_priglos_eblanov
+		x = 0
+		y = 1
 
 	}
 	focus = {
 		id = BTK_lomaka_gvin
 		icon = GFX_BTK_gvin
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = BTK_vspomnit_druzey
 		}
@@ -617,8 +683,8 @@ focus_tree = {
 				add_to_faction = GVI
 			}
 		}
-		x = 14
-		y = 12
+		x = 19
+		y = 8
 
 	}
 	focus = {
@@ -628,8 +694,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_priglos_eblanov
 		}
-		x = 15
-		y = 15
+		relative_position_id = BTK_priglos_eblanov
+		x = 2
+		y = 1
 
 	}
 	focus = {
@@ -639,7 +706,15 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_nachalo_army
 		}
-		x = 21
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = BTK_army_0
+					add_idea = BTK_debarmy_1
+				}
+			}
+		}
+		x = 28
 		y = 1
 
 	}
@@ -650,19 +725,20 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_moders
 		}
-		x = 20
+		x = 27
 		y = 2
-		hidden_effect = {
-			retire_ideology_leader = hypecratia
-			create_country_leader = {
-				name = BTK_sovet_moderov
-				desc = ""
-				picture = "GFX_portrait_BTK"
-				expire = "1965.1.1"
-				ideology = twitcherizm
+		completion_reward = {
+			hidden_effect = {
+				retire_ideology_leader = hypecratia
+				create_country_leader = {
+					name = BTK_sovet_moderov
+					desc = ""
+					picture = "GFX_portrait_BTK"
+					expire = "1965.1.1"
+					ideology = twitcherizm
+				}
 			}
 		}
-
 	}
 	focus = {
 		id = BTK_form_tg_modders
@@ -671,7 +747,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_moders
 		}
-		x = 21
+		x = 28
 		y = 3
 
 	}
@@ -682,7 +758,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_nachalo_army
 		}
-		x = 23
+		x = 30
 		y = 1
 
 	}
@@ -697,7 +773,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_narezka
 		}
-		x = 22
+		x = 29
 		y = 2
 
 	}
@@ -708,7 +784,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_nachalo_army
 		}
-		x = 25
+		x = 32
 		y = 1
 
 	}
@@ -722,7 +798,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_yandex
 		}
-		x = 24
+		x = 31
 		y = 2
 
 	}
@@ -736,7 +812,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_pari
 		}
-		x = 26
+		x = 33
 		y = 2
 
 	}
@@ -748,7 +824,7 @@ focus_tree = {
 			focus = BTK_pari
 			focus = BTK_yandex
 		}
-		x = 25
+		x = 32
 		y = 3
 
 	}
@@ -764,7 +840,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_attack_tiktok_likee
 		}
-		x = 22
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = BTK_debarmy_1
+					add_idea = BTK_debarmy_2
+				}
+			}
+		}
+		x = 29
 		y = 4
 
 	}
@@ -780,22 +864,36 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_strim_s_ham
 		}
-		x = 24
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = BTK_debarmy_1
+					add_idea = BTK_debarmy_2
+				}
+			}
+		}
+		x = 31
 		y = 4
 
 	}
 	focus = {
 		id = BTK_army_uchenia
 		icon = GFX_BTK_army_uchenia
-		cost = 5.00
+		cost = 1.00
 		prerequisite = {
 			focus = BTK_strim_s_ham
 			focus = BTK_attack_tiktok_likee
 		}
 		completion_reward = {
 			country_event = btk.10
+			hidden_effect = {
+					swap_ideas = {
+						remove_idea = BTK_debarmy_2
+						add_idea = BTK_debarmy_3
+					}
+				}
 		}
-		x = 23
+		x = 30
 		y = 5
 
 	}
@@ -811,7 +909,8 @@ focus_tree = {
 			focus = BTK_morale_preserve
 			focus = BTK_anti_evelone
 		}
-		x = 20
+		
+		x = 27
 		y = 6
 
 	}
@@ -827,7 +926,8 @@ focus_tree = {
 			focus = BTK_morale_preserve
 			focus = BTK_anti_evelone
 		}
-		x = 22
+		
+		x = 29
 		y = 6
 
 	}
@@ -843,7 +943,22 @@ focus_tree = {
 			focus = BTK_anti_clown
 			focus = BTK_anti_evelone
 		}
-		x = 24
+		completion_reward = {
+			if = {
+				limit={has_idea=BTK_army_3}
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = BTK_debarmy_3	
+						add_idea = BTK_army
+					}
+					add_ideas = {
+						BTK_naval
+						BTK_air
+					}
+				}
+			}
+		}
+		x = 31
 		y = 6
 
 	}
@@ -859,7 +974,22 @@ focus_tree = {
 			focus = BTK_anti_clown
 			focus = BTK_morale_preserve
 		}
-		x = 26
+		completion_reward = {
+			if = {
+				limit={has_idea=BTK_army_3}
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = BTK_debarmy_3	
+						add_idea = BTK_army
+					}
+					add_ideas = {
+						BTK_naval
+						BTK_air
+					}
+				}
+			}
+		}
+		x = 33
 		y = 6
 
 	}
@@ -879,8 +1009,9 @@ focus_tree = {
 				uses = 1
 				category = improved_medium_tank_chassis
 			}
+				
 		}
-		x = 25
+		x = 32
 		y = 7
 
 	}
@@ -894,7 +1025,10 @@ focus_tree = {
 			focus = BTK_anti_evelone
 			focus = BTK_morale_preserve
 		}
-		x = 17
+		completion_reward = {
+			
+		}
+		x = 24
 		y = 7
 
 	}
@@ -905,7 +1039,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_specnaz
 		}
-		x = 16
+		x = 23
 		y = 8
 
 	}
@@ -919,7 +1053,10 @@ focus_tree = {
 			focus = BTK_morale_preserve
 			focus = BTK_anti_evelone
 		}
-		x = 19
+		completion_reward = {
+			
+		}
+		x = 26
 		y = 7
 
 	}
@@ -933,7 +1070,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_transatlantic
 		}
-		x = 18
+		x = 25
 		y = 8
 
 	}
@@ -947,7 +1084,10 @@ focus_tree = {
 			focus = BTK_anti_clown
 			focus = BTK_antihesus
 		}
-		x = 21
+		completion_reward = {
+			
+		}
+		x = 28
 		y = 7
 
 	}
@@ -961,7 +1101,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_flame
 		}
-		x = 26
+		x = 33
 		y = 8
 
 	}
@@ -975,7 +1115,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BTK_norm
 		}
-		x = 24
+		x = 31
 		y = 8
 
 	}
@@ -987,7 +1127,7 @@ focus_tree = {
 			focus = BTK_norm
 			focus = BTK_flame
 		}
-		x = 25
+		x = 32
 		y = 9
 
 	}
@@ -1009,7 +1149,7 @@ focus_tree = {
 				category = infantry_weapons
 			}
 		}
-		x = 27
+		x = 34
 		y = 7
 
 	}
@@ -1020,7 +1160,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_vintovki
 		}
-		x = 28
+		x = 35
 		y = 8
 		completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -1038,7 +1178,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_school_taktik
 		}
-		x = 27
+		x = 34
 		y = 9
 		completion_reward = {
 			set_technology = {
@@ -1058,7 +1198,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_transatlantic
 		}
-		x = 19
+		x = 26
 		y = 9
 
 	}
@@ -1072,7 +1212,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_transatlantic
 		}
-		x = 20
+		x = 27
 		y = 8
 
 	}
@@ -1083,7 +1223,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_rakety
 		}
-		x = 21
+		x = 28
 		y = 10
 
 	}
@@ -1094,7 +1234,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_planes
 		}
-		x = 22
+		x = 29
 		y = 8
 
 	}
@@ -1105,7 +1245,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_polety
 		}
-		x = 21
+		x = 28
 		y = 9
 
 	}
@@ -1379,23 +1519,27 @@ focus_tree = {
 	focus = {
 		id = BTK_old_enemy_new_fred
 		icon = GFX_BTK_evelone
-		cost = 8.00
+		cost = 5.00
 		prerequisite = {
-			focus = BTK_restart_89_squad
+			focus = BTK_rashir_soyuz
 		}
-		x = 16
-		y = 11
+		x = 21
+		y = 6
 
 	}
 	focus = {
 		id = BTK_shadowkek
 		icon = GFX_BTK_shd
-		cost = 1.00
+		relative_position_id = BTK_old_conflickt
+		cost = 5.00
 		prerequisite = {
-			focus = BTK_vspomnit_druzey
+			focus = BTK_old_conflickt
 		}
-		x = 10
-		y = 12
+		completion_reward = {
+			SHD = { country_event = btk.24 }
+		}
+		x = 1
+		y = 1
 
 	}
 	focus = {
@@ -1405,8 +1549,8 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_old_enemy_new_fred
 		}
-		x = 16
-		y = 12
+		x = 21
+		y = 7
 
 	}
 	focus = {
@@ -1416,44 +1560,46 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_alliance_with_evelone
 		}
-		x = 16
-		y = 13
+		x = 21
+		y = 8
 
 	}
 	focus = {
 		id = BTK_jojo
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 5.00
 		prerequisite = {
 			focus = BTK_old_conflickt
 		}
+		relative_position_id = BTK_old_conflickt
 		completion_reward = {
-			JHF = { country_event = btk.1 }
+			JHF = { country_event = btk.21 }
 		}
-		x = 6
-		y = 13
+		x = -1
+		y = 1
 
 	}
 	focus = { 
 		id = BTK_vybut_gayki
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 5.00
+		relative_position_id = BTK_gensyxa
 		prerequisite = {
 			focus = BTK_gensyxa
 		}
-		x = 4
-		y = 14
+		x = 0
+		y = 1
 		completion_reward = {
-			GCH = { country_event = btk.3 }
+			GCH = { country_event = btk.23 }
 		}
 
 	}
 	focus = {
 		id = BTK_logodski_ustupki
 		icon = GFX_goal_unknown
-		cost = 4.00
+		cost = 5.00
 		prerequisite = {
-			focus = BTK_jojo
+			focus = BTK_vspomnit_druzey
 		}
 		available = {
 			has_completed_focus = BTK_lomaka_gvin
@@ -1464,8 +1610,8 @@ focus_tree = {
 			}
 		
 		}
-		x = 6
-		y = 14
+		x = 18
+		y = 7
 
 	}
 	focus = {
@@ -1475,8 +1621,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_nelya_back
 		}
-		x = 8
-		y = 16
+		relative_position_id = BTK_nelya_back
+		x = -1
+		y = 1
 
 	}
 	focus = {
@@ -1489,8 +1636,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BTK_stint_marionteka
 		}
-		x = 10
-		y = 16
+		relative_position_id = BTK_nelya_back
+		x = 1
+		y = 1
 
 	}
 	focus = {
@@ -1502,6 +1650,8 @@ focus_tree = {
 		}
 		x = 12
 		y = 16
-
+		relative_position_id = BTK_89_idea
+		x = 0
+		y = 3
 	}
 }

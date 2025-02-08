@@ -28,7 +28,7 @@ BTK_integrations_cat = {
 
 }
 BTK_council_cat = {
-	icon = GFX_decision_category_generic_political_actions
+	icon = GFX_decision_BTK_parl
 	allowed = {
 		original_tag = BTK
 	}
