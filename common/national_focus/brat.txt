@@ -518,7 +518,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = BTK_bad_government
-				add_idea = BTK_good_goverment
+				add_idea = BTK_good_goverment 
 			}
 		}
 

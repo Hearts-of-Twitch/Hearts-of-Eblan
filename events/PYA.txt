@@ -8,7 +8,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = PYA
-		on_startup = yes
 	}
 	option = {
 		name = boss_start.1.a
@@ -91,6 +90,7 @@ country_event = {
 			hidden_effect = {
 				load_focus_tree = PYA_boss
 				set_country_flag = PYA_boss_vibory
+				mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = {
 				localization_key = razvilka.1.a.tt
@@ -106,6 +106,7 @@ country_event = {
 			hidden_effect = {
 				load_focus_tree = PYA_boss
 				set_country_flag = PYA_boss_dictator
+				mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = {
 				localization_key = razvilka.1.b.tt
@@ -121,10 +122,10 @@ country_event = {
 			hidden_effect = {
 				load_focus_tree = PYA_boss
 				set_country_flag = PYA_boss_korol
+				mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = {
 				localization_key = razvilka.1.c.tt
-				
 			}
 		}
 	}
