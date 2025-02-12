@@ -30,6 +30,9 @@ focus_tree = {
         x = 1
         y = 1
         cost = 5
+        ai_will_do = {
+            factor = 33
+        }
         prerequisite = {
             focus = PYA_razvilka
         }
@@ -109,6 +112,9 @@ focus_tree = {
         x = 13
         y = 1
         cost = 5
+        ai_will_do = {
+            factor = 33
+        }
         prerequisite = {
             focus = PYA_razvilka
         }
@@ -165,6 +171,9 @@ focus_tree = {
         id = PYA_slava_bossu
         icon = GFX_goal_PYA_slava_bossu
         cost = 5
+        ai_will_do = {
+            factor = 33
+        }
         x = 7
         y = 1
         prerequisite = {

@@ -137,7 +137,6 @@ country_event = {
 	id = pya_vibory.1
 	desc = pya_vibory.1.d
 	title = pya_vibory.1.t
-	desc = pya_vibory.1.d
 	picture = GFX_event_pya_vibory.1
 	is_triggered_only = yes
 	option = {
