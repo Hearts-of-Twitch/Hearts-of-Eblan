@@ -354,6 +354,16 @@ spriteTypes = {
 		name = "GFX_goal_PYA_nax"
 		texturefile = "gfx/interface/goals/goal_PYA_nax.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_PYA_telega"
+		texturefile = "gfx/interface/goals/goal_PYA_telega.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_PYA_privatka"
+		texturefile = "gfx/interface/goals/goal_PYA_privatka.dds"
+	}
 	#Аратосс
 	spriteType = {
 		name = "GFX_ARA_yes_org"
