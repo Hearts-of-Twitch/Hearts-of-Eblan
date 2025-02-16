@@ -201,4 +201,84 @@ spriteTypes = {
         name = "GFX_idea_BTK_pobeda"
         texturefile = "gfx/interface/ideas/BTK_pobeda.dds"
     }
+    #spriteType = {
+    #    name = "GFX_idea_BTK_"
+    #    texturefile = "gfx/interface/ideas/BTK_.dds"
+    #}
+    spriteType = {
+        name = "GFX_idea_BTK_dead_economy"
+        texturefile = "gfx/interface/ideas/BTK_dead_economy.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_econmil"
+        texturefile = "gfx/interface/ideas/BTK_econmil.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_emissia"
+        texturefile = "gfx/interface/ideas/BTK_emissia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_freenzy"
+        texturefile = "gfx/interface/ideas/BTK_freenzy.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_great_economy"
+        texturefile = "gfx/interface/ideas/BTK_great_economy.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_mobol"
+        texturefile = "gfx/interface/ideas/BTK_mobol.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_natzionalizatia"
+        texturefile = "gfx/interface/ideas/BTK_natzionalizatia.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_newinit"
+        texturefile = "gfx/interface/ideas/BTK_newinit.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_newmio"
+        texturefile = "gfx/interface/ideas/BTK_newmio.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_newprivate"
+        texturefile = "gfx/interface/ideas/BTK_newprivate.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_newsocial"
+        texturefile = "gfx/interface/ideas/BTK_newsocial.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_newtax"
+        texturefile = "gfx/interface/ideas/BTK_newtax.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_repairecon"
+        texturefile = "gfx/interface/ideas/BTK_repairecon.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_trudprop"
+        texturefile = "gfx/interface/ideas/BTK_trudprop.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_freenzy"
+        texturefile = "gfx/interface/ideas/BTK_freenzy.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_pari"
+        texturefile = "gfx/interface/ideas/BTK_pari.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_uande"
+        texturefile = "gfx/interface/ideas/BTK_uande.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_narezka"
+        texturefile = "gfx/interface/ideas/BTK_narezka.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_BTK_part"
+        texturefile = "gfx/interface/ideas/BTK_part.dds"
+    }
 }

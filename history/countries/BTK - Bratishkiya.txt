@@ -12,6 +12,7 @@ add_ideas = {
 	BTK_parlament
 	slay_2023_king
 	BTK_army_0
+	BTK_dead_economy
 }
 
 # Starting tech

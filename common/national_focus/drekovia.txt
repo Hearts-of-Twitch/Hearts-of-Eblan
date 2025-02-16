@@ -742,16 +742,6 @@ focus_tree = {
 				states = { 848 153 152 4 }
 				keep_all_characters = yes
 			}
-
-			152 = {
-				set_demilitarized_zone = no
-			}
-			153 = {
-				set_demilitarized_zone = no
-			}
-			848 = {
-				set_demilitarized_zone = no
-			}
 			add_timed_idea = { idea = DRE_clamp_down_on_hypecratia days = 365}
 		}
 	}

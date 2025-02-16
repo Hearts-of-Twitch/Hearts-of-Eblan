@@ -8,6 +8,12 @@ opinion_modifiers = {
 		value = 135
 	}
 	
+	BTK_hametova_yes = {
+		value = 100
+	}
+	BTK_hametova_no = {
+		value = -100
+	}
 	first_venezia_award = {
 		value = 10
 	}

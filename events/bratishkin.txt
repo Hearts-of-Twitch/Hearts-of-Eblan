@@ -186,6 +186,35 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = btk.26
+	title = btk.0.t
+	desc = btk.0.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.0.a
+		
+		hidden_effect = {
+			BTK = {
+				transfer_state = 909
+				add_state_core = 909
+				diplomatic_relation = {
+					country = DER
+					relation = guarantee
+					active = yes
+				}
+			}
+			DER = {
+				remove_state_core = 909
+
+			}
+		}
+	}
+}
 
 #Внутренний конфликт
 country_event = {
@@ -720,6 +749,20 @@ country_event = {
 		custom_effect_tooltip = BTK_89_nach_tt
 	}
 }
+country_event = {
+	id = btk.14
+	title = btk.14.t
+	desc = btk.14.d
+	picture = GFX_report_event_picture_BTK_3
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.14.a
+		custom_effect_tooltip = BTK_nach_army
+	}
+}
 #тестовый только для теста
 country_event = {
 	id = btk.11
@@ -732,39 +775,25 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = btk.0.a
-		add_ideas = BTK_test_2
-		add_ideas = BTK_test_3
-		add_ideas = BTK_test_4
-		add_ideas = BTK_test_5
-		add_ideas = BTK_pobeda
-		add_ideas = BTK_good_goverment
-		add_ideas = BTK_naval
-		add_ideas = BTK_air
+		add_ideas = BTK_emiss
 	}
 	option = {
 		name = btk.0.b
-		remove_ideas = BTK_test_2
-		remove_ideas = BTK_test_3
-		remove_ideas = BTK_test_4
-		remove_ideas = BTK_test_5
-		remove_ideas = BTK_air
-		remove_ideas = BTK_naval
-		remove_ideas = BTK_pobeda
-		remove_ideas = BTK_good_goverment
+		remove_ideas = BTK_emiss
 	}
 }
 #Решение о тактике борьбы
 country_event = {
 	id = btk.10
-	title = btk.0.t
-	desc = btk.0.d
+	title = btk.10.t
+	desc = btk.10.d
 	picture = GFX_report_event_picture_BTK_4
 	
 	major = no
 	
 	is_triggered_only = yes
 	option = {
-		name = btk.0.a
+		name = btk.10.a
 		hidden_effect = {
 			add_ideas = {
 				BTK_naval
@@ -778,7 +807,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = btk.0.b
+		name = btk.10.b
 		hidden_effect = {
 			complete_national_focus = BTK_anti_clown
 			add_ideas = {
@@ -792,7 +821,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = btk.0.c
+		name = btk.10.c
 		hidden_effect = {
 			complete_national_focus = BTK_morale_preserve
 			add_ideas = {
@@ -806,7 +835,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = btk.0.e
+		name = btk.10.e
 		hidden_effect = {
 			complete_national_focus = BTK_anti_evelone
 			add_ideas = {
@@ -816,6 +845,83 @@ country_event = {
 			swap_ideas = {
 				remove_idea = BTK_debarmy_3	
 				add_idea = BTK_army
+			}
+		}
+	}
+}
+#Выбор Экономического развития
+country_event = {
+	id = btk.12
+	title = btk.12.t
+	desc = btk.12.d
+	picture = GFX_report_event_picture_BTK_1
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.12.a
+		complete_national_focus = BTK_start_economic_repair
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = BTK_dead_economy
+				add_idea = BTK_econrep_1
+			}
+		}
+		
+	}
+	option = {
+		name = btk.12.b
+		complete_national_focus = BTK_make_military_economy
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = BTK_dead_economy
+				add_idea = BTK_econrep_mil
+			}
+		}
+		
+	}
+	option = {
+		name = btk.12.c
+		complete_national_focus = BTK_new_tacticks
+		hidden_effect = {
+			add_political_power = 150
+			add_stability = 0.15
+		}
+		
+	}
+}
+country_event = {
+	id = btk.13
+	title = btk.13.t
+	desc = btk.13.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	is_triggered_only = yes
+	option = {
+		name = btk.13.a
+		random_owned_controlled_state = {
+			create_unit = { 
+				division = "name = \"1. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"2. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"3. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"4. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
+			}
+			create_unit = { 
+				division = "name = \"5. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+				owner = ROOT
 			}
 		}
 	}

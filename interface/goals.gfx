@@ -599,6 +599,26 @@ spriteTypes = {
 		name = "GFX_BTK_sts9"
 		texturefile = "gfx/interface/goals/BTK_sts9.dds"
 	}
+	spriteType = {
+		name = "GFX_BTK_gens"
+		texturefile = "gfx/interface/goals/BTK_gens.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_jojo"
+		texturefile = "gfx/interface/goals/BTK_jojo.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_logoda"
+		texturefile = "gfx/interface/goals/BTK_logoda.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_rashir"
+		texturefile = "gfx/interface/goals/BTK_rashir.dds"
+	}
+	spriteType = {
+		name = "GFX_BTK_gaech"
+		texturefile = "gfx/interface/goals/BTK_gaech.dds"
+	}
 	
 
 
