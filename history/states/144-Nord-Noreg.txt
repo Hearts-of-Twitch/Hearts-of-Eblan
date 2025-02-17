@@ -18,8 +18,8 @@ state = {
 			9126 1
 		}
 		
-		owner = PYA
-		add_core_of = PYA
+		owner = ZUS
+		add_core_of = ZUS
 		add_core_of = SMI
 		
 		buildings = {

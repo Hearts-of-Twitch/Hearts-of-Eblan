@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = PYA
+		owner = ZUS
 
 		victory_points = {
 			6050 20 # Stockholm
@@ -33,7 +33,7 @@ state = {
 			}
 		}
 
-		add_core_of = PYA
+		add_core_of = ZUS
 
 	}
 

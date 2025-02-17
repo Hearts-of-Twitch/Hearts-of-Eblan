@@ -8,7 +8,6 @@ state={
 	history = {
 
 		owner = LOM
-		add_core_of = HAM
 		add_core_of = LOM
 
 		buildings = {

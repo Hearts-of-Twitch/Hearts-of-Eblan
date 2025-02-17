@@ -148,7 +148,7 @@ ideologies = {
 			hypeclown = {
 				color = { 184 24 69 }
 			}
-			42ideology = {
+			PYA_42ideology = {
 				color = { 240 186 10 }
 			}
 			twitcherizm={

@@ -6,8 +6,8 @@ state = {
 	
 
 	history = {
-		owner = PYA
-		add_core_of = PYA
+		owner = ZUS
+		add_core_of = ZUS
 
 		victory_points = {
 			11091 2 # Gävle
