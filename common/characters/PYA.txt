@@ -39,7 +39,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = PYA_42ideology
+			ideology = hypetiktok
 			expire = "2042.1.1.1"
 			id = -1
 

@@ -13,8 +13,8 @@ state = {
 			9296 3 
 		}
 		
-		owner = ZUS
-		add_core_of = ZUS
+		owner = PYA
+		add_core_of = PYA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

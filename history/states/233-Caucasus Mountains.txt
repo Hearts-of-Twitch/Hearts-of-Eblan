@@ -12,7 +12,6 @@ state = {
 
 		}
 		add_core_of = STY
-		add_claim_by = PYA
 		victory_points = {
 			9663 1
 		}
