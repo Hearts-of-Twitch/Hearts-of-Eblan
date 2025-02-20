@@ -1,4 +1,5 @@
 add_namespace = squad_news
+add_namespace = welcome
 
 news_event = {
 	id = squad_news.1
@@ -155,94 +156,38 @@ news_event = {
 		}
 	}
 } 
-
-news_event = {
-	id = squad_news.9
-	title = squad_news.9.t
-	desc = squad_news.9.d
-	picture = GFX_news_brat_1
-	
-	major = yes
-	
+country_event = {
+	id = welcome.1
+	title = welcome.1.t
+	desc = welcome.1.d
 	is_triggered_only = yes
-	
+	picture = GFX_report_event_picture_BTK_4
 	option = {
-		name = news.2.a
+		name = welcome.1.a
 		
 		hidden_effect = {
-		
-		}
-	}
-} 
-news_event = {
-	id = squad_news.91
-	title = squad_news.91.t
-	desc = squad_news.91.d
-	picture = GFX_news_brat_2
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.a
-		
-		hidden_effect = {
-		
+			country_event = { id = welcome.2 days = 5 }
 		}
 	}
 }
-news_event = {
-	id = squad_news.92
-	title = squad_news.92.t
-	desc = squad_news.92.d
-	picture = GFX_news_brat_3
-	
-	major = yes
-	
+country_event = {
+	id = welcome.2
+	title = welcome.2.t
+	desc = welcome.2.d
 	is_triggered_only = yes
-	
+	picture = GFX_report_event_picture_BTK_4
 	option = {
-		name = squad_news.92.a
+		name = welcome.2.a
 		
 		hidden_effect = {
-		
+			
 		}
 	}
-} 
-news_event = {
-	id = squad_news.93
-	title = squad_news.93.t
-	desc = squad_news.93.d
-	picture = GFX_news_brat_4
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
 	option = {
-		name = news.2.a
+		name = welcome.2.b
 		
 		hidden_effect = {
-		
+			
 		}
 	}
-} 
-news_event = {
-	id = squad_news.94
-	title = squad_news.94.t
-	desc = squad_news.94.d
-	picture = GFX_news_brat_5
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.a
-		
-		hidden_effect = {
-		
-		}
-	}
-} 
+}

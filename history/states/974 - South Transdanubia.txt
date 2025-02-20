@@ -15,6 +15,7 @@ state = {
 		owner = CHB
 		
 		add_core_of = CHD
+		set_demilitarized_zone = yes
 
 		victory_points = {
 			11610 5 

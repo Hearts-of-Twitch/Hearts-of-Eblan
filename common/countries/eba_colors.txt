@@ -196,8 +196,8 @@ GCH = {
 	color_ui = rgb { 8 96 95 }
 }
 TND = {
-	color = rgb { 246 131 156 }
-	color_ui = rgb { 246 131 156 }
+	color = rgb { 86 163 166 }
+	color_ui = rgb { 86 163 166 }
 }
 GNS = {
 	color = rgb { 84 198 235 }

@@ -12,7 +12,13 @@ country_event = {
 	option = {
 		name = chicken.1.a #yes
 		ai_chance = {
-			factor = 30
+			factor = 35
+			modifier = {
+				CHB = {
+					fascism > 0.75
+				}
+				factor = 70
+			}
 		}
 		CHB = {
 			country_event = { id = chicken.2 hours = 6 }
@@ -28,12 +34,6 @@ country_event = {
 		name = chicken.1.b
 		ai_chance = {
 			factor = 65
-			modifier = {
-				CHB = {
-					fascism < 0.75
-				}
-				factor = 70
-			}
 		}
 		CHB = {
 			country_event = { id = chicken.3 hours = 6 }
@@ -404,6 +404,55 @@ country_event = {
 				declare_war_on = {
 					target = CHB
 					type = annex_everything
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = chicken.15
+	title = chicken.15.t
+	desc = chicken.15.d
+
+	picture = GFX_report_event_anschlus_drake
+
+	is_triggered_only = yes
+	option = {
+		name = chicken.12.a
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			CHD = {
+				set_state_controller = 102
+				set_state_controller = 853
+				set_state_controller = 852
+				set_state_controller = 736
+				set_state_owner = 102
+				set_state_owner = 853
+				set_state_owner = 852
+				set_state_owner = 736
+			}
+			random_owned_controlled_state = {
+				create_unit = { 
+					division = "name = \"1. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"2. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"3. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"4. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"5. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
+					owner = ROOT
 				}
 			}
 		}

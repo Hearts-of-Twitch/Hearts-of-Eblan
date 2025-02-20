@@ -34,16 +34,7 @@ country_event = {
 	
 	hidden = yes
 	
-	trigger = {
-		CHB = {
-		    has_war_with = DRE
-			NOT = {
-				controls_province = 11586
-				is_puppet = yes
-				is_subject = yes
-			}
-		}
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		name = super.2.a

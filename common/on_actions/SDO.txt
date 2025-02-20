@@ -1,0 +1,32 @@
+on_actions = {
+	on_startup = {
+        effect = {
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                country_event = welcome.1
+            }
+        }
+    }
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 107 }
+				}
+				if =  {
+					limit = {
+						tag = DRE
+						has_completed_focus = DRE_svo_chb_start
+						has_war_with = CHB
+					}
+					FROM.FROM = {
+						DRE = {country_event = { id=svo.5 days=3}}
+						every_country = {country_event = super.2}
+					}
+				}
+			}
+		}
+	}
+}

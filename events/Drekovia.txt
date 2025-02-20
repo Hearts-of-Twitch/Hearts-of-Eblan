@@ -90,6 +90,7 @@ country_event = {
 			transfer_state = 974
 			transfer_state = 973
 			transfer_state = 83
+			transfer_state = 45
 		}
 
 		CHB = {
@@ -97,6 +98,8 @@ country_event = {
 			transfer_state = 850
 			transfer_state = 160
 			transfer_state = 159
+			transfer_state = 151
+			transfer_state = 846
 			remove_ideas = CHB_hungary_problem
 		}
 	}
@@ -185,17 +188,42 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		
-		DRE = {
-			transfer_state = 52
-			transfer_state = 53
+		if = {
+			limit = {
+				ZUS = {
+					controls_state = 52
+					controls_state = 53
+				}
+			}
+			DRE = {
+				transfer_state = 52
+				transfer_state = 53
+				52 = {
+					set_demilitarized_zone = no
+				}
+				53 = {
+					set_demilitarized_zone = no
+				}
+			}
 		}
+		else = {
+			DRE = {
+				add_state_claim = 52
+				add_state_claim = 53
+			}
+			
+		}
+		
 	}
 	option = {
 		name = drek.5.b #no
 
 		ai_chance = {
 			factor = 30
+		}
+		DRE = {
+			add_state_claim = 52
+			add_state_claim = 53
 		}
 		
 	}
@@ -407,12 +435,78 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		DRE = {
-			annex_country = {
-				target = CHD
+		remove_ideas = defeted_at_wwone
+		CHB = {
+			remove_ideas = CHB_hungary_problem
+			add_ideas = defeted_at_wwone
+		}
+		news_event = svo.6
+		if = {
+			limit = {
+				country_exists = CHD
+			}
+			DRE = {
+				annex_country = {
+					target = CHD
+				}
+			}
+		}
+		if ={
+			limit = {
+				CHB = {
+					controls_state = 102
+					controls_state = 853
+					controls_state = 736
+					controls_state = 852
+				}
+			}
+			transfer_state = 102
+			transfer_state = 853
+			transfer_state = 736
+			transfer_state = 852
+		}
+		if = {
+			limit = {
+				CHB = {
+					controls_state = 155
+					controls_state = 43
+					controls_state = 974
+					controls_state = 973
+					controls_state = 154
+					controls_state = 83
+					controls_state = 45
+				}
+			}
+			transfer_state = 155
+			transfer_state = 43
+			transfer_state = 974
+			transfer_state = 973
+			transfer_state = 154
+			transfer_state = 83
+			transfer_state = 45
+		}
+		if = {
+			limit = {
+				CHB = {
+					controls_state = 159
+					controls_state = 160
+					controls_state = 39
+					controls_state = 850
+					controls_state = 846
+					controls_state = 151
+				}
+			}
+			ROOT = {
+				transfer_state = 159
+				transfer_state = 160
+				transfer_state = 39
+				transfer_state = 850
+				transfer_state = 151
+				transfer_state = 846
 			}
 		}
 	}
+	
 }
 
 ##Vapers for hungary

@@ -6,16 +6,11 @@ characters = {
 				small=GFX_unknown_char_small
 			}
 		}
-		
-		advisor={
+		advisor = {
+			allowed = { has_completed_focus = BTK_upgrade_twitch }
 			slot = political_advisor
 			idea_token = universal_hype_btk
-			allowed = {
-				always = yes
-			}	
-			traits  = {
-				hypecratia_booster
-			}
+			traits = { hypecratia_booster }
 			cost = 100
 			do_effect = {
 				NOT = {
@@ -23,6 +18,7 @@ characters = {
 				}
 			}
 		}
+		
 	}
 	BTK_Bratishkin = {
 		name=BTK_Bratishkin
@@ -47,7 +43,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = mc_maks
+			idea_token = BTK_alina
 			allowed = {
 				tag=BTK
 			}

@@ -76,3 +76,43 @@ country_event = {
 		}
 	}
 }
+news_event = {
+	id = svo.6
+	title = svo.6.t
+	desc = svo.6.d
+	picture = GFX_news_event_051
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = svo.6.a
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+country_event = {
+	id = svo.5
+	title = svo.5.t
+	desc = svo.5.d
+	picture = GFX_report_event_svo_for_chb
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = svo.5.a
+		custom_effect_tooltip = svo_end_tt
+		hidden_effect = {
+			country_event = { id = drek.14 days = 7 }
+			white_peace = {
+				tag = CHB
+				message = my_peace_tt
+			}
+		}
+	}
+}

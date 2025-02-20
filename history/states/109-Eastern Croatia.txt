@@ -15,7 +15,7 @@ state={
 		victory_points = {
 			11581 3 
 		}
-		add_core_of = CHD
+		add_core_of = CHB
 	}
 
 	provinces={
