@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_default_station_cover"
+		textureFile = "gfx/radio/default.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_NeiroMusic_station_cover"
+		textureFile = "gfx/radio/NeiroMusic.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_noAP_station_cover"
+		textureFile = "gfx/radio/noAP.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_war_station_cover"
+		textureFile = "gfx/radio/war.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_Trash_station_cover"
+		textureFile = "gfx/radio/Trash.dds"
+		noOfFrames = 2
+	}
+}

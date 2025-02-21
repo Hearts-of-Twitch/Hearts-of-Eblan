@@ -111,7 +111,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "tg_button"
-			position = { x=100 y=0 }
+			position = { x=120 y=390 }
 			quadTextureSprite ="discord"
 			#clicksound = click_default
 			pdx_tooltip = "HOE_YOUTUBE"

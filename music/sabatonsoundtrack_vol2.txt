@@ -1,0 +1,4 @@
+# Songs from the esteemed metal band Sabaton
+# 10 song to enjoy while playing Hearts of Iron IV
+
+music_station = "sabaton"
