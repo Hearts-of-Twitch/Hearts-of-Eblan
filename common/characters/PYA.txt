@@ -1,97 +1,73 @@
 characters = {
-	dichlorid_oganeson = {
-		name = "Дихлорид Оганесона"
-		portraits = {
-			civilian = {
-				small = GFX_dichlorid_oganeson_advisor
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = dichlorid_oganeson
-			allowed = {
-				if = {
-					limit={has_completed_focus = PYA_mc_maks}
-					NOT = {
-						PYA = {
-							has_government = hypecratia
-						}
-					}
-				}
-			}
-			
-			traits = {
-				PYA_42bratuxa
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
+	universal_hype_PAT = {
+		name = "Хайпократ"
+		portraits={
+			civilian={
+				large=GFX_unknown_char_small
+				small=GFX_unknown_char_small
 			}
 		}
 		
-	}
-	
-	dichlorid_oganeson_leader = {
-		name = "Дихлорид Оганесона"
-		portraits = {
-			civilian = {
-				large = GFX_dichlorid_oganeson_portrait
-			}
-		}
-		country_leader = {
-			ideology = hypetiktok
-			expire = "2042.1.1.1"
-			id = -1
-
-			traits = {
-				PYA_42bratuxa_leader
-			}
-		}
-	}
-
-	mc_maks_advisor = {
-		name = "МС Макс"
-		portraits = {
-			civilian = {
-				small = GFX_mc_maks_small
-			}
-		}
-		advisor = {
+		advisor={
 			slot = political_advisor
-			idea_token = mc_maks
+			idea_token = universal_hype_PAT
 			allowed = {
-				if = {
-					limit = {has_completed_focus = PYA_42_party}
-					NOT = {
-						PYA = {
-							has_government = fascism
-						}
-					}
+				always = yes
+			}	
+			traits  = {
+				hypecratia_booster
+			}	
+			cost = 100
+			do_effect = {
+				NOT = {
+					has_government = hypecratia # You can only select it if your current ideology isn't your new one
 				}
 			}
-			traits = {
-				mc_chuma
+		}
+	}
+	PYA_Eka_normis = { 
+		name = Ека
+		portraits = {
+			army = {
+				large = GFX_portrait_PYA_Eka
+				small = GFX_portrait_PYA_Eka_small
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1
+		}
+		
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = Ека
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				superior_firepower_expert
 			}
 		}
 	}
-
-	mc_maks = {
-		name = "МС Макс"
+	PYA_Joper_normis = { 
+		name = Жопер
 		portraits = {
-			civilian = {
-				large = GFX_mc_maks
+			army = {
+				small = GFX_portrait_PYA_Joper_small
 			}
 		}
-		country_leader = {
-			ideology = fascism_ideology
-			expire = "2042.1.1.1"
-
+		
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = jopr
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
 			traits = {
-				mc_chuma
+				PYA_joper
+			}
+			available = {
+				has_completed_focus = PYA_fugobot4 
 			}
 		}
 	}

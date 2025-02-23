@@ -85,7 +85,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BTK_new_goverment
-		icon = GFX_goal_unknown
+		icon = GFX_BTK_new_goverment
 		cost = 5.00
 		prerequisite = {
 			focus = BTK_internal_politiks

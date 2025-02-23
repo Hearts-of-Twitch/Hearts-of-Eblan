@@ -38,4 +38,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_sdo.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_PYA_Great_popka"
+		texturefile = "gfx/interface/decisions/decision_PYA_Great_popka.dds"
+	}
+	
 }

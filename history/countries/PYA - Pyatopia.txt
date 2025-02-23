@@ -1,21 +1,31 @@
 capital = 141
 
-oob = "SWE_1936"
-set_naval_oob = "SWE_1936_naval"
-
-set_research_slots = 5 
-
+	
+	set_oob = "PYA_1936"
+	
+set_research_slots = 3
+	
 add_ideas = {
 	dva_disa
 	sp_crisis
 	slay_2023_mem_goda
+	ankapi_borba
+	sudia
 }
 
-recruit_character = dichlorid_oganeson
-recruit_character = dichlorid_oganeson_leader
-recruit_character = mc_maks_advisor
-recruit_character = mc_maks
+recruit_character = universal_hype_PYA
 
+recruit_character = PYA_Gena
+recruit_character = PYA_Mr_Brison
+
+recruit_character = PYA_Eka_normis
+
+recruit_character = PYA_Mc_Kvadrat
+recruit_character = PYA_Gigilo
+recruit_character = PYA_Mc_Max
+recruit_character = PYA_Zvezda
+
+recruit_character = PYA_Joper_normis
 
 set_autonomy = {
 	target = MPK
@@ -52,6 +62,138 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Баранов Кириллиус"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "5opka_fascism.dds"
+	expire = "2000.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Кириллиус I Великий СПшер"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "5opka_fascism.dds"
+	expire = "2000.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Пятёрка"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "5opka_neutrality.dds"
+	expire = "2000.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Конгресс Нарезчиков"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "5opka_democratic.dds"
+	expire = "2000.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "5opka Великий BO55"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "5opka_hypecratia.dds"
+	expire = "2000.1.1"
+	ideology = hypetiktok
+	traits = {
+		luzifer_stilya
+	}
+}
+
+create_field_marshal = {
+	name = "Гена"
+	picture = "PAT_Gena.dds"
+	traits = { }
+	id = 45577528792
+	skill = 5
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Мистр Брисон"
+	picture = "PAT_Mr_Brison.dds"
+	traits = { }
+	id = 455477527
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}	
+create_corps_commander = {
+	name = "Мс Квадрат"
+	picture = "PAT_Mc_Kvadrat.dds"
+	traits = { }
+	id = 455496359357
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "МС Макс"
+	picture = "PAT_Mc_Max.dds"
+	traits = { }
+	id = 41045411
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}	
+create_corps_commander = {
+	name = "Гигила"
+	picture = "PAT_Gigilo.dds"
+	traits = { }
+	id = 455454462
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}	
+create_corps_commander = {
+	name = "Звезда"
+	picture = "PAT_Zvezda.dds"
+	traits = { }
+	id = 01010101
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}	
+create_corps_commander = {
+	name = "Ека"
+	picture = "PAT_Eka.dds"
+	traits = { }
+	id = 4554846
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
 set_popularities = {
 	democratic = 19
 	fascism = 12
@@ -59,3 +201,5 @@ set_popularities = {
 	neutrality = 16
 	hypecratia = 42
 }
+
+

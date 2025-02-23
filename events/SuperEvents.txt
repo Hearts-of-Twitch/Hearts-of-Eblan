@@ -1,5 +1,31 @@
 add_namespace = super
 
+
+country_event = {
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_sp_event_top_squad
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	time_to_happen = 1
+	
+	trigger = { 
+		tag = BTK
+	}
+
+	immediate = {
+		name = super.5.a
+		log = "[GetDateText]: [This.GetName]: super.5.a executed"
+		
+        set_global_flag = BTK_top_squad
+		set_global_flag = Super_Event_Visible
+	}
+}
+	
 country_event = {
 	id = super.1
 	title = super.1.t
@@ -145,3 +171,32 @@ country_event = {
 		play_song = "the_great_war"
 	}
 }
+country_event = {
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_sp_event_top_squad
+
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		BTK = {
+		has_completed_focus = BTK_restart_89_squad
+		}
+	}
+
+	immediate = {
+		name = super.5.a
+		log = "[GetDateText]: [This.GetName]: super.5.a executed"
+		
+        set_global_flag = BTK_top_squad
+		set_global_flag = Super_Event_Visible
+		
+		play_song = "top_squad"
+	}
+}
+
+
+

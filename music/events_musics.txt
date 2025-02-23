@@ -23,3 +23,11 @@ chance = { factor = 0 }}
 music = {
 song = "the_great_war"
 chance = { factor = 0 }}
+
+music = {
+song = "limuzin"
+chance = { factor = 0 }}
+
+music = {
+song = "top_squad"
+chance = { factor = 0 }}

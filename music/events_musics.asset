@@ -27,3 +27,11 @@ music = {
 	name = "the_great_war"
 	file = "the_great_war.ogg"
 }
+music = {
+	name = "limuzin"
+	file = "limuzin.ogg"
+}
+music = {
+	name = "top_squad"
+	file = "top_squad.ogg"
+}
