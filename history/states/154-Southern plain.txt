@@ -10,6 +10,7 @@ state = {
 		owner = CHB
 		add_core_of = CHD
 
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 2

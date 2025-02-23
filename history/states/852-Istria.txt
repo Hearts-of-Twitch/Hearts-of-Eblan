@@ -19,7 +19,7 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = CHD
+		add_core_of = CHB
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

@@ -1,30 +1,31 @@
 music = {
 	name = "SDO_POCHALOS"
-	file = "sdo_start.ogg"
+	file = "SP/sdo_start.ogg"
 }
 
 music = {
 	name = "mazokgrad_fall"
-	file = "mazokgrad_fall.ogg"
+	file = "SP/mazokgrad_fall.ogg"
 }
 
 music = {
 	name = "dayraid_fall"
-	file = "dayraid_fall.ogg"
+	file = "SP/dayraid_fall.ogg"
 }
 
 music = {
 	name = "blitzkrieg_zabuksoval"
-	file = "blitzkrieg_zabuksoval.ogg"
+	file = "SP/blitzkrieg_zabuksoval.ogg"
 }
 
 music = {
 	name = "lagoda_raspil"
-	file = "lagoda_raspil.ogg"
+	file = "SP/lagoda_raspil.ogg"
 }
 
 music = {
 	name = "the_great_war"
+<<<<<<< HEAD
 	file = "the_great_war.ogg"
 }
 music = {
@@ -34,4 +35,7 @@ music = {
 music = {
 	name = "top_squad"
 	file = "top_squad.ogg"
+=======
+	file = "SP/the_great_war.ogg"
+>>>>>>> 6ae181b801a990e2bac025a7a26be093fc60c02e
 }

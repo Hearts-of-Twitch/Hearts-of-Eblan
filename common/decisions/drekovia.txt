@@ -358,7 +358,7 @@ drekovia_sdo_cat = {
 		is_good = no
 		
 		available = {
-			NOT = { country_exists = CHB }
+			controls_province = 11586
 		}
 		
 		timeout_effect = {
