@@ -95,4 +95,50 @@ characters = {
 			}
 		}
 	}
+	PYA_Eka_normis = { 
+		name = Ека
+		portraits = {
+			army = {
+				large = GFX_portrait_PYA_Eka
+				small = GFX_portrait_PYA_Eka_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = Ека
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				superior_firepower_expert
+			}
+		}
+	}
+	PYA_Joper_normis = { 
+		name = Жопер
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Joper_small
+			}
+		}
+		
+		advisor = {
+			cost = 50
+			slot = political_advisor
+			idea_token = jopr
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_joper
+			}
+			available = {
+				has_completed_focus = PYA_fugobot4 
+			}
+		}
+	}
 }

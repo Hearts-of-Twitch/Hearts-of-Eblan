@@ -1,0 +1,28 @@
+PYA_Joper_economic_cat = {
+	icon = GFX_decision_category_generic_political_actions
+	
+	visible_when_empty = no
+	
+	allowes = {
+		original_tag = PYA
+		}
+	visible = {
+	}
+}
+PYA_Great_popka_cat = {
+
+	icon = category_generic_formable_nations
+	
+	picture = GFX_PYA_Great_popka
+	
+	priority = 1
+	
+	visible_when_empty = yes
+	
+	
+	allowes = {
+		original_tag = PYA
+	}
+	visible = {
+	}
+}

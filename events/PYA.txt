@@ -72,6 +72,40 @@ country_event = {
 		}
 	}
 }
+country_event = {	
+	
+	id = boss.3
+	title = boss.3.t
+	desc = boss.3.d
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = boss.1.a #yes
+		ai_chance = {
+			factor = 10
+		}
+		
+		hidden_effect = {
+		PYA = {
+			annex_country = {
+				target = MPK
+				transfer_troops = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = boss.1.c #no
+		ai_chance = {
+			factor = 10
+		}
+		
+		hidden_effect = {
+		}
+	}
+}
 
 add_namespace = razvilka
 
@@ -131,14 +165,13 @@ country_event = {
 	}
 
 }
-add_namespace = pya_vibory
 
 country_event = {
-	id = pya_vibory.1
+	id = razvilka.2
 	desc = pya_vibory.1.d
 	title = pya_vibory.1.t
 	desc = pya_vibory.1.d
-	picture = GFX_event_pya_vibory.1
+	picture = GFX_event_pya_vibory
 	is_triggered_only = yes
 	option = {
 		name = pya_vibory.1.a

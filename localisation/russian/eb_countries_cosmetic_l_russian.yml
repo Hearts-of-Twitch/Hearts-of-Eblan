@@ -32,7 +32,19 @@
  expand_DRE_EMPIR_CHB: "Интегрировать территории Словенской Народной Республики"
  expand_DRE_EMPIR_SLA: "Интегрировать территории Силажика"
  
-  
+ PYA_Great_popka_cat: "Договор великого хайпа"
+ PYA_Great_popka_cat_desc: "ддд ддддд ддд дддддд дддддддд дд ддд ддддддд д ддддддд дд ддддддд д ддд дддддд дд ддддд ддддд ддддд ддд ддд ддд дддддд ддд ддд"
+ topka_great: "Договор великого хайпа"
+ form_country_popka_required_states_tt: "Контролирует все территории Босса"
+ form_country_skandi_required_states_tt: "Контролирует все территории Западной Скандинавии"
+ form_country_svinland_required_states_tt: "Контролирует все европейские территории Свинленда"
+ form_country_kussian_required_states_tt: "Контролирует все территории Куссии"
+ form_country_bo_required_states_tt: "Контролирует все территории Мистера Пятёрки"
+ 
+ form_country_skandi_coring_states_tt: "Все территории Западной Скандинавскии становятся национальными"
+ form_country_svinland_coring_states_tt: "Все европейские территории Свинленда становятся национальными"
+ form_country_kussia_coring_states_tt: "Все территории Куссии становятся национальными"
+ form_country_bo_coring_states_tt: "Все территории Мистера Пятёрки становятся национальными"
 
  form_BTK_89: "Реформировать 89 сквад"
  form_BTK_89_cat: "Реформировать 89 сквад"
