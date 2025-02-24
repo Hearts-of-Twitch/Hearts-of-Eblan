@@ -290,6 +290,40 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/portrait_PYA_Joper_small.dds"
 	}
 	spriteType = {
+		name = "GFX_portrait_PYA_Nerkin_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Nerkin_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PYA_Zakviel_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Zakviel_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PYA_Skrinnik_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Skrinnik_small.dds"
+	}	
+	spriteType = {
+		name = "GFX_portrait_PYA_Skrepka_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Skrepka_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PYA_Saya_Moon_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Saya_Moon_small.dds"
+		
+	}	
+	spriteType = {
+		name = "GFX_portrait_PYA_Oster_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Oster_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PYA_Mesh_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Mesh_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_PYA_Melham_small"
+		textureFile = "gfx/interface/ideas/portrait_PYA_Melham_small.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_PYA_ankapi"
 		textureFile = "gfx/interface/ideas/PYA_ankapi_borba.dds"
 	}

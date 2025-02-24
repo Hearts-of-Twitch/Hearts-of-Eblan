@@ -26,6 +26,14 @@ recruit_character = PYA_Mc_Max
 recruit_character = PYA_Zvezda
 
 recruit_character = PYA_Joper_normis
+recruit_character = PYA_Skrinnik
+recruit_character = PYA_Zakviel
+recruit_character = PYA_Skrepka
+recruit_character = PYA_Saya_Moon
+recruit_character = PYA_Oster
+recruit_character = PYA_Nerkin
+recruit_character = PYA_Mesh
+recruit_character = PYA_Melham
 
 set_autonomy = {
 	target = MPK
