@@ -16,8 +16,9 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name = "Super_Event_Squade"
-			spriteType = "GFX_sp_event_Squade"
+
+			name = "Super_Event_Image_Squad"
+			spriteType = "GFX_sp_event_Squad"
 			position = { x = 0 y = 0 }
 		}
 		
