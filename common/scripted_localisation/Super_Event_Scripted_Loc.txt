@@ -43,18 +43,6 @@ defined_text = {
         }
         localization_key = "sp_event_the_great_war"
     }
-	text = {
-        trigger = {
-            has_global_flag = PYA_start
-        }
-        localization_key = "sp_event_PYA_start"
-    }
-	text = {
-        trigger = {
-            has_global_flag = BTK_top_squad
-        }
-        localization_key = "sp_event_top_squad"
-    }
 }
 
 #Remarks
@@ -103,19 +91,6 @@ defined_text = {
         localization_key = "sp_event_the_great_war_remark"
     }
 	
-	text = {
-        trigger = {
-            has_global_flag = PYA_start
-        }
-        localization_key = "sp_event_PYA_start_remark"
-    }
-	text = {
-        trigger = {
-            has_global_flag = BTK_top_squad
-        }
-        localization_key = "sp_event_top_squad_remark"
-    }
-	
 }
 
 #Quotes
@@ -162,18 +137,5 @@ defined_text = {
             has_global_flag = PYA_the_great_war
         }
         localization_key = "sp_event_the_great_war_quote"
-    }
-	
-	text = {
-        trigger = {
-            has_global_flag = PYA_start
-        }
-        localization_key = "sp_event_PYA_start_quote"
-    }
-	text = {
-        trigger = {
-            has_global_flag = BTK_top_squad
-        }
-        localization_key = "sp_event_top_squad_quote"
     }
 }

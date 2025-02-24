@@ -1,6 +1,6 @@
 capital = 64
 
-oob = "BTK_1936"
+oob = "GER_1936"
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 set_research_slots = 5

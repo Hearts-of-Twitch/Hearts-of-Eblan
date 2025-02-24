@@ -281,24 +281,4 @@ spriteTypes = {
         name = "GFX_idea_BTK_part"
         texturefile = "gfx/interface/ideas/BTK_part.dds"
     }
-	spriteType = {
-		name = "GFX_portrait_PYA_Eka_small"
-		textureFile = "gfx/interface/ideas/portrait_PYA_Eka_small.dds"
-	}
-	spriteType = {
-		name = "GFX_portrait_PYA_Joper_small"
-		textureFile = "gfx/interface/ideas/portrait_PYA_Joper_small.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_PYA_ankapi"
-		textureFile = "gfx/interface/ideas/PYA_ankapi_borba.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_PYA_sudia"
-		textureFile = "gfx/interface/ideas/PYA_sudia.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_PYA_joper_economic"
-		textureFile = "gfx/interface/ideas/PYA_joper_economic.dds"
-	}
 }

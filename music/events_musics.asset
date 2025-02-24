@@ -27,6 +27,7 @@ music = {
 	name = "the_great_war"
 <<<<<<< HEAD
 	file = "the_great_war.ogg"
+<<<<<<< HEAD
 }
 music = {
 	name = "limuzin"
@@ -38,4 +39,6 @@ music = {
 =======
 	file = "SP/the_great_war.ogg"
 >>>>>>> 6ae181b801a990e2bac025a7a26be093fc60c02e
+=======
+>>>>>>> parent of d9632f1 (Bananis)
 }

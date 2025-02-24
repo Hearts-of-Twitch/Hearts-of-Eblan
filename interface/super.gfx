@@ -47,12 +47,4 @@ spriteTypes = {
 		name = "GFX_sp_event_the_great_war"
 		textureFile = "gfx/sp_events/Super_Event_the_great_war.dds"
 	}
-	spriteType = {
-		name = "GFX_sp_event_PYA_start"
-		textureFile = "gfx/sp_events/Super_Event_PYA_start.dds"
-	}
-	spriteType = {
-		name = "GFX_sp_event_top_squad"
-		textureFile = "gfx/sp_events/Super_Event_top_squad.dds"
-	}
 }
