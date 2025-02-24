@@ -71,4 +71,194 @@ characters = {
 			}
 		}
 	}
+	PYA_Skrinnik = { 
+		name = Dmitry_Skrinnik
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Skrinnik_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = skrin
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_Skrinnik
+			}
+			available = {
+				has_completed_focus = PYA_fugobot2
+			}
+		}
+	}
+	PYA_Zakviel = { 
+		name = Kostic_Smerch
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Zakviel_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = zak
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			available = {
+				has_completed_focus = PYA_fugobot2
+			}
+		}
+	}
+	PYA_Skrepka = { 
+		name = Скрепка
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Skrepka_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = skrep
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_skrepka
+			}
+			available = {
+				has_completed_focus = PYA_fugobot2
+			}
+		}
+	}
+	PYA_Saya_Moon = { 
+		name = Saya_Moon
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Saya_Moon_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = Smoon
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_agentSP
+			}
+			available = {
+				has_completed_focus = PYA_fugobot11
+			}
+		}
+	}
+	PYA_Oster = { 
+		name = Andrey_Oster
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Oster_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = oster
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			available = {
+				has_completed_focus = PYA_fugobot2
+			}
+		}
+	}
+	PYA_Nerkin = { 
+		name = Неркин
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Nerkin_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = navy_chief
+			idea_token = nerkin
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			available = {
+				has_completed_focus = PYA_fugobot2
+			}
+		}
+	}
+	PYA_Mesh = { 
+		name = Мэш
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Mesh_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = mesh
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_soldar
+			}
+			available = {
+			}
+		}
+	}
+	PYA_Melham = { 
+		name = Мелхам
+		portraits = {
+			army = {
+				small = GFX_portrait_PYA_Melham_small
+			}
+		}
+		
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = melham
+			ledger = army
+			allowed = {
+				original_tag = PYA
+			}
+			traits = {
+				PYA_aristocrat
+			}
+			available = {
+			}
+		}
+	}
 }
