@@ -7,6 +7,8 @@ focus_tree = {
 			tag = PYA
 		}
 	}
+	continuous_focus_position = { x = 2170 y = 1480 }
+	
 	default = no
 	focus = {
 		id = PYA_Polit1
