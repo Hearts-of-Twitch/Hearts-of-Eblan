@@ -1,16 +1,16 @@
 PYA_Joper_economic = {
 	icon = 
 	
-	picture
-	
 	priority = 70
 	
 	visible_when_empty = no
 	
 	allowes = {
-		original_tag = PYA
+		has_completed_focus = PYA_fugobot4
 		}
 	visible = {
+		original_tag = PYA
+		has_completed_focus = PYA_fugobot4
 	}
 }
 PYA_Great_popka = {
@@ -28,6 +28,6 @@ PYA_Great_popka = {
 		original_tag = PYA
 		}
 	visible = {
-		stability > 0.1
+		original_tag = PYA
 	}
 }
