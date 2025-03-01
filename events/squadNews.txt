@@ -155,7 +155,25 @@ news_event = {
 		
 		}
 	}
-} 
+}
+news_event = {
+	id = squad_news.9
+	title = squad_news.9.t
+	desc = squad_news.9.d
+	picture = GFX_news_event_partition_of_india
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		
+		hidden_effect = {
+			
+		}
+	}
+}
 country_event = {
 	id = welcome.1
 	title = welcome.1.t
