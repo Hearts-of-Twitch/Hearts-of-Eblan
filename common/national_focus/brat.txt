@@ -135,7 +135,7 @@ focus_tree = {
 			}
 			hidden_trigger = {
 				OR = {
-					NOT = { country_exists = KRU }
+					NOT = { country_exists = CHD }
 					DRE = {
 						owns_state = 152
 						owns_state = 153
@@ -679,8 +679,7 @@ focus_tree = {
 		x = 13
 		y = 5
 			completion_reward = {
-					custom_effect_tooltip = BTK_restart_89_squad_tt
-					
+				#
 			}
 
 	}

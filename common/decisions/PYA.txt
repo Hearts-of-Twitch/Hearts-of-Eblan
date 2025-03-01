@@ -238,6 +238,7 @@ PYA_Great_popka = {
 		complete_effect = {
 			custom_effect_tooltip = form_country_skandi_coring_states_tt
 			hidden_effect = {
+				set_cosmetic_tag = PYA_hype
 				148 = { add_core_of = ROOT }
 				722 = { add_core_of = ROOT }
 				147 = { add_core_of = ROOT }
@@ -268,6 +269,9 @@ PYA_Great_popka = {
 				13 = { add_core_of = ROOT }
 				12 = { add_core_of = ROOT }
 				808 = { add_core_of = ROOT }
+				812 = { add_core_of = ROOT }
+				983 = { add_core_of = ROOT }
+				982 = { add_core_of = ROOT }
 				809 = { add_core_of = ROOT }
 				815 = { add_core_of = ROOT }
 				11 = { add_core_of = ROOT }

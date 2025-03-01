@@ -109,28 +109,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			152 = {
-				set_demilitarized_zone = no
-			}
-			153 = {
-				set_demilitarized_zone = no
-			}
-			848 = {
-				set_demilitarized_zone = no
-			}
-			976 = {
-				set_demilitarized_zone = no
-			}
-			DRE={
-				transfer_state = 152
-				transfer_state = 153
-				transfer_state = 848
-				transfer_state = 976
-			}
-			news_event = {
-				id = squad_news.4
-				days = 3
-			}
+			custom_effect_tooltip = dre_strart_empire_tt
 		}
 	}
 
