@@ -13,8 +13,8 @@ state={
 
 		}
 		add_core_of = CHB
-		add_core_of = SER
-		add_claim_by = BUL
+		add_core_of = CHB
+		add_claim_by = CHB
 
 	}
 

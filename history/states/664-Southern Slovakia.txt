@@ -15,7 +15,7 @@ state = {
 	
 	history = {
 
-		owner = DRE
+		owner = CHB
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -26,8 +26,8 @@ state = {
 			6573 1 # Kosice
 		}
 
-		add_core_of = DRE
-		add_core_of = SLO
+		add_core_of = CHB
+		add_core_of = CHB
 
 		# This should isntead be reclaimable through Hungarian focuses with ww
 		IF = {
@@ -36,14 +36,14 @@ state = {
 					has_dlc = "Gotterdammerung"
 				}
 			}
-			add_claim_by = HUN
+			add_claim_by = CHB
 		}
 		
 
 		1939.3.14 = {
 			owner = CHB
-			controller = HUN
-			remove_claim_by = HUN
+			controller = CHB
+			remove_claim_by = CHB
 			add_core_of = CHB
 		}
 	}

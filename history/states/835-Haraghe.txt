@@ -38,13 +38,13 @@ state = {
 			12812 1
 		}
 		
-		owner = ZUS
-		add_core_of = ZUS
-		add_core_of = ZUS
+		owner = ETH
+		add_core_of = ETH
+		add_core_of = SOM
 		add_core_of = HAR
 
 		1936.6.1 = {
-			owner = ZOL
+			owner = ITA
 			controller = ITA
 		}
 	}

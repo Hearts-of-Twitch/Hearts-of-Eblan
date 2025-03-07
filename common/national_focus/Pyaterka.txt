@@ -19,6 +19,19 @@ focus_tree = {
 		}
 		x = 10
 		y = 0
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 5
+			}
+
+			set_politics = {
+				ruling_party = fascism
+    			elections_allowed = no
+			}
+			remove_ideas = sp_crisis
+		}
 
 	}
 	focus = {
@@ -44,6 +57,10 @@ focus_tree = {
 		}
 		x = 6
 		y = 1
+		
+		completion_reward = {
+			add_ideas = fugaboti
+		}
 
 	}
 	focus = {

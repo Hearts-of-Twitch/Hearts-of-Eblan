@@ -5,8 +5,8 @@ state = {
 	manpower = 45819
 
 	history = {
-		owner = DER
-		add_core_of = DER
+		owner = DEN
+		add_core_of = DEN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

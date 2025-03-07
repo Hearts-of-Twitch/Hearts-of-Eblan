@@ -14,7 +14,7 @@ state = {
 
 		owner = HSU
 		add_core_of = HSU
-		add_core_of = RIG
+		add_core_of = HSU
 
 		buildings = {
 			infrastructure = 2

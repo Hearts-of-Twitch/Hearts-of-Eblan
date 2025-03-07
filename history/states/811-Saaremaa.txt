@@ -12,7 +12,6 @@ state={
 			185 1
 		}
 		add_core_of = SVI
-		add_core_of = HYP
 	}
 
 	provinces={

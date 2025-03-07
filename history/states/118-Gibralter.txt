@@ -16,7 +16,7 @@ state=
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = GON
+		add_claim_by = GON
 	}
 	provinces={
 		4135

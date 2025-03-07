@@ -6,8 +6,8 @@ state = {
 	
 	history = {
 
-		owner = BAT
-		add_core_of = PAS
+		owner = CHL
+		add_core_of = CHL
 		add_core_of = RAP
 
 		buildings = {

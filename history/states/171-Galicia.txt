@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = GON
-		add_core_of = GLC
+		add_core_of = GON
 		victory_points = {
 			758 5
 		}

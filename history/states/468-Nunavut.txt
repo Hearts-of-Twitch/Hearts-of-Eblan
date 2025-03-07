@@ -13,7 +13,7 @@ state = {
 
 		owner = HSU
 		add_core_of = HSU
-		add_core_of = QUE
+		add_core_of = HSU
 
 		buildings = {
 			infrastructure = 3 #was: 6

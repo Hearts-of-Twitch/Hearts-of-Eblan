@@ -15,7 +15,7 @@ state = {
 		}
 		owner = PYA
 		add_core_of = PYA
-		add_core_of = SMI
+		add_core_of = PYA
 		
 		buildings = {
 			infrastructure = 1

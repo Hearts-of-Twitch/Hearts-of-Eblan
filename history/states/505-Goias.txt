@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = PAS
-		add_core_of = PAS
+		owner = BRA
+		add_core_of = BRA
 
 		buildings = {
 			infrastructure = 1

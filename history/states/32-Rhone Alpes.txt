@@ -12,14 +12,15 @@ state={
 	}
 
 	history={
-		owner = KRY
+		owner = FRA
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			3768 1 
 		}
-		add_core_of = KRY
+		add_core_of = OCC
+		add_core_of = FRA
 	}
 
 	provinces={

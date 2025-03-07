@@ -10,7 +10,7 @@ state = {
 
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = MEK
+		add_core_of = BTK
 
 		victory_points = {
 			321 5 # Rostocj

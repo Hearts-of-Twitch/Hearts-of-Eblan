@@ -6,13 +6,13 @@ state = {
 	state_category = enclave
 	
 	history = {	
-		owner = RAZ
+		owner = FIN
 
 		buildings = {
 			infrastructure = 1 
 		}
 
-		add_core_of = RAZ
+		add_core_of = FIN
 		add_core_of = KAR
 		add_core_of = SMI
 		

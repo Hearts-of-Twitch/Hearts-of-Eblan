@@ -6,7 +6,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = RAZ
+		owner = KUS
 
 		victory_points = { #Petsamo
 			9140 1
@@ -18,8 +18,8 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = RAZ
-		add_core_of = SMI
+		add_core_of = KUS
+		add_core_of = KUS
 
 	}
 	

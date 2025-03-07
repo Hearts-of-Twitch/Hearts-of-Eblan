@@ -15,7 +15,7 @@ state={
 			9821 1
 		}
 		owner = CHB
-		add_core_of = MNT
+		add_core_of = CHB
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

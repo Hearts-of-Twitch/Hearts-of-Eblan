@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = ZUS
-		add_core_of = DRE
+		owner = AUS
+		add_core_of = AUS
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -28,7 +28,11 @@ state = {
 			9665 3
 		}
 
-		set_demilitarized_zone = yes
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
 	}
 
 	provinces = {

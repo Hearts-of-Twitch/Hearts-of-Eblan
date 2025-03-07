@@ -10,7 +10,7 @@ state = {
 
 	history = {
 
-		owner = ZUS
+		owner = ENG
 		add_core_of = NGA
 
 		buildings = {

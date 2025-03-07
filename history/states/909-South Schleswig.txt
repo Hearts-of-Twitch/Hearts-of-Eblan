@@ -6,8 +6,10 @@ state = {
 	
 	history = {
 
-		owner = DER
-		add_core_of = DER
+		owner = GER
+		add_core_of = GER
+		add_core_of = SHL
+		add_core_of = PRE
 
 		victory_points = {
 			317 3  # Flensburg

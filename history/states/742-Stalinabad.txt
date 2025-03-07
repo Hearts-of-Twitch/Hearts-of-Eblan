@@ -2,9 +2,13 @@ state = {
 	id = 742
 	name = "STATE_742"
 
+	resources = {
+		steel = 3.000
+	}
+
 	history = {
 
-		owner = RAB
+		owner = SOV
 		victory_points = {
 			1384 1
 		}
@@ -12,7 +16,7 @@ state = {
 			infrastructure = 1
 
 		}
-		add_core_of = RAB
+		add_core_of = SOV
 		add_core_of = TAJ
 		add_core_of = BUK
 

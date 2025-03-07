@@ -43,6 +43,28 @@ country_event = {
 }
 
 country_event = {
+	id = gonduras.10
+	title = gonduras.10.t
+	desc = gonduras.10.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.10.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_fascism
+		}
+	}
+	option = {
+		name = gonduras.10.b
+		hidden_effect = {
+			load_focus_tree = Gonduras_monarch
+		}
+	}
+}
+
+country_event = {
 	id = gonduras.2
 	title = gonduras.2.t
 	desc = gonduras.2.d
@@ -155,4 +177,30 @@ country_event = {
 	#	}
 	#}
 }
+country_event = {
+	id = gonduras.9
+	title = gonduras.9.t
+	desc = gonduras.9.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.9.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_war 
+			}
+		}
+	}
+	option = {
+		name = gonduras.9.b
+		hidden_effect = {
+			load_focus_tree = Gonduras_chat
+		}
+	}
+}
+
+
+
+
 

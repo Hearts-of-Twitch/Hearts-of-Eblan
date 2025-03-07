@@ -13,8 +13,8 @@ state = {
 
 		owner = BTK
 		add_core_of = BTK
-		add_core_of = SIL
-		add_core_of = PRE
+		add_core_of = BTK
+		add_core_of = BTK
 
 		victory_points = {
 			11467 5 # Gleiwitz

@@ -28,7 +28,7 @@ state={
 		}
 		add_core_of = CHB
 		#add_claim_by = ITA #added by focus
-		add_core_of = CRO
+		add_core_of = CHB
 	}
 
 	provinces={

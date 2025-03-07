@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = LID
+		owner = SOV
 		victory_points = {
 			11370 20
 		}
@@ -19,9 +19,8 @@ state={
 			industrial_complex = 2
 			air_base = 8
 		}
-		add_core_of = LID
+		add_core_of = SOV
 		add_core_of = BLR
-		set_demilitarized_zone = yes
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3

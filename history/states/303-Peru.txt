@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = PAS
-		add_core_of = PAS
+		owner = PRU
+		add_core_of = PRU
 
 		buildings = {
 			infrastructure = 2

@@ -36,11 +36,11 @@ state = {
 
 		}
 		add_core_of = CHB
-		add_claim_by = ITA
+		add_claim_by = CHB
 		1939.4.12 = {
-			owner = ZOL
-			controller = ITA
-			remove_claim_by = ITA
+			owner = CHB
+			controller = CHB
+			remove_claim_by = CHB
 
 		}
 

@@ -5,7 +5,7 @@ state = {
 	manpower = 2642000 
 	state_category = city
 	history = {
-		owner = ZOL
+		owner = ITA
 		victory_points = { #Bari
 			9784 3
 		}
@@ -30,7 +30,7 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = ZOL
+		add_core_of = ITA
 		add_core_of = TTS
 
 		1939.1.1 = {

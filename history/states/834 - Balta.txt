@@ -20,6 +20,8 @@ state = {
 			
 		}
 		add_core_of = GVI
+		add_core_of = GVI
+		add_core_of = GVI
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
