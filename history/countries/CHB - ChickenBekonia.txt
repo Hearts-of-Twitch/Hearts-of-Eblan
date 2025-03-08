@@ -7,11 +7,6 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 set_research_slots = 4
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> parent of 81f011d (state)
 # Starting tech
 set_technology = {
  	infantry_weapons = 1
