@@ -1,4 +1,4 @@
-version="0.1.3c"
+version="0.1.4"
 tags={
 	"Alternative History"
 	"Events"
@@ -9,5 +9,5 @@ tags={
 name="The new 89: Last Days of Twitch"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
-supported_version="1.15.2"
+supported_version="1.16.x"
 remote_file_id="3412939902"

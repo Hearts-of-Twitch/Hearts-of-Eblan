@@ -6,15 +6,15 @@ state={
 	state_category = rural
 	
 	history={
-		owner = CZE
+		owner = LAG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = CZE
+		add_core_of = LAG
 
 		1939.3.14 = {
-			owner = POL
+			owner = LAG
 			controller = POL
 		}
 	}

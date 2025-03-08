@@ -17,7 +17,7 @@ state = {
 			}
 			industrial_complex = 1
 		}
-		# add_core_of = GCM
+		# add_core_of = MPK
 		add_core_of = GCM
 	}
 	provinces = {

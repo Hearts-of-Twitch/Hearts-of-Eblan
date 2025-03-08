@@ -9,7 +9,6 @@ state = {
 
 		owner = KUS
 		add_core_of = KUS
-		add_core_of = KUS
 
 		victory_points = {
 			11159 1 # Petrozavodsk/Äänislinna

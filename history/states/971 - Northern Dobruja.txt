@@ -11,7 +11,7 @@ state = {
 
 		owner = GVI
 		add_core_of = GVI
-		add_claim_by = GVI
+		add_claim_by = BUL
 
 		victory_points = { 
 			657 3 

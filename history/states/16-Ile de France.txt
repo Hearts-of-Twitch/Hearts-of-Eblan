@@ -8,11 +8,11 @@ state = {
 
 	history = {
 
-		owner = FRA
-		add_core_of = FRA
+		owner = DPN
+		add_core_of = DPN
 
 		victory_points = {
-			11506 50 # Paris
+			9725 5 # Paris
 		}
 
 		buildings = {
@@ -45,7 +45,7 @@ state = {
 	}
 
 	provinces = {
-		6547 6949 9507 9523 9534 9725 11491 11506 11518 
+		6547 6949 9507 9725 11491 
 	}
 
 	local_supplies = 0.0 

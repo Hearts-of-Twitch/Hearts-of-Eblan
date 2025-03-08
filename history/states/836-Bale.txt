@@ -29,13 +29,13 @@ state = {
 			10775 1
 		}
 		
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = SOM
+		owner = ZUS
+		add_core_of = ZUS
+		add_core_of = ZUS
 		add_core_of = ORO
 
 		1936.6.1 = {
-			owner = ITA
+			owner = ZOL
 			controller = ITA
 		}
 	}

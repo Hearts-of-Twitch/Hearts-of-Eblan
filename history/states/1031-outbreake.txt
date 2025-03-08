@@ -1,0 +1,25 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		1544 1631 4440 4562 4574 4591 4603 4951 7001  11976  
+	}
+	history = {
+
+		owner = EVL
+		add_core_of = EVL
+
+		victory_points = {
+			4603 1 # Samawah
+		}
+
+		buildings = {
+			#infrastructure = 1
+		}
+		
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

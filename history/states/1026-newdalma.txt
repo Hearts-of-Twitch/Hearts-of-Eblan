@@ -1,0 +1,23 @@
+state={
+	id=1026
+	name="STATE_1026"
+	provinces={
+		3868 3924 6889 11816 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+	history={
+		owner = CHB
+		victory_points = {
+			6889 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CHB
+		add_core_of = CHB
+		add_core_of = CHB
+	}
+}

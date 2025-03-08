@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = OMA
-		add_core_of = OMA
+		owner = EVL
+		add_core_of = EVL
 
 		buildings = {
 			infrastructure = 1

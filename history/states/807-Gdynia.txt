@@ -7,10 +7,9 @@ state = {
 
 	history = {
 
-		owner = POL
-		add_core_of = POL
-		add_core_of = KSH
-		add_claim_by = PRE
+		owner = SHD
+		add_core_of = SHD
+		add_core_of = BTK
 
 		victory_points = {
 			9263 5 # Gdynia

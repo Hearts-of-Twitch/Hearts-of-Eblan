@@ -20,8 +20,8 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = CHB
-		add_core_of = CHB
-		add_core_of = CHB
+		add_core_of = BOS
+		add_core_of = HRZ
 	}
 
 	provinces={

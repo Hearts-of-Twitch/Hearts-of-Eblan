@@ -1,0 +1,22 @@
+state={
+	id=1017
+	name="STATE_1017"
+	provinces={
+		9523 9534 11506 11518 
+	}
+	history={
+		victory_points = {
+			11506 10
+		}
+		owner = DPN
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = DPN
+	}
+	state_category = town
+	manpower=1684623
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

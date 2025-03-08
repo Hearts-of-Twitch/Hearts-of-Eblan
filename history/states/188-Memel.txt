@@ -7,9 +7,8 @@ state = {
 	
 	history = {
 
-		owner = LIT
-		add_core_of = LIT
-		add_claim_by = PRE
+		owner = SHD
+		add_core_of = SHD
 
 		victory_points = {
 			3288 3 # Klaipeda/Memel
@@ -24,9 +23,9 @@ state = {
 		}
 		
 		1939.3.22 = {
-			owner = GER
+			owner = BTK
 			controller = GER
-			add_core_of = GER
+			add_core_of = BTK
 		}
 
 	}

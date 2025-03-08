@@ -10,9 +10,9 @@ state = {
 
 	history = {
 
-		owner = GER
-		add_core_of = GER
-		add_core_of = BAY
+		owner = ZUS
+		add_core_of = BTK
+		set_demilitarized_zone = yes
 
 		victory_points = {
 			692 20 # Munich

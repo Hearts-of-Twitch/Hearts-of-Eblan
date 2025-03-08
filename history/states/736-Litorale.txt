@@ -10,9 +10,6 @@ state = {
 		}
 		owner = CHB
 		add_core_of = CHB
-		add_core_of = CHB
-		add_core_of = CHB
-		add_core_of = CHB
 		buildings = {
 			infrastructure = 1
 			dockyard = 1

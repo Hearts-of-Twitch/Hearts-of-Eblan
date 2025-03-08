@@ -8,7 +8,7 @@ state = {
 	
 		owner = HSU
 		add_core_of = HSU
-		add_core_of = HSU
+		add_core_of = QUE
 
 		victory_points = {
 			12223 1

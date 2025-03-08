@@ -12,7 +12,6 @@ state={
 
 		}
 		add_core_of = KUS
-		add_core_of = KUS
 	}
 
 	provinces={

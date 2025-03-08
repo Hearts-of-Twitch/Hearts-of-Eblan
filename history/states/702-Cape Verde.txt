@@ -7,7 +7,7 @@ state = {
 
 	history = { 
 
-		owner = POR
+		owner = GON
 		add_core_of = CBV
 
 		victory_points = {

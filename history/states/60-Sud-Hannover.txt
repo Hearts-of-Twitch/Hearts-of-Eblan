@@ -12,9 +12,9 @@ state = {
 
 	history = {
 
-		owner = GER
-		add_core_of = GER
-		add_core_of = THU
+		owner = JHF
+		add_core_of = JHF
+		add_core_of = BTK
 
 		victory_points = { 
 			3561 5 # Erfurt

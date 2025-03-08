@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = BEL
-		add_core_of = BEL
+		owner = DPN
+		add_core_of = DPN
 
 		victory_points = { 
 			6598 30 

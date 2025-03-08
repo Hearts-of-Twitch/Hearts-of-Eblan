@@ -6,8 +6,8 @@ state = {
 
 	history = {
 		
-		owner = ENG
-		add_core_of = BHR
+		owner = EVL
+		add_core_of = EVL
 
 		victory_points = {
 			13313 2 # Manama

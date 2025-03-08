@@ -6,8 +6,8 @@ state = {
 
 	history = {
 
-		owner = ENG
-		add_core_of = EGY
+		owner = PBU
+		add_core_of = PBU
 
 		buildings = {
 			infrastructure = 3

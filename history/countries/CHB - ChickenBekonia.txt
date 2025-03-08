@@ -1,4 +1,4 @@
-capital = 107
+capital = 1027
 
 oob = "YUG_1936"
 set_naval_oob = "YUG_1936_naval"
@@ -7,7 +7,7 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 set_research_slots = 4
 
-add_ideas = CHB_hungary_problem
+
 
 # Starting tech
 set_technology = {

@@ -9,7 +9,7 @@ state={
 	state_category=town
 	local_supplies=0.000
 	history={
-		owner = RAJ
+		##owner = RAJ
 		add_claim_by = KHL
 		victory_points = {
 			1377 10

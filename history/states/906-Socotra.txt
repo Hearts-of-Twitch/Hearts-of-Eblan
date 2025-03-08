@@ -5,7 +5,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = ENG
+		owner = ZUS
 		buildings = {
 			infrastructure = 1
 			
@@ -14,7 +14,7 @@ state={
 			}
 
 		}
-		add_core_of = YEM
+		add_core_of = ZUS
 		add_claim_by = SOM
 	}
 

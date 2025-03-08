@@ -10,8 +10,8 @@ state = {
 
 	history = {
 
-		owner = BEL
-		add_core_of = BEL
+		owner = DPN
+		add_core_of = DPN
 
 		victory_points = {
 			3516 5 # Namur

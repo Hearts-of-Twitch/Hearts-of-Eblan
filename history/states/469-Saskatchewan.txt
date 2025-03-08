@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = HSU
+		owner = HSU 
 		add_core_of = HSU
 
 		buildings = {
