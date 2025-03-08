@@ -92,186 +92,153 @@ PYA_Great_popka = {
 		original_tag = PYA
 		}
 		
-		highlight_states = {
-					state = 110
-					state = 142
-					state = 143
-					state = 144
-					state = 920
-					state = 921
-					state = 922
-					state = 923
-					state = 924
-					state = 925
-					state = 38
-					state = 124
-					state = 138
-					state = 139
-					state = 140
-					state = 141
-					state = 666
-					state = 913
-					state = 915
-					state = 916
-					state = 917
-					state = 918
-					state = 919
-					state = 111
-					state = 145
-					state = 147
-					state = 146
-					state = 148
-					state = 149
-					state = 150
-					state = 926
-					state = 927
-					state = 928
-					state = 929
-					state = 930
-					state = 722
-					state = 195
-					state = 244
-					state = 208
-					state = 263
-					state = 209
-					state = 210
-					state = 207
-					state = 242
-					state = 813
-					state = 812
-					state = 811
-					state = 13
-					state = 12
-					state = 810
-					state = 808
-					state = 809
-					state = 190
-					state = 815
-					state = 189
-					state = 188
-					state = 11
-					state = 814
-					state = 37
-					state = 911
-					state = 912
-					state = 99
-					state = 909
-					state = 910
-					state = 337
-					state = 213
-					state = 215
-					state = 216
-					state = 879
-					state = 351
-					state = 248
-					state = 264
-					state = 247
-					state = 246
-					state = 191
-				}
-		
 	available = {
 			is_subject = no
 			custom_trigger_tooltip = {
-					tooltip = form_country_popka_required_states_tt
-					controls_state = 110
-					controls_state = 142
-					controls_state = 143
-					controls_state = 144
-					controls_state = 920
-					controls_state = 921
-					controls_state = 922
-					controls_state = 923
-					controls_state = 924
-					controls_state = 925
-					controls_state = 38
-					controls_state = 124
-					controls_state = 138
-					controls_state = 139
-					controls_state = 140
-					controls_state = 141
-					controls_state = 666
-					controls_state = 913
-					controls_state = 915
-					controls_state = 916
-					controls_state = 917
-					controls_state = 918
-					controls_state = 919
-				}
-				# Sweden
-				custom_trigger_tooltip = {
-					tooltip = form_country_skandi_required_states_tt
-					controls_state = 111
-					controls_state = 145
-					controls_state = 147
-					controls_state = 146
-					controls_state = 148
-					controls_state = 149
-					controls_state = 150
-					controls_state = 926
-					controls_state = 927
-					controls_state = 928
-					controls_state = 929
-					controls_state = 930
-					controls_state = 722
-				}
-				# Denmark
-				custom_trigger_tooltip = {
-					tooltip = form_country_svinland_required_states_tt
-					controls_state = 195
-					controls_state = 244
-					controls_state = 208
-					controls_state = 263
-					controls_state = 209
-					controls_state = 210
-					controls_state = 207
-					controls_state = 242
-					controls_state = 813
-					controls_state = 812
-					controls_state = 811
-					controls_state = 13
-					controls_state = 12
-					controls_state = 810
-					controls_state = 808
-					controls_state = 809
-					controls_state = 190
-					controls_state = 815
-					controls_state = 189
-					controls_state = 188
-					controls_state = 11
-					controls_state = 814
-				}
-				#Куссия
-				custom_trigger_tooltip = {
-					tooltip = form_country_kussian_required_states_tt
-					controls_state = 213
-					controls_state = 215
-					controls_state = 216
-					controls_state = 879
-					controls_state = 351
-					controls_state = 248
-					controls_state = 264
-					controls_state = 247
-					controls_state = 246
-					#Кашка стт
-				}
-				#Бо
-				custom_trigger_tooltip = {
-					tooltip = form_country_bo_required_states_tt
-					controls_state = 37
-					controls_state = 911
-					controls_state = 912
-					controls_state = 99
-					controls_state = 909
-					controls_state = 910
-					controls_state = 337
-				}
-				controls_state = 983
+				tooltip = form_country_popka_required_states_tt
+				controls_state = 110
+				controls_state = 142
+				controls_state = 143
+				controls_state = 144
+				controls_state = 920
+				controls_state = 921
+				controls_state = 922
+				controls_state = 923
+				controls_state = 924
+				controls_state = 925
+				controls_state = 38
+				controls_state = 124
+				controls_state = 138
+				controls_state = 139
+				controls_state = 140
+				controls_state = 141
+				controls_state = 666
+				controls_state = 913
+				controls_state = 915
+				controls_state = 916
+				controls_state = 917
+				controls_state = 918
+				controls_state = 919
 			}
+			# RazDva
+			custom_trigger_tooltip = {
+				tooltip = form_country_skandi_required_states_tt
+				controls_state = 111
+				controls_state = 145
+				controls_state = 147
+				controls_state = 146
+				controls_state = 148
+				controls_state = 149
+				controls_state = 150
+				controls_state = 926
+				controls_state = 927
+				controls_state = 928
+				controls_state = 929
+				controls_state = 930
+				controls_state = 722
+			}
+			# Svinland
+			custom_trigger_tooltip = {
+				tooltip = form_country_svinland_required_states_tt
+				controls_state = 195
+				controls_state = 244
+				controls_state = 208
+				controls_state = 263
+				controls_state = 209
+				controls_state = 210
+				controls_state = 813
+				controls_state = 812
+				controls_state = 811
+				controls_state = 13
+				controls_state = 12
+				controls_state = 810
+				controls_state = 808
+				controls_state = 982			}
+			#Куссия
+			custom_trigger_tooltip = {
+				tooltip = form_country_kussian_required_states_tt
+				controls_state = 213
+				controls_state = 215
+				controls_state = 216
+				controls_state = 879
+				controls_state = 351
+				controls_state = 248
+				controls_state = 264
+				controls_state = 247
+				controls_state = 246
+			}
+				controls_state = 983
+		}
+	highlight_states = {
+			highlight_state_targets = {
+				state = 983
+				state = 213
+				state = 215
+				state = 216
+				state = 191
+				state = 879
+				state = 351
+				state = 248
+				state = 264
+				state = 247
+				state = 246
+				state = 195
+				state = 244
+				state = 208
+				state = 263
+				state = 209
+				state = 210
+				state = 813
+				state = 812
+				state = 811
+				state = 13
+				state = 12
+				state = 810
+				state = 808
+				state = 982
+				state = 111
+				state = 145
+				state = 147
+				state = 146
+				state = 148
+				state = 149
+				state = 150
+				state = 926
+				state = 927
+				state = 928
+				state = 929
+				state = 930
+				state = 722
+				state = 110
+				state = 142
+				state = 143
+				state = 144
+				state = 920
+				state = 921
+				state = 922
+				state = 923
+				state = 924
+				state = 925
+				state = 38
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 666
+				state = 913
+				state = 915
+				state = 916
+				state = 917
+				state = 918
+				state = 919
+			}
+		}
 			
 		complete_effect = {
 			custom_effect_tooltip = form_country_skandi_coring_states_tt
 			hidden_effect = {
+				set_cosmetic_tag = PYA_hype
 				148 = { add_core_of = ROOT }
 				722 = { add_core_of = ROOT }
 				147 = { add_core_of = ROOT }
@@ -302,6 +269,9 @@ PYA_Great_popka = {
 				13 = { add_core_of = ROOT }
 				12 = { add_core_of = ROOT }
 				808 = { add_core_of = ROOT }
+				812 = { add_core_of = ROOT }
+				983 = { add_core_of = ROOT }
+				982 = { add_core_of = ROOT }
 				809 = { add_core_of = ROOT }
 				815 = { add_core_of = ROOT }
 				11 = { add_core_of = ROOT }

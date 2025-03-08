@@ -19,3 +19,7 @@ BTK_89 = {
 	color = rgb { 89 65 169 }
 	color_ui = rgb { 89 65 169 }
 }
+CHD_CHBpup = {
+	color = rgb { 167 7 39 }
+	color_ui = rgb { 167 7 39 }
+}

@@ -117,6 +117,9 @@ form_BTK_89_cat = {
 		complete_effect = {
 			set_cosmetic_tag = BTK_89
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				every_country = { country_event = super.6 }
+			}
 			set_country_leader_portrait = {
 				ideology = fascism
 				portrait = GFX_BTK_89
@@ -163,6 +166,7 @@ form_BTK_89_cat = {
 		
 		fire_only_once = yes
 		cost = 100
+		days_remove = 180
 	
 		allowed = {
 			original_tag = BTK
@@ -194,13 +198,78 @@ form_BTK_89_cat = {
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
-		complete_effect = {
+		remove_effect  = {
 			transfer_state = 52
 			transfer_state = 53
 			53 = {
 				set_demilitarized_zone = no
 			}
 			52 = {
+				set_demilitarized_zone = no
+			}
+		}
+
+	}
+	Vpered_drekovia = {
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 100
+		days_remove = 180
+	
+		allowed = {
+			original_tag = BTK
+		}
+		visible = {
+			has_cosmetic_tag = BTK_89
+			OR = {
+				owns_state = 52
+				owns_state = 53
+			}
+			NOT = {
+				DRE = {
+					owns_state = 848
+					owns_state = 153
+					owns_state = 152
+					owns_state = 976
+				}
+				
+			}
+		}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 848
+				state = 153
+				state = 152
+				state = 976
+				
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		remove_effect  = {
+			transfer_state = 848
+			transfer_state = 153
+			transfer_state = 152
+			transfer_state = 976
+			153 = {
+				set_demilitarized_zone = no
+			}
+			152 = {
+				set_demilitarized_zone = no
+			}
+			976 = {
+				set_demilitarized_zone = no
+			}
+			848 = {
 				set_demilitarized_zone = no
 			}
 		}

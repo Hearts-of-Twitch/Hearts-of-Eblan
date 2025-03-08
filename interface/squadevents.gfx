@@ -85,16 +85,4 @@ spriteTypes = {
 		name = "GFX_news_brat_5"
 		texturefile = "gfx/event_pictures/news_brat_5.dds"
 	}
-	spriteType = {
-		name = "GFX_report_event_picture_GON_1"
-		texturefile = "gfx/event_pictures/report_event_picture_GON_1.dds"
-	}
-	spriteType = {
-		name = "GFX_report_event_acf_dre"
-		texturefile = "gfx/event_pictures/report_event_acf_dre.dds"
-	}
-	spriteType = {
-		name = "GFX_report_event_acf_dre2"
-		texturefile = "gfx/event_pictures/report_event_acf_dre2.dds"
-	}
 }
