@@ -1,0 +1,78 @@
+focus_tree = {
+	id = DRE_war
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = DRE_war1
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = DRE_war2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_war1
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = DRE_war4
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_war2
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = DRE_war3
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_war1
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = DRE_war5
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_war3
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = DRE_war6
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_war5
+		}
+		prerequisite = {
+			focus = DRE_war4
+		}
+		x = 14
+		y = 3
+		
+		completion_reward = {
+			DRE = {
+				country_event = drek.20
+			}
+		}
+	}
+}

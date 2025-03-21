@@ -94,7 +94,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_fugobot6
-		icon = 
+		icon = GFX_focus_PYA_fugaboss2
 		cost = 0
 		prerequisite = {
 			focus = PYA_fugobot4
@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_fugobot8
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PYA_fugaboss4
 		cost = 0
 		prerequisite = {
 			focus = PYA_fugobot6
@@ -130,7 +130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PYA_fugobot9
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PYA_fugaboss
 		cost = 0
 		prerequisite = {
 			focus = PYA_fugobot7

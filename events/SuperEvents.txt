@@ -1,36 +1,10 @@
 add_namespace = super
-
-
-country_event = {
-	id = super.6
-	title = super.6.t
-	desc = super.6.d
-	picture = GFX_sp_event_top_squad
-
-	fire_only_once = yes
-	
-	hidden = yes
-	
-	time_to_happen = 1
-	
-	trigger = { 
-		tag = BTK
-	}
-
-	immediate = {
-		name = super.5.a
-		log = "[GetDateText]: [This.GetName]: super.5.a executed"
-		
-        set_global_flag = BTK_top_squad
-		set_global_flag = Super_Event_Visible
-	}
-}
 	
 country_event = {
 	id = super.1
 	title = super.1.t
 	desc = super.1.d
-	picture = GFX_report_event_diplomatic_message 
+	picture = GFX_sp_event_SDO_start 
 
 	is_triggered_only = yes
 	
@@ -54,7 +28,7 @@ country_event = {
 	id = super.2
 	title = super.2.t
 	desc = super.2.d
-	picture = GFX_report_event_diplomatic_message
+	picture = GFX_sp_event_mazokgrad_fall
 
 	fire_only_once = yes
 	
@@ -77,7 +51,7 @@ country_event = {
 	id = super.3
 	title = super.3.t
 	desc = super.3.d
-	picture = GFX_report_event_diplomatic_message
+	picture = GFX_sp_event_dayraid_fall
 
 	fire_only_once = yes
 	
@@ -109,7 +83,7 @@ country_event = {
 	id = super.4
 	title = super.4.t
 	desc = super.4.d
-	picture = GFX_report_event_diplomatic_message
+	picture = GFX_sp_event_lagoda_raspil
 
 	fire_only_once = yes
 	
@@ -140,7 +114,7 @@ country_event = {
 	id = super.5
 	title = super.5.t
 	desc = super.5.d
-	picture = GFX_report_event_diplomatic_message
+	picture = GFX_sp_event_the_great_war
 
 	fire_only_once = yes
 	
@@ -163,10 +137,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = super.5
-	title = super.5.t
-	desc = super.5.d
-	picture = GFX_sp_event_top_squad
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_sp_event_Squade
 
 	fire_only_once = yes
 	
@@ -179,8 +153,8 @@ country_event = {
 	}
 
 	immediate = {
-		name = super.5.a
-		log = "[GetDateText]: [This.GetName]: super.5.a executed"
+		name = super.6.a
+		log = "[GetDateText]: [This.GetName]: super.6.a executed"
 		
         set_global_flag = BTK_top_squad
 		set_global_flag = Super_Event_Visible

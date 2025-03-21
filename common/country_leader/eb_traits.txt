@@ -81,6 +81,65 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	PYA_soldar = {
+		random = no
+		production_factory_efficiency_gain_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		army_core_defence_factor = 0.05
+		command_power_gain_mult = 0.1
+		political_power_gain = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PYA_Skrinnik = {
+		random = no
+		production_speed_buildings_factor = 0.15
+		industry_free_repair_factor = 0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PYA_aristocrat = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = -0.1
+		production_speed_infrastructure_factor = 0.1
+		political_power_gain = 0.1
+		political_power_gain = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PYA_agentSP = {
+		random = no
+		agency_upgrade_time = -0.2
+		intel_network_gain_factor = 0.1
+		resistance_growth_on_our_occupied_states = 0.1
+		operative_slot = 1
+		resistance_damage_to_garrison = -0.15
+		foreign_subversive_activites = -0.15
+		non_core_manpower = 0.01
+		political_power_gain = -0.2
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	PYA_skrepka = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		research_speed_factor = 0.15
+		political_power_gain = -0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	polkovnik = {
 		random = no
 		army_core_attack_factor = 0.1
