@@ -7,7 +7,7 @@ state={
 	history={
 		owner = CVD
 		victory_points = {
-			6724 3
+			705 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -18,7 +18,7 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = ROS
+		add_core_of = HAM
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
