@@ -1,0 +1,32 @@
+state={
+	id=1033
+	name="STATE_1033"
+	provinces={
+		6741 9680 
+	}
+	history={
+		owner = SVI
+		victory_points = {
+			9680 3
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			9417 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = HAM
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+	state_category=city
+	manpower=651687
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

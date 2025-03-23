@@ -1,0 +1,94 @@
+spriteTypes = {
+
+	# Follow the rule GFX_culture_<variable value of the culture> #
+
+	spriteType = {
+		name = "GFX_culture_show_background"
+		texturefile = "gfx/interface/culture_show_background.dds"
+	}  
+	spriteType = {
+		name = "GFX_culture_0"
+		texturefile = "gfx/interface/culture/culture_placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_1"
+		texturefile = "gfx/interface/culture/JS.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_2"
+		texturefile = "gfx/interface/culture/likee.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_3"
+		texturefile = "gfx/interface/culture/tiktok_cult.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_4"
+		texturefile = "gfx/interface/culture/youtube_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_5"
+		texturefile = "gfx/interface/culture/trashstrim.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_6"
+		texturefile = "gfx/interface/culture/gamers.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_7"
+		texturefile = "gfx/interface/culture/cybersport.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_8"
+		texturefile = "gfx/interface/culture/twicherizm.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_9"
+		texturefile = "gfx/interface/culture/Minecraft.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_10"
+		texturefile = "gfx/interface/culture/okolopolit.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_11"
+		texturefile = "gfx/interface/culture/politstim.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_12"
+		texturefile = "gfx/interface/culture/Tiktok+JS.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_13"
+		texturefile = "gfx/interface/culture/Likee+JS.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_14"
+		texturefile = "gfx/interface/culture/Youtube+js.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_15"
+		texturefile = "gfx/interface/culture/polit+js.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_16"
+		texturefile = "gfx/interface/culture/JS+bratish.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_17"
+		texturefile = "gfx/interface/culture/Gamer+JS.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_18"
+		texturefile = "gfx/interface/culture/Bratishkin.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_19"
+		texturefile = "gfx/interface/culture/Drake.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_20"
+		texturefile = "gfx/interface/culture/JS+Drake.dds"
+	}
+	
+}

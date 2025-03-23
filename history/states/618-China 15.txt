@@ -7,10 +7,10 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = VAH
-		add_core_of = VAH
+		owner = ZUS
+		#add_core_of = VAH
 		#add_core_of = CHI
-		add_core_of = VAH
+		#add_core_of = VAH
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

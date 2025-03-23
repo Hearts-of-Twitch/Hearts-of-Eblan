@@ -1,0 +1,242 @@
+scripted_map_modes = {
+	culture_map_mode = {
+		top = { type = none }
+		bottom = {
+			type = state
+			color = {
+				set_temp_variable = { alpha_temp = 0.95 }
+				if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 1 } #JS
+						}
+					}
+					
+					set_temp_variable = { red = 0.956 }
+					set_temp_variable = { green = 0.913 }
+					set_temp_variable = { blue = 0.804 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 2 } #Likee
+						}
+					}
+					set_temp_variable = { red = 0.950 }
+					set_temp_variable = { green = 0.106 }
+					set_temp_variable = { blue = 0.247 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 3 } #TikTok
+						}
+					}
+					set_temp_variable = { red = 0.207 }
+					set_temp_variable = { green = 0.564 }
+					set_temp_variable = { blue = 0.953 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 4 } #Youtube
+						}
+					}
+					set_temp_variable = { red = 0.643 }
+					set_temp_variable = { green = 0.011 }
+					set_temp_variable = { blue = 0.121 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 5 } #Trash
+						}
+					}
+					set_temp_variable = { red = 0.212 }
+					set_temp_variable = { green = 0.125 }
+					set_temp_variable = { blue = 0.137 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 6 } #Gaming
+						}
+					}
+					set_temp_variable = { red = 0.447 }
+					set_temp_variable = { green = 0.447 }
+					set_temp_variable = { blue = 0.671 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 7 } #Cybersport
+						}
+					}
+					set_temp_variable = { red = 0.109 }
+					set_temp_variable = { green = 0.109 }
+					set_temp_variable = { blue = 0.419 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 8 } #Twitcherizm
+						}
+					}
+					set_temp_variable = { red = 0.337 }
+					set_temp_variable = { green = 0.278 }
+					set_temp_variable = { blue = 0.529 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 9 } #Minecraft
+						}
+					}
+					set_temp_variable = { red = 0.333 }
+					set_temp_variable = { green = 0.498 }
+					set_temp_variable = { blue = 0.349 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 10 } #okolopolit
+						}
+					}
+					set_temp_variable = { red = 0.047 }
+					set_temp_variable = { green = 0.643 }
+					set_temp_variable = { blue = 0.647 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 11 } #Politstrimer
+						}
+					}
+					set_temp_variable = { red = 0.024 }
+					set_temp_variable = { green = 0.564 }
+					set_temp_variable = { blue = 0.560 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 12 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.525 }
+					set_temp_variable = { green = 0.682 }
+					set_temp_variable = { blue = 0.823 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 13 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.945 }
+					set_temp_variable = { green = 0.670 }
+					set_temp_variable = { blue = 0.666 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 14 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.753 }
+					set_temp_variable = { green = 0.475 }
+					set_temp_variable = { blue = 0.462 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 15 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.451 }
+					set_temp_variable = { green = 0.686 }
+					set_temp_variable = { blue = 0.635 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 16 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.831 }
+					set_temp_variable = { green = 0.796 }
+					set_temp_variable = { blue = 0.701 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 17 } #Sicilian
+						}
+					}
+					set_temp_variable = { red = 0.651 }
+					set_temp_variable = { green = 0.631 }
+					set_temp_variable = { blue = 0.686 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 18 } #Bratshkinsy
+						}
+					}
+					set_temp_variable = { red = 0.898 }
+					set_temp_variable = { green = 0.858 }
+					set_temp_variable = { blue = 0.757 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 19 } #Drakevcy
+						}
+					}
+					set_temp_variable = { red = 0.929 }
+					set_temp_variable = { green = 0.420 }
+					set_temp_variable = { blue = 0.525 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 20 } #OkoloDrakevcy
+						}
+					}
+					set_temp_variable = { red = 0.929 }
+					set_temp_variable = { green = 0.420 }
+					set_temp_variable = { blue = 0.525 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+				else = {
+					set_temp_variable = { red = 0.001 }
+					set_temp_variable = { green = 0.001 }
+					set_temp_variable = { blue = 0.001 }
+		 			set_temp_variable = { alpha = alpha_temp }
+				}
+
+			}
+		}
+		far_text = none
+		near_text = state
+		update_daily = no
+	}
+}

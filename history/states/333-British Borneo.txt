@@ -13,6 +13,7 @@ state=
 	history=
 	{
 		#owner = MAL
+		owner = ZUS
 		victory_points = {
 			7371 1
 		}

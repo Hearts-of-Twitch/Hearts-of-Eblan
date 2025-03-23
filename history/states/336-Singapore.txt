@@ -14,7 +14,7 @@ state = {
 	}
 
 	history = {
-
+		owner = ZUS
 		#owner = MAL
 		#add_core_of = MAL
 

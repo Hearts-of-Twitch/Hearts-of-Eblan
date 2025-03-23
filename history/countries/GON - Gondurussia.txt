@@ -88,7 +88,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Максим Стинтлерьев"
+	name = "Максим 'Стинт' Шабанов"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_comm.dds"
 	expire = "2000.1.1"
@@ -99,7 +99,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Стинтлер"
+	name = "Максим Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stintler.dds"
 	expire = "2000.1.1"
@@ -110,7 +110,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Стинт"
+	name = "Максимильяно Дэль Стинто"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_neutrality.dds"
 	expire = "2000.1.1"

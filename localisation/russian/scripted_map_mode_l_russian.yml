@@ -1,0 +1,11 @@
+﻿l_russian:
+
+ # Culture map mode
+ MAPMODE_CULTURE_MAP_MODE: "Режим карты: §Yкультура§!"
+ MAPMODE_CULTURE_MAP_MODE_NAME: "Культуры"
+ MAPMODE_CULTURE_MAP_MODE_DESCRIPTION: "Отражает культурную ценность данной территории"
+ 
+ culture_map_mode_tooltip: "§Y[FROM.GetNationality]§!"
+ culture_map_mode_tooltip_delayed: "§F(§Y[FROM.Controller.GetNameWithFlag]§!): В [FROM.GetName] доминирует культура §Y[FROM.GetNationality]§!.§!"
+ 
+ tno_culture_map_mode_debug: "§TDEBUG: Go to a state without a culture§!"

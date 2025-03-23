@@ -1,25 +1,21 @@
-
 state={
 	id=258
 	name="STATE_258"
-	manpower = 1282096
-	
-	state_category = town
-
+	provinces={
+		356 3199 3291 3318 3346 6230 6279 6317 6341 6369 6398 9339 9394 
+	}
 	history={
 		owner = HAM
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2
 		}
 		add_core_of = HAM
 		victory_points = {
-			6398 1
+			6230 1
 		}
 	}
-
-	provinces={
-		356 3199 3291 3318 3346 6230 6317 6341 6369 6398 9339 9394 
-	}
-
-	local_supplies=0.0 
+	manpower=1282096
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

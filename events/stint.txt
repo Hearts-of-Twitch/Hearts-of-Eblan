@@ -1,0 +1,61 @@
+add_namespace = stn
+
+country_event = {
+	id = stn.1
+	title = stn.1.t
+	desc = stn.1.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	
+	if = {
+		limit={has_completed_focus=GON_com}
+		option = {
+			name = stn.1.a #yes
+			hidden_effect = {
+				load_focus_tree = stint_fasc
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	if = {
+		limit={has_completed_focus=GON_dem}
+		option = {
+			name = stn.1.b #yes
+			hidden_effect = {
+				load_focus_tree = stint_fasc
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	if = {
+		limit={has_completed_focus=GON_hyp}
+		option = {
+			name = stn.1.c #yes
+			hidden_effect = {
+				load_focus_tree = stint_fasc
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	if = {
+		limit={has_completed_focus=GON_emp}
+		option = {
+			name = stn.1.d #yes
+			hidden_effect = {
+				load_focus_tree = stint_fasc
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	if = {
+		limit={has_completed_focus=GON_fas}
+		option = {
+			name = stn.1.e #yes
+			hidden_effect = {
+				load_focus_tree = stint_fasc
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}

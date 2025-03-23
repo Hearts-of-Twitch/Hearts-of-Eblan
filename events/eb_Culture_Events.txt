@@ -1,0 +1,505 @@
+add_namespace = CTM
+
+country_event = {
+    id = CTM.1
+    immediate = {
+        #Just Chatting
+        set_variable = { 60.nationality = 1 }
+        set_variable = { 59.nationality = 1 }
+        set_variable = { 9.nationality = 1 }
+        set_variable = { 75.nationality = 1 }
+        set_variable = { 10.nationality = 1 }
+        set_variable = { 90.nationality = 1 }
+        set_variable = { 88.nationality = 1 }
+        set_variable = { 92.nationality = 1 }
+        set_variable = { 94.nationality = 1 }
+        set_variable = { 91.nationality = 1 }
+        set_variable = { 89.nationality = 1 }
+        set_variable = { 109.nationality = 1 }
+        set_variable = { 104.nationality = 1 }
+        set_variable = { 45.nationality = 1 }
+        set_variable = { 974.nationality = 1 }
+        set_variable = { 973.nationality = 1 }
+        set_variable = { 154.nationality = 1 }
+        set_variable = { 83.nationality = 1 }
+        set_variable = { 82.nationality = 1 }
+        set_variable = { 764.nationality = 1 }
+        set_variable = { 107.nationality = 1 }
+        set_variable = { 108.nationality = 1 }
+        set_variable = { 95.nationality = 1 }
+        set_variable = { 96.nationality = 1 }
+        set_variable = { 784.nationality = 1 }
+        set_variable = { 11.nationality = 1 }
+        set_variable = { 814.nationality = 1 }
+        set_variable = { 189.nationality = 1 }
+        set_variable = { 815.nationality = 1 }
+        set_variable = { 209.nationality = 1 }
+        set_variable = { 813.nationality = 1 }
+        set_variable = { 18.nationality = 1 }
+        set_variable = { 15.nationality = 1 }
+        set_variable = { 1017.nationality = 1 }
+        set_variable = { 785.nationality = 1 }
+        set_variable = { 29.nationality = 1 }
+        set_variable = { 7.nationality = 1 }
+        set_variable = { 165.nationality = 1 }
+        set_variable = { 166.nationality = 1 }
+        set_variable = { 794.nationality = 1 }
+        set_variable = { 167.nationality = 1 }
+        set_variable = { 907.nationality = 1 }
+        set_variable = { 453.nationality = 1 }
+        set_variable = { 454.nationality = 1 }
+        set_variable = { 80.nationality = 1 }
+        set_variable = { 78.nationality = 1 }
+        set_variable = { 79.nationality = 1 }
+        set_variable = { 766.nationality = 1 }
+        set_variable = { 204.nationality = 1 }
+        set_variable = { 206.nationality = 1 }
+        set_variable = { 207.nationality = 1 }
+        set_variable = { 241.nationality = 1 }
+        set_variable = { 242.nationality = 1 }
+        set_variable = { 243.nationality = 1 }
+        set_variable = { 208.nationality = 1 }
+        set_variable = { 210.nationality = 1 }
+        set_variable = { 246.nationality = 1 }
+        set_variable = { 244.nationality = 1 }
+        set_variable = { 263.nationality = 1 }
+        set_variable = { 264.nationality = 1 }
+        set_variable = { 351.nationality = 1 }
+        set_variable = { 879.nationality = 1 }
+        set_variable = { 168.nationality = 1 }
+        set_variable = { 793.nationality = 1 }
+        set_variable = { 176.nationality = 1 }
+        set_variable = { 41.nationality = 1 }
+        set_variable = { 175.nationality = 1 }
+        set_variable = { 791.nationality = 1 }
+        set_variable = { 789.nationality = 1 }
+        set_variable = { 169.nationality = 1 }
+        set_variable = { 170.nationality = 1 }
+        set_variable = { 788.nationality = 1 }
+        set_variable = { 122.nationality = 1 }
+        set_variable = { 128.nationality = 1 }
+        set_variable = { 132.nationality = 1 }
+        set_variable = { 130.nationality = 1 }
+        set_variable = { 131.nationality = 1 }
+        set_variable = { 797.nationality = 1 }
+        set_variable = { 352.nationality = 1 }
+        set_variable = { 800.nationality = 1 }
+        set_variable = { 419.nationality = 1 }
+        set_variable = { 676.nationality = 1 }
+        set_variable = { 350.nationality = 1 }
+        set_variable = { 680.nationality = 1 }
+        set_variable = { 1010.nationality = 1 }
+        set_variable = { 1011.nationality = 1 }
+        set_variable = { 291.nationality = 1 }
+        set_variable = { 1001.nationality = 1 }
+        set_variable = { 421.nationality = 1 }
+        set_variable = { 553.nationality = 1 }
+        set_variable = { 140.nationality = 1 }
+        set_variable = { 919.nationality = 1 }
+        set_variable = { 110.nationality = 1 }
+        set_variable = { 921.nationality = 1 }
+        set_variable = { 922.nationality = 1 }
+        set_variable = { 920.nationality = 1 }
+
+
+        #Likee
+        set_variable = { 201.nationality = 2 }
+        set_variable = { 202.nationality = 2 }
+        set_variable = { 203.nationality = 2 }
+        set_variable = { 54.nationality = 2 }
+        set_variable = { 105.nationality = 2 }
+        set_variable = { 802.nationality = 2 }
+        set_variable = { 970.nationality = 2 }
+        set_variable = { 211.nationality = 2 }
+        set_variable = { 21.nationality = 2 }
+        set_variable = { 851.nationality = 2 }
+        set_variable = { 32.nationality = 2 }
+        set_variable = { 22.nationality = 2 }
+        set_variable = { 26.nationality = 2 }
+        set_variable = { 31.nationality = 2 }
+        set_variable = { 25.nationality = 2 }
+        set_variable = { 24.nationality = 2 }
+        set_variable = { 33.nationality = 2 }
+        set_variable = { 23.nationality = 2 }
+        set_variable = { 1018.nationality = 2 }
+        set_variable = { 6.nationality = 2 }
+        set_variable = { 977.nationality = 2 }
+        set_variable = { 192.nationality = 2 }
+        set_variable = { 197.nationality = 2 }
+        set_variable = { 1028.nationality = 2 }
+        set_variable = { 193.nationality = 2 }
+        set_variable = { 226.nationality = 2 }
+        set_variable = { 200.nationality = 2 }
+        set_variable = { 196.nationality = 2 }
+        set_variable = { 137.nationality = 2 }
+        set_variable = { 259.nationality = 2 }
+        set_variable = { 1029.nationality = 2 }
+        set_variable = { 221.nationality = 2 }
+        set_variable = { 225.nationality = 2 }
+        set_variable = { 224.nationality = 2 }
+        set_variable = { 220.nationality = 2 }
+        set_variable = { 240.nationality = 2 }
+        set_variable = { 227.nationality = 2 }
+        set_variable = { 228.nationality = 2 }
+        set_variable = { 258.nationality = 2 }
+        set_variable = { 260.nationality = 2 }
+        set_variable = { 222.nationality = 2 }
+        set_variable = { 133.nationality = 2 }
+
+        #TikTok
+        set_variable = { 3.nationality = 3 }
+        set_variable = { 845.nationality = 3 }
+        set_variable = { 55.nationality = 3 }
+        set_variable = { 42.nationality = 3 }
+        set_variable = { 51.nationality = 3 }
+        set_variable = { 186.nationality = 3 }
+        set_variable = { 187.nationality = 3 }
+        set_variable = { 182.nationality = 3 }
+        set_variable = { 185.nationality = 3 }
+        set_variable = { 731.nationality = 3 }
+        set_variable = { 47.nationality = 3 }
+        set_variable = { 212.nationality = 3 }
+        set_variable = { 8.nationality = 3 }
+        set_variable = { 28.nationality = 3 }
+        set_variable = { 980.nationality = 3 }
+        set_variable = { 1019.nationality = 3 }
+        set_variable = { 30.nationality = 3 }
+        set_variable = { 14.nationality = 3 }
+        set_variable = { 119.nationality = 3 }
+        set_variable = { 113.nationality = 3 }
+        set_variable = { 134.nationality = 3 }
+        set_variable = { 135.nationality = 3 }
+        set_variable = { 337.nationality = 3 }
+        set_variable = { 141.nationality = 3 }
+        
+
+        #Trash
+        set_variable = { 161.nationality = 5 }
+        set_variable = { 162.nationality = 5 }
+        set_variable = { 2.nationality = 5 }
+        set_variable = { 157.nationality = 5 }
+        set_variable = { 117.nationality = 5 }
+        set_variable = { 156.nationality = 5 }
+        set_variable = { 849.nationality = 5 }
+        set_variable = { 114.nationality = 5 }
+        set_variable = { 115.nationality = 5 }
+        set_variable = { 100.nationality = 5 }
+        set_variable = { 914.nationality = 5 }
+
+        #YouTube
+        set_variable = { 158.nationality = 4 }
+        set_variable = { 163.nationality = 4 }
+
+        #Gamers
+        set_variable = { 160.nationality = 6 }
+        set_variable = { 159.nationality = 6 }
+        set_variable = { 846.nationality = 6 }
+        set_variable = { 151.nationality = 6 }
+        set_variable = { 56.nationality = 6 }
+        set_variable = { 911.nationality = 6 }
+        set_variable = { 37.nationality = 6 }
+        set_variable = { 99.nationality = 6 }
+        set_variable = { 910.nationality = 6 }
+        set_variable = { 48.nationality = 6 }
+        set_variable = { 513.nationality = 6 }
+        set_variable = { 459.nationality = 6 }
+        set_variable = { 460.nationality = 6 }
+        set_variable = { 458.nationality = 6 }
+        set_variable = { 665.nationality = 6 }
+        set_variable = { 661.nationality = 6 }
+        set_variable = { 662.nationality = 6 }
+        set_variable = { 663.nationality = 6 }
+        set_variable = { 448.nationality = 6 }
+        set_variable = { 449.nationality = 6 }
+        set_variable = { 452.nationality = 6 }
+        set_variable = { 699.nationality = 6 }
+        set_variable = { 557.nationality = 6 }
+        set_variable = { 272.nationality = 6 }
+        set_variable = { 899.nationality = 6 }
+        set_variable = { 898.nationality = 6 }
+        set_variable = { 551.nationality = 6 }
+        set_variable = { 883.nationality = 6 }
+        set_variable = { 550.nationality = 6 }
+        set_variable = { 146.nationality = 6 }
+        set_variable = { 928.nationality = 6 }
+        set_variable = { 111.nationality = 6 }
+        set_variable = { 930.nationality = 6 }
+        set_variable = { 927.nationality = 6 }
+        set_variable = { 926.nationality = 6 }
+        set_variable = { 149.nationality = 6 }
+        set_variable = { 929.nationality = 6 }
+        set_variable = { 147.nationality = 6 }
+        set_variable = { 148.nationality = 6 }
+        set_variable = { 722.nationality = 6 }
+        set_variable = { 150.nationality = 6 }
+        set_variable = { 215.nationality = 6 }
+        set_variable = { 213.nationality = 6 }
+        set_variable = { 126.nationality = 6 }
+        set_variable = { 125.nationality = 6 }
+        set_variable = { 340.nationality = 6 }
+        set_variable = { 347.nationality = 6 }
+        set_variable = { 339.nationality = 6 }
+        set_variable = { 343.nationality = 6 }
+        set_variable = { 49.nationality = 6 }
+        set_variable = { 345.nationality = 6 }
+        set_variable = { 342.nationality = 6 }
+        set_variable = { 346.nationality = 6 }
+        set_variable = { 356.nationality = 6 }
+        set_variable = { 348.nationality = 6 }
+        set_variable = { 798.nationality = 6 }
+        set_variable = { 164.nationality = 6 }
+        set_variable = { 355.nationality = 6 }
+        set_variable = { 349.nationality = 6 }
+        set_variable = { 344.nationality = 6 }
+        set_variable = { 353.nationality = 6 }
+        set_variable = { 354.nationality = 6 }
+        set_variable = { 857.nationality = 6 }
+        set_variable = { 855.nationality = 6 }
+        set_variable = { 679.nationality = 6 }
+        set_variable = { 856.nationality = 6 }
+        set_variable = { 266.nationality = 6 }
+        set_variable = { 918.nationality = 6 }
+        set_variable = { 666.nationality = 6 }
+        set_variable = { 144.nationality = 6 }
+        set_variable = { 925.nationality = 6 }
+        set_variable = { 924.nationality = 6 }
+        set_variable = { 923.nationality = 6 }
+
+        #Cybersport
+        set_variable = { 801.nationality = 7 }
+        set_variable = { 450.nationality = 7 }
+        set_variable = { 451.nationality = 7 }
+        set_variable = { 701.nationality = 7 }
+        set_variable = { 183.nationality = 7 }
+        set_variable = { 859.nationality = 7 }
+        set_variable = { 1014.nationality = 7 }
+        set_variable = { 765.nationality = 7 }
+        set_variable = { 658.nationality = 7 }
+        set_variable = { 292.nationality = 7 }
+        set_variable = { 678.nationality = 7 }
+        set_variable = { 1013.nationality = 7 }
+        set_variable = { 1015.nationality = 7 }
+        set_variable = { 294.nationality = 7 }
+        set_variable = { 858.nationality = 7 }
+        set_variable = { 1016.nationality = 7 }
+
+        #Twicherizm
+        set_variable = { 36.nationality = 8 }
+        set_variable = { 1.nationality = 8 }
+        set_variable = { 177.nationality = 8 }
+        set_variable = { 933.nationality = 8 }
+        set_variable = { 514.nationality = 8 }
+        set_variable = { 515.nationality = 8 }
+        set_variable = { 273.nationality = 8 }
+        set_variable = { 552.nationality = 8 }
+        set_variable = { 767.nationality = 8 }
+        set_variable = { 775.nationality = 8 }
+        set_variable = { 782.nationality = 8 }
+        set_variable = { 786.nationality = 8 }
+        set_variable = { 229.nationality = 8 }
+        set_variable = { 230.nationality = 8 }
+        set_variable = { 786.nationality = 8 }
+        set_variable = { 231.nationality = 8 }
+        set_variable = { 826.nationality = 8 }
+        set_variable = { 233.nationality = 8 }
+        set_variable = { 827.nationality = 8 }
+        set_variable = { 828.nationality = 8 }
+        set_variable = { 821.nationality = 8 }
+        set_variable = { 232.nationality = 8 }
+
+        #Minecraft
+        set_variable = { 1024.nationality = 9 }
+        set_variable = { 810.nationality = 9 }
+        set_variable = { 808.nationality = 9 }
+        set_variable = { 12.nationality = 9 }
+        set_variable = { 13.nationality = 9 }
+        set_variable = { 191.nationality = 9 }
+        set_variable = { 124.nationality = 9 }
+        set_variable = { 138.nationality = 9 }
+        set_variable = { 139.nationality = 9 }
+        set_variable = { 913.nationality = 9 }
+        set_variable = { 145.nationality = 9 }
+
+        #Politstrim
+        set_variable = { 219.nationality = 11 }
+        set_variable = { 253.nationality = 11 }
+        set_variable = { 254.nationality = 11 }
+
+        #Okolopolit
+        set_variable = { 190.nationality = 10 }
+        set_variable = { 809.nationality = 10 }
+        set_variable = { 812.nationality = 10 }
+        set_variable = { 811.nationality = 10 }
+        
+        #JS + Likee
+        set_variable = { 93.nationality = 13 }
+        set_variable = { 199.nationality = 13 }
+        set_variable = { 198.nationality = 13 }
+        set_variable = { 73.nationality = 13 }
+        set_variable = { 75.nationality = 13 }
+        set_variable = { 71.nationality = 13 }
+        set_variable = { 972.nationality = 13 }
+        set_variable = { 1020.nationality = 13 }
+        set_variable = { 1022.nationality = 13 }
+        set_variable = { 804.nationality = 13 }
+        set_variable = { 1026.nationality = 13 }
+        set_variable = { 934.nationality = 13 }
+        set_variable = { 77.nationality = 13 }
+        set_variable = { 27.nationality = 13 }
+        set_variable = { 20.nationality = 13 }
+        set_variable = { 34.nationality = 13 }
+        set_variable = { 35.nationality = 13 }
+        set_variable = { 19.nationality = 13 }
+        set_variable = { 806.nationality = 13 }
+        set_variable = { 172.nationality = 13 }
+        set_variable = { 792.nationality = 13 }
+        set_variable = { 834.nationality = 13 }
+        set_variable = { 194.nationality = 13 }
+        set_variable = { 223.nationality = 13 }
+        set_variable = { 205.nationality = 13 }
+        set_variable = { 931.nationality = 13 }
+        set_variable = { 121.nationality = 13 }
+        set_variable = { 1032.nationality = 13 }
+        set_variable = { 1033.nationality = 13 }
+
+        #JS + TikTok
+        set_variable = { 50.nationality = 12 }
+        set_variable = { 978.nationality = 12 }
+        set_variable = { 57.nationality = 12 }
+        set_variable = { 44.nationality = 12 }
+        set_variable = { 805.nationality = 12 }
+        set_variable = { 184.nationality = 12 }
+        set_variable = { 341.nationality = 12 }
+        set_variable = { 17.nationality = 12 }
+        set_variable = { 16.nationality = 12 }
+        set_variable = { 112.nationality = 12 }
+        set_variable = { 179.nationality = 12 }
+        set_variable = { 795.nationality = 12 }
+        set_variable = { 136.nationality = 12 }
+        set_variable = { 120.nationality = 12 }
+        set_variable = { 38.nationality = 12 }
+        set_variable = { 916.nationality = 12 }
+        set_variable = { 917.nationality = 12 }
+        set_variable = { 915.nationality = 12 }
+        
+
+        #JS + Youtube
+        set_variable = { 735.nationality = 14 }
+        set_variable = { 847.nationality = 14 }
+        set_variable = { 171.nationality = 14 }
+        set_variable = { 180.nationality = 14 }
+        set_variable = { 181.nationality = 14 }
+        set_variable = { 174.nationality = 14 }
+        set_variable = { 790.nationality = 14 }
+
+        #JS + Polit
+        set_variable = { 1025.nationality = 15 }
+        set_variable = { 247.nationality = 15 }
+        set_variable = { 248.nationality = 15 }
+
+        #JS + Gamers
+        set_variable = { 850.nationality = 17 }
+        set_variable = { 852.nationality = 17 }
+        set_variable = { 736.nationality = 17 }
+        set_variable = { 853.nationality = 17 }
+        set_variable = { 103.nationality = 17 }
+        set_variable = { 59.nationality = 17 }
+        set_variable = { 912.nationality = 17 }
+        set_variable = { 106.nationality = 17 }
+        set_variable = { 803.nationality = 17 }
+        set_variable = { 81.nationality = 17 }
+        set_variable = { 84.nationality = 17 }
+        set_variable = { 86.nationality = 17 }
+        set_variable = { 76.nationality = 17 }
+        set_variable = { 46.nationality = 17 }
+        set_variable = { 290.nationality = 17 }
+        set_variable = { 461.nationality = 17 }
+        set_variable = { 783.nationality = 17 }
+        set_variable = { 462.nationality = 17 }
+        set_variable = { 447.nationality = 17 }
+        set_variable = { 456.nationality = 17 }
+        set_variable = { 457.nationality = 17 }
+        set_variable = { 116.nationality = 17 }
+        set_variable = { 446.nationality = 17 }
+        set_variable = { 79.nationality = 17 }
+        set_variable = { 971.nationality = 17 }
+        set_variable = { 195.nationality = 17 }
+        set_variable = { 216.nationality = 17 }
+        set_variable = { 118.nationality = 17 }
+        set_variable = { 173.nationality = 17 }
+        set_variable = { 127.nationality = 17 }
+        set_variable = { 123.nationality = 17 }
+        set_variable = { 338.nationality = 17 }
+        set_variable = { 129.nationality = 17 }
+        set_variable = { 554.nationality = 17 }
+        set_variable = { 677.nationality = 17 }
+        set_variable = { 799.nationality = 17 }
+        set_variable = { 455.nationality = 17 }
+        set_variable = { 1031.nationality = 17 }
+        set_variable = { 675.nationality = 17 }
+        set_variable = { 656.nationality = 17 }
+        set_variable = { 854.nationality = 17 }
+        set_variable = { 1000.nationality = 17 }
+        set_variable = { 420.nationality = 17 }
+        set_variable = { 417.nationality = 17 }
+        set_variable = { 413.nationality = 17 }
+        set_variable = { 411.nationality = 17 }
+        set_variable = { 418.nationality = 17 }
+        set_variable = { 1002.nationality = 17 }
+        set_variable = { 412.nationality = 17 }
+        set_variable = { 414.nationality = 17 }
+        set_variable = { 410.nationality = 17 }
+        set_variable = { 1003.nationality = 17 }
+        set_variable = { 416.nationality = 17 }
+        set_variable = { 1004.nationality = 17 }
+        set_variable = { 142.nationality = 17 }
+        set_variable = { 143.nationality = 17 }
+
+        #Bratishkin
+        set_variable = { 762.nationality = 18 }
+        set_variable = { 72.nationality = 18 }
+        set_variable = { 1023.nationality = 18 }
+        set_variable = { 63.nationality = 18 }
+        set_variable = { 67.nationality = 18 }
+        set_variable = { 68.nationality = 18 }
+        set_variable = { 66.nationality = 18 }
+        set_variable = { 64.nationality = 18 }
+        set_variable = { 1021.nationality = 18 }
+        set_variable = { 62.nationality = 18 }
+        set_variable = { 61.nationality = 18 }
+        set_variable = { 58.nationality = 18 }
+        
+        #OkoloBratish
+        set_variable = { 5.nationality = 16 }
+        set_variable = { 763.nationality = 16 }
+        set_variable = { 188.nationality = 16 }
+        set_variable = { 98.nationality = 16 }
+        set_variable = { 85.nationality = 16 }
+        set_variable = { 86.nationality = 16 }
+        set_variable = { 97.nationality = 16 }
+        set_variable = { 807.nationality = 16 }
+        set_variable = { 87.nationality = 16 }
+        set_variable = { 74.nationality = 16 }
+        set_variable = { 69.nationality = 16 }
+        set_variable = { 65.nationality = 16 }
+        set_variable = { 909.nationality = 16 }
+
+        #Drake
+        set_variable = { 4.nationality = 19 }
+        set_variable = { 975.nationality = 19 }
+        set_variable = { 70.nationality = 19 }
+
+        #OkoloDrake
+        set_variable = { 155.nationality = 20 }
+        set_variable = { 664.nationality = 20 }
+        set_variable = { 43.nationality = 20 }
+        set_variable = { 39.nationality = 20 }
+        set_variable = { 102.nationality = 20 }
+
+    }   
+    title = CULTURE.1776.t
+	desc = CULTURE.1776.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+}

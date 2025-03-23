@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = RAB
-		add_core_of = RAB
+		owner = ZUS
+		#add_core_of = RAB
 		add_core_of = EVE
 
 		buildings = {

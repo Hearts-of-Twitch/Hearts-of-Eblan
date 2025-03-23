@@ -7,7 +7,7 @@ state= {
 	{
 		#owner = CHI
 		#add_core_of = CHI
-		add_core_of = VAH
+		#add_core_of = VAH
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

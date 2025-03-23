@@ -1,0 +1,23 @@
+focus_tree = {
+	id = stint_fasc
+	country = {
+		factor = 0
+		modifier = {
+			add = 1
+			tag = GON
+		}
+	}
+	continuous_focus_position = { x = 2850 y = 1520 }
+	initial_show_position = {
+		focus = GON_f_start
+	}
+	default = no
+	focus = {
+		id = GON_f_start
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 12
+		y = 0
+
+	}
+}

@@ -16,7 +16,7 @@ state = {
 
 		#owner = INS
 		#add_core_of = INS
-
+		owner = ZUS
 		victory_points = {
 			4652 1 
 		}

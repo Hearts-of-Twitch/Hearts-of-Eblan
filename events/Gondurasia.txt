@@ -156,3 +156,103 @@ country_event = {
 	#}
 }
 
+country_event = {
+	id = gonduras.6
+	title = gonduras.6.t
+	desc = gonduras.6.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.7.c #yes
+		
+		hidden_effect = {
+			load_focus_tree = stint
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	option = {
+		name = chicken.7.b #yes
+		
+		hidden_effect = {
+			load_focus_tree = gondurasia_focus
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	option = {
+		name = chicken.7.b #yes
+		
+		hidden_effect = {
+			load_focus_tree = stint_fasc
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+country_event = {
+	id = gonduras.7
+	title = gonduras.6.t
+	desc = gonduras.6.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	option = {
+		name = chicken.7.b #yes
+		
+		hidden_effect = {
+			complete_national_focus=GON_fas
+		}
+	}
+}
+country_event = {
+	id = gonduras.8
+	title = gonduras.6.t
+	desc = gonduras.6.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	option = {
+		name = chicken.7.b #yes
+		
+		hidden_effect = {
+			load_focus_tree = stint_fasc
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+country_event = {
+	id = gonduras.9
+	title = gonduras.9.t
+	desc = gonduras.9.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.9.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_war 
+			}
+		}
+}
+country_event = {
+	id = gonduras.10
+	title = gonduras.10.t
+	desc = gonduras.10.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.10.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_fascism
+		}
+	}
+	option = {
+		name = gonduras.10.b
+		hidden_effect = {
+			load_focus_tree = Gonduras_monarch
+		}
+	}
+}

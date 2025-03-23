@@ -1,0 +1,21 @@
+state={
+	id=1035
+	name="STATE_1035"
+	provinces={
+		437 3504 6494 6591 9529 
+	}
+	history={
+		owner = ZUS
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = HAM
+		victory_points = {
+			6494 1
+		}
+	}
+	manpower=46548
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
