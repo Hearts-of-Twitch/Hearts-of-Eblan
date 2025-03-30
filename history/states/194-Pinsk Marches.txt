@@ -17,7 +17,6 @@ state={
 		}
 		add_core_of = LID
 		#add_core_of = BLR
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

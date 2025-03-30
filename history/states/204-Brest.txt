@@ -17,7 +17,6 @@ state = {
 		#}
 
 		owner = LID
-		set_demilitarized_zone = yes
 
 		buildings = {
 			infrastructure = 3 #was: 5

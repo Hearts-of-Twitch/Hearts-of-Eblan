@@ -11,7 +11,7 @@ state={
 	history={
 		owner = ZUS
 		victory_points = {
-			3760 3
+			3734 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

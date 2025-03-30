@@ -479,6 +479,13 @@ country_event = {
 			news_event = squad_news.9
 			CHD = {
 				drop_cosmetic_tag = yes
+				remove_state_core = 45
+				remove_state_core = 155
+				remove_state_core = 43
+				remove_state_core = 154
+				remove_state_core = 973
+				remove_state_core = 83
+				remove_state_core = 974
 			}
 			45 = {
 				set_demilitarized_zone = no
@@ -501,6 +508,39 @@ country_event = {
 			974 = {
 				set_demilitarized_zone = no
 			}
+		}
+	}
+}
+country_event = {
+	id = chb.17
+	title = chb.1112.t
+	desc = chb.12.d
+	picture = GFX_report_event_spr_franco_generals
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chb.unfor
+		
+		hidden_effect = {
+			load_focus_tree = chb_f
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+country_event = {
+	id = chb.18
+	title = chb.1112.t
+	desc = chb.12.d
+	picture = GFX_report_event_spr_franco_generals
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = chb.unfor
+		
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

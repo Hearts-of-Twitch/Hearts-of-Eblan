@@ -1,0 +1,537 @@
+focus_tree = {
+	id = chb_f
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CHB
+		}
+	}
+	continuous_focus_position = { x = 2850 y = 1520 }
+	default = no
+	focus = {
+		id = CHB_start
+		icon = GFX_goal_chb_politika
+		cost = 10.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = CHB_rome?
+		icon = GFX_goal_unknown
+		cost = 10.00
+		available = {
+			always = no
+		}
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = CHB_economy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = CHB_gold
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_economy
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = CHB_newmoney
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_gold
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = CHB_neweconomtrade
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_newmoney
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = CHB_t2x2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_neweconomtrade
+		}
+		mutually_exclusive = {
+			focus = CHB_brat
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = CHB_brat
+		icon = GFX_goal_chb_btk_allies
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_neweconomtrade
+		}
+		mutually_exclusive = {
+			focus = CHB_t2x2
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = CHB_return89
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_brat
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = CHB_licenze
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_brat
+			focus = CHB_t2x2
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = CHB_mutualpact
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_licenze
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = CHB_moderrs
+		icon = GFX_goal_chb_zarplata_moderam
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = CHB_nopolit
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_economy
+			focus = CHB_moderrs
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CHB_ban_frends
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_nopolit
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = CHB_reinfrules
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_ban_frends
+		}
+		prerequisite = {
+			focus = CHB_gold
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = CHB_start_prom
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_moderrs
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = CHB_prom1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start_prom
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = CHB_prom2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_prom1
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = CHB_prom3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_prom2
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = CHB_new_culture
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = CHB_newculutes
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_new_culture
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = CHB_reopen_demos
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start
+		}
+		x = 16
+		y = 1
+
+	}
+	focus = {
+		id = CHB_embrace_lirrap
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_reopen_demos
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = CHB_futy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_embrace_lirrap
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = CHB_newfans
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_newculutes
+		}
+		prerequisite = {
+			focus = CHB_futy
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = CHB_kot
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_reopen_demos
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = CHB_annex_veng
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = CHB_start_newcult
+		icon = GFX_goal_chb_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_annex_veng
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = CHB_entranch
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_start_newcult
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = CHB_armymod
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_entranch
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = CHB_junifans
+		icon = GFX_focus_generic_full_social_mobilization
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_armymod
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = CHB_naval
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_entranch
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = CHB_unetedshtab
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_armymod
+		}
+		prerequisite = {
+			focus = CHB_naval
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = CHB_modders_in_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_unetedshtab
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = CHB_planes
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_naval
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = CHB_newblan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_t2x2
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = CHB_newtanks
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_licenze
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = CHB_newallies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_newtanks
+		}
+		prerequisite = {
+			focus = CHB_mutualpact
+			focus = CHB_newblan
+			focus = CHB_return89
+		}
+		prerequisite = {
+			focus = CHB_mutualpact
+		}
+		x = 7
+		y = 8
+
+	}
+	focus = {
+		id = CHB_Slavachb
+		icon = GFX_goal_chb_ya_bekon
+		cost = 10.00
+		allow_branch = {
+			AND = {
+				has_completed_focus = CHB_newfans
+				has_completed_focus = CHB_modders_in_army
+			}
+			
+		}
+		prerequisite = {
+			focus = CHB_newfans
+		}
+		prerequisite = {
+			focus = CHB_modders_in_army
+		}
+		prerequisite = {
+			focus = CHB_prom3
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = CHB_lom
+		icon = GFX_goal_war_lomaka
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_Slavachb
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = CHB_hoz
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_Slavachb
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = CHB_miramistin
+		icon = GFX_goal_war_flack
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_lom
+		}
+		prerequisite = {
+			focus = CHB_hoz
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = CHB_attack_DRE
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_miramistin
+		}
+		prerequisite = {
+			focus = CHB_Gvinland_ustup
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = CHB_Gvinland_ustup
+		icon = GFX_goal_war_gvin
+		cost = 10.00
+		prerequisite = {
+			focus = CHB_lom
+		}
+		x = 17
+		y = 9
+
+	}
+}

@@ -1,0 +1,106 @@
+GON_civilwar_bop = {
+    initial_value = 0
+    left_side = GON_chatters
+    right_side = GON_modders
+    decision_category = civilwar_gon_bop_cat
+    range = {
+        id = mid_range
+        min = -0.5
+        max = 0.5
+        modifier = {
+            war_support_weekly = 0.5
+        }
+		on_activate = {
+			if = {
+				limit={NOT={has_idea=GON_civilwar_stoproc}}
+			}
+			add_ideas = GON_civilwar_stoproc
+		}
+		on_deactivate = {
+			if = {
+				limit={has_idea=GON_civilwar_stoproc}
+			}
+			remove_ideas = GON_civilwar_stoproc
+		}
+    }
+
+    side = {
+        id = GON_chatters
+        icon = GFX_idea_generic_agrarian_society
+        range = {
+            id = GON_chatters_half
+            min = -0.75
+            max = -0.5
+            modifier = {
+                war_support_weekly = 0.1
+            }
+			on_activate = {
+				if = {
+					limit={NOT={has_idea=GON_civilwar_chatters}}
+				}
+				add_ideas = GON_civilwar_chatters
+			}
+			on_deactivate = {
+				if = {
+					limit={has_idea=GON_civilwar_chatters}
+				}
+				remove_ideas = GON_civilwar_chatters
+			}
+			
+        }
+		range = {
+            id = GON_chatters_full
+            min = -1
+            max = -0.75
+            modifier = {
+                war_support_weekly = 0.5
+            }
+			on_activate = {
+				if = {
+					limit={has_idea=GON_civilwar_chatters}
+				}
+				remove_ideas = GON_civilwar_chatters
+				country_event = stn.3
+			}
+        }
+    }
+    side = {
+        id = GON_modders
+        icon = GFX_idea_generic_agrarian_society
+        range = {
+            id = GON_modders_half
+            min = 0.5
+            max = 0.75
+            modifier = {
+                war_support_weekly = 0.1
+            }
+			on_activate = {
+				if = {
+					limit={NOT={has_idea=GON_civilwar_modder}}
+				}
+				add_ideas = GON_civilwar_modder
+			}
+			on_deactivate = {
+				if = {
+					limit={has_idea=GON_civilwar_modder}
+				}
+				remove_ideas = GON_civilwar_modder
+			}
+        }
+		range = {
+            id = GON_modders_full
+            min = 0.75
+            max = 1
+            modifier = {
+                war_support_weekly = 0.5
+            }
+			on_activate = {
+				if = {
+					limit={has_idea=GON_civilwar_modder}
+				}
+				remove_ideas = GON_civilwar_modder
+				country_event = stn.4
+			}
+        }
+    }
+}

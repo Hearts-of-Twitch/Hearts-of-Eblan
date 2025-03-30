@@ -1,0 +1,295 @@
+form_italia_cat = {
+	form_italia = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 100
+	
+		allowed = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+		}
+	
+		available = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = ita_mkr
+				# Mokrivski
+				controls_state = 735
+				controls_state = 158
+				controls_state = 847
+			}
+			custom_trigger_tooltip = {
+				tooltip = ita_sil
+				# Silazhik
+				controls_state = 159
+				controls_state = 846
+				controls_state = 151
+				controls_state = 160
+				controls_state = 850
+				controls_state = 39
+			}
+			custom_trigger_tooltip = {
+				tooltip = ita_nek
+				# Nekogloai
+				controls_state = 161
+				controls_state = 1038
+				controls_state = 162
+				controls_state = 157
+			}
+			custom_trigger_tooltip = {
+				tooltip = ita_zol
+				# Zolo
+				controls_state = 2
+				controls_state = 1041
+				controls_state = 117
+				controls_state = 849
+				controls_state = 156
+				controls_state = 1040
+				controls_state = 1042
+			}
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 735
+				state = 158
+				state = 847
+
+				state = 159
+				state = 846
+				state = 151
+				state = 160
+				state = 850
+				state = 39
+
+				state = 161
+				state = 1038
+				state = 162
+				state = 157
+
+				state = 2
+				state = 1041
+				state = 117
+				state = 849
+				state = 156
+				state = 1040
+				state = 1042
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+	
+		
+	
+		complete_effect = {
+			set_cosmetic_tag = ITA
+			custom_effect_tooltip = form_italia
+			hidden_effect = {
+				add_state_core = 735
+				add_state_core = 158
+				add_state_core = 847
+
+				add_state_core = 159
+				add_state_core = 846
+				add_state_core = 151
+				add_state_core = 160
+				add_state_core = 850
+				add_state_core = 39
+
+				add_state_core = 161
+				add_state_core = 1038
+				add_state_core = 162
+				add_state_core = 157
+
+				add_state_core = 2
+				add_state_core = 1041
+				add_state_core = 117
+				add_state_core = 849
+				add_state_core = 156
+				add_state_core = 1040
+				add_state_core = 1042
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	vernut_rim = {
+	
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 100
+	
+		allowed = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+		}
+		visible = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+			has_cosmetic_tag = ITA
+		}
+	
+		available = {
+			has_cosmetic_tag = ITA
+			
+			
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 114
+				state = 115
+				state = 1039
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+	
+		
+	
+		complete_effect = {
+			PBU = {
+				country_event = ital.1
+			}
+			
+			
+			
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	pizdarez = {
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 100
+	
+		allowed = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+			
+		}
+		visible = {
+			OR = {
+				original_tag = MKR
+				original_tag = SLA
+				original_tag = NEK
+				original_tag = ZOL
+			}
+		}
+	
+		available = {
+			OR = {
+				country_exists = MKR
+				country_exists = SLA
+				country_exists = ZOL
+				country_exists = NEK
+			}
+			date > 1937.01.01
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 735
+				state = 158
+				state = 847
+
+				state = 159
+				state = 846
+				state = 151
+				state = 160
+				state = 850
+				state = 39
+
+				state = 161
+				state = 1038
+				state = 162
+				state = 157
+
+				state = 2
+				state = 1041
+				state = 117
+				state = 849
+				state = 156
+				state = 1040
+				state = 1042
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+	
+		
+	
+		complete_effect = {
+			ROOT = {
+				declare_war_on = {
+					target = NEK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SLA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ZOL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MKR
+					type = annex_everything
+				}
+			}
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

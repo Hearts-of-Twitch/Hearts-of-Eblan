@@ -176,8 +176,12 @@ news_event = {
 }
 country_event = {
 	id = welcome.1
-	title = welcome.1.t
-	desc = welcome.1.d
+	title = {
+		text = welcome.1.t
+	}
+	desc = {
+		text = welcome.1.d
+	}
 	is_triggered_only = yes
 	picture = GFX_report_event_picture_BTK_4
 	option = {

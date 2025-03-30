@@ -15,7 +15,6 @@ state={
 			6371 1
 		}
 		
-		set_demilitarized_zone = yes
 	}
 	manpower=1217854
 	buildings_max_level_factor=1.000

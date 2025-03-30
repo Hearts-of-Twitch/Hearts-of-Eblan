@@ -116,8 +116,8 @@ CVD = {
 	color_ui = rgb { 186 174 194 }
 }
 GON = {
-	color = rgb { 145 255 244 }
-	color_ui = rgb { 145 255 244 }
+	color = rgb { 66 191 221 }
+	color_ui = rgb { 66 191 221 }
 }
 GVI = {
 	color = rgb { 105 105 105 }
@@ -218,4 +218,8 @@ MKR = {
 LID = {
 	color = rgb { 249 57 67 }
 	color_ui = rgb {  249 57 67 }
+}
+ST2 = {
+	color = rgb { 187 230 228 }
+	color_ui = rgb { 187 230 228 }
 }

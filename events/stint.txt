@@ -7,55 +7,98 @@ country_event = {
 	picture = GFX_report_event_acf_gon
 	
 	is_triggered_only = yes
+	option = {
+		name = stn.1
+		set_power_balance = {
+			id = GON_civilwar_bop
+		}
+		activate_mission = GON_ciliwar_nach
+	}
+}
+country_event = {
+	id = stn.2
+	title = stn.2.t
+	desc = stn.2.d
+	picture = GFX_report_event_acf_gon
 	
-	if = {
-		limit={has_completed_focus=GON_com}
-		option = {
-			name = stn.1.a #yes
-			hidden_effect = {
-				load_focus_tree = stint_fasc
-				mark_focus_tree_layout_dirty = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = stn.2
+		hidden_effect = {
+			activate_mission = GON_ciliwar_start
+			ST2 = {
+				transfer_state = 112
+				transfer_state = 181
+				transfer_state = 795
+				transfer_state = 179
+				transfer_state = 170
+				transfer_state = 175
+				transfer_state = 168
+				transfer_state = 169
+				transfer_state = 173
+				transfer_state = 789
+				transfer_state = 118
+				
+				add_state_core = 112
+				add_state_core = 181
+				add_state_core = 795
+				add_state_core = 179
+				add_state_core = 170
+				add_state_core = 175
+				add_state_core = 168
+				add_state_core = 169
+				add_state_core = 173
+				add_state_core = 789
+				add_state_core = 118
+
+				add_state_core = 180
+				add_state_core = 788
+				add_state_core = 41
+				add_state_core = 793
+				add_state_core = 791
+				add_state_core = 176
+				add_state_core = 174
+				add_state_core = 171
+				add_state_core = 790
+				add_state_core = 789
+				add_state_core = 118
+				add_state_core = 792
+			}
+			set_cosmetic_tag = GON_mod
+			remove_power_balance = {
+				id = GON_civilwar_bop
 			}
 		}
 	}
-	if = {
-		limit={has_completed_focus=GON_dem}
-		option = {
-			name = stn.1.b #yes
-			hidden_effect = {
-				load_focus_tree = stint_fasc
-				mark_focus_tree_layout_dirty = yes
-			}
+}
+country_event = {
+	id = stn.3
+	title = stn.2.t
+	desc = stn.2.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	option = {
+		name=stn.3.a
+		remove_power_balance = {
+			id = GON_civilwar_bop
 		}
 	}
-	if = {
-		limit={has_completed_focus=GON_hyp}
-		option = {
-			name = stn.1.c #yes
-			hidden_effect = {
-				load_focus_tree = stint_fasc
-				mark_focus_tree_layout_dirty = yes
-			}
+	
+}
+country_event = {
+	id = stn.4
+	title = stn.2.t
+	desc = stn.2.d
+	picture = GFX_report_event_acf_gon
+	
+	is_triggered_only = yes
+	option = {
+		name=stn.4.a
+		remove_power_balance = {
+			id = GON_civilwar_bop
 		}
 	}
-	if = {
-		limit={has_completed_focus=GON_emp}
-		option = {
-			name = stn.1.d #yes
-			hidden_effect = {
-				load_focus_tree = stint_fasc
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-	}
-	if = {
-		limit={has_completed_focus=GON_fas}
-		option = {
-			name = stn.1.e #yes
-			hidden_effect = {
-				load_focus_tree = stint_fasc
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-	}
+	
 }

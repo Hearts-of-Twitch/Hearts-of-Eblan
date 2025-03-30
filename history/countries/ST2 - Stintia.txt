@@ -1,7 +1,6 @@
-capital = 41
+capital = 112
 
 oob = "SPR_1936"
-
 set_research_slots = 4
 
 add_ideas = { 
@@ -12,7 +11,6 @@ add_ideas = {
 }
 
 recruit_character = universal_hype_gon
-
 
 # Starting tech
 set_technology = {

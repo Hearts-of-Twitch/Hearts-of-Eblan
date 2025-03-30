@@ -364,5 +364,53 @@ ideas = {
 				neutrality_drift = -0.02
 			}
 		}
+
+		GON_civilwar_stoproc = {
+			picture = GON_acf
+			
+			allowed = {
+				original_tag = GON
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -0.15
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		GON_civilwar_modder = {
+			picture = GON_acf
+			
+			allowed = {
+				original_tag = GON
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		GON_civilwar_chatters = {
+			picture = GON_acf
+			
+			allowed = {
+				original_tag = GON
+			}
+
+			
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
 	}
 }

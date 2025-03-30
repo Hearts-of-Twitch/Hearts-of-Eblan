@@ -1,0 +1,42 @@
+add_namespace = ital
+
+country_event = {
+	id = ital.1
+	title =  ital.1.t
+	desc =  ital.1.d
+	picture = GFX_report_event_spr_franco_generals
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = chb.unfor
+		
+		hidden_effect = {
+			FROM = {
+				transfer_state = 1039
+				transfer_state = 114
+				transfer_state = 115
+				set_capital = {
+					state = 1039
+				}
+				FROM = {
+					add_state_core = 1039
+					add_state_core = 114
+					add_state_core = 115
+				}
+			}
+		}
+	}
+	option = {
+		name = chb.unfor
+		
+		hidden_effect = {
+			FROM = {
+				declare_war_on = {
+					target = PBU
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

@@ -1,13 +1,13 @@
 state={
-	id=157
-	name="STATE_157"
+	id=1038
+	name="STATE_1038"
 	provinces={
-		925 967 6926 11861 
+		782 6793 9924 
 	}
 	history = {
 		owner = NEK
 		victory_points = {
-			6926 3 
+			6793 3 
 		}
 		buildings = {
 			infrastructure = 4 #was: 8
@@ -24,8 +24,8 @@ state={
 		}
 		add_core_of = NEK
 	}
-	manpower=2979335
+	manpower=615745
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 	local_supplies=0.000
 }
