@@ -1,0 +1,23 @@
+state={
+	id=1029
+	name="STATE_1029"
+	provinces={
+		453 472 486 9463 9479 11452 
+	}
+	manpower=0
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	history={
+		owner = CVD
+		victory_points = {
+			11715 10 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			air_base = 2
+		}
+		add_core_of = CVD
+	}
+}

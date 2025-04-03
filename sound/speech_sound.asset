@@ -1,0 +1,357 @@
+	sound = {
+		name = "siren_sound_effect"
+		file = "Nuke/Siren.wav"
+	}
+	
+	sound = {
+		name = "nuke_sound_effect"
+		file = "Nuke/CWANuke.wav"
+	}
+	
+	sound = {
+		name = "TFR_game_over"
+		file = "menu/gameover.wav"
+	}
+	
+	sound = {
+		name = "north_korean_civil_war"
+		file = "Super_Events/north_korean_civil_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_dark_trump"
+		file = "Super_Events/TFR_se_dark_trump.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_maga_king"
+		file = "Super_Events/TFR_se_maga_king.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_dugin_eurasian_victory"
+		file = "Super_Events/TFR_dugin_eurasian_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_medvedev_victory_2"
+		file = "Super_Events/TFR_se_medvedev_victory_2.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_navalny_victory"
+		file = "Super_Events/TFR_se_navalny_victory.wav"
+	}	
+	
+	sound = {
+		name = "TFR_se_navalny_war"
+		file = "Super_Events/TFR_se_navalny_war.wav"
+	}	
+	
+	sound = {
+		name = "TFR_se_zhir_second_war_victory"
+		file = "Super_Events/TFR_se_zhir_second_war_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_second_american_civil_war"
+		file = "Super_Events/TFR_se_second_american_civil_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_hail_to_the_chief"
+		file = "Super_Events/TFR_se_hail_to_the_chief.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_champion"
+		file = "Super_Events/TFR_se_champion.wav"
+	}
+	
+	sound = {
+		name = "TFR_american_iranian_war"
+		file = "Super_Events/TFR_american_iranian_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_smooth_criminal"
+		file = "Super_Events/TFR_se_smooth_criminal.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_hillary_clinton_presidency"
+		file = "Super_Events/TFR_se_hillary_clinton_presidency.wav"
+	}
+	
+	sound = {
+		name = "paradise_incident"
+		file = "Super_Events/paradise_incident.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_third_term"
+		file = "Super_Events/TFR_se_third_term.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_invasion_of_taiwan"
+		file = "Super_Events/TFR_se_invasion_of_taiwan.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_cartel_war"
+		file = "Super_Events/TFR_cartel_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_eurasian_chinese_war"
+		file = "Super_Events/Eurasian Chinese War.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_arab_world"
+		file = "Super_Events/TFR_se_arab_world.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_trump_cums"
+		file = "Super_Events/TFR_se_trump_cums.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_patriot_front"
+		file = "Super_Events/TFR_se_patriot_front.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_nine_angels"
+		file = "Super_Events/TFR_se_nine_angels.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_under_siege"
+		file = "Super_Events/TFR_se_under_siege.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_kingdom_of_god"
+		file = "Super_Events/TFR_se_kingdom_of_god.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_a_new_america"
+		file = "Super_Events/TFR_se_a_new_america.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_a_new_order"
+		file = "Super_Events/TFR_se_a_new_order.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_red_dawn"
+		file = "Super_Events/TFR_se_red_dawn.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_american_caligula"
+		file = "Super_Events/TFR_se_american_caligula.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_the_last_war"
+		file = "Super_Events/TFR_se_the_last_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_cultural_revolution"
+		file = "Super_Events/TFR_se_cultural_revolution.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_germany_third_european_war"
+		file = "Super_Events/TFR_se_germany_third_european_war.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_Napoleon"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_Napoleon.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_Monarchist"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_Monarchist.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_LeDuc"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_LeDuc.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_LatinEmpire"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_LatinEmpire.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_Lafayette"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_Lafayette.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_Junta"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_Junta.wav"
+	}
+	sound = {
+		name = "TFR_se_ThirdEuropeanWar_Republic"
+		file = "Super_Events/TFR_se_ThirdEuropeanWar_Republic.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_rise_up"
+		file = "Super_Events/TFR_se_rise_up.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_saudi_civil_war"
+		file = "Super_Events/TFR_se_saudi_civil_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_patriot_rock"
+		file = "Super_Events/TFR_se_patriot_rock.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_christian_patriot"
+		file = "Super_Events/TFR_se_christian_patriot.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_sahara_expansion"
+		file = "Super_Events/TFR_se_sahara_expansion.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_gma_victory"
+		file = "Super_Events/TFR_se_gma_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_day_x"
+		file = "Super_Events/TFR_se_day_x.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_third_american_civil_war"
+		file = "Super_Events/TFR_se_third_american_civil_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_chinese_collapse"
+		file = "Super_Events/TFR_se_chinese_collapse.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_nato_victory"
+		file = "Super_Events/TFR_se_nato_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_soviet_victory_new_guard"
+		file = "Super_Events/TFR_se_soviet_victory_new_guard.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_soviet_victory_old_guard"
+		file = "Super_Events/TFR_se_soviet_victory_old_guard.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_soviet_victory_in_second_war"
+		file = "Super_Events/TFR_se_soviet_victory_in_second_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_united_victory"
+		file = "Super_Events/TFR_se_united_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_LDPR_victory_NATO_war"
+		file = "Super_Events/TFR_se_LDPR_victory_NATO_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_bloomberg_sweep"
+		file = "Super_Events/TFR_se_bloomberg_sweep.wav"
+	}
+
+	sound = {
+		name = "TFR_se_populist_confederacy"
+		file = "Super_Events/TFR_se_populist_confederacy.wav"
+	}
+
+	sound = {
+		name = "TFR_se_old_guard_confederacy"
+		file = "Super_Events/TFR_se_old_guard_confederacy.wav"
+	}
+
+	sound = {
+		name = "TFR_se_neosocialist_apla"
+		file = "Super_Events/TFR_se_neosocialist_apla.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_japan_civil_war"
+		file = "Super_Events/TFR_se_japan_civil_war.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_yugoslav_formation_titoist"
+		file = "Super_Events/TFR_se_yugoslav_formation_titoist.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_second_nato_war_fascist"
+		file = "Super_Events/TFR_se_second_nato_war_fascist.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_second_nato_war_communist"
+		file = "Super_Events/TFR_se_second_nato_war_communist.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_second_nato_war_nafo"
+		file = "Super_Events/TFR_se_second_nato_war_nafo.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_american_anarchy"
+		file = "Super_Events/TFR_se_american_anarchy.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_gaw"
+		file = "Super_Events/TFR_se_gaw.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_eadi_victory"
+		file = "Super_Events/TFR_se_eadi_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_pdto_victory"
+		file = "Super_Events/TFR_se_pdto_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_fascist_victory"
+		file = "Super_Events/TFR_se_fascist_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_communist_victory"
+		file = "Super_Events/TFR_se_communist_victory.wav"
+	}
+	
+	sound = {
+		name = "TFR_se_nafo_victory"
+		file = "Super_Events/TFR_se_nafo_victory.wav"
+	}

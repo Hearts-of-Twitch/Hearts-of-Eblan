@@ -1,0 +1,44 @@
+state={
+	id=1020
+	name="STATE_1020"
+	provinces={
+		3474 6421 11404 13116 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_city
+
+	history = {
+		owner = JHF
+		add_core_of = JHF
+
+		victory_points = {
+			11404 1 # Dortmund
+		}
+		victory_points = {
+			6421 2 # Coburg
+		}
+
+		#victory_points = {
+		#	9509 1 # Hamm
+		#}
+
+		buildings = {
+
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
+
+		}
+
+		1939.1.1 = {
+			buildings = {
+				radar_station = 1
+				arms_factory = 6
+				industrial_complex = 3
+			}
+		}
+	} 
+}

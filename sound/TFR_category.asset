@@ -1,0 +1,23 @@
+######################################
+category = {
+ name = "TFR"
+	soundeffects = {
+		apc_unit_move_animation
+		SOV_airplane_crash_animation
+		helicopter_idle_animation
+		helicopter_move_animation
+		helicopter_attack_animation
+		SOV_helicopter_crash_animation
+		artyom_comments
+		Armor_training
+		Terminator_gun
+		drone_idle_animation
+		old_tank_engine_move
+		t90_engine_move
+		abrams_engine_move
+		ztz_engine_move
+		type_90_engine_move
+		apa_infantry_rifle_attack
+		turbo_prop_animation
+    }
+}

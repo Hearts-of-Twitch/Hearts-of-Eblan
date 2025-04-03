@@ -1,0 +1,26 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		9412 13205 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+	history={
+		owner = LAG
+		victory_points = {
+			13205 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 4
+
+		}
+		add_core_of = LAG
+
+	}
+}

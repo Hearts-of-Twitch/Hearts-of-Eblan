@@ -1,0 +1,32 @@
+state={
+	id=1030
+	name="STATE_1030"
+	provinces={
+		585 11559 
+	}
+	history={
+		owner = RAB
+		victory_points = {
+			11559 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			9417 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = ROS
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
+		}
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

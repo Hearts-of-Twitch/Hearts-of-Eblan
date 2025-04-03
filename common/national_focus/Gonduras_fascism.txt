@@ -1,0 +1,310 @@
+focus_tree = {
+	id = Gonduras_fascism
+	country = {
+		factor = 0
+	}
+	
+	default = no
+	focus = {
+		id = STI_fas_focus1
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = STI_fas_focus11
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus1
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = STI_fas_focus13
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus11
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus14
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus13
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus12
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus11
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus15
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus12
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus16
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus15
+		}
+		prerequisite = {
+			focus = STI_fas_focus14
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = STI_fas_focus2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus1
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = STI_fas_focus4
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus2
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus6
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus4
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus3
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus2
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus5
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus3
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus7
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus5
+		}
+		prerequisite = {
+			focus = STI_fas_focus6
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = STI_fas_focus8
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus7
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = STI_fas_focus9
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus7
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = STI_fas_focus18
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus1
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = STI_fas_focus19
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus18
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus20
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus18
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = STI_fas_focus21
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus19
+		}
+		prerequisite = {
+			focus = STI_fas_focus20
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus22
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus19
+		}
+		prerequisite = {
+			focus = STI_fas_focus20
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = STI_fas_focus23
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus22
+		}
+		prerequisite = {
+			focus = STI_fas_focus21
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = STI_fas_focus24
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus22
+		}
+		prerequisite = {
+			focus = STI_fas_focus21
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = STI_fas_focus25
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus24
+		}
+		prerequisite = {
+			focus = STI_fas_focus23
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = STI_fas_focus10
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus9
+		}
+		prerequisite = {
+			focus = STI_fas_focus8
+		}
+		prerequisite = {
+			focus = STI_fas_focus25
+		}
+		prerequisite = {
+			focus = STI_fas_focus17
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = STI_fas_focus17
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = STI_fas_focus16
+		}
+		x = 7
+		y = 5
+
+	}
+}
