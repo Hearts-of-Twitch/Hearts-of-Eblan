@@ -1,0 +1,225 @@
+
+soundeffect = {
+	name = apc_unit_move_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = apc_unit_move_animation_01
+	} 
+	volume = 0.9
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = helicopter_attack_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = helicopter_attack_01
+	} 
+	volume = 0.9
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = no
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = Armor_training
+	falloff = "falloff_100"
+	sounds = {
+		sound = armor_training_01
+	} 
+	volume = 0.1
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = type_90_engine_move
+	falloff = "falloff_100"
+	sounds = {
+		sound = type_90_engine_01
+	} 
+	volume = 0.5
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = ztz_engine_move
+	falloff = "falloff_100"
+	sounds = {
+		sound = ztz_engine_01
+	} 
+	volume = 0.4
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = t90_engine_move
+	falloff = "falloff_100"
+	sounds = {
+		sound = t90_engine_01
+	} 
+	volume = 0.4
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = abrams_engine_move
+	falloff = "falloff_100"
+	sounds = {
+		sound = abrams_engine_01
+	} 
+	volume = 0.4
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = old_tank_engine_move
+	falloff = "falloff_100"
+	sounds = {
+		sound = old_tank_engine_01
+	} 
+	volume = 0.7
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = Terminator_gun
+	falloff = "falloff_100"
+	sounds = {
+		sound = 2A42_cannon
+	} 
+	volume = 1.2
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = no
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = artyom_comments
+	falloff = "falloff_100"
+	sounds = {
+		sound = artyom_comment_01
+		sound = artyom_comment_02
+	} 
+	volume = 0.9
+	max_audible = 3
+	delay_random_offset = { 0.0 0.3 }
+	is3d = yes
+	loop = yes
+	max_audible_behaviour = fail
+}
+
+soundeffect = {
+	name = SOV_airplane_crash_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = SOV_airplane_crash
+		sound = SOV_airplane_crash_02
+		sound = SOV_airplane_crash_03
+		sound = SOV_airplane_crash_04
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	volume = 0.8
+}
+
+soundeffect = {
+	name = SOV_helicopter_crash_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = SOV_helicopter_crash_01
+		sound = SOV_helicopter_crash_02
+		sound = SOV_helicopter_crash_03
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	volume = 0.95
+}
+
+soundeffect = {
+	name = helicopter_idle_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = helicopter_idle_01
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	volume = 0.8
+}
+
+soundeffect = {
+	name = helicopter_move_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = helicopter_move
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	volume = 0.8
+}
+
+soundeffect = {
+	name = drone_idle_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = drone_idle_01
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	volume = 0.9
+}
+
+soundeffect = {
+	name = turbo_prop_animation
+	falloff = "falloff_100"
+	sounds = {
+		sound = turbo_prop_engine_01
+	} 
+	max_audible = 3
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -2.0 2.0 }
+	is3d = yes
+	loop = yes
+	volume = 0.9
+}

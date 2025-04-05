@@ -144,16 +144,38 @@ country_event = {
 			#add_to_variable = { pofig_na_opozitsiyu = 1 }
 		}
 	}
+}
 	
-	#option = {
-	#	name = gonduras.5.b #sleshka za alekseem
-	#	
-	#	add_ideas = GON_acf
-	#	
-	#	hidden_effect = {
-	#		add_to_variable = { aleksey_eblanov = 1 }
-	#	}
-	#}
+country_event = {
+	id = gonduras.10
+	title = gonduras.10.t
+	desc = gonduras.10.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.10.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_war
+		}
+	}
+}
+	
+country_event = {
+	id = gonduras.11
+	title = gonduras.11.t
+	desc = gonduras.11.d
+	picture = GFX_report_event_picture_GON_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gonduras.11.a 
+		hidden_effect = {
+			load_focus_tree = Gonduras_fascism
+		}
+	}
 }
 
 country_event = {

@@ -1,0 +1,154 @@
+sound =
+{
+	name = "type_90_engine_01"
+	file = "animations/type90_engine_move.wav"
+	always_load = no
+}
+
+
+sound =
+{
+	name = "ztz_engine_01"
+	file = "animations/ztz_engine_move.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "abrams_engine_01"
+	file = "animations/abrams_engine_move.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "t90_engine_01"
+	file = "animations/t90_engine_move.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "old_tank_engine_01"
+	file = "animations/engine_old.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "2A42_cannon"
+	file = "animations/2A42 Cannon.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "artyom_comment_01"
+	file = "SOV/SOV_Positive_001.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "artyom_comment_02"
+	file = "SOV/SOV_Neutral_004.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "armor_training_01"
+	file = "animations/Armor_Training.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "helicopter_attack_01"
+	file = "animations/helicopter_attack.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "apc_unit_move_animation_01"
+	file = "animations/apc_unit_move_animation_01.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_airplane_crash"
+	file = "animations/SOV_airplane_crash.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_airplane_crash_02"
+	file = "animations/SOV_airplane_crash_02.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_airplane_crash_03"
+	file = "animations/SOV_airplane_crash_03.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_airplane_crash_04"
+	file = "animations/SOV_airplane_crash_04.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "helicopter_idle_01"
+	file = "animations/helicopter_idle.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "helicopter_move"
+	file = "animations/helicopter_move.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_helicopter_crash_01"
+	file = "animations/SOV_helicopter_crash_01.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_helicopter_crash_02"
+	file = "animations/SOV_helicopter_crash_02.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "SOV_helicopter_crash_03"
+	file = "animations/SOV_helicopter_crash_03.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "drone_idle_01"
+	file = "animations/drone_idle.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "turbo_prop_engine_01"
+	file = "animations/turbo_prop.wav"
+	always_load = no
+}

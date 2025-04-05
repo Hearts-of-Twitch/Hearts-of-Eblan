@@ -1,0 +1,117 @@
+focus_tree = {
+	id = DRE_sdo
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = DRE_sdo1
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = DRE_sdo2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo1
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = DRE_sdo3
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo1
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = DRE_sdo4
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo1
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = DRE_sdo5
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo2
+		}
+		prerequisite = {
+			focus = DRE_sdo3
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = DRE_sdo6
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo5
+		}
+		prerequisite = {
+			focus = DRE_sdo7
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = DRE_sdo7
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo3
+		}
+		prerequisite = {
+			focus = DRE_sdo4
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = DRE_sdo8
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo6
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = DRE_sdo9
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_sdo8
+		}
+		x = 10
+		y = 5
+		
+		completion_reward = {
+			DRE = {
+				country_event = drek.19
+			}
+		}
+	}
+}

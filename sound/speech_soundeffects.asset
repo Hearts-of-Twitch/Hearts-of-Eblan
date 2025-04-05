@@ -1,0 +1,580 @@
+	#################
+	#F E M U R B R E A K E R
+	#################
+
+	soundeffect = {
+		name = "siren_sound_effect"
+		sounds = {
+			sound = siren_sound_effect
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "nuke_sound_effect"
+		sounds = {
+			sound = nuke_sound_effect
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_game_over"
+		sounds = {
+			sound = TFR_game_over
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "north_korean_civil_war"
+		sounds = {
+			sound = north_korean_civil_war
+		}
+		volume = 3.0
+	}	
+	
+	soundeffect = {
+		name = "TFR_se_dark_trump"
+		sounds = {
+			sound = TFR_se_dark_trump
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_maga_king"
+		sounds = {
+			sound = TFR_se_maga_king
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_dugin_eurasian_victory"
+		sounds = {
+			sound = TFR_se_dugin_eurasian_victory
+		}
+		volume = 3.0
+	}	
+	
+	soundeffect = {
+		name = "TFR_se_medvedev_victory_2"
+		sounds = {
+			sound = TFR_se_medvedev_victory_2
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_navalny_victory"
+		sounds = {
+			sound = TFR_se_navalny_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_navalny_war"
+		sounds = {
+			sound = TFR_se_navalny_war
+		}
+		volume = 3.0
+	}	
+	
+	soundeffect = {
+		name = "TFR_se_zhir_second_war_victory"
+		sounds = {
+			sound = TFR_se_zhir_second_war_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_second_american_civil_war"
+		sounds = {
+			sound = TFR_se_second_american_civil_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_hail_to_the_chief"
+		sounds = {
+			sound = TFR_se_hail_to_the_chief
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_champion"
+		sounds = {
+			sound = TFR_se_champion
+		}
+		volume = 2.0
+	}
+	
+	soundeffect = {
+		name = "TFR_american_iranian_war"
+		sounds = {
+			sound = TFR_american_iranian_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "paradise_incident"
+		sounds = {
+			sound = paradise_incident
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_smooth_criminal"
+		sounds = {
+			sound = TFR_se_smooth_criminal
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_hillary_clinton_presidency"
+		sounds = {
+			sound = TFR_se_hillary_clinton_presidency
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_third_term"
+		sounds = {
+			sound = TFR_se_third_term
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_invasion_of_taiwan"
+		sounds = {
+			sound = TFR_se_invasion_of_taiwan
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_eurasian_chinese_war"
+		sounds = {
+			sound = TFR_se_eurasian_chinese_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_cartel_war"
+		sounds = {
+			sound = TFR_se_cartel_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_arab_world"
+		sounds = {
+			sound = TFR_se_arab_world
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_trump_cums"
+		sounds = {
+			sound = TFR_se_trump_cums
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_patriot_front"
+		sounds = {
+			sound = TFR_se_patriot_front
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_nine_angels"
+		sounds = {
+			sound = TFR_se_nine_angels
+		}
+		volume = 1.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_under_siege"
+		sounds = {
+			sound = TFR_se_under_siege
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_kingdom_of_god"
+		sounds = {
+			sound = TFR_se_kingdom_of_god
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_a_new_america"
+		sounds = {
+			sound = TFR_se_a_new_america
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_a_new_order"
+		sounds = {
+			sound = TFR_se_a_new_order
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_red_dawn"
+		sounds = {
+			sound = TFR_se_red_dawn
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_american_caligula"
+		sounds = {
+			sound = TFR_se_american_caligula
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_the_last_war"
+		sounds = {
+			sound = TFR_se_the_last_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_cultural_revolution"
+		sounds = {
+			sound = TFR_se_cultural_revolution
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_germany_third_european_war"
+		sounds = {
+			sound = TFR_se_germany_third_european_war
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_Napoleon"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_Napoleon
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_Monarchist"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_Monarchist
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_LeDuc"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_LeDuc
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_LatinEmpire"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_LatinEmpire
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_Lafayette"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_Lafayette
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_Junta"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_Junta
+		}
+		volume = 3.0
+	}
+	soundeffect = {
+		name = "TFR_se_ThirdEuropeanWar_Republic"
+		sounds = {
+			sound = TFR_se_ThirdEuropeanWar_Republic
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_rise_up"
+		sounds = {
+			sound = TFR_se_rise_up
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_saudi_civil_war"
+		sounds = {
+			sound = TFR_se_saudi_civil_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_patriot_rock"
+		sounds = {
+			sound = TFR_se_patriot_rock
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_christian_patriot"
+		sounds = {
+			sound = TFR_se_christian_patriot
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_sahara_expansion"
+		sounds = {
+			sound = TFR_se_sahara_expansion
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_gma_victory"
+		sounds = {
+			sound = TFR_se_gma_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_third_american_civil_war"
+		sounds = {
+			sound = TFR_se_third_american_civil_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_day_x"
+		sounds = {
+			sound = TFR_se_day_x
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_chinese_collapse"
+		sounds = {
+			sound = TFR_se_chinese_collapse
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_nato_victory"
+		sounds = {
+			sound = TFR_se_nato_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_soviet_victory_new_guard"
+		sounds = {
+			sound = TFR_se_soviet_victory_new_guard
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_soviet_victory_in_second_war"
+		sounds = {
+			sound = TFR_se_soviet_victory_in_second_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_soviet_victory_old_guard"
+		sounds = {
+			sound = TFR_se_soviet_victory_old_guard
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_united_victory"
+		sounds = {
+			sound = TFR_se_united_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_LDPR_victory_NATO_war"
+		sounds = {
+			sound = TFR_se_LDPR_victory_NATO_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_bloomberg_sweep"
+		sounds = {
+			sound = TFR_se_bloomberg_sweep
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_populist_confederacy"
+		sounds = {
+			sound = TFR_se_populist_confederacy
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_old_guard_confederacy"
+		sounds = {
+			sound = TFR_se_old_guard_confederacy
+		}
+		volume = 3.0
+	}
+
+	soundeffect = {
+		name = "TFR_se_neosocialist_apla"
+		sounds = {
+			sound = TFR_se_neosocialist_apla
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_japan_civil_war"
+		sounds = {
+			sound = TFR_se_japan_civil_war
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_yugoslav_formation_titoist"
+		sounds = {
+			sound = TFR_se_yugoslav_formation_titoist
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_second_nato_war_fascist"
+		sounds = {
+			sound = TFR_se_second_nato_war_fascist
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_second_nato_war_communist"
+		sounds = {
+			sound = TFR_se_second_nato_war_communist
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_second_nato_war_nafo"
+		sounds = {
+			sound = TFR_se_second_nato_war_nafo
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_american_anarchy"
+		sounds = {
+			sound = TFR_se_american_anarchy
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_gaw"
+		sounds = {
+			sound = TFR_se_gaw
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_eadi_victory"
+		sounds = {
+			sound = TFR_se_eadi_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_pdto_victory"
+		sounds = {
+			sound = TFR_se_pdto_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_fascist_victory"
+		sounds = {
+			sound = TFR_se_fascist_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_communist_victory"
+		sounds = {
+			sound = TFR_se_communist_victory
+		}
+		volume = 3.0
+	}
+	
+	soundeffect = {
+		name = "TFR_se_nafo_victory"
+		sounds = {
+			sound = TFR_se_nafo_victory
+		}
+		volume = 3.0
+	}

@@ -1,0 +1,195 @@
+focus_tree = {
+	id = DRE_nowar
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = DRE_nowar1
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = DRE_nowar2
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = DRE_nowar4
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar2
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = DRE_nowar7
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar4
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = DRE_nowar3
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = DRE_nowar5
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar3
+		}
+		prerequisite = {
+			focus = DRE_nowar2
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = DRE_nowar8
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar5
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = DRE_nowar10
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar8
+		}
+		prerequisite = {
+			focus = DRE_nowar7
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = DRE_nowar6
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar3
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = DRE_nowar9
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar6
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = DRE_nowar11
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar8
+		}
+		prerequisite = {
+			focus = DRE_nowar9
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = DRE_nowar12
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar11
+		}
+		prerequisite = {
+			focus = DRE_nowar10
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = DRE_nowar13
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar12
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = DRE_nowar14
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar12
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = DRE_nowar15
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar14
+		}
+		prerequisite = {
+			focus = DRE_nowar13
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = DRE_nowar16
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = DRE_nowar15
+		}
+		x = 9
+		y = 8
+
+	}
+}
