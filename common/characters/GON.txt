@@ -8,7 +8,7 @@ characters = {
 			}
 		}
 		
-		advisor={
+		advisor = {
 			slot = political_advisor
 			idea_token = universal_hype_gon
 			allowed = {
@@ -23,6 +23,69 @@ characters = {
 					has_government = hypecratia # You can only select it if your current ideology isn't your new one
 				}
 			}
+		}
+	}
+	
+	WizeBot = {
+		name = WizeBot
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_WizeBot_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = WizeBot
+			allowed = {
+				always = yes
+			}	
+			traits  = {
+				WizeBot
+			}	
+			cost = 150
+		}
+	}
+	
+	ModBoty = {
+		name = ModBoty
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_ModBoty_small
+				}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = ModBoty
+			allowed = {
+				always = yes
+			}	
+			traits  = {
+				ModBoty
+			}	
+			cost = 150
+		}
+	}
+	
+	aFsQQ = {
+		name = aFsQQ
+		portraits = {
+				army = {
+					small = GFX_portrait_GON_aFsQQ_small
+			}
+		}
+		
+		advisor = {
+			slot = political_advisor
+			idea_token = aFsQQ
+			allowed = {
+				always = yes
+			}	
+			traits = {
+				PYA_aristocrat
+			}	
+			cost = 150
 		}
 	}
 }

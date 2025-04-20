@@ -55,6 +55,12 @@ defined_text = {
         }
         localization_key = "sp_event_top_squad"
     }
+	text = {
+        trigger = {
+            has_global_flag = HSU_war
+        }
+        localization_key = "sp_event_HSU_war"
+    }
 }
 
 #Remarks
@@ -114,6 +120,12 @@ defined_text = {
             has_global_flag = BTK_top_squad
         }
         localization_key = "sp_event_top_squad_remark"
+    }
+	text = {
+        trigger = {
+            has_global_flag = HSU_war
+        }
+        localization_key = "sp_event_HSU_war_remark"
     }
 	
 }
@@ -175,5 +187,11 @@ defined_text = {
             has_global_flag = BTK_top_squad
         }
         localization_key = "sp_event_top_squad_quote"
+    }
+	text = {
+        trigger = {
+            has_global_flag = HSU_war
+        }
+        localization_key = "sp_event_HSU_war_quote"
     }
 }

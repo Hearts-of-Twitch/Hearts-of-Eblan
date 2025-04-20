@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = GON_Pervi_focus1
-		icon = GFX_GON_stint_politics
+		icon = GFX_GON_Pervi_focus1
 		cost = 0
 		x = 10
 		y = 0
@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus2
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus1
@@ -32,7 +32,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus14
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus2
@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus15
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus14
@@ -54,7 +54,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus18
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus15
@@ -65,7 +65,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus13
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus2
@@ -76,7 +76,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus16
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus13
@@ -87,7 +87,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus17
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus16
@@ -101,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus19
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus17
@@ -115,7 +115,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus3
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus2
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus1
@@ -126,7 +126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus4
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus3
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus3
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus5
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus5
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus4
@@ -148,7 +148,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus8
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus8
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus5
@@ -159,7 +159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus6
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus6
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus3
@@ -170,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus7
-		icon = GFX_goal_unknown
+		icon = GFX_GON_Pervi_focus7
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus6
@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus9
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus7
@@ -192,7 +192,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus10
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus9
@@ -206,7 +206,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus11
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus19
@@ -218,7 +218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GON_Pervi_focus12
-		icon = GFX_goal_unknown
+		icon = GFX_No_Signal
 		cost = 0
 		prerequisite = {
 			focus = GON_Pervi_focus11
@@ -228,8 +228,7 @@ focus_tree = {
 		
 		completion_reward = {
 			GON = {
-				country_event = gonduras.9
-			}
+				country_event = gonduras.10
+
 	}
-}
 }

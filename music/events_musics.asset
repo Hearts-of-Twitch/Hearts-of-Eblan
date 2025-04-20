@@ -24,6 +24,11 @@ music = {
 }
 
 music = {
+	name = "HSU_war"
+	file = "SP/HSU_war.ogg"
+}
+
+music = {
 	name = "the_great_war"
 <<<<<<< HEAD
 	file = "the_great_war.ogg"

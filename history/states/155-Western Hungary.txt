@@ -13,7 +13,6 @@ state = {
 
 		owner = CHD
 		add_core_of = CHD
-		add_claim_by = CHB
 		set_demilitarized_zone = yes
 
 		victory_points = {

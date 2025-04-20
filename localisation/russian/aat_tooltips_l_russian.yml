@@ -253,4 +253,13 @@
  subsidy_faction_leader_tt: "Лидер альянса"
  subsidy_non_aggression_nation_tt: "Участник пакта о ненападении"
  
+ form_country_popka_required_states_tt: "Контролирует все территории Босса"
+ form_country_skandi_required_states_tt: "Контролирует все территории Западной Скандинавии"
+ form_country_svinland_required_states_tt: "Контролирует все европейские территории Свинленда"
+ form_country_kussian_required_states_tt: "Контролирует все территории Куссии"
+ form_country_bo_required_states_tt: "Контролирует все территории Мистера Пятёрки"
  
+ form_country_skandi_coring_states_tt: "Все территории Западной Скандинавскии становятся национальными"
+ form_country_svinland_coring_states_tt: "Все европейские территории Свинленда становятся национальными"
+ form_country_kussia_coring_states_tt: "Все территории Куссии становятся национальными"
+ form_country_bo_coring_states_tt: "Все территории Мистера Пятёрки становятся национальными"

@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = DRE_do1
-		icon = GFX_drake_expansion
+		icon = GFX_DRE_do1
 		cost = 0
 		x = 14
 		y = 0
@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do2
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do2
 		cost = 0
 		prerequisite = {
 			focus = DRE_do1
@@ -29,7 +29,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do3
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do3
 		cost = 0
 		prerequisite = {
 			focus = DRE_do2
@@ -40,7 +40,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do13
-		icon = GFX_goal_unknown
+		icon = 
 		cost = 0
 		prerequisite = {
 			focus = DRE_do3
@@ -62,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do4
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do4
 		cost = 0
 		prerequisite = {
 			focus = DRE_do2
@@ -109,7 +109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do5
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do6
 		cost = 0
 		prerequisite = {
 			focus = DRE_do1
@@ -120,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do6
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do8
 		cost = 0
 		prerequisite = {
 			focus = DRE_do5
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = DRE_do7
-		icon = GFX_goal_unknown
+		icon = GFX_DRE_do8
 		cost = 0
 		prerequisite = {
 			focus = DRE_do5

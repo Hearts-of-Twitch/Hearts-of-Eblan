@@ -7,7 +7,7 @@ news_event = {
 	desc = squad_news.1.d
 	picture = GFX_news_event_partition_of_india
 	
-	major = yes
+	ma
 	
 	is_triggered_only = yes
 	
@@ -120,25 +120,6 @@ news_event = {
 }
 
 news_event = {
-	id = squad_news.7
-	title = squad_news.7.t
-	desc = squad_news.7.d
-	picture = GFX_news_event_slay
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.a
-		
-		hidden_effect = {
-		
-		}
-	}
-}
-
-news_event = {
 	id = squad_news.8
 	title = squad_news.8.t
 	desc = squad_news.8.d
@@ -155,33 +136,11 @@ news_event = {
 		
 		}
 	}
-}
-news_event = {
-	id = squad_news.9
-	title = squad_news.9.t
-	desc = squad_news.9.d
-	picture = GFX_news_event_partition_of_india
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = news.2.a
-		
-		hidden_effect = {
-			
-		}
-	}
-}
+} 
 country_event = {
 	id = welcome.1
-	title = {
-		text = welcome.1.t
-	}
-	desc = {
-		text = welcome.1.d
-	}
+	title = welcome.1.t
+	desc = welcome.1.d
 	is_triggered_only = yes
 	picture = GFX_report_event_picture_BTK_4
 	option = {

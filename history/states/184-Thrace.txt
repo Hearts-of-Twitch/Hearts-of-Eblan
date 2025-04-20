@@ -14,13 +14,14 @@ state={
 		victory_points = {
 			11905 1 
 		}
-		owner = HOZ
+		owner = FLA
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 
 		}
-		add_core_of = HOZ
+		add_core_of = CHB
+		add_claim_by = FLA
 	}
 
 	provinces={

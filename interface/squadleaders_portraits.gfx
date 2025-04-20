@@ -38,5 +38,17 @@ SpriteTypes = {
 		name = "GFX_mc_maks_small"
 		texturefile = "gfx/leaders/PYA/PYA_mc_maks_small.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_GON_aFsQQ_small"
+		texturefile = "gfx/interface/ideas/idea_GON_aFsQQ_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_ModBoty_small"
+		texturefile = "gfx/interface/ideas/idea_GON_ModBoty_small.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_WizeBot_small"
+		texturefile = "gfx/interface/ideas/idea_GON_WizeBot_small.dds"
+	}
 	
 }

@@ -15,7 +15,7 @@ state={
 			560 1
 		}
 		add_core_of = LAG
-		#add_core_of = BLR
+		add_core_of = BLR
 	}
 
 	provinces={

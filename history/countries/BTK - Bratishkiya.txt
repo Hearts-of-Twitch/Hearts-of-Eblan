@@ -1,4 +1,4 @@
-capital = 1021
+capital = 64
 
 oob = "BTK_1936"
 starting_train_buffer = 2

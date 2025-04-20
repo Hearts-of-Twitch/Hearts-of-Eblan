@@ -1,16 +1,16 @@
-add_namespace = chb
+add_namespace = chicken
 
 #Invite BTK to faction
 country_event = {
-	id = chb.1
-	title = chb.1.t
-	desc = chb.1.d
+	id = chicken.1
+	title = chicken.1.t
+	desc = chicken.1.d
 	picture = GFX_report_event_baltic_entente_one
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.1.a #yes
+		name = chicken.1.a #yes
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -21,7 +21,7 @@ country_event = {
 			}
 		}
 		CHB = {
-			country_event = { id = chb.2 hours = 6 }
+			country_event = { id = chicken.2 hours = 6 }
 		}
 		BTK = { create_faction = "BTK_chb_allies" }
 		BTK = { add_to_faction = CHB }
@@ -31,12 +31,12 @@ country_event = {
 	}
 	
 	option = {
-		name = chb.1.b
+		name = chicken.1.b
 		ai_chance = {
 			factor = 65
 		}
 		CHB = {
-			country_event = { id = chb.3 hours = 6 }
+			country_event = { id = chicken.3 hours = 6 }
 		}
 		
 		hidden_effect = {
@@ -46,9 +46,9 @@ country_event = {
 }
 # BTK says yes
 country_event = {
-	id = chb.2
-	title = chb.23.t
-	desc = chb.2.d
+	id = chicken.2
+	title = chicken.23.t
+	desc = chicken.2.d
 	picture = GFX_report_event_hitler_handshake
 	
 	is_triggered_only = yes
@@ -62,15 +62,15 @@ country_event = {
 }
 # YUG says no
 country_event = {
-	id = chb.3
-	title = chb.23.t
-	desc = chb.3.d
+	id = chicken.3
+	title = chicken.23.t
+	desc = chicken.3.d
 	picture = GFX_report_event_german_reichstag_gathering
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.unfor
+		name = chicken.unfor
 		
 		hidden_effect = {
 		
@@ -80,15 +80,15 @@ country_event = {
 
 #HAM Gvinland nezavisimos
 country_event = {
-	id = chb.4
-	title = chb.4.t
-	desc = chb.4.d
+	id = chicken.4
+	title = chicken.4.t
+	desc = chicken.4.d
 	picture = GFX_report_event_finnish_letter
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.4.a #yes
+		name = chicken.4.a #yes
 		ai_chance = {
 			factor = 10
 		}
@@ -102,7 +102,7 @@ country_event = {
 	}
 	
 	option = {
-		name = chb.4.b
+		name = chicken.4.b
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -113,7 +113,7 @@ country_event = {
 			}
 		}
 		CHB = {
-			country_event = { id = chb.6 hours = 4 }
+			country_event = { id = chicken.6 hours = 4 }
 		}
 		
 		hidden_effect = {
@@ -123,9 +123,9 @@ country_event = {
 }
 
 country_event = {
-	id = chb.5
-	title = chb.56.t
-	desc = chb.5.d
+	id = chicken.5
+	title = chicken.56.t
+	desc = chicken.5.d
 	picture = GFX_report_event_partition_of_india
 	
 	is_triggered_only = yes
@@ -140,15 +140,15 @@ country_event = {
 }
 
 country_event = {
-	id = chb.6
-	title = chb.56.t
-	desc = chb.6.d
+	id = chicken.6
+	title = chicken.56.t
+	desc = chicken.6.d
 	picture = GFX_report_event_king_speech
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.6.a
+		name = chicken.6.a
 		
 		hidden_effect = {
 		
@@ -156,7 +156,7 @@ country_event = {
 	}
 	
 	option = {
-		name = chb.6.b
+		name = chicken.6.b
 		declare_war_on = {
 			target = HAM
 			type = independence_wargoal
@@ -168,20 +168,20 @@ country_event = {
 }
 
 country_event = {
-	id = chb.7
-	title = chb.7.t
-	desc = chb.7.d
+	id = chicken.7
+	title = chicken.7.t
+	desc = chicken.7.d
 	picture = GFX_report_event_baltic_entente_one
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.7.a #yes
+		name = chicken.7.a #yes
 		ai_chance = {
 			factor = 60
 		}
 		CHB = {
-			country_event = { id = chb.8 hours = 3 }
+			country_event = { id = chicken.8 hours = 3 }
 		}
 		
 		CHB = {
@@ -193,7 +193,7 @@ country_event = {
 	}
 	
 	option = {
-		name = chb.7.b
+		name = chicken.7.b
 		ai_chance = {
 			factor = 45
 			modifier = {
@@ -204,7 +204,7 @@ country_event = {
 			}
 		}
 		CHB = {
-			country_event = { id = chb.9 hours = 3 }
+			country_event = { id = chicken.9 hours = 3 }
 		}
 		
 		hidden_effect = {
@@ -215,9 +215,9 @@ country_event = {
 
 #ARA says yes
 country_event = {
-	id = chb.8
-	title = chb.89.t
-	desc = chb.8.d
+	id = chicken.8
+	title = chicken.89.t
+	desc = chicken.8.d
 	picture = GFX_report_event_chinese_japanese_handshake
 	
 	is_triggered_only = yes
@@ -231,15 +231,15 @@ country_event = {
 }
 # ARA says no
 country_event = {
-	id = chb.9
-	title = chb.89.t
-	desc = chb.9.d
+	id = chicken.9
+	title = chicken.89.t
+	desc = chicken.9.d
 	picture = GFX_report_event_iww_demonstration
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.unfor
+		name = chicken.unfor
 		
 		hidden_effect = {
 		
@@ -248,20 +248,20 @@ country_event = {
 }
 
 country_event = {
-	id = chb.10
-	title = chb.10.t
-	desc = chb.10.d
+	id = chicken.10
+	title = chicken.10.t
+	desc = chicken.10.d
 	picture = GFX_report_event_generic_conference
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.10.a #yes
+		name = chicken.10.a #yes
 		ai_chance = {
 			factor = 60
 		}
 		CHB = {
-			country_event = { id = chb.11 hours = 3 }
+			country_event = { id = chicken.11 hours = 3 }
 		}
 		
 		CHB = {
@@ -273,7 +273,7 @@ country_event = {
 	}
 	
 	option = {
-		name = chb.10.b
+		name = chicken.10.b
 		ai_chance = {
 			factor = 45
 			modifier = {
@@ -284,7 +284,7 @@ country_event = {
 			}
 		}
 		CHB = {
-			country_event = { id = chb.12 hours = 3 }
+			country_event = { id = chicken.12 hours = 3 }
 		}
 		
 		hidden_effect = {
@@ -295,9 +295,9 @@ country_event = {
 
 #SVI says yes
 country_event = {
-	id = chb.11
-	title = chb.1112.t
-	desc = chb.11.d
+	id = chicken.11
+	title = chicken.1112.t
+	desc = chicken.11.d
 	picture = GFX_report_event_carol_meeting
 	
 	is_triggered_only = yes
@@ -311,15 +311,15 @@ country_event = {
 }
 # SVI says no
 country_event = {
-	id = chb.12
-	title = chb.1112.t
-	desc = chb.12.d
+	id = chicken.12
+	title = chicken.1112.t
+	desc = chicken.12.d
 	picture = GFX_report_event_spr_franco_generals
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.unfor
+		name = chicken.unfor
 		
 		hidden_effect = {
 		
@@ -328,22 +328,22 @@ country_event = {
 }
 
 country_event = {
-	id = chb.13
-	title = chb.13.t
-	desc = chb.13.d
+	id = chicken.13
+	title = chicken.13.t
+	desc = chicken.13.d
 	
 	picture = GFX_report_event_anschlus_drake
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = chb.13.a
+		name = chicken.13.a
 		
 		CHB = { annex_country = { target = DRE transfer_troops = yes }}
 	}
 	
 	option = {
-		name = chb.13.b
+		name = chicken.13.b
 		
 		add_ideas = DRE_sila_duha
 		CHB = {
@@ -362,15 +362,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = chb.14
-	title = chb.14.t
-	desc = chb.14.d
+	id = chicken.14
+	title = chicken.14.t
+	desc = chicken.14.d
 
 	picture = GFX_report_event_anschlus_drake
 
 	is_triggered_only = yes
 	option = {
-		name = chb.14.a
+		name = chicken.14.a
 		ai_chance = {
 			factor = 50
 		}
@@ -392,7 +392,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = chb.14.b
+		name = chicken.14.b
 		ai_chance = {
 			factor = 50
 		}
@@ -410,15 +410,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = chb.15
-	title = chb.15.t
-	desc = chb.15.d
+	id = chicken.15
+	title = chicken.15.t
+	desc = chicken.15.d
 
 	picture = GFX_report_event_anschlus_drake
 
 	is_triggered_only = yes
 	option = {
-		name = chb.12.a
+		name = chicken.12.a
 		ai_chance = {
 			factor = 50
 		}
@@ -455,92 +455,6 @@ country_event = {
 					owner = ROOT
 				}
 			}
-		}
-	}
-}
-country_event = {
-	id = chb.16
-	title = chb.16.t
-	desc = chb.16.d
-	picture = GFX_report_event_partition_of_india
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = excellent
-		
-		hidden_effect = {
-			annex_country = {
-				target = CHD
-			}
-			add_ideas = {
-				CHB_hungary_problem
-			}
-			news_event = squad_news.9
-			CHD = {
-				drop_cosmetic_tag = yes
-				remove_state_core = 45
-				remove_state_core = 155
-				remove_state_core = 43
-				remove_state_core = 154
-				remove_state_core = 973
-				remove_state_core = 83
-				remove_state_core = 974
-			}
-			45 = {
-				set_demilitarized_zone = no
-			}
-			155 = {
-				set_demilitarized_zone = no
-			}
-			43 = {
-				set_demilitarized_zone = no
-			}
-			154 = {
-				set_demilitarized_zone = no
-			}
-			973 = {
-				set_demilitarized_zone = no
-			}
-			83 = {
-				set_demilitarized_zone = no
-			}
-			974 = {
-				set_demilitarized_zone = no
-			}
-		}
-	}
-}
-country_event = {
-	id = chb.17
-	title = chb.1112.t
-	desc = chb.12.d
-	picture = GFX_report_event_spr_franco_generals
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = chb.unfor
-		
-		hidden_effect = {
-			load_focus_tree = chb_f
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
-}
-country_event = {
-	id = chb.18
-	title = chb.1112.t
-	desc = chb.12.d
-	picture = GFX_report_event_spr_franco_generals
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = chb.unfor
-		
-		hidden_effect = {
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

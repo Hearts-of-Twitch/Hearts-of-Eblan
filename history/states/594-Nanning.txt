@@ -10,11 +10,11 @@ state = {
 	}
 
 	history = {
-		owner = ZUS
+
 		#owner = GXC
 		#add_core_of = GXC
 		#add_core_of = CHI
-		#add_core_of = VAH
+		add_core_of = VAH
 
 		buildings = {
 			infrastructure = 2

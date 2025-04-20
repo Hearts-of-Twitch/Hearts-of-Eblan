@@ -5,14 +5,15 @@ oob = "SPR_1936"
 set_research_slots = 4
 
 add_ideas = { 
-	closed_economy
-	GON_kotel_shabanova
-	GON_legends_of_stintler
-	demografic_problems
+	stint_divided
+	GON_gamer
+	GON_Legalais
 }
 
 recruit_character = universal_hype_gon
-
+recruit_character = WizeBot
+recruit_character = ModBoty
+recruit_character = aFsQQ
 
 # Starting tech
 set_technology = {
@@ -89,7 +90,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Максим 'Стинт' Шабанов"
+	name = "Стинтэриус III"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_comm.dds"
 	expire = "2000.1.1"
@@ -100,7 +101,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Максим Стинтлер"
+	name = "Максимильян Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stintler.dds"
 	expire = "2000.1.1"
@@ -111,7 +112,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Максимильяно Дэль Стинто"
+	name = "Стинтэриус II"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_neutrality.dds"
 	expire = "2000.1.1"
@@ -149,6 +150,63 @@ set_popularities = {
 	fascism = 14
 	communism = 8
 	neutrality = 52
+}
+
+create_field_marshal = {
+	name = "Максимильян Стинтлер"
+	picture = "stintler.dds"
+	traits = { }
+	id = 47658899
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}	
+create_corps_commander = {
+	name = "aFs QQ"
+	picture = "aFs_QQ.dds"
+	traits = { stint_moder }
+	id = 7768724
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}	
+
+create_corps_commander = {
+	name = "cherepaha a5"
+	picture = "cherepaha_a5.dds"
+	traits = { stint_moder }
+	id = 05677567
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "DARKSY72"
+	picture = "DARKSY72.dds"
+	traits = { stint_moder }
+	id = 05647701
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Neket Ondi"
+	picture = "Neket_Ondi.dds"
+	traits = { stint_moder }
+	id = 0145671
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 

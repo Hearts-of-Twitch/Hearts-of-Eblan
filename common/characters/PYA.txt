@@ -119,30 +119,6 @@ characters = {
 			}
 		}
 	}
-	PYA_Skrepka = { 
-		name = Скрепка
-		portraits = {
-			army = {
-				small = GFX_portrait_PYA_Skrepka_small
-			}
-		}
-		
-		advisor = {
-			cost = 150
-			slot = political_advisor
-			idea_token = skrep
-			ledger = army
-			allowed = {
-				original_tag = PYA
-			}
-			traits = {
-				PYA_skrepka
-			}
-			available = {
-				has_completed_focus = PYA_fugobot2
-			}
-		}
-	}
 	PYA_Saya_Moon = { 
 		name = Saya_Moon
 		portraits = {

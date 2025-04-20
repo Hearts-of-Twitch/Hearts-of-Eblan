@@ -129,11 +129,23 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	PYA_skrepka = {
+	WizeBot = {
 		random = no
-		production_speed_industrial_complex_factor = 0.1
-		research_speed_factor = 0.15
-		political_power_gain = -0.1
+		production_speed_industrial_complex_factor = 0.05
+		stability_factor = 0.1
+		political_power_gain = -0.05
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ModBoty = {
+		random = no
+		fascism_drift = 0.05
+		war_support_factor = 0.1
+		political_power_gain = -0.05
 
 
 		ai_will_do = {

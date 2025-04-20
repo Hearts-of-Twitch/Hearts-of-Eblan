@@ -96,3 +96,104 @@ country_event = {
 	}
 }
 }
+country_event = {
+	id = tik.2
+	title = tik.2.t
+	desc = tik.2.d
+	picture = GFX_report_event_picture_BTK_4
+	
+	major = no
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tik.2.a
+		
+		hidden_effect = {
+		
+			LEZ = {
+				transfer_state = 357
+				transfer_state = 359
+				transfer_state = 468
+				transfer_state = 464
+				transfer_state = 465
+			}
+			CUT = {
+				transfer_state = 378
+				transfer_state = 377
+			}
+			GRP = {
+				transfer_state = 393
+				transfer_state = 394
+				transfer_state = 391
+				transfer_state = 261
+				transfer_state = 396
+				transfer_state = 395
+				transfer_state = 392
+				transfer_state = 369
+			}
+			HES = {
+				transfer_state = 360
+				transfer_state = 359
+				transfer_state = 361
+				transfer_state = 362
+				transfer_state = 816
+				transfer_state = 363
+				transfer_state = 358
+			}
+			RTW = {
+				transfer_state = 373
+				transfer_state = 374
+				transfer_state = 383
+				transfer_state = 384
+				transfer_state = 388
+				transfer_state = 387
+				transfer_state = 390
+				transfer_state = 389
+				transfer_state = 382
+				transfer_state = 381
+			}
+			SRS = {
+				transfer_state = 386
+				transfer_state = 385
+			}
+			TLA = {
+				transfer_state = 365
+				transfer_state = 367
+				transfer_state = 364
+				transfer_state = 368
+				transfer_state = 370
+				transfer_state = 371
+				transfer_state = 372 
+			}
+			ULT = {
+				transfer_state = 380
+				transfer_state = 379
+			}
+			DAD = {
+				transfer_state = 375
+				transfer_state = 376
+			}
+			ZUS = {
+				transfer_state = 313
+				transfer_state = 311
+				transfer_state = 474
+				transfer_state = 475
+				transfer_state = 476
+				transfer_state = 477
+				transfer_state = 485
+				transfer_state = 277
+				transfer_state = 479
+				transfer_state = 480
+				transfer_state = 478
+				transfer_state = 481
+				transfer_state = 482
+				transfer_state = 483
+				transfer_state = 484
+				transfer_state = 315
+			}
+		}
+	}
+}
+

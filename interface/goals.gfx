@@ -9804,8 +9804,80 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PYA_fugaboss4.dds"
 	}
 	SpriteType = { 
+		name = "GFX_PYA_boss21"
+		texturefile = "gfx/interface/goals/PYA_boss21.dds"
+	}
+	SpriteType = { 
 		name = "GFX_BTK_new_goverment"
 		texturefile = "gfx/interface/goals/BTK_new_goverment.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do1"
+		texturefile = "gfx/interface/goals/DRE_do1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do2"
+		texturefile = "gfx/interface/goals/DRE_do2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do3"
+		texturefile = "gfx/interface/goals/DRE_do3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do5"
+		texturefile = "gfx/interface/goals/DRE_do5.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_DRE_do7"
+		texturefile = "gfx/interface/goals/DRE_do7.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do4"
+		texturefile = "gfx/interface/goals/DRE_do4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do6"
+		texturefile = "gfx/interface/goals/DRE_do6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_HSU_start1"
+		texturefile = "gfx/interface/goals/HSU_start1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_HSU_start2"
+		texturefile = "gfx/interface/goals/HSU_start2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus1"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus3"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus4"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus5"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus5.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus6"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus7"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus7.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus8"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus8.dds"
+	}
+	SpriteType = { 
+		name = "GFX_No_Signal"
+		texturefile = "gfx/interface/goals/No_Signal.dds"
 	}
 	
 	

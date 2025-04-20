@@ -1,31 +1,47 @@
-state={
-	id=2
-	name="STATE_2"
-	provinces={
-		923 6862 9794 11751 11846 11882 
-	}
+state = {
+	id = 2
+	name = "STATE_2" # Latium
+	manpower = 2781971
+	
+	state_category = city
+
 	history = {
 		owner = ZOL
-		victory_points = {
-			11751 3 
-		}
+		victory_points = { 9904 40 } #Rome
+		victory_points = { 11846 1 } #Anzio (was 5)
 		buildings = {
-			infrastructure = 4 #was: 8
+			infrastructure = 4
+			air_base = 8
 			arms_factory = 1
-			industrial_complex = 1
-			dockyard = 3
-			air_base = 2
-			6973 = {
-				naval_base = 10
+			industrial_complex = 4
+			11751 = {
+				naval_base = 5
 			}
-			11833 = {
-				naval_base = 4
+			11846 = {
+				naval_base = 2
 			}
+            9904 = {
+                landmark_colosseum = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
 		}
 		add_core_of = ZOL
+		add_core_of = PAP
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+				industrial_complex = 5
+			}
+		}
 	}
-	manpower=2781971
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+
+	provinces = {
+		923 6862 9794 9904 11751 11846 11882
+ 	}
+
+	local_supplies = 0.0 
 }

@@ -11,15 +11,15 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.4
-				conscription_factor = -0.25
+				consumer_goods_factor = 0.45
+				conscription_factor = -0.2
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				stability_factor = -0.1
-				political_power_gain = -0.25
+				political_power_gain = -0.2
 				research_speed_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.1
-				war_support_factor = -0.3
+				war_support_factor = -0.2
 				training_time_army_factor = -0.2
 				production_speed_industrial_complex_factor = -0.3
 				production_speed_arms_factory_factor = -0.3
@@ -49,9 +49,9 @@ ideas = {
 				research_speed_factor = -0.01
 				production_factory_efficiency_gain_factor = -0.1
 				war_support_factor = -0.1
-				training_time_army_factor = -0.05
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_arms_factory_factor = -0.15
+				training_time_army_factor = -0.6
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
 				conversion_cost_mil_to_civ_factor = 0.1
 			}
 		}
@@ -88,6 +88,22 @@ ideas = {
 				consumer_goods_factor = -0.03
 				industrial_capacity_factory = 0.05
 				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+	}
+	country = {
+		fugaboti = {
+			allowed = {
+				always = no
+				original_tag = PYA
+			}
+			
+			picture = 
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				fascism_drift = 0.0015
 			}
 		}
 	}

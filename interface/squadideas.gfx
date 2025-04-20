@@ -322,6 +322,18 @@ spriteTypes = {
 		name = "GFX_portrait_PYA_Melham_small"
 		textureFile = "gfx/interface/ideas/portrait_PYA_Melham_small.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_GON_aFsQQ_small"
+		texturefile = "gfx/interface/ideas/portrait_GON_aFsQQ_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GON_ModBoty_small"
+		texturefile = "gfx/interface/ideas/portrait_GON_ModBoty_small.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_GON_WizeBot_small"
+		texturefile = "gfx/interface/ideas/portrait_GON_WizeBot_small.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_PYA_ankapi"
@@ -334,5 +346,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PYA_joper_economic"
 		textureFile = "gfx/interface/ideas/PYA_joper_economic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ceisis_twich"
+		textureFile = "gfx/interface/ideas/ceisis_twich.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_Legalais"
+		textureFile = "gfx/interface/ideas/GON_Legalais.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GON_gamer"
+		textureFile = "gfx/interface/ideas/GON_gamer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stint_divided"
+		textureFile = "gfx/interface/ideas/stint_divided.dds"
 	}
 }
