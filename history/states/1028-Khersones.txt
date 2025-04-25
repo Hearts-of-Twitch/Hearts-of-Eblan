@@ -4,12 +4,12 @@ state={
 	provinces={
 		11715 
 	}
-	manpower=0
+	manpower=6546542
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	history={
-		owner = CVD
+		owner = HAM
 		victory_points = {
 			11715 10 
 		}

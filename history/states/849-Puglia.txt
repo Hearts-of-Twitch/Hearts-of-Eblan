@@ -1,46 +1,31 @@
-
-state = {
-	id = 849
-	name = "STATE_849"
-	manpower = 2642000 
-	state_category = city
+state={
+	id=849
+	name="STATE_849"
+	provinces={
+		883 6843 6939 6980 
+	}
 	history = {
 		owner = ZOL
-		victory_points = { #Bari
-			9784 3
-		}
-		victory_points = { #Brindisi
-			11998 3
-		}
-		victory_points = { #Taranto
-			11837 15 
-		}
-		victory_points = { #Foggia
-			883 3
+		victory_points = {
+			6939 3
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4 #was: 8
+			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 4
-			air_base = 5
-			11837 = { #Taranto
+			dockyard = 3
+			air_base = 2
+			6973 = {
 				naval_base = 10
 			}
-			9784 = { #Bari
-				naval_base = 3
+			11833 = {
+				naval_base = 4
 			}
 		}
 		add_core_of = ZOL
-		add_core_of = TTS
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-			}
-		}
 	}
-	provinces = {
-		883	6843 6939 6980 6979 9784 11837 11998
-	}
-	local_supplies = 0.000
+	manpower=2642000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

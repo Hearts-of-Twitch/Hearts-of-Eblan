@@ -7,15 +7,15 @@ state={
 	state_category = city
 
 	history={
-		owner = RAB
+		owner = HAM
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
 		victory_points = {
 			6474 10
 		}
-		add_core_of = RAB
-		add_core_of = UKR
+		add_core_of = HAM
+		#add_core_of = UKR
 	}
 
 	provinces={

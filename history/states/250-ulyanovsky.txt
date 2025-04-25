@@ -10,12 +10,12 @@ state={
 	}
 
 	history={
-		owner = RAB
+		owner = ZUS
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = RAB
+		#add_core_of = RAB
 		victory_points = {
 			392 1
 		}

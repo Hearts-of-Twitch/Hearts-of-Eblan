@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = RAB
-		add_core_of = RAB
+		owner = HAM
+		add_core_of = HAM
 
 		victory_points = {
 			721 1 # Kherson

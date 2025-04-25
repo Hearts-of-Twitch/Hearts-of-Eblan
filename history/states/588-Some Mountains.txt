@@ -9,9 +9,9 @@ state = {
 	}
 
 	history = {
-		owner = RAB
+		owner = ZUS
 		add_core_of = KAZ
-		add_core_of = RAB
+		#add_core_of = RAB
 
 		victory_points = {
 			12594 2 # Seipalatinsk
