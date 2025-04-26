@@ -1,26 +1,33 @@
+
 state={
 	id=392
 	name="STATE_392"
-	provinces={
-		1831 4691 7306 7458 7539 9910 10478 11971 12418 
-	}
-	history=
-	{
+	manpower = 2470938
+	
+	state_category = city
+
+	history={
 		owner = HSU
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
-			7660 = {
-				naval_base = 2
-			}
+			infrastructure = 3 #was: 6
+			industrial_complex = 4
 		}
 		add_core_of = HSU
+		victory_points = {
+			1770 3 
+		}
+
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 5
+			}
+		}
 
 	}
-	manpower=2470938
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=6.000
+
+	provinces={
+		1586 1678 1770 1831 4691 7306 7458 7539 9892 9910 10478 10666 11788 11971 12418 12646 
+	}
+
+	local_supplies=6.0 
 }
