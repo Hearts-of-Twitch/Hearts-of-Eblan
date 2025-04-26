@@ -53,6 +53,7 @@ GNS = "countries/Gensyxa.txt"
 ST9 = "countries/Stas9.txt"
 JHF = "countries/JojoHF.txt"
 MKR = "countries/Mokrivski.txt"
+ 
 LID = "countries/Lida.txt"
 HES = "countries/Hesus Empire.txt"
 CUT = "countries/Communists Union Twitch.txt"
