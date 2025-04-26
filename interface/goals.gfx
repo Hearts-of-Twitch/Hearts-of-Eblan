@@ -620,6 +620,131 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/BTK_gaech.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_focus_PYA_Polit1"
+		texturefile = "gfx/interface/goals/focus_PYA_Polit1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_Polit2"
+		texturefile = "gfx/interface/goals/focus_PYA_Polit2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv1"
+		texturefile = "gfx/interface/goals/focus_PYA_fugatv1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv6"
+		texturefile = "gfx/interface/goals/focus_PYA_fugatv6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv2"
+		texturefile = "gfx/interface/goals/focus_PYA_fugatv2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugaboss"
+		texturefile = "gfx/interface/goals/focus_PYA_fugaboss.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv3"
+		texturefile = "gfx/interface/goals/PYA_fugatv3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv4"
+		texturefile = "gfx/interface/goals/PYA_fugatv4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv5"
+		texturefile = "gfx/interface/goals/PYA_fugatv5.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugatv7"
+		texturefile = "gfx/interface/goals/PYA_fugatv7.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugaboss2"
+		texturefile = "gfx/interface/goals/PYA_fugaboss2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_PYA_fugaboss4"
+		texturefile = "gfx/interface/goals/PYA_fugaboss4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_PYA_boss21"
+		texturefile = "gfx/interface/goals/PYA_boss21.dds"
+	}
+	SpriteType = { 
+		name = "GFX_BTK_new_goverment"
+		texturefile = "gfx/interface/goals/BTK_new_goverment.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do1"
+		texturefile = "gfx/interface/goals/DRE_do1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do2"
+		texturefile = "gfx/interface/goals/DRE_do2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do3"
+		texturefile = "gfx/interface/goals/DRE_do3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do5"
+		texturefile = "gfx/interface/goals/DRE_do5.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_DRE_do7"
+		texturefile = "gfx/interface/goals/DRE_do7.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do4"
+		texturefile = "gfx/interface/goals/DRE_do4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_DRE_do6"
+		texturefile = "gfx/interface/goals/DRE_do6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_HSU_start1"
+		texturefile = "gfx/interface/goals/HSU_start1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_HSU_start2"
+		texturefile = "gfx/interface/goals/HSU_start2.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus1"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus3"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus3.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus4"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus4.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus5"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus5.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus6"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus6.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus7"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus7.dds"
+	}
+	SpriteType = { 
+		name = "GFX_GON_Pervi_focus8"
+		texturefile = "gfx/interface/goals/GON_Pervi_focus8.dds"
+	}
+	SpriteType = { 
+		name = "GFX_No_Signal"
+		texturefile = "gfx/interface/goals/No_Signal.dds"
+	}
+	
 
 
 
@@ -9755,130 +9880,6 @@ spriteTypes = {
 			name = "GFX_focus_COG_force_publique_mutiny"
 			texturefile = "gfx/interface/goals/focus_COG_force_publique_mutiny.dds"
 		}
-	SpriteType = { 
-		name = "GFX_focus_PYA_Polit1"
-		texturefile = "gfx/interface/goals/focus_PYA_Polit1.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_Polit2"
-		texturefile = "gfx/interface/goals/focus_PYA_Polit2.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv1"
-		texturefile = "gfx/interface/goals/focus_PYA_fugatv1.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv6"
-		texturefile = "gfx/interface/goals/focus_PYA_fugatv6.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv2"
-		texturefile = "gfx/interface/goals/focus_PYA_fugatv2.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugaboss"
-		texturefile = "gfx/interface/goals/focus_PYA_fugaboss.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv3"
-		texturefile = "gfx/interface/goals/PYA_fugatv3.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv4"
-		texturefile = "gfx/interface/goals/PYA_fugatv4.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv5"
-		texturefile = "gfx/interface/goals/PYA_fugatv5.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugatv7"
-		texturefile = "gfx/interface/goals/PYA_fugatv7.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugaboss2"
-		texturefile = "gfx/interface/goals/PYA_fugaboss2.dds"
-	}
-	SpriteType = { 
-		name = "GFX_focus_PYA_fugaboss4"
-		texturefile = "gfx/interface/goals/PYA_fugaboss4.dds"
-	}
-	SpriteType = { 
-		name = "GFX_PYA_boss21"
-		texturefile = "gfx/interface/goals/PYA_boss21.dds"
-	}
-	SpriteType = { 
-		name = "GFX_BTK_new_goverment"
-		texturefile = "gfx/interface/goals/BTK_new_goverment.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do1"
-		texturefile = "gfx/interface/goals/DRE_do1.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do2"
-		texturefile = "gfx/interface/goals/DRE_do2.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do3"
-		texturefile = "gfx/interface/goals/DRE_do3.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do5"
-		texturefile = "gfx/interface/goals/DRE_do5.dds"
-	}	
-	SpriteType = { 
-		name = "GFX_DRE_do7"
-		texturefile = "gfx/interface/goals/DRE_do7.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do4"
-		texturefile = "gfx/interface/goals/DRE_do4.dds"
-	}
-	SpriteType = { 
-		name = "GFX_DRE_do6"
-		texturefile = "gfx/interface/goals/DRE_do6.dds"
-	}
-	SpriteType = { 
-		name = "GFX_HSU_start1"
-		texturefile = "gfx/interface/goals/HSU_start1.dds"
-	}
-	SpriteType = { 
-		name = "GFX_HSU_start2"
-		texturefile = "gfx/interface/goals/HSU_start2.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus1"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus1.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus3"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus3.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus4"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus4.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus5"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus5.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus6"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus6.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus7"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus7.dds"
-	}
-	SpriteType = { 
-		name = "GFX_GON_Pervi_focus8"
-		texturefile = "gfx/interface/goals/GON_Pervi_focus8.dds"
-	}
-	SpriteType = { 
-		name = "GFX_No_Signal"
-		texturefile = "gfx/interface/goals/No_Signal.dds"
-	}
 	
 	
 	
@@ -9889,7 +9890,7 @@ spriteTypes = {
 		
 		SpriteType = {
 			name = "GFX_focus_PLACEHOLDER"
-			texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
+			texturefile = "gfx/interface/goals/No_Signal.dds"
 		}
 
 }
