@@ -25,17 +25,17 @@ music = {
 
 music = {
 	name = "the_great_war"
-<<<<<<< HEAD
-	file = "the_great_war.ogg"
+	file = "SP/the_great_war.ogg"
 }
 music = {
 	name = "limuzin"
-	file = "limuzin.ogg"
+	file = "SP/limuzin.ogg"
 }
 music = {
 	name = "top_squad"
-	file = "top_squad.ogg"
-=======
 	file = "SP/the_great_war.ogg"
->>>>>>> 6ae181b801a990e2bac025a7a26be093fc60c02e
+}
+music = {
+	name = "HSU_war"
+	file = "SP/HSU_war.ogg"
 }

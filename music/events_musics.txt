@@ -31,3 +31,7 @@ chance = { factor = 0 }}
 music = {
 song = "top_squad"
 chance = { factor = 0 }}
+
+music = {
+song = "HSU_war"
+chance = { factor = 0 }}
