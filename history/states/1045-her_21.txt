@@ -1,0 +1,25 @@
+state={
+	id=1045
+	name="STATE_1045"
+	provinces={
+		3659 9631 11600 
+	}
+	state_category = town
+	history={
+		owner = MOY
+		victory_points = {
+			11600 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			11600 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MOY
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,20 @@
+ideas = {
+
+	country = {
+	
+		beer_problem_idea = {
+			picture = beer_problem
+			allowed = {
+				original_tag = DOR
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.04
+				army_speed_factor = -0.03
+				stability_factor = 0.04
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+CHB_peace_deals_category = {
+	start_peace_conferece = {
+		icon = eng_trade_unions_support
+		cost = 100
+	
+		allowed = {
+			original_tag = CHB
+		}
+		
+		complete_effect = {
+			country_event = { id = chicken.15 }
+			set_country_flag = peace_started
+		}
+	}
+}

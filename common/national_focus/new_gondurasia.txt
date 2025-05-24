@@ -1,0 +1,2368 @@
+focus_tree = {
+	id = gondurassia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = GON
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = GON_call_to_reform
+		mutually_exclusive = { focus = GON_the_clean_election focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_join_comintern
+		x = -2
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+			swap_ideas = {
+				add_idea = GON_infamous_decade_3
+				remove_idea = GON_infamous_decade
+			}
+		}
+	}
+
+	focus = {
+		id = GON_invite_maskim_iosif_shabanov
+		relative_position_id = GON_call_to_reform
+		prerequisite = { focus = GON_call_to_reform }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stint_comm
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = sea_advisor
+			custom_effect_tooltip = GON_invite_maskim_iosif_shabanov_effect
+			set_country_flag = GON_shaban_invite
+		}
+	}
+
+	focus = {
+		id = GON_legitimize_the_GCP
+		relative_position_id = GON_invite_maskim_iosif_shabanov
+		prerequisite = { focus = GON_invite_maskim_iosif_shabanov }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_communism
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism 
+				popularity = 0.1
+			}
+
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = GON_reach_out_to_rabotyagi
+		relative_position_id = GON_legitimize_the_GCP
+		prerequisite = { focus = GON_legitimize_the_GCP }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			RAB = {
+				add_opinion_modifier = {
+    				target = ARA
+    				modifier = gon_reach_out
+				}
+			}
+
+			ARA = {
+				add_opinion_modifier = {
+    				target = RAB
+    				modifier = gon_reach_out
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_unite_the_workers
+		relative_position_id = GON_legitimize_the_GCP
+		prerequisite = { focus = GON_legitimize_the_GCP }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GON_united_workers_idea
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = GON_viva_la_revolution
+		relative_position_id = GON_legitimize_the_GCP
+		prerequisite = { focus = GON_reach_out_to_rabotyagi focus = GON_unite_the_workers }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = GON_workers_rights
+		relative_position_id = GON_viva_la_revolution
+		prerequisite = { focus = GON_align_with_rabotyagi focus = GON_forge_our_own_future }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_full_employment
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_united_workers_idea
+		}
+	}
+
+	focus = {
+		id = GON_reform_our_industry
+		relative_position_id = GON_workers_rights
+		prerequisite = { focus = GON_workers_rights }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}	
+			}
+		}
+	}
+
+	focus = {
+		id = GON_empower_fjc
+		relative_position_id = GON_reform_our_industry
+		prerequisite = { focus = GON_reform_our_industry }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_join_comintern
+		x = 0
+		y = 1
+		
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_war_support = 0.15
+			GON = {
+				division_template = { 
+				name = "GON_gonep_division"
+				division_names_group = GON_gonep_01
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+
+					infantry = { x = 2 y = 0 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Дивизия ГоНеПа\" division_template = \"GON_gonep_division\" start_experience_factor = 0.75" 
+						owner = GON
+					}
+					create_unit = { 
+						division = "name = \"2. Дивизия ГоНеПа\" division_template = \"GON_gonep_division\" start_experience_factor = 0.75" 
+						owner = GON
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_state_atheism
+		relative_position_id = GON_empower_fjc
+		prerequisite = { focus = GON_empower_fjc }
+		mutually_exclusive = { focus = GON_liberation_theology }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_state_atheism
+		x = -1
+		y = 1
+		
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_state_atheism_idea
+		}
+	}
+
+	focus = {
+		id = GON_liberation_theology
+		relative_position_id = GON_empower_fjc
+		prerequisite = { focus = GON_empower_fjc }
+		mutually_exclusive = { focus = GON_state_atheism }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_liberation_theology
+		x = 1
+		y = 1
+		
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_liberation_theology_idea
+		}
+	}
+
+	focus = {
+		id = GON_socialist_researchers
+		relative_position_id = GON_empower_fjc
+		prerequisite = { focus = GON_state_atheism focus = GON_liberation_theology }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_socialist_science
+		x = 0
+		y = 2
+		
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GON_align_with_rabotyagi
+		relative_position_id = GON_viva_la_revolution
+		prerequisite = { focus = GON_viva_la_revolution }
+		mutually_exclusive = { focus = GON_forge_our_own_future }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = -4
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_close_ties_with_rabotyagi
+		}
+	}
+
+	focus = {
+		id = GON_soviet_industrial_model
+		relative_position_id = GON_align_with_rabotyagi
+		prerequisite = { focus = GON_align_with_rabotyagi }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 41 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_soviet_manufactures
+		relative_position_id = GON_soviet_industrial_model
+		prerequisite = { focus = GON_soviet_industrial_model }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_rabotyaga_manufactures
+		}
+	}
+
+	focus = {
+		id = GON_comittee_of_state_security
+		relative_position_id = GON_soviet_industrial_model
+		prerequisite = { focus = GON_soviet_industrial_model }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_secret_service_agency
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = { 
+					name = "О.З.С"
+					icon = GFX_intelligence_agency_logo_ARG_intelligence
+				}
+				upgrade_intelligence_agency = upgrade_anti_partisan
+				add_ideas = GON_committee_of_state_security_idea_lar
+			}
+			ELSE = {
+				add_ideas = GON_committee_of_state_security_idea_no_lar
+			}
+		}
+	}
+
+	focus = {
+		id = GON_centralize_power
+		relative_position_id = GON_soviet_industrial_model
+		prerequisite = { focus = GON_soviet_manufactures focus = GON_comittee_of_state_security }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_NOR_empower_sivorg
+		x = 0 
+		y = 4
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_popularity = {
+				popularity = 0.2
+				ideology = communism 
+			}
+
+			add_manpower = 50000
+
+			add_political_power = 100
+			remove_ideas = GON_infamous_decade_2
+		}
+	}
+
+	focus = {
+		id = GON_forge_our_own_future
+		relative_position_id = GON_viva_la_revolution
+		prerequisite = { focus = GON_viva_la_revolution }
+		mutually_exclusive = { focus = GON_align_with_rabotyagi }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			create_faction = GON_communist_faction
+		}
+	}
+
+	focus = {
+		id = GON_women_in_industry
+		relative_position_id = GON_forge_our_own_future
+		prerequisite = { focus = GON_forge_our_own_future }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_women_in_military
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_women_in_industry_idea
+		}
+	}
+
+	focus = {
+		id = GON_support_farmers
+		relative_position_id = GON_women_in_industry
+		prerequisite = { focus = GON_women_in_industry }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_farmland
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_agrarian_reforms_idea
+		}
+	}
+
+	focus = {
+		id = GON_socialist_volunteers
+		relative_position_id = GON_women_in_industry
+		prerequisite = { focus = GON_women_in_industry }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_socialist_volunteers_idea
+
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = GON_madrid_conference
+		relative_position_id = GON_women_in_industry
+		prerequisite = { focus = GON_socialist_volunteers focus = GON_support_farmers }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_the_buenos_aires_conference
+		x = 0
+		y = 4
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			custom_effect_tooltip = in_development
+			remove_ideas = GON_infamous_decade_2
+		}
+	}
+
+	focus = {
+		id = GON_liberate_continent
+		relative_position_id = GON_socialist_researchers
+		prerequisite = { focus = GON_centralize_power focus = GON_madrid_conference }
+		#mutually_exclusive = { focus = GON_call_to_reform focus = GON_stintler_way }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ETH_callout_to_the_world
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_lliberate_continent
+		}
+	}
+
+
+	focus = {
+		id = GON_the_clean_election
+		mutually_exclusive = { focus = GON_stintler_way focus = GON_call_to_reform }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_CHL_mobilize_the_veteran_legionaries
+		x = 8
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+			add_ideas = GON_infamous_decade_3
+		}
+	}
+
+	focus = {
+		id = GON_memory_of_democratic
+		prerequisite = { focus = GON_the_clean_election }
+		relative_position_id = GON_the_clean_election
+		#mutually_exclusive = { focus = GON_neutrality_manifest }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stintrel
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = sea_advisor
+            add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+
+	focus = {
+		id = GON_promote_urbanisation
+		prerequisite = { focus = GON_memory_of_democratic }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_anticorruption_politics
+		prerequisite = { focus = GON_memory_of_democratic }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_anti_corruption_policies
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GON_political_corruption
+            	add_idea = GON_anti_corruption_politics
+			}
+		}
+	}
+
+	focus = {
+		id = GON_regulated_salaries
+		prerequisite = { focus = GON_promote_urbanisation }
+		relative_position_id = GON_promote_urbanisation
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_DEN_limited_regulations
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_regulated_salaries
+		}
+	}
+
+	focus = {
+		id = GON_fond_of_national_blagosostoyanie
+		prerequisite = { focus = GON_regulated_salaries }
+		relative_position_id = GON_regulated_salaries
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GER_factories_for_resources
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_ideas = GON_social_welfare_fund_ns
+
+			41 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+
+	focus = {
+		id = GON_improve_education
+		prerequisite = { focus = GON_anticorruption_politics }
+		relative_position_id = GON_anticorruption_politics
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARG_education_electronics_bonus
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+
+			add_tech_bonus = {
+				name = ARG_education_industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+
+			add_tech_bonus = {
+				name = ARG_education_synthetics_bonus
+				bonus = 1
+				uses = 1
+				category = cat_synth_rubber
+			}
+		}
+	}
+
+	focus = {
+		id = GON_university_reform
+		prerequisite = { focus = GON_improve_education }
+		relative_position_id = GON_improve_education
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GON_destroy_opposition
+		prerequisite = { focus = GON_promote_urbanisation }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = GON_real_democratic
+		prerequisite = { focus = GON_anticorruption_politics }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_democracy
+		x = -1
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			add_stability = 0.02
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = GON_gondurassia_for_all
+		prerequisite = { focus = GON_real_democratic focus = GON_destroy_opposition }
+		relative_position_id = GON_memory_of_democratic
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_free_iberia
+		x = 0
+		y = 4
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_ideas = GON_for_all_idea
+		}
+	}
+
+	focus = {
+		id = GON_stintler_way
+		mutually_exclusive = { focus = GON_the_clean_election focus = GON_call_to_reform }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stintler
+		x = 18
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+			add_ideas = sea_advisor
+			swap_ideas = {
+				remove_idea = GON_infamous_decade
+				add_idea = GON_infamous_decade_2
+			}
+		}
+	}
+
+	focus = {
+		id = GON_crackdown_on_corruption
+		prerequisite = { focus = GON_neutrality_manifest focus = GON_work_with_nationalists }
+		relative_position_id = GON_stintler_way
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_crackdown_on_corruption
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = GON_political_corruption
+				add_idea = GON_crackdown_on_corruption_idea
+			}
+		}
+	}
+
+	focus = {
+		id = GON_work_with_nationalists
+		prerequisite = { focus = GON_stintler_way }
+		relative_position_id = GON_stintler_way
+		mutually_exclusive = { focus = GON_neutrality_manifest }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_fascism
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_ideas = GON_groving_nationalist_movement
+		}
+	}
+
+	focus = {
+		id = GON_cut_ties_with_dippins
+		prerequisite = { focus = GON_work_with_nationalists }
+		relative_position_id = GON_work_with_nationalists
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_cut_ties_with_dipins
+		x = 0
+		y = 2
+
+		cost = 12
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_ideas = GON_anti_dipins_sentiment
+		}
+	}
+
+	focus = {
+		id = GON_revive_the_colonial_plan
+		prerequisite = { focus = GON_cut_ties_with_dippins }
+		relative_position_id = GON_cut_ties_with_dippins
+		mutually_exclusive = { focus = GON_establishing_foothold }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GON_annex_NEL
+		x = 5
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            NEL = {
+				country_event = {
+					id = gonduras.1
+					days = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_establishing_foothold
+		prerequisite = { focus = GON_cut_ties_with_dippins }
+		relative_position_id = GON_cut_ties_with_dippins
+		mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_fascism
+		x = 7
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            create_wargoal = {
+					type = annex_everything
+					target = NEL
+			}
+		}
+	}
+
+	focus = {
+		id = GON_corporatism
+		prerequisite = { focus = GON_cut_ties_with_dippins }
+		relative_position_id = GON_cut_ties_with_dippins
+		#mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ICE_state_corporatism
+		x = 9
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 50
+			add_popularity = {
+				ideology = fascism 
+				popularity = 0.1
+			}
+			41 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_reestablish_ligas
+		prerequisite = { focus = GON_corporatism }
+		relative_position_id = GON_corporatism
+		#mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = GON_fascist_researchers
+		prerequisite = { focus = GON_reestablish_ligas }
+		relative_position_id = GON_corporatism
+		#mutually_exclusive = { focus = GON_revive_the_colonial_plan }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_ARG_fascist_researchers
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GON_support_radical_nationalism
+		prerequisite = { focus = GON_cut_ties_with_dippins }
+		relative_position_id = GON_cut_ties_with_dippins
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = GON_groving_nationalist_movement
+				add_idea = GON_groving_nationalist_movement_2
+			}
+		}
+	}
+
+	focus = {
+		id = GON_btk_investments
+		prerequisite = { focus = GON_support_radical_nationalism }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_chb_diplomacy
+		prerequisite = { focus = GON_support_radical_nationalism }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_major_alliance
+		x = 2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+
+            random_owned_controlled_state = {
+                add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+            }
+		}
+	}
+
+	focus = {
+		id = GON_gondunation
+		prerequisite = { focus = GON_btk_investments focus = GON_chb_diplomacy }
+		relative_position_id = GON_support_radical_nationalism
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GON_great_gondurasia
+		x = 1
+		y = 2
+
+		cost = 13
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			remove_ideas = GON_legends_of_stintler
+			remove_ideas = GON_infamous_decade_2
+		}
+	}
+
+	focus = {
+		id = GON_rapid_militarization
+		prerequisite = { focus = GON_gondunation }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = GON_rapid_militarization
+		}
+	}
+
+	focus = {
+		id = GON_gonduras_nationalism
+		prerequisite = { focus = GON_gondunation }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			swap_ideas = {
+            remove_idea = GON_groving_nationalist_movement_2
+			add_idea = GON_military_government
+			}
+		}
+	}
+
+	focus = {
+		id = GON_war_division
+		prerequisite = { focus = GON_rapid_militarization focus = GON_gonduras_nationalism }
+		relative_position_id = GON_gondunation
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_SWI_issue_war_bonds
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = {
+				idea = GON_war_division_idea
+				days = 365
+			}	
+		}
+	}
+
+	focus = {
+		id = GON_gondunation_first
+		prerequisite = { focus = GON_war_division }
+		relative_position_id = GON_war_division
+		#mutually_exclusive = { focus = GON_memory_of_democratic }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GON_preparing
+		x = 0
+		y = 1
+
+		cost = 11
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {	
+			IF = {
+				limit = {
+					is_in_faction = yes
+				}
+				leave_faction = yes 
+			}
+
+			add_political_power = 50
+			add_war_support = 0.05
+
+			add_ideas = GON_gondunation_first_idea
+
+			create_faction = GON_nationalist_faction	
+
+			hidden_effect = {
+				set_rule = { can_send_volunteers = yes }
+				set_rule = { can_create_factions = yes }
+				set_rule = { can_join_factions = no }
+			}
+		}
+	}
+
+	focus = {
+		id = GON_dominate_europe
+		prerequisite = { focus = GON_gondunation_first }
+		relative_position_id = GON_gondunation_first
+		mutually_exclusive = { focus = GON_no_extra_military_spending }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_printing_press
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = { idea = GON_total_war days = 350 }
+		}
+	}
+
+	focus = {
+		id = GON_no_extra_military_spending
+		prerequisite = { focus = GON_gondunation_first }
+		relative_position_id = GON_gondunation_first
+		mutually_exclusive = { focus = GON_dominate_europe }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_GER_integrated_economies
+		x = 1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = { idea = GON_limited_war_money days = 350 }
+		}
+	}
+
+	focus = {
+		id = GON_conquer_morphi
+		prerequisite = { focus = GON_dominate_europe focus = GON_no_extra_military_spending }
+		relative_position_id = GON_dominate_europe
+		mutually_exclusive = { focus = GON_morphi_ultimatum }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_major_war
+		x = -1
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            create_wargoal = {
+					type = annex_everything
+					target = MOY
+			}
+		}
+	}
+
+	focus = {
+		id = GON_morphi_ultimatum
+		prerequisite = { focus = GON_dominate_europe focus = GON_no_extra_military_spending }
+		relative_position_id = GON_dominate_europe
+		mutually_exclusive = { focus = GON_conquer_morphi }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_fascism
+		x = 3
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            MOY = { country_event = { id = gonduras.6 hours = 10 } }
+		}
+	}
+
+	focus = {
+		id = GON_reach_out_to_zolo
+		prerequisite = { focus = GON_conquer_morphi focus = GON_morphi_ultimatum }
+		relative_position_id = GON_dominate_europe
+		mutually_exclusive = { focus = GON_zolo_ultimatum }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_zolo_war
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            create_wargoal = {
+					type = annex_everything
+					target = ZOL
+			}
+		}
+	}
+
+	focus = {
+		id = GON_zolo_ultimatum
+		prerequisite = { focus = GON_conquer_morphi focus = GON_morphi_ultimatum }
+		relative_position_id = GON_dominate_europe
+		mutually_exclusive = { focus = GON_reach_out_to_zolo }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_zolo_focus
+		x = 2
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            ZOL = { country_event = { id = gonduras.8 hours = 10 } }
+		}
+	}
+
+	focus = {
+		id = GON_the_old_enemy
+		prerequisite = { focus = GON_reach_out_to_zolo focus = GON_zolo_ultimatum }
+		relative_position_id = GON_dominate_europe
+		#mutually_exclusive = { focus = GON_reach_out_to_zolo }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_secret_rearmament
+		x = 1
+		y = 3
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            create_wargoal = {
+					type = annex_everything
+					target = DPS
+			}
+		}
+	}
+
+	focus = {
+		id = GON_neutrality_manifest
+		prerequisite = { focus = GON_stintler_way }
+		relative_position_id = GON_stintler_way
+		mutually_exclusive = { focus = GON_work_with_nationalists }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = -2
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+			custom_effect_tooltip = in_development_dont_use
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.02
+            }
+		}
+	}
+
+	focus = {
+		id = GON_dipins_economics
+		prerequisite = { focus = GON_neutrality_manifest }
+		relative_position_id = GON_neutrality_manifest
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_dipins_economics
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_ideas = GON_dipins_economics_idea
+		}
+	}
+
+	focus = {
+		id = GON_stintrel_cabinet
+		prerequisite = { focus = GON_dipins_economics }
+		relative_position_id = GON_dipins_economics
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_maks_stint
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_country_flag = GON_stint_cabinet
+		}
+	}
+
+	focus = {
+		id = GON_maintain_the_quo
+		prerequisite = { focus = GON_stintrel_cabinet }
+		relative_position_id = GON_stintrel_cabinet
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 50
+			add_stability = 0.1
+			remove_ideas = GON_infamous_decade_2
+		}
+	}
+
+
+	focus = {
+		id = GON_interveciones_federales
+		prerequisite = { focus = GON_maintain_the_quo }
+		relative_position_id = GON_maintain_the_quo
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_occupy_start_war
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = GON_subdue_dissesion
+		prerequisite = { focus = GON_interveciones_federales }
+		relative_position_id = GON_interveciones_federales
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_focus_generic_court
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_timed_idea = {
+				idea = GON_subdued_dissension
+				days = 365
+			}
+		}
+	}
+
+
+	focus = {
+		id = GON_hesus_push
+		prerequisite = { focus = GON_subdue_dissesion }
+		relative_position_id = GON_subdue_dissesion
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_support_democracy
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = GON_stintler_palace_start
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_palace_dream
+		x = 26
+		y = 0
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 100
+			add_ideas = GON_stint_palace_1
+		}
+	}
+
+	focus = {
+		id = GON_stole_money
+		relative_position_id = GON_stintler_palace_start
+		prerequisite = { focus = GON_stintler_palace_start }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_stole_money_palace
+		x = 0
+		y = 1
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            add_political_power = 50
+			add_timed_idea = { idea = GON_stolen_money days = 100 }
+		}
+	}
+
+	focus = {
+		id = GON_start_building
+		relative_position_id = GON_stintler_palace_start
+		prerequisite = { focus = GON_stole_money }
+		available = {
+		}
+
+		bypass = {
+		}
+
+		icon = GFX_goal_GON_palace_start
+		x = 0
+		y = 2
+
+		cost = 10
+		search_filters = {FOCUS_FILTER_MANPOWER}
+		completion_reward = {
+            set_variable = { is_palace_selected = 1 }
+			custom_effect_tooltip = GON_start_palace_build_effect
+		}
+	}
+
+	focus = {
+		id = GON_civil_works
+		icon = GFX_goal_generic_construction
+		x = 32
+		y = 0
+		relative_position_id = GON_politics_effort
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GON_civil_works
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = GON_national_defense_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 0
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 79 81 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GON_national_defense_industry_AF1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 79 81 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GON_national_defense_industry_AF2
+			}
+		}
+	}
+
+	focus = {
+		id = GON_danubian_transport_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GON_national_defense_industry focus = GON_civil_works }
+		x = 1
+		y = 1
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 46 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GON_danubian_transport_network_Inf
+			}
+			random_owned_controlled_state = {
+				prioritize = { 81 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GON_danubian_transport_network_Inf_2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 82 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = GON_danubian_transport_network_Inf_3
+			}
+		}
+	}
+
+	focus = {
+		id = GON_malaxa
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = GON_danubian_transport_network }
+		#mutually_exclusive = { focus = GON_invite_foreign_motor_companies }
+		x = 1
+		y = 2
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 41 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = GON_malaxa_IC
+			}
+		}
+	}
+
+	#focus = {
+	#	id = GON_invite_foreign_motor_companies
+	#	icon = GFX_goal_generic_army_motorized
+	#	prerequisite = { focus = GON_danubian_transport_network }
+	#	mutually_exclusive = { focus = GON_malaxa }
+	#	x = 2
+	#	y = 3
+	#	relative_position_id = GON_civil_works
+#
+	#	cost = 10
+#
+	#	ai_will_do = {
+	#		factor = 5
+	#	}
+#
+	#	available = {
+#
+	#	}
+#
+	#	bypass = {
+#
+	#	}
+#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = no
+#
+#
+	#	completion_reward = {
+	#		country_event = DOD_GONania.120
+	#	}
+	#}
+
+	focus = {
+		id = GON_hunedoara_steel_works
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {focus = GON_malaxa }
+		x = 0
+		y = 4
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 118 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_invest_in_the_iar
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = GON_malaxa }
+		x = 2
+		y = 4
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 41 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_expand_ploiesti_oil_production
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = GON_invest_in_the_iar }
+		prerequisite = { focus = GON_hunedoara_steel_works }
+		x = 1
+		y = 5
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 165
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 165 }
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GON_expand_the_university_of_bucharest
+		icon = GFX_focus_research
+		prerequisite = { focus = GON_expand_ploiesti_oil_production }
+		x = 1
+		y = 6
+		relative_position_id = GON_civil_works
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			num_of_factories > 35
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 2000 }
+	
+}

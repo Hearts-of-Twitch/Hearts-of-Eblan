@@ -19,3 +19,17 @@ BTK_89 = {
 	color = rgb { 89 65 169 }
 	color_ui = rgb { 89 65 169 }
 }
+ARA_OF = {
+	color = rgb { 120 25 8 }
+	color_ui = rgb { 120 25 8 }
+}
+
+ARA_HDR = {
+	color = rgb { 135 54 114 }
+	color_ui = rgb { 135 54 114 }
+}
+
+ARA_HypeD = {
+	color = rgb { 66 1 12 }
+	color_ui = rgb { 66 1 12 }
+}

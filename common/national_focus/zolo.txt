@@ -1,0 +1,398 @@
+focus_tree = {
+	id = zolo_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ZOL
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 150 y = 100 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	focus = {
+		id = ZOL_great_zolo
+		icon = GFX_goal_ZOL_1
+		x = 13
+		y = 0
+		offset = {
+		}
+		cost = 5
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = ego_slaboumnoe_velichie_1
+		}
+	}
+
+	focus = {
+		id = ZOL_slaboumie_problem
+		icon = GFX_goal_ZOL_2
+		relative_position_id = ZOL_great_zolo
+		prerequisite = { focus = ZOL_great_zolo }
+		x = -4
+		y = 1
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_political_power = 25
+			add_ideas = tabletki_ot_uma
+		}
+	}
+
+	focus = {
+		id = ZOL_laboratorii
+		icon = GFX_focus_research
+		relative_position_id = ZOL_great_zolo
+		prerequisite = { focus = ZOL_great_zolo }
+		mutually_exclusive = { focus = ZOL_slaboumnaya_marionetka }
+		x = -2
+		y = 1
+		offset = {
+		}
+		cost = 10
+		
+		ai_will_do = {
+			factor = 50
+		}
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = our_laboratorii
+		}
+	}
+
+	focus = {
+		id = ZOL_ww2
+		icon = GFX_focus_generic_university_1
+		relative_position_id = ZOL_laboratorii
+		prerequisite = { focus = ZOL_laboratorii }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_ideas = neuch
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ego_slaboumnoe_velichie_1
+					add_idea = ego_slaboumnoe_velichie_2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZOL_invite_pushking
+		icon = GFX_goal_ZOL_5
+		relative_position_id = ZOL_ww2
+		prerequisite = { focus = ZOL_ww2 }
+		x = -2
+		y = 0
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			set_country_flag = ZOL_pushkin
+		}
+	}
+
+	focus = {
+		id = ZOL_invite_stalin
+		icon = GFX_focus_fra_loyalty_stalin
+		relative_position_id = ZOL_ww2
+		prerequisite = { focus = ZOL_ww2 }
+		x = 2
+		y = 0
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			set_country_flag = ZOL_stalin
+		}
+	}
+
+	focus = {
+		id = ZOL_comm_equals_to_fas
+		icon = GFX_focus_generic_communism_anti_fascism
+		relative_position_id = ZOL_ww2
+		prerequisite = { focus = ZOL_ww2 }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 6
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
+
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.4
+			}
+		}
+	}
+
+	focus = {
+		id = ZOL_atom_bomb
+		icon = GFX_focus_generic_nuclear_development
+		relative_position_id = ZOL_comm_equals_to_fas
+		prerequisite = { focus = ZOL_comm_equals_to_fas }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 7
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = {
+					name = ZOL_arma_maravillosa_bonus
+					bonus = 1
+					uses = 2
+					category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = ZOL_sborshiki_muculaturi
+		icon = GFX_goal_GON_cut_ties_with_dipins
+		relative_position_id = ZOL_atom_bomb
+		prerequisite = { focus = ZOL_atom_bomb }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 7
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			ZOL = {
+				create_wargoal = {
+					type = annex_everything
+					target = DPS
+				} 
+			}
+		}
+	}
+
+	focus = {
+		id = ZOL_mazeloff_verni_dolg
+		icon = GFX_focus_CONGO_gold_and_diamonds
+		relative_position_id = ZOL_sborshiki_muculaturi
+		prerequisite = { focus = ZOL_sborshiki_muculaturi }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 7
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			CHB = { country_event = { id = chicken.14 days = 1 } }
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ego_slaboumnoe_velichie_2
+					add_idea = ego_slaboumnoe_velichie_3
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = ZOL_slaboumnaya_marionetka
+		icon = GFX_goal_ZOL_3
+		relative_position_id = ZOL_great_zolo
+		prerequisite = { focus = ZOL_great_zolo }
+		mutually_exclusive = { focus = ZOL_laboratorii }
+		x = 2
+		y = 1
+		offset = {
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZOL_dvoevlastie
+		icon = GFX_goal_ZOL_4
+		relative_position_id = ZOL_slaboumnaya_marionetka
+		prerequisite = { focus = ZOL_slaboumnaya_marionetka }
+		x = 0
+		y = 1
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ZOL_nekoglay
+		icon = GFX_goal_ZOL_4
+		relative_position_id = ZOL_dvoevlastie
+		prerequisite = { focus = ZOL_dvoevlastie }
+		mutually_exclusive = { focus = ZOL_mazeloff }
+		x = -1
+		y = 1
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			NEK = {
+				diplomatic_relation = {
+    				country = ZOL
+    				relation = puppet
+    				active = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZOL_mazeloff
+		icon = GFX_goal_ZOL_4
+		relative_position_id = ZOL_dvoevlastie
+		prerequisite = { focus = ZOL_dvoevlastie }
+		mutually_exclusive = { focus = ZOL_nekoglay }
+		x = 1
+		y = 1
+		offset = {
+		}
+		cost = 10
+
+		bypass = {
+		}
+
+		available = {
+		}
+
+
+		completion_reward = {
+			CHB = {
+				diplomatic_relation = {
+    				country = ZOL
+    				relation = puppet
+    				active = yes
+				}
+			}
+		}
+	}
+}

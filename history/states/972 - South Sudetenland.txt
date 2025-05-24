@@ -13,7 +13,6 @@ state = {
 
 		owner = KRU
 		add_core_of = KRU
-		add_core_of = DRE
 
 		victory_points = {
 			557 1

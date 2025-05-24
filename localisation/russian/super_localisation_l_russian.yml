@@ -1,0 +1,28 @@
+﻿l_russian:
+  sp_event_sdo_start:0 "Специальная Дрейковская Операция"
+  sp_event_sdo_start_quote:0 "Обстоятельства требуют от нас решительных и незамедлительных действий. Мною принято решение о проведении Специальной Дрейковской Операции. Её цель – защита людей, которые на протяжении нескольких лет подвергаются издевательствам, геноциду со стороны Мазок-Градовского режима.\n- Drakeoffc"
+  sp_event_sdo_start_remark:0 "Мировая война?"
+  
+  sp_event_mazokgrad_fall:0 "Падение Мазок-града"
+  sp_event_mazokgrad_fall_remark:0 "Чикен-Беконии конец..."
+  sp_event_mazokgrad_fall_quote:0 "Мы освободим мир от преступного Мазок-градовского режима! Мы уже на финишной прямой! \n- Drakeoffc"
+  
+  sp_event_dayraid_fall:0 "Падение Дайрейда"
+  sp_event_dayraid_fall_remark:0 "Близится конец СДО?"
+  sp_event_dayraid_fall_quote:0 "Ничто не сможет спасти Дрейковию. \n- Mzlff"
+  
+  sp_event_blitzkrieg_zabuksoval:0 "Блицкриг забуксовал"
+  sp_event_blitzkrieg_zabuksoval_remark:0 "Что-то пошло не так..."
+  sp_event_blitzkrieg_zabuksoval_quote:0 "Дамы и господа, вы должны быть уверены в том\n что великая Чикен-Бекония никогда не падёт! \n- Mzlff"
+  
+  sp_event_lagoda_raspil:0 "Распил Лагоды"
+  sp_event_lagoda_raspil_remark:0 "Ой ой"
+  sp_event_lagoda_raspil_quote:0 "Это моё! \n- Школьник Drake"  
+  
+  sp_event_stintler_returns:0 "Возвращение Стинтлера"
+  sp_event_stintler_returns_remark:0 "Слава великой Гондунации"
+  sp_event_stintler_returns_quote:0 "Хихихиха \n- Великий Дуче-Фюрер Стинтлер"
+
+  sp_event_top_squad:0 "89сквад сново обьеденён"
+  sp_event_top_squad_remark:0 "Восставший из могил"
+  sp_event_top_squad_quote:0 "Обьеденение 89сквада, это не вопрос времени, референдумов или резолюций, это ответ железом и кровью!"

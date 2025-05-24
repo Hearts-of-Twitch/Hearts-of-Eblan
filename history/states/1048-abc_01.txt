@@ -1,0 +1,26 @@
+state={
+	id=1048
+	name="STATE_1048"
+	provinces={
+		6431 6460 6483 
+	}
+	history={
+		victory_points = {
+			6460 1
+		}
+		#victory_points = {
+		#	572 5
+		#}
+		owner = LAG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = LAG
+
+	}
+	state_category=rural
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

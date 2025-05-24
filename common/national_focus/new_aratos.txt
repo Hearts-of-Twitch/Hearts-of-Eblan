@@ -1,0 +1,1907 @@
+focus_tree = {
+	id = aratos_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = ARA
+		}
+	}
+	default = no
+
+    continuous_focus_position = { x = 100 y = 2650 }
+	
+	focus = {
+		id = ARA_critical_gos_apparat_state
+		available = {				
+			
+		} 
+		icon = GFX_goal_ARA_politics
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_political_power = 100
+            add_command_power = 30
+		}
+	}
+
+	focus = {
+		id = ARA_votum_doveria
+		available = {				
+			
+		} 
+        relative_position_id = ARA_critical_gos_apparat_state
+        prerequisite = { focus = ARA_critical_gos_apparat_state }
+		mutually_exclusive = { focus = ARA_altarnativa_dla_strani focus = ARA_red_way }
+		icon = GFX_focus_generic_fascist_propaganda
+		x = -7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_stability = -0.05
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.15
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_altarnativa_dla_strani
+		available = {				
+			
+		} 
+        relative_position_id = ARA_critical_gos_apparat_state
+        prerequisite = { focus = ARA_critical_gos_apparat_state }
+		mutually_exclusive = { focus = ARA_votum_doveria focus = ARA_red_way }
+		icon = GFX_goal_hypecratia_effort
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_stability = 0.05
+            add_popularity = {
+                ideology = hypecratia
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_people_cifrovisation
+		available = {				
+			
+		} 
+        relative_position_id = ARA_altarnativa_dla_strani
+        prerequisite = { focus = ARA_altarnativa_dla_strani }
+		icon = GFX_goal_ARA_people_digitalization
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_timed_idea = { idea = ARA_people_digitalization days = 300 }
+		}
+	}
+
+	focus = {
+		id = ARA_internet_cabels
+		available = {				
+			
+		} 
+        relative_position_id = ARA_altarnativa_dla_strani
+        prerequisite = { focus = ARA_altarnativa_dla_strani }
+		icon = GFX_goal_ARA_internet_cable
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_timed_idea = { idea = ARA_internet_cables days = 350 }
+		}
+	}
+
+	focus = {
+		id = ARA_hype_chuma
+		available = {				
+			
+		} 
+        relative_position_id = ARA_altarnativa_dla_strani
+        prerequisite = { focus = ARA_internet_cabels }
+        prerequisite = { focus = ARA_people_cifrovisation }
+		icon = GFX_goal_ARA_hype_chuma
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_hype_chuma
+		}
+	}
+
+	focus = {
+		id = ARA_freedom_of_press
+		available = {				
+			
+		} 
+        relative_position_id = ARA_hype_chuma
+        prerequisite = { focus = ARA_hype_chuma }
+		icon = GFX_focus_SWE_radiotjanst
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_freedom_of_press
+            add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = ARA_hype_ministers
+		available = {				
+			
+		} 
+        relative_position_id = ARA_hype_chuma
+        prerequisite = { focus = ARA_hype_chuma }
+		icon = GFX_focus_generic_improve_the_administration
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_timed_idea = { idea = ARA_hype_ministers days = 755 }
+            add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = ARA_hypecratic_country
+		available = {				
+			hypecratia > 0.4
+		} 
+        relative_position_id = ARA_hype_chuma
+        prerequisite = { focus = ARA_hype_ministers focus = ARA_freedom_of_press }
+		icon = GFX_goal_hypecratia_celebration
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_stability = 0.1
+			set_politics = {
+				ruling_party = hypecratia
+                elections_allowed = no
+			}
+			remove_ideas = ARA_hype_chuma
+			remove_ideas = ARA_massive_opposition
+			swap_ideas = {
+				remove_idea = ARA_gos_apparat_idea
+				add_idea = ARA_rebuilding_gos_apparat_idea
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_new_things_propaganda
+		available = {				
+		} 
+        relative_position_id = ARA_hypecratic_country
+        prerequisite = { focus = ARA_hypecratic_country  }
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_forbid_all_old
+		available = {				
+		} 
+        relative_position_id = ARA_new_things_propaganda
+        prerequisite = { focus = ARA_new_things_propaganda  }
+		icon = GFX_goal_ARA_old_things
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = GENERIC_banned_adults
+		}
+	}
+
+	focus = {
+		id = ARA_hype_army_reform
+		available = {				
+		} 
+        relative_position_id = ARA_hypecratic_country
+        prerequisite = { focus = ARA_hypecratic_country  }
+		icon = GFX_goal_ARA_hype_army
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_internet_army
+		}
+	}
+
+	focus = {
+		id = ARA_expanded_kids_rights
+		available = {				
+		} 
+        relative_position_id = ARA_hypecratic_country
+        prerequisite = { focus = ARA_hypecratic_country  }
+		icon = GFX_goal_ARA_kids_rights
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_kids_work
+		available = {				
+		} 
+        relative_position_id = ARA_expanded_kids_rights
+        prerequisite = { focus = ARA_expanded_kids_rights  }
+		icon = GFX_goal_ARA_kids_work
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = SVI_detskiy_trud
+		}
+	}
+
+	focus = {
+		id = ARA_tiktok_army
+		available = {				
+		} 
+        relative_position_id = ARA_hype_army_reform
+        prerequisite = { focus = ARA_forbid_all_old }
+        prerequisite = { focus = ARA_kids_work }
+        prerequisite = { focus = ARA_hype_army_reform }
+		icon = GFX_goal_ARA_tiktok_army
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			ARA = {
+				division_template = { 
+				name = "ARA_tt_division"
+				division_names_group = ARA_tt_01
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"2. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"3. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"4. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+					create_unit = { 
+						division = "name = \"5. Дивизия ТикТок войск\" division_template = \"ARA_tt_01\" start_experience_factor = 0.7" 
+						owner = ARA
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_increse_hype_party_ratings
+		available = {				
+		} 
+        relative_position_id = ARA_tiktok_army
+        prerequisite = { focus = ARA_tiktok_army }
+		icon = GFX_goal_ARA_hype_ratings
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_new_laws
+		available = {				
+		} 
+        relative_position_id = ARA_tiktok_army
+        prerequisite = { focus = ARA_tiktok_army }
+		icon = GFX_goal_generic_trade
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_parlament_fight
+		available = {				
+		} 
+        relative_position_id = ARA_tiktok_army
+        prerequisite = { focus = ARA_new_laws }
+		prerequisite = { focus = ARA_increse_hype_party_ratings }
+		icon = GFX_goal_ARA_parlament_fight
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			set_power_balance = { id = president_parlament_balance }
+			add_stability = -0.05
+			add_war_support = -0.05
+			country_event = { id = aratos.7 days = 1}
+		}
+	}
+
+	focus = {
+		id = ARA_president_focus
+		available = {				
+		} 
+        relative_position_id = ARA_parlament_fight
+        prerequisite = { focus = ARA_parlament_fight }
+		mutually_exclusive = { focus = ARA_parlament_focus }
+		icon = GFX_goal_ARA_president_focus
+		x = -3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_popularity = {
+                ideology = democratic
+                popularity = -0.05
+            }
+			add_ideas = ARA_president_focus_1
+		}
+	}
+
+	focus = {
+		id = ARA_parlament_focus
+		available = {				
+		} 
+        relative_position_id = ARA_parlament_fight
+        prerequisite = { focus = ARA_parlament_fight }
+		mutually_exclusive = { focus = ARA_president_focus }
+		icon = GFX_goal_ARA_parlament_focus
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_parlament_focus_1
+			swap_ideas = {
+				remove_idea = ARA_rebuilding_gos_apparat_idea
+				add_idea = ARA_democratic_gos_apparat_idea
+			}
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_osudit_presidental_ambitions
+		available = {				
+		} 
+        relative_position_id = ARA_parlament_focus
+        prerequisite = { focus = ARA_parlament_focus }
+		icon = GFX_goal_ARA_condemn_ambitions
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			#swap_ideas = {
+			#	remove_idea = ARA_parlament_focus_1
+			#	add_idea = ARA_parlament_focus_2
+			#}
+
+			country_event = { id = aratos.6 days = 1 }
+
+			add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_took_president_to_dacha
+		available = {				
+		} 
+        relative_position_id = ARA_osudit_presidental_ambitions
+        prerequisite = { focus = ARA_osudit_presidental_ambitions }
+		icon = GFX_goal_ARA_send_to_dacha
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_president_v_isgnanii
+		}
+	}
+
+	focus = {
+		id = ARA_prepare_tv_appeal
+		available = {				
+		} 
+        relative_position_id = ARA_osudit_presidental_ambitions
+        prerequisite = { focus = ARA_osudit_presidental_ambitions }
+		icon = GFX_goal_ARA_prepare_tv_appeal
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_tv_appeal
+		available = {				
+		} 
+        relative_position_id = ARA_osudit_presidental_ambitions
+        prerequisite = { focus = ARA_prepare_tv_appeal }
+		prerequisite = { focus = ARA_took_president_to_dacha }
+		icon = GFX_goal_ARA_tv_appeal
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			news_event = { id = squad_news.11 hours = 3 }
+			swap_ideas = {
+				add_idea = ARA_parlament_focus_2
+				remove_idea = ARA_parlament_focus_1
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_emergency_convocation_of_parlament
+		available = {				
+		} 
+        relative_position_id = ARA_tv_appeal
+        prerequisite = { focus = ARA_tv_appeal }
+		icon = GFX_goal_ARA_emergency_convocation
+		x = 1
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_anti_presidental_constitution
+		available = {				
+		} 
+        relative_position_id = ARA_emergency_convocation_of_parlament
+        prerequisite = { focus = ARA_emergency_convocation_of_parlament }
+		icon = GFX_goal_ARA_anti_president_constitution
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_president_isolation
+		available = {				
+		} 
+        relative_position_id = ARA_tv_appeal
+        prerequisite = { focus = ARA_tv_appeal }
+		icon = GFX_goal_ARA_president_isolation
+		x = -1
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARA_president_v_isgnanii
+				add_idea = ARA_president_isolation
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_circle_dacha
+		available = {				
+		} 
+        relative_position_id = ARA_president_isolation
+        prerequisite = { focus = ARA_president_isolation }
+		icon = GFX_goal_ARA_circle_dacha
+		x = -1
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_cut_the_connections
+		available = {				
+		} 
+        relative_position_id = ARA_president_isolation
+        prerequisite = { focus = ARA_president_isolation }
+		icon = GFX_goal_ARA_cut_the_connections
+		x = 1
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_full_president_isolation
+		available = {				
+		} 
+        relative_position_id = ARA_president_isolation
+	    prerequisite = { focus = ARA_circle_dacha }
+        prerequisite = { focus = ARA_cut_the_connections }
+		icon = GFX_goal_ARA_full_isolation
+		x = 0
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_where_is_president
+		}
+	}
+
+	focus = {
+		id = ARA_impeachment
+		available = {				
+		} 
+        relative_position_id = ARA_president_isolation
+	    prerequisite = { focus = ARA_full_president_isolation }
+        prerequisite = { focus = ARA_anti_presidental_constitution }
+		icon = GFX_goal_ARA_impeachment
+		x = 1
+		y = 3
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			AND = {
+			has_country_leader = {
+				character = hypecratia_parlament
+				ruling_only = yes
+			}
+			has_cosmetic_tag = ARA_HDR
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			retire_character = hypecratia_president
+			remove_ideas = ARA_where_is_president
+			remove_ideas = ARA_president_isolation
+			set_cosmetic_tag = ARA_HDR
+			add_country_leader_role = {
+        		character = hypecratia_parlament  # Must be recruited
+        		promote_leader = yes  # Makes the character be promoted to leader of the party
+        		country_leader = {
+            		ideology = hypetiktok
+            		traits = {  }
+        		}
+    		}
+			remove_power_balance = {
+    			id = president_parlament_balance
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_president_batalions
+		available = {				
+		} 
+        relative_position_id = ARA_president_focus
+        prerequisite = { focus = ARA_president_focus }
+		icon = GFX_focus_GER_strafbataillon
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_president_batalions_idea
+		}
+	}
+
+	focus = {
+		id = ARA_take_control_on_media_hype
+		available = {				
+		} 
+        relative_position_id = ARA_president_focus
+        prerequisite = { focus = ARA_president_focus }
+		icon = GFX_goal_ARA_total_media_control
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_pro_government_media
+			if = {
+				limit = { has_idea = ARA_freedom_of_press}
+				remove_ideas = ARA_freedom_of_press
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_presidental_meetings
+		available = {				
+		} 
+        relative_position_id = ARA_president_focus
+        prerequisite = { focus = ARA_take_control_on_media_hype }
+		prerequisite = { focus = ARA_president_batalions }
+		icon = GFX_goal_ARA_president_meetings
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			country_event = { id = aratos.5 days = 1}
+		}
+	}
+
+	focus = {
+		id = ARA_emergency_powers
+		available = {				
+		} 
+        relative_position_id = ARA_presidental_meetings
+        prerequisite = { focus = ARA_presidental_meetings }
+		icon = GFX_goal_ARA_emergency_powers
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			swap_ideas = {
+			add_idea = ARA_destroyed_legislation
+			remove_idea = ARA_slabie_zakoni
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_change_constitution
+		available = {				
+		} 
+        relative_position_id = ARA_emergency_powers
+        prerequisite = { focus = ARA_emergency_powers }
+		icon = GFX_goal_ARA_change_constitution
+		x = -2
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_dicator_constitution
+		}
+	}
+
+	focus = {
+		id = ARA_new_gosapparat
+		available = {				
+		} 
+        relative_position_id = ARA_change_constitution
+        prerequisite = { focus = ARA_change_constitution }
+		icon = GFX_goal_ARA_new_gosapparat
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ARA_new_type_gos_apparat_idea
+				remove_idea = ARA_gos_apparat_idea
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_dictatorskaya_hypecratia
+		available = {				
+		} 
+        relative_position_id = ARA_new_gosapparat
+		prerequisite = { focus = ARA_new_gosapparat }
+		icon = GFX_goal_ARA_hype_totalitarism
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			set_cosmetic_tag = ARA_HypeD
+		}
+	}
+
+	focus = {
+		id = ARA_dissolve_parlament
+		available = {				
+		} 
+        relative_position_id = ARA_emergency_powers
+        prerequisite = { focus = ARA_emergency_powers }
+		icon = GFX_goal_ARA_dissolve_parlament
+		x = 2
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_broken_democratic_principles
+		}
+	}
+
+	focus = {
+		id = ARA_officials_to_SIZO
+		available = {				
+		} 
+        relative_position_id = ARA_dissolve_parlament
+        prerequisite = { focus = ARA_dissolve_parlament }
+		icon = GFX_goal_ARA_arrest_officials
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_ideas = ARA_jailed_officials
+		}
+	}
+
+	focus = {
+		id = ARA_preparing_for_a_putch
+		available = {				
+		} 
+        relative_position_id = ARA_emergency_powers
+        prerequisite = { focus = ARA_emergency_powers }
+		icon = GFX_goal_ARA_prepare_for_a_putch
+		x = 0
+		y = 1
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			country_event = { id = aratos.8 hours = 1}
+		}
+	}
+
+	focus = {
+		id = ARA_militarize_president_supporters
+		available = {				
+		} 
+        relative_position_id = ARA_preparing_for_a_putch
+        prerequisite = { focus = ARA_preparing_for_a_putch }
+		icon = GFX_goal_ARA_militiraze_president_supporters
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_completed_focus = ARA_putch }
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			swap_ideas = {
+				add_idea = ARA_putch_divisions_idea
+				remove_idea = ARA_president_batalions_idea
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_putch
+		available = {				
+		} 
+        relative_position_id = ARA_militarize_president_supporters
+        prerequisite = { focus = ARA_militarize_president_supporters focus = ARA_officials_to_SIZO focus = ARA_dictatorskaya_hypecratia }
+		icon = GFX_goal_ARA_putch
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			remove_ideas = ARA_shadow_weapons_idea
+			start_civil_war = {
+				ideology = hypecratia
+				size = 0.34
+				capital = 126
+				states = { 126 127 123 338 125 135 }
+				keep_unit_leaders = {
+					1235
+				}
+				set_cosmetic_tag = ARA_HDR
+			}
+			remove_power_balance = {
+				id = president_parlament_balance
+			}
+			remove_ideas = { ARA_jailed_officials }
+			add_timed_idea = { idea = ARA_never_defeat days = 100 }
+		}
+	}
+
+	focus = {
+		id = ARA_red_way
+		available = {				
+			
+		} 
+        relative_position_id = ARA_critical_gos_apparat_state
+        prerequisite = { focus = ARA_critical_gos_apparat_state }
+		mutually_exclusive = { focus = ARA_votum_doveria focus = ARA_altarnativa_dla_strani }
+		icon = GFX_goal_support_communism
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_war_support = 0.05
+            add_popularity = {
+                ideology = communism
+                popularity = 0.15
+            }
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.05
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_soviet_ministers
+		available = {				
+			
+		} 
+        relative_position_id = ARA_red_way
+        prerequisite = { focus = ARA_red_way }
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_soviet_ministers_idea
+		}
+	}
+
+	focus = {
+		id = ARA_expand_people_rights
+		available = {				
+			
+		} 
+        relative_position_id = ARA_soviet_ministers
+        prerequisite = { focus = ARA_soviet_ministers }
+		icon = GFX_focus_GER_the_peoples_victory
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_people_against_fascism
+		available = {				
+			
+		} 
+        relative_position_id = ARA_expand_people_rights
+        prerequisite = { focus = ARA_expand_people_rights }
+		icon = GFX_focus_generic_communism_anti_fascism
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_timed_idea = { idea = ARA_people_against_fascism days = 700 }
+		}
+	}
+
+	focus = {
+		id = ARA_liquidate_corporations
+		available = {				
+			
+		} 
+        relative_position_id = ARA_soviet_ministers
+        prerequisite = { focus = ARA_soviet_ministers }
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_liquidate_corporations_idea
+		}
+	}
+
+	focus = {
+		id = ARA_fuck_burshui
+		available = {				
+			
+		} 
+        relative_position_id = ARA_liquidate_corporations
+        prerequisite = { focus = ARA_liquidate_corporations }
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_timed_idea = { idea = ARA_fuck_burshui days = 300}
+		}
+	}
+
+	focus = {
+		id = ARA_zagovor_protiv_dictator
+		available = {				
+			communism > 0.4
+		} 
+        relative_position_id = ARA_liquidate_corporations
+        prerequisite = { focus = ARA_fuck_burshui }
+		prerequisite = { focus = ARA_people_against_fascism }
+		icon = GFX_focus_generic_conspiracy
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            set_politics = {
+				ruling_party = communism
+                elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_rethink_laws
+		available = {				
+			
+		} 
+        relative_position_id = ARA_zagovor_protiv_dictator
+        prerequisite = { focus = ARA_zagovor_protiv_dictator }
+		icon = GFX_goal_support_communism
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = ARA_gos_apparat_idea
+				add_idea= ARA_collectivist_gos_apparat_idea
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_new_economy_policy
+		available = {				
+			
+		} 
+        relative_position_id = ARA_zagovor_protiv_dictator
+        prerequisite = { focus = ARA_zagovor_protiv_dictator }
+		icon = GFX_goal_support_communism
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = new_economic_policy
+		}
+	}
+
+	focus = {
+		id = ARA_fatherland_front
+		available = {				
+			
+		} 
+        relative_position_id = ARA_zagovor_protiv_dictator
+		prerequisite = { focus = ARA_rethink_laws }
+        prerequisite = { focus = ARA_new_economy_policy }
+		icon = GFX_goal_aratos_of
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            set_cosmetic_tag = ARA_OF
+		}
+	}
+
+	focus = {
+		id = ARA_promivka_mozgov
+		available = {				
+			
+		} 
+        relative_position_id = ARA_fatherland_front
+		prerequisite = { focus = ARA_fatherland_front }
+		icon = GFX_goal_ARA_young_minds
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_pro_government_media
+		}
+	}
+
+	focus = {
+		id = ARA_defense_from_foreign_propaganda
+		available = {				
+			
+		} 
+        relative_position_id = ARA_promivka_mozgov
+		prerequisite = { focus = ARA_promivka_mozgov }
+		icon = GFX_goal_generic_defence
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_political_power = 40
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.07
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_total_represions
+		available = {				
+			
+		} 
+        relative_position_id = ARA_fatherland_front
+		prerequisite = { focus = ARA_fatherland_front }
+		icon = GFX_focus_generic_national_security
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_arrest_opposition
+		available = {				
+			
+		} 
+        relative_position_id = ARA_total_represions
+		prerequisite = { focus = ARA_total_represions }
+		icon = GFX_focus_mex_arrest_general_cedillo
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			remove_ideas = ARA_massive_opposition
+            add_ideas = ARA_arrested_opposition
+		}
+	}
+
+	focus = {
+		id = ARA_proletarian_dictatorship
+		available = {				
+			
+		} 
+        relative_position_id = ARA_total_represions
+		prerequisite = { focus = ARA_arrest_opposition }
+		prerequisite = { focus = ARA_defense_from_foreign_propaganda }
+		icon = GFX_focus_GER_proletarian_dictatorship
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            remove_ideas = ARA_collectivist_gos_apparat_idea
+		}
+	}
+
+
+
+	focus = {
+		id = ARA_national_restvration
+		available = {				
+			
+		} 
+        relative_position_id = ARA_votum_doveria    
+        prerequisite = { focus = ARA_votum_doveria }
+		icon = GFX_focus_SWE_counter_revolution
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_national_revitalization
+		}
+	}
+	focus = {
+		id = ARA_renovation_project
+		available = {				
+			
+		} 
+        relative_position_id = ARA_national_restvration
+        prerequisite = { focus = ARA_national_restvration }
+		icon = GFX_focus_generic_modernize_industry
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_timed_idea = { idea = ARA_renovation_project days = 150 }
+		}
+	}
+	focus = {
+		id = ARA_national_bank_of_reich
+		available = {				
+			
+		} 
+        relative_position_id = ARA_votum_doveria
+        prerequisite = { focus = ARA_votum_doveria }
+		icon = GFX_goal_ARA_nationalize_bank
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_natinonal_bank
+		}
+	}
+	focus = {
+		id = ARA_return_stolen_money
+		available = {				
+			
+		} 
+        relative_position_id = ARA_national_bank_of_reich
+        prerequisite = { focus = ARA_national_bank_of_reich }
+		icon = GFX_focus_generic_monetary_union
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_timed_idea = { idea = ARA_returned_money days = 100 }
+		}
+	}
+
+	focus = {
+		id = ARA_uprazdnit_ministerstvo
+		available = {				
+			
+		} 
+        relative_position_id = ARA_national_bank_of_reich
+        prerequisite = { focus = ARA_national_bank_of_reich }
+        prerequisite = { focus = ARA_national_restvration }
+		icon = GFX_focus_BRA_repeale_national_security_law
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            swap_ideas = {
+                add_idea = ARA_rebuilding_gos_apparat_idea
+                remove_idea = ARA_gos_apparat_idea 
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_create_SZS
+		available = {				
+			
+		} 
+        relative_position_id = ARA_uprazdnit_ministerstvo
+        prerequisite = { focus = ARA_uprazdnit_ministerstvo }
+		icon = GFX_focus_LIT_restore_the_grand_duchy
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_ideas = ARA_SZS
+		}
+	}
+
+	focus = {
+		id = ARA_create_SBP
+		available = {				
+			
+		} 
+        relative_position_id = ARA_uprazdnit_ministerstvo
+        prerequisite = { focus = ARA_uprazdnit_ministerstvo }
+		icon = GFX_focus_generic_secret_service_agency
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            IF = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = { 
+					name = "Служба Безопасности Правителя"
+					icon = GFX_intelligence_agency_logo_ARG_intelligence
+				}
+				upgrade_intelligence_agency = upgrade_anti_partisan
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_problems_solving
+		available = {				
+			
+		} 
+        relative_position_id = ARA_uprazdnit_ministerstvo
+        prerequisite = { focus = ARA_create_SBP }
+        prerequisite = { focus = ARA_create_SZS }
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_ideas = ARA_usilenie_vlasti
+		}
+	}
+
+	focus = {
+		id = ARA_rally_around_aratossik
+		available = {				
+			
+		} 
+        relative_position_id = ARA_problems_solving
+        prerequisite = { focus = ARA_problems_solving }
+		icon = GFX_focus_SOV_zemsky_sobor
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           swap_ideas = { 
+			remove_idea = ARA_usilenie_vlasti
+			add_idea = ARA_rally_around_president
+		   }
+		}
+	}
+
+	focus = {
+		id = ARA_destroy_opposition
+		available = {				
+			
+		} 
+        relative_position_id = ARA_rally_around_aratossik
+        prerequisite = { focus = ARA_rally_around_aratossik }
+		icon = GFX_SOV_left_opposition_coup_ccp_2d_sov_compatibility
+		x = 0
+		y = 1
+		cost = 15
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           remove_ideas = ARA_massive_opposition
+		}
+	}
+
+	focus = {
+		id = ARA_uzhestochit_zakon
+		available = {				
+			
+		} 
+        relative_position_id = ARA_rally_around_aratossik
+        prerequisite = { focus = ARA_rally_around_aratossik }
+		icon = GFX_focus_AUS_lawmaking_leniency
+		x = 2
+		y = 1
+		cost = 13
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           swap_ideas = {
+            add_idea = ARA_zhestkie_zakoni
+            remove_idea = ARA_slabie_zakoni
+           }
+		}
+	}
+
+	focus = {
+		id = ARA_conservatism
+		available = {				
+			
+		} 
+        relative_position_id = ARA_rally_around_aratossik
+        prerequisite = { focus = ARA_uzhestochit_zakon }
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+        	add_trait = {
+     			character = aratoss_fuhrer
+    			ideology = fascism_ideology
+     			trait = defender_of_traditional_values
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_school_reform
+		available = {				
+			
+		} 
+        relative_position_id = ARA_conservatism
+        prerequisite = { focus = ARA_conservatism }
+		icon = GFX_focus_generic_military_academy
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_ideas = ARA_patriotic_schools
+		}
+	}
+
+	focus = {
+		id = ARA_younth_militarization
+		available = {				
+			
+		} 
+        relative_position_id = ARA_school_reform
+        prerequisite = { focus = ARA_school_reform }
+		icon = GFX_focus_AUS_frontmiliz_focus
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_command_power = 25
+		   add_ideas = military_youth_focus
+		}
+	}
+
+	focus = {
+		id = ARA_homeland
+		available = {				
+			
+		} 
+        relative_position_id = ARA_rally_around_aratossik
+        prerequisite = { focus = ARA_uzhestochit_zakon }
+        prerequisite = { focus = ARA_destroy_opposition }
+		icon = GFX_focus_generic_home_defense
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.045
+
+		}
+	}
+
+	focus = {
+		id = ARA_slavit_voyska
+		available = {				
+			
+		} 
+        relative_position_id = ARA_homeland
+        prerequisite = { focus = ARA_homeland }
+		icon = GFX_focus_GER_army
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_war_support = 0.15
+		   add_command_power = 50
+		   add_political_power = 25
+		   army_experience = 25
+		}
+	}
+
+	focus = {
+		id = ARA_best_ideology
+		available = {				
+			
+		} 
+        relative_position_id = ARA_homeland
+        prerequisite = { focus = ARA_homeland }
+		icon = GFX_focus_generic_fascist_troops
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.2
+            }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ARA_no_one_exept_aratossik
+		available = {				
+			
+		} 
+        relative_position_id = ARA_homeland
+        prerequisite = { focus = ARA_best_ideology }
+        prerequisite = { focus = ARA_slavit_voyska }
+		icon = GFX_goal_ARA_no_one_exept
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = ARA_take_control_on_media
+		available = {				
+			
+		} 
+        relative_position_id = ARA_rally_around_aratossik
+        prerequisite = { focus = ARA_rally_around_aratossik }
+		icon = GFX_goal_ARA_total_media_control
+		x = -2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_ideas = ARA_pro_government_media
+		}
+	}
+
+	focus = {
+		id = ARA_save_young_minds
+		available = {				
+			
+		} 
+        relative_position_id = ARA_take_control_on_media
+        prerequisite = { focus = ARA_take_control_on_media }
+		icon = GFX_goal_ARA_young_minds
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_political_power = 35
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.035
+            }
+		}
+	}
+
+	focus = {
+		id = ARA_povisit_doverie
+		available = {				
+			
+		} 
+        relative_position_id = ARA_take_control_on_media
+        prerequisite = { focus = ARA_take_control_on_media }
+		icon = GFX_goal_ARA_increase_doverie
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           	add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = ARA_only_national_media
+		available = {				
+			
+		} 
+        relative_position_id = ARA_take_control_on_media
+        prerequisite = { focus = ARA_povisit_doverie focus = ARA_save_young_minds }
+		icon = GFX_goal_ARA_national_tv
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           swap_ideas = {
+			remove_idea = ARA_pro_government_media
+			add_idea = ARA_only_government_media
+		   }
+		}
+	}
+
+	focus = {
+		id = ARA_block_foreign_resources
+		available = {				
+			
+		} 
+        relative_position_id = ARA_only_national_media
+        prerequisite = { focus = ARA_only_national_media }
+		icon = GFX_goal_ARA_block_foreign_resources
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_political_power = 40
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = ARA_propaganda_manuals
+		available = {				
+			
+		} 
+        relative_position_id = ARA_only_national_media
+        prerequisite = { focus = ARA_only_national_media }
+		icon = GFX_goal_ARA_manuals
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+           add_ideas = ARA_propaganda_manuals
+		}
+	}
+
+	focus = {
+		id = ARA_total_control_of_people_minds
+		available = {				
+			
+		} 
+        relative_position_id = ARA_only_national_media
+        prerequisite = { focus = ARA_propaganda_manuals }
+        prerequisite = { focus = ARA_block_foreign_resources }
+		icon = GFX_goal_ARA_total_minds_control
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+            swap_ideas = {
+			remove_idea = ARA_only_government_media
+			add_idea = ARA_total_mind_control
+		   }
+		}
+	}
+
+}

@@ -12,6 +12,7 @@ state={
 	history = {
 		owner = JHF
 		add_core_of = JHF
+		add_core_of = BTK
 
 		victory_points = {
 			11404 1 # Dortmund

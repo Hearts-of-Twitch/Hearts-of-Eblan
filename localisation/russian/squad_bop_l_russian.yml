@@ -1,0 +1,12 @@
+﻿l_russian:
+ president_parlament_balance: "Вражда Президента и Парламента"
+ parlament_council_side: "Сторона Парламента"
+ aratoss_side: "Сторона Президента"
+ ARA_balance_range: "Неопределённая позиция"
+ parlament_medium_control_range: "Средняя поддержка Парламента"
+ parlament_high_control_range: "Сильная поддержка Парламента"
+ parlament_total_control_range: "Тотальная поддержка Парламента"
+ aratoss_high_control_range: "Сильная поддержка Президента"
+ aratoss_total_control_range: "Тотальная поддержка Президента"
+ aratoss_medium_control_range: "Средняя поддержка Президента"
+ aratoss_low_control_range: "Слабая поддержка Президента"

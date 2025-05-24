@@ -1,19 +1,15 @@
-
 state={
 	id=22
-	name="STATE_22" # Languedoc
-	manpower = 1691200
-	
-	
-	state_category = town
-	
+	name="STATE_22"
 	resources={
-		steel=27 #was:70 was: 136
-		aluminium=50 # was: 96
+		steel=27.000
+		aluminium=50.000
 	}
-
+	provinces={
+		752 760 3751 3754 6770 6773 6960 6962 9723 9898 11709 11711 11877 
+	}
 	history={
-		owner = MOY
+		owner = NEL
 		victory_points = {
 			9898 1 
 		}
@@ -22,12 +18,10 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = MOY
+		add_core_of = NEL
 	}
-
-	provinces={
-		752 760 3751 6770 6960 6962 9723 9898 11709 11711 11877 
-	}
-
-	local_supplies=12.0 
+	manpower=1691200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=12.000
 }

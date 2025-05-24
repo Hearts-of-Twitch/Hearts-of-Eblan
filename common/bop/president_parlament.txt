@@ -1,0 +1,231 @@
+president_parlament_balance = {
+    initial_value = 0.35
+	left_side = parlament_council_side	
+	right_side = aratoss_side	
+	#decision_category = ITA_balance_of_power_category
+
+	### Neutral status
+	range = {
+		id = ARA_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Grand Council
+	side = {
+		id = parlament_council_side	
+		icon = GFX_bop_ITA_grand_council_side
+
+		range = {
+			id = parlament_low_control_range
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_advisor_cost_factor = -0.1
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = parlament_medium_control_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				offensive_war_stability_factor = -0.1
+				political_power_factor = 0.05
+				stability_factor = 0.01
+				war_support_factor = -0.05
+			}
+			on_activate = {
+				custom_effect_tooltip = ITA_bop_cap_for_colonies_impact_tt
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = parlament_high_control_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				offensive_war_stability_factor = -0.15
+				political_power_factor = 0.1
+				stability_factor = 0.03
+				war_support_factor = -0.1
+			}
+			on_activate = {
+				#Depose the Duce or whoever is in charge because the dude sucks at it
+				#if = {
+				#	limit = {
+				#		NOT = {
+				#			has_country_leader = {
+				#				character = ITA_grand_council
+				#				ruling_only = yes
+				#			}
+				#		}
+				#		NOT = { has_completed_focus = ITA_crush_opposition }
+				#	}
+				#	hidden_effect = {
+				#		country_event = BBA_italy_council_deposes_duce.1
+				#	}
+				#}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = parlament_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				offensive_war_stability_factor = -0.2
+				political_power_factor = -0.13
+				stability_factor = 0.07
+				war_support_factor = -0.15
+			}
+			on_activate = {
+				start_civil_war = {
+					ruling_party = hypecratia
+					ideology = hypecratia
+					size = 0.18
+					capital = 122
+					states = { 122 123 338 127}
+					keep_all_characters = yes
+				}
+				retire_character = hypecratia_president
+				remove_ideas = ARA_where_is_president
+				remove_ideas = ARA_president_isolation
+				add_country_leader_role = {
+					character = hypecratia_parlament  # Must be recruited
+					promote_leader = yes  # Makes the character be promoted to leader of the party
+					country_leader = {
+						ideology = hypetiktok
+						traits = {  }
+					}
+				}
+				set_cosmetic_tag = ARA_HDR
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### Mussolini
+	side = {
+		id = aratoss_side	
+		icon = GFX_bop_ITA_mussolini_side
+
+		range = {
+			id = aratoss_low_control_range
+			min = 0.1
+			max = 0.3
+			modifier = {
+				political_power_factor = -0.01
+				war_support_factor = 0.005
+				stability_factor = 0.005
+			}
+			on_activate = {
+				#if = {
+				#	limit = {
+				#		NOT = {
+				#			has_country_leader = {
+				#				character = ITA_benito_mussolini
+				#			}
+				#		}
+				#	}
+				#	promote_character = {
+				#		character = ITA_benito_mussolini
+				#		ideology = fascism
+				#	}
+				#}
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = aratoss_medium_control_range
+			min = 0.3
+			max = 0.6
+			modifier = {
+				political_power_factor = -0.02
+				stability_factor = 0.01
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = aratoss_high_control_range
+			min = 0.6
+			max = 0.9
+			modifier = {
+				political_power_factor = -0.05
+				war_support_factor = 0.01
+				stability_factor = 0.02
+				experience_gain_army = -0.05
+				experience_gain_air = -0.05
+				experience_gain_navy = -0.03
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = aratoss_total_control_range
+			min = 0.9
+			max = 1
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = 0.02
+				stability_factor = 0.03
+				experience_gain_army = -0.1
+				experience_gain_air = -0.05
+				experience_gain_navy = -0.05
+			}
+			on_activate = {
+				set_power_balance_gfx = {
+					id = ITA_power_balance
+					side = ITA_mussolini_side
+					gfx = GFX_bop_ITA_mussolini_improved_side
+				}
+			}
+			on_deactivate = {
+				set_power_balance_gfx = {
+					id = ITA_power_balance
+					side = ITA_mussolini_side
+					gfx = GFX_bop_ITA_mussolini_side
+				}
+			}
+		}
+	}
+}

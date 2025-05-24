@@ -1,0 +1,24 @@
+add_namespace = db
+
+country_event = {
+	id = db.1
+	title = tik.2.t
+	desc = tik.2.d
+	picture = GFX_report_event_picture_BTK_3
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = db.1.a
+		
+		
+	}
+	option = {
+		name = db.1.b
+		
+		
+	}
+}
+

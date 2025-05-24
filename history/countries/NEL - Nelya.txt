@@ -1,4 +1,4 @@
-capital = 19
+capital = 165
 
 set_research_slots = 3
 oob = "NEL_1936"

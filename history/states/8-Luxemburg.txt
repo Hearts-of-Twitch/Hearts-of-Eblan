@@ -13,6 +13,7 @@ state = {
 
 		owner = TND
 		add_core_of = TND
+		add_core_of = BTK
 
 		buildings = {
 			infrastructure = 3

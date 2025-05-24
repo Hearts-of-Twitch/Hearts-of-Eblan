@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = EVL
+		owner = ZUS
 		victory_points = {
 			7969 5
 		}
@@ -17,7 +17,7 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = EVL
+		add_core_of = ZUS
 		add_core_of = AZR
 	}
 

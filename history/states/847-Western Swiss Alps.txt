@@ -7,12 +7,12 @@ state={
 	resources={
 	}
 	history={
-		owner = MKR
+		owner = ZOL
 		buildings = {
 			infrastructure = 1 
 			industrial_complex = 1
 		}
-		add_core_of = MKR
+		add_core_of = ZOL
 	}
 	provinces={
 		636 9587 3612 9618  

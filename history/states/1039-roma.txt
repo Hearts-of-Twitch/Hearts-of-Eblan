@@ -5,7 +5,7 @@ state={
 		9904 
 	}
 	history = {
-		owner = PBU
+		owner = ZOL
 		victory_points = {
 			9904 20
 		}
@@ -22,9 +22,9 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = PBU
+		add_core_of = ZOL
 	}
-	manpower=0
+	manpower=618574
 	state_category = metropolis
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

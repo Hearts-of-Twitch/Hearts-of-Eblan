@@ -61,6 +61,14 @@ defined_text = {
         }
         localization_key = "sp_event_HSU_war"
     }
+    text = {
+        trigger = {
+            has_global_flag = GON_stintler_returns
+        }
+        localization_key = "sp_event_stintler_returns"
+    }
+    
+
 }
 
 #Remarks
@@ -126,6 +134,12 @@ defined_text = {
             has_global_flag = HSU_war
         }
         localization_key = "sp_event_HSU_war_remark"
+    }
+    text = {
+        trigger = {
+            has_global_flag = GON_stintler_returns
+        }
+        localization_key = "sp_event_stintler_returns_remark"
     }
 	
 }
@@ -193,5 +207,11 @@ defined_text = {
             has_global_flag = HSU_war
         }
         localization_key = "sp_event_HSU_war_quote"
+    }
+    text = {
+        trigger = {
+            has_global_flag = GON_stintler_returns
+        }
+        localization_key = "sp_event_stintler_returns_quote"
     }
 }

@@ -31,7 +31,9 @@ set_technology = {
 }
 
 recruit_character = universal_hype_hes
-
+add_ideas = {
+	soplya_coin
+}
 set_convoys = 150
 
 

@@ -1,4 +1,5 @@
 form_DRE_EMPIRE_cat = {
+	priority = 100
 
 	icon = GFX_decision_category_border_conflicts
 	picture = GFX_decision_drake_empire
@@ -15,7 +16,7 @@ form_DRE_EMPIRE_cat = {
 drekovia_integrations_cat = {
 
 	icon = GFX_decision_category_generic_political_actions
-	priority = 29
+	priority = 28
 
 	allowed = {
 		original_tag = DRE
@@ -40,6 +41,23 @@ drekovia_sdo_cat = {
 		OR = {
 			has_country_flag = SDO_started_chb
 			has_country_flag = SDO_started_btk
+		}
+	}
+}
+drekovia_rostov_cat = {
+	priority = 29
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_dre_rostov_infuence
+
+	allowed = {
+		original_tag = DRE
+	}
+
+	visible = {
+		AND = {
+			original_tag = DRE
+			has_completed_focus = DRE_delegatsiya_v_rostov
+			NOT = { has_completed_focus = DRE_peregovory_start }
 		}
 	}
 }

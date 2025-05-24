@@ -10,8 +10,8 @@ state = {
 	
 	history = {
 
-		owner = GNS
-		add_core_of = GNS
+		owner = TND
+		add_core_of = TND
 		add_core_of = BTK
 
 		victory_points = {

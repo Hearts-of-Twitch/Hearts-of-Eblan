@@ -1,0 +1,235 @@
+focus_tree = {
+	id = Gonduras_polit
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = GON
+		}
+	}
+	default = no
+	focus = {
+		id = GON_Pervi_focus1
+		icon = GFX_GON_Pervi_focus1
+		cost = 0
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = GON_Pervi_focus2
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus1
+		}
+		mutually_exclusive = {
+			focus = GON_Pervi_focus3
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = GON_Pervi_focus14
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus2
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = GON_Pervi_focus15
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus14
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = GON_Pervi_focus18
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus15
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = GON_Pervi_focus13
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus2
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = GON_Pervi_focus16
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus13
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = GON_Pervi_focus17
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus16
+		}
+		prerequisite = {
+			focus = GON_Pervi_focus15
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = GON_Pervi_focus19
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus17
+		}
+		prerequisite = {
+			focus = GON_Pervi_focus18
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = GON_Pervi_focus3
+		icon = GFX_GON_Pervi_focus2
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus1
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = GON_Pervi_focus4
+		icon = GFX_GON_Pervi_focus3
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus3
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = GON_Pervi_focus5
+		icon = GFX_GON_Pervi_focus5
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus4
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = GON_Pervi_focus8
+		icon = GFX_GON_Pervi_focus8
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus5
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = GON_Pervi_focus6
+		icon = GFX_GON_Pervi_focus6
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus3
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = GON_Pervi_focus7
+		icon = GFX_GON_Pervi_focus7
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus6
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = GON_Pervi_focus9
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus7
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = GON_Pervi_focus10
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus9
+		}
+		prerequisite = {
+			focus = GON_Pervi_focus8
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = GON_Pervi_focus11
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus19
+			focus = GON_Pervi_focus10
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = GON_Pervi_focus12
+		icon = GFX_No_Signal
+		cost = 0
+		prerequisite = {
+			focus = GON_Pervi_focus11
+		}
+		x = 10
+		y = 7
+		
+		completion_reward = {
+			GON = {
+				country_event = gonduras.10
+
+	}
+}
+	}}

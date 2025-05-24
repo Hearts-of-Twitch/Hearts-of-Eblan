@@ -12,13 +12,7 @@ country_event = {
 	option = {
 		name = chicken.1.a #yes
 		ai_chance = {
-			factor = 35
-			modifier = {
-				CHB = {
-					fascism > 0.75
-				}
-				factor = 70
-			}
+			factor = 30
 		}
 		CHB = {
 			country_event = { id = chicken.2 hours = 6 }
@@ -34,6 +28,12 @@ country_event = {
 		name = chicken.1.b
 		ai_chance = {
 			factor = 65
+			modifier = {
+				CHB = {
+					fascism < 0.75
+				}
+				factor = 70
+			}
 		}
 		CHB = {
 			country_event = { id = chicken.3 hours = 6 }
@@ -361,100 +361,188 @@ country_event = {
 		}
 	}
 }
+
+#Zolo dolg
 country_event = {
 	id = chicken.14
 	title = chicken.14.t
 	desc = chicken.14.d
-
-	picture = GFX_report_event_anschlus_drake
-
+	
+	picture = GFX_report_event_spr_franco_generals
+	
 	is_triggered_only = yes
+	
+	#ne otdavat
 	option = {
 		name = chicken.14.a
-		ai_chance = {
-			factor = 50
-		}
-		hidden_effect = {
-			CHB = {
-				release_on_controlled = CHD
-			}
-			DRE = {
-				diplomatic_relation = { 
-					country = CHD 
-					relation = military_access 
-				}
-	
-				diplomatic_relation = { 
-					country = CHD 
-					relation = guarantee 
-				}
+		
+		ZOL = {
+			set_country_flag = dolg_wargoal
+			
+			create_wargoal = {
+				type = independence_wargoal
+				target = CHB
 			}
 		}
 	}
+	
+	#otdat
 	option = {
 		name = chicken.14.b
-		ai_chance = {
-			factor = 50
-		}
+		
+		CHB = { add_ideas = mazeloff_dolg }
+		
 		hidden_effect = {
-			CHB = {
-				release_on_controlled = CHD
-			}
-			CHD = {
-				declare_war_on = {
-					target = CHB
-					type = annex_everything
+			ZOL = {
+				swap_ideas = {
+					add_idea = ego_slaboumnoe_velichie_2
+					remove_idea = ego_slaboumnoe_velichie_1
 				}
 			}
 		}
 	}
 }
+
+#peace start
 country_event = {
 	id = chicken.15
 	title = chicken.15.t
 	desc = chicken.15.d
-
-	picture = GFX_report_event_anschlus_drake
-
+	
+	picture = GFX_report_event_chb_peace_deal
+	
 	is_triggered_only = yes
+	
+	#first deal
 	option = {
-		name = chicken.12.a
-		ai_chance = {
-			factor = 50
-		}
+		name = chicken.15.a
+		country_event = { id = chicken.16 }
+		
+	}	
+	
+	#second deal
+	option = {
+		name = chicken.15.b
+		country_event = { id = chicken.17 }
+		
+	}	
+	
+	#third deal
+	option = {
+		name = chicken.15.c
+		country_event = { id = chicken.18 }
+		
+	}	
+	
+	#quo deal
+	option = {
+		name = chicken.15.e
+		country_event = { id = chicken.19 }
+		
+	}
+
+}
+
+#first peace deal
+country_event = {
+	id = chicken.16
+	title = chicken.16.t
+	desc = chicken.16.d
+	picture = GFX_report_event_sdo_peace_deal_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.back
+		
 		hidden_effect = {
-			CHD = {
-				set_state_controller = 102
-				set_state_controller = 853
-				set_state_controller = 852
-				set_state_controller = 736
-				set_state_owner = 102
-				set_state_owner = 853
-				set_state_owner = 852
-				set_state_owner = 736
-			}
-			random_owned_controlled_state = {
-				create_unit = { 
-					division = "name = \"1. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
-					owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"2. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
-					owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"3. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
-					owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"4. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
-					owner = ROOT
-				}
-				create_unit = { 
-					division = "name = \"5. Модераторский дивизион\" division_template = \"Infanterie-Division\" start_experience_factor = 0.5" 
-					owner = ROOT
-				}
-			}
+		country_event = { id = chicken.15 }
+		}
+	}	
+	
+	option = {
+		name = chicken.use
+		
+		hidden_effect = {
+			DRE = { country_event = { id = drek.16 hours = 3 } }
+		}
+	}
+}
+
+#second peace deal
+country_event = {
+	id = chicken.17
+	title = chicken.17.t
+	desc = chicken.16.d
+	picture = GFX_report_event_sdo_peace_deal_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.back
+		
+		hidden_effect = {
+		country_event = { id = chicken.15 }
+		}
+	}	
+	
+	option = {
+		name = chicken.use
+		
+		hidden_effect = {
+		DRE = { country_event = { id = drek.17 hours = 3 } }
+		}
+	}
+}
+
+#third peace deal
+country_event = {
+	id = chicken.18
+	title = chicken.18.t
+	desc = chicken.16.d
+	picture = GFX_report_event_sdo_peace_deal_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.back
+		
+		hidden_effect = {
+		country_event = { id = chicken.15 }
+		}
+	}	
+	
+	option = {
+		name = chicken.use
+		
+		hidden_effect = {
+		DRE = { country_event = { id = drek.18 hours = 3 } }
+		}
+	}
+}
+
+#quo deal
+country_event = {
+	id = chicken.19
+	title = chicken.19.t
+	desc = chicken.19.d
+	picture = GFX_report_event_sdo_peace_deal_quo
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.back
+		
+		hidden_effect = {
+		country_event = { id = chicken.15 }
+		}
+	}	
+	
+	option = {
+		name = chicken.use
+		
+		hidden_effect = {
+		DRE = { country_event = { id = drek.19 hours = 3 } }
 		}
 	}
 }

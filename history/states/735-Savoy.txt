@@ -8,8 +8,8 @@ state = {
 
 	history = {
 
-		owner = MKR
-		add_core_of = MKR
+		owner = ZOL
+		add_core_of = ZOL
 
 		victory_points = {
 			778 1 # Annecy

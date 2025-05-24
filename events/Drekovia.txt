@@ -89,8 +89,6 @@ country_event = {
 			transfer_state = 154
 			transfer_state = 974
 			transfer_state = 973
-			transfer_state = 83
-			transfer_state = 45
 		}
 
 		CHB = {
@@ -98,8 +96,6 @@ country_event = {
 			transfer_state = 850
 			transfer_state = 160
 			transfer_state = 159
-			transfer_state = 151
-			transfer_state = 846
 			remove_ideas = CHB_hungary_problem
 		}
 	}
@@ -151,6 +147,8 @@ country_event = {
 	}
 }
 
+
+
 country_event = {
 	id = drek.4
 	title = drek.4.t
@@ -188,42 +186,17 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		if = {
-			limit = {
-				ZUS = {
-					controls_state = 52
-					controls_state = 53
-				}
-			}
-			DRE = {
-				transfer_state = 52
-				transfer_state = 53
-				52 = {
-					set_demilitarized_zone = no
-				}
-				53 = {
-					set_demilitarized_zone = no
-				}
-			}
-		}
-		else = {
-			DRE = {
-				add_state_claim = 52
-				add_state_claim = 53
-			}
-			
-		}
 		
+		DRE = {
+			transfer_state = 52
+			transfer_state = 53
+		}
 	}
 	option = {
 		name = drek.5.b #no
 
 		ai_chance = {
 			factor = 30
-		}
-		DRE = {
-			add_state_claim = 52
-			add_state_claim = 53
 		}
 		
 	}
@@ -368,19 +341,33 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
-		DRE = {
-			transfer_state = 88
-			transfer_state = 72
+		
+		88 = {
+			transfer_state_to = DRE
 		}
-		SVI = {
-			transfer_state = 809
-			transfer_state = 190
-			transfer_state = 189
-			transfer_state = 11
-			transfer_state = 815
-			transfer_state = 784
-			transfer_state = 96
-			transfer_state = 814
+		72 = {
+			transfer_state_to = DRE
+		}
+		1023 = {
+			transfer_state_to = DRE
+		}
+
+		190 = {
+			transfer_state_to = SVI
+		}
+
+		809 = {
+			transfer_state_to = SVI
+		}
+
+		1049 = {
+			transfer_state_to = HAM
+		}
+		1047 = {
+			transfer_state_to = HAM
+		}
+		1048 = {
+			transfer_state_to = HAM
 		}
 	}
 }
@@ -399,6 +386,7 @@ country_event = {
 		ai_chance = {
 
 		}
+		
 		create_wargoal = {
 			target = LAG
 			type = annex_everything
@@ -422,92 +410,714 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = drek.14
 	title = drek.14.t
 	desc = drek.14.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_kru_march
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = svin.3.a 
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				DRE = {
+					controls_state = 69
+					controls_state = 9
+					controls_state = 75
+					controls_state = 74
+					controls_state = 972
+				}
+			}
+			release_on_controlled = KRU
+			KRU = {
+				load_oob = "KRU_1936"
+				declare_war_on = {
+					target = DRE
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = drek.15
+	title = drek.15.t
+	desc = drek.15.d
+	picture = GFX_report_event_drake_plan
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = drek.14.a #yes
+		name = news.5.c
 		ai_chance = {
 			factor = 100
 		}
-		remove_ideas = defeted_at_wwone
+		
+	}
+}
+
+#first peace deal from chb
+country_event = {
+	id = drek.16
+	title = drek.16.t
+	desc = drek.16.d
+	picture = GFX_report_event_sdo_peace_deal_1
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.svodealyes
+		ai_chance = {
+			factor = 6
+		}
+		set_country_flag = SDO_peace
+		white_peace = {
+			tag = CHB
+			message = sdo_deal
+		}
+		
+		custom_effect_tooltip = drake_deal
+		
+		hidden_effect = {
+		155 = { transfer_state_to = DRE }
+		43 = { transfer_state_to = DRE }
+		154 = { transfer_state_to = DRE }
+		973 = { transfer_state_to = DRE }
+		974 = { transfer_state_to = DRE }
+		102 = { transfer_state_to = DRE }
+		853 = { transfer_state_to = DRE }
+		852 = { transfer_state_to = DRE }
+		736 = { transfer_state_to = DRE }
+		103 = { transfer_state_to = DRE }
+		109 = { transfer_state_to = DRE }
+		45 = { transfer_state_to = DRE }
+		163 = { transfer_state_to = DRE }
+		83 = { transfer_state_to = DRE }
+		
+		clr_country_flag = SDO_started_chb
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.svodealno
+		ai_chance = {
+			factor = 73
+		}
 		CHB = {
-			remove_ideas = CHB_hungary_problem
-			add_ideas = defeted_at_wwone
+			clr_country_flag = peace_started
 		}
-		news_event = svo.6
+	}
+}
+
+#second peace deal from chb
+country_event = {
+	id = drek.17
+	title = drek.16.t
+	desc = drek.16.d
+	picture = GFX_report_event_sdo_peace_deal_2
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.svodealyes
+		ai_chance = {
+			factor = 12
+		}
+		set_country_flag = SDO_peace
+		white_peace = {
+			tag = CHB
+			message = sdo_deal
+		}
+		
+		custom_effect_tooltip = drake_deal
+		
+		hidden_effect = {
+		155 = { transfer_state_to = DRE }
+		43 = { transfer_state_to = DRE }
+		154 = { transfer_state_to = DRE }
+		973 = { transfer_state_to = DRE }
+		974 = { transfer_state_to = DRE }
+		102 = { transfer_state_to = DRE }
+		853 = { transfer_state_to = DRE }
+		852 = { transfer_state_to = DRE }
+		736 = { transfer_state_to = DRE }
+		103 = { transfer_state_to = DRE }
+		109 = { transfer_state_to = DRE }
+		45 = { transfer_state_to = DRE }
+		163 = { transfer_state_to = DRE }
+		104 = { transfer_state_to = DRE }
+		804 = { transfer_state_to = DRE }
+		107 = { transfer_state_to = DRE }
+		764 = { transfer_state_to = DRE }
+		83 = { transfer_state_to = DRE }
+		82 = { transfer_state_to = DRE }
+		1027 = { transfer_state_to = DRE }
+		1026 = { transfer_state_to = DRE }
+		clr_country_flag = SDO_started_chb
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.svodealno
+		ai_chance = {
+			factor = 75
+		}
+		CHB = {
+			clr_country_flag = peace_started
+		}
+	}
+}
+
+#third peace deal from chb
+country_event = {
+	id = drek.18
+	title = drek.16.t
+	desc = drek.16.d
+	picture = GFX_report_event_sdo_peace_deal_3
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.svodealyes
+		ai_chance = {
+			factor = 24
+		}
+		set_country_flag = SDO_peace
+		white_peace = {
+			tag = CHB
+			message = sdo_deal
+		}
+		
+		custom_effect_tooltip = drake_deal
+		
+		hidden_effect = {
+		155 = { transfer_state_to = DRE }
+		43 = { transfer_state_to = DRE }
+		154 = { transfer_state_to = DRE }
+		973 = { transfer_state_to = DRE }
+		974 = { transfer_state_to = DRE }
+		102 = { transfer_state_to = DRE }
+		853 = { transfer_state_to = DRE }
+		852 = { transfer_state_to = DRE }
+		736 = { transfer_state_to = DRE }
+		103 = { transfer_state_to = DRE }
+		109 = { transfer_state_to = DRE }
+		45 = { transfer_state_to = DRE }
+		163 = { transfer_state_to = DRE }
+		104 = { transfer_state_to = DRE }
+		804 = { transfer_state_to = DRE }
+		107 = { transfer_state_to = DRE }
+		764 = { transfer_state_to = DRE }
+		105 = { transfer_state_to = DRE }
+		802 = { transfer_state_to = DRE }
+		108 = { transfer_state_to = DRE }
+		803 = { transfer_state_to = DRE }
+		970 = { transfer_state_to = DRE }
+		934 = { transfer_state_to = DRE }
+		106 = { transfer_state_to = DRE }
+		83 = { transfer_state_to = DRE }
+		82 = { transfer_state_to = DRE }
+		1027 = { transfer_state_to = DRE }
+		1026 = { transfer_state_to = DRE }
+		clr_country_flag = SDO_started_chb
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.svodealno
+		ai_chance = {
+			factor = 75
+		}
+		CHB = {
+			clr_country_flag = peace_started
+		}
+	}
+}
+
+#quo peace deal from chb
+country_event = {
+	id = drek.19
+	title = drek.16.t
+	desc = drek.19.d
+	picture = GFX_report_event_sdo_peace_deal_quo
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.svodealyes
+		ai_chance = {
+			factor = 10
+		}
+		set_country_flag = SDO_peace
+		white_peace = {
+			tag = CHB
+			message = sdo_deal_quo
+		}
+		clr_country_flag = SDO_started_chb
+	}	
+	
+	#no
+	option = {
+		name = drek.svodealno
+		ai_chance = {
+			factor = 75
+		}
+		CHB = {
+			clr_country_flag = peace_started
+		}
+	}
+}
+
+country_event = {
+	id = drek.20
+	title = drek.20.t
+	desc = drek.20.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.20.a
+		ai_chance = {
+			factor = 50
+		}
+		DRE = {
+			puppet = ROS
+		}
+		add_timed_idea = { idea = DRE_sodershanie_barona days = 1000 }
+		set_country_flag = DRE_baron_bills
+	}	
+	
+	#no
+	option = {
+		name = drek.20.b
+		ai_chance = {
+			factor = 50
+		}
+		create_wargoal = {
+    		type = annex_everything
+    		target = ROS
+		}
+	}
+}
+
+country_event = {
+	id = drek.21
+	title = drek.21.t
+	desc = drek.21.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.21.a
+		ai_chance = {
+			factor = 53
+		}
+		add_timed_idea = { idea = DRE_extra_baron_bills days = 30 }
+	}	
+}
+
+country_event = {
+	id = drek.22
+	title = drek.22.t
+	desc = drek.22.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.21.a
+		ai_chance = {
+			factor = 53
+		}
+		add_timed_idea = { idea = DRE_extra_baron_bills days = 30 }
+	}	
+}
+
+country_event = {
+	id = drek.23
+	title = drek.23.t
+	desc = drek.23.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.21.a
+		ai_chance = {
+			factor = 53
+		}
+		add_timed_idea = { idea = DRE_extra_baron_bills days = 30 }
+	}	
+}
+
+#morphi subordination
+country_event = {
+	id = drek.24
+	title = drek.24.t
+	desc = drek.24.d
+	picture = GFX_report_event_ENG_middle_eastern_conflict_2
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.24.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { puppet = MOY }
+	}	
+	
+	#no
+	option = {
+		name = drek.24.b
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { country_event = { id = drek.25 } }
+	}	
+	
+}
+
+country_event = {
+	id = drek.25
+	title = drek.25.t
+	desc = drek.25.d
+	picture = GFX_report_event_NOR_norway_exile_troops
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.25.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			create_wargoal = { 
+				target = MOY 
+				type = annex_everything
+			} 
+		}
+	}	
+	
+}
+
+#rostov otstavka event
+country_event = {
+	id = drek.26
+	title = drek.26.t
+	desc = drek.26.d
+	picture = GFX_report_event_SWI_parliament_members
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.26.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			country_event = {
+				id = drek.20
+				days = 2
+			}
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.20.b
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			country_event = {
+				id = drek.27
+				days = 2
+			}
+		}
+	}	
+	
+}
+
+#rostov otstavka otkaZ
+country_event = {
+	id = drek.27
+	title = drek.27.t
+	desc = drek.27.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.25.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			create_wargoal = { 
+				target = ROS 
+				type = annex_everything
+			} 
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.28
+	title = drek.28.t
+	desc = drek.28.d
+	picture = GFX_report_event_ITA_partisans
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.28.a
+		ai_chance = {
+			factor = 53
+		}
+		add_ideas = DRE_shoted_vips
+	}	
+	
+}
+
+
+country_event = {
+	id = drek.29
+	title = drek.29.t
+	desc = drek.29.d
+	picture = GFX_report_event_NOR_quisling_speech
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.29.a
+		ai_chance = {
+			factor = 53
+		}
+		NEK = {
+			add_ideas = DRE_NEK_gold
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.29.b
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			country_event = { id = drek.30 days = 2 }
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.30
+	title = drek.30.t
+	desc = drek.30.d
+	picture = GFX_report_event_NOR_nygaardsvold_cabinet
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.30.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			create_wargoal = { 
+				target = NEK 
+				type = annex_everything
+			} 
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.31
+	title = drek.31.t
+	desc = drek.31.d
+	picture = GFX_report_event_spr_army_of_africa
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.31.a
+		ai_chance = {
+			factor = 50
+		}
 		if = {
-			limit = {
-				country_exists = CHD
+			limit = { controls_state = 543 }
+			543 = {
+				transfer_state_to = DRE
 			}
-			DRE = {
-				annex_country = {
-					target = CHD
-				}
-			}
-		}
-		if ={
-			limit = {
-				CHB = {
-					controls_state = 102
-					controls_state = 853
-					controls_state = 736
-					controls_state = 852
-				}
-			}
-			transfer_state = 102
-			transfer_state = 853
-			transfer_state = 736
-			transfer_state = 852
-		}
+		}		
 		if = {
-			limit = {
-				CHB = {
-					controls_state = 155
-					controls_state = 43
-					controls_state = 974
-					controls_state = 973
-					controls_state = 154
-					controls_state = 83
-					controls_state = 45
-				}
+			limit = { controls_state = 559 }
+			559 = {
+				transfer_state_to = DRE
 			}
-			transfer_state = 155
-			transfer_state = 43
-			transfer_state = 974
-			transfer_state = 973
-			transfer_state = 154
-			transfer_state = 83
-			transfer_state = 45
-		}
+		}		
 		if = {
-			limit = {
-				CHB = {
-					controls_state = 159
-					controls_state = 160
-					controls_state = 39
-					controls_state = 850
-					controls_state = 846
-					controls_state = 151
-				}
+			limit = { controls_state = 844 }
+			844 = {
+				transfer_state_to = DRE
 			}
-			ROOT = {
-				transfer_state = 159
-				transfer_state = 160
-				transfer_state = 39
-				transfer_state = 850
-				transfer_state = 151
-				transfer_state = 846
+		}		
+		if = {
+			limit = { controls_state = 900 }
+			900 = {
+				transfer_state_to = DRE
+			}
+		}		
+		if = {
+			limit = { controls_state = 773 }
+			773 = {
+				transfer_state_to = DRE
+			}
+		}		
+		if = {
+			limit = { controls_state = 297 }
+			297 = {
+				transfer_state_to = DRE
+			}
+		}
+	}	
+	
+	option = {
+		name = drek.31.b
+		ai_chance = {
+			factor = 50
+		}
+		DRE = {
+			country_event = { id = drek.32 days = 2 }
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.32
+	title = drek.32.t
+	desc = drek.32.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.30.a
+		ai_chance = {
+			factor = 53
+		}
+		DRE = { 
+			create_wargoal = { 
+				target = ZUS 
+				type = annex_everything
+			} 
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.33
+	title = drek.33.t
+	desc = drek.33.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#ok
+	option = {
+		name = drek.33.a
+		ai_chance = {
+			factor = 53
+		}
+	}	
+	
+}
+
+country_event = {
+	id = drek.34
+	title = drek.34.t
+	desc = drek.34.d
+	picture = GFX_report_event_rostov_baron
+	
+	is_triggered_only = yes
+	
+	#yes
+	option = {
+		name = drek.34.a
+		ai_chance = {
+			base = 5			
+			#modifier = {
+			#	factor = 2
+			#	check_variable = {
+			#		rostovskie_svyazi > 84
+			#	}
+			#}			
+			modifier = {
+				set_temp_variable = { t = DRE.rostovskie_svyazi }
+				add = t
+			}
+		}
+		DRE = {
+			annex_country = {
+				target = ROS
+				transfer_troops = no
+			}
+		}
+	}	
+	
+	#no
+	option = {
+		name = drek.34.b
+		ai_chance = {
+			base = 100
+		}
+		DRE = {
+			create_wargoal = {
+				type = annex_everything
+				target = ROS
 			}
 		}
 	}
-	
 }
+
+
 
 ##Vapers for hungary
 #country_event = {
@@ -635,51 +1245,3 @@ country_event = {
 #		}
 #	}
 #}
-
-country_event = {
-	id = drek.18
-	title = drek.18.t
-	desc = drek.18.d
-	picture = GFX_report_event_acf_dre
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = drek.18.a 
-		hidden_effect = {
-			load_focus_tree = DRE_sdo
-		}
-	}
-}
-
-country_event = {
-	id = drek.19
-	title = drek.19.t
-	desc = drek.19.d
-	picture = GFX_report_event_acf_dre
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = drek.19.a 
-		hidden_effect = {
-			load_focus_tree = DRE_war
-		}
-	}
-}
-
-country_event = {
-	id = drek.20
-	title = drek.20.t
-	desc = drek.20.d
-	picture = GFX_report_event_acf_dre2
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = drek.20.a 
-		hidden_effect = {
-			load_focus_tree = DRE_nowar
-		}
-	}
-}

@@ -7,14 +7,14 @@ state = {
 
 	history = {
 
-		owner = CHD
+		owner = CHB
 		add_claim_by = CHB
-		add_core_of = CHD
+		add_core_of = CHB
 
 		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 2
+			industrial_complex = 2 
 			arms_factory = 1
 			air_base = 2
 		}

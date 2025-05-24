@@ -7,8 +7,8 @@ state = {
 
 	history = {
 
-		owner = KRY
-		add_core_of = KRY
+		owner = ZOL
+		add_core_of = ZOL
 
 		victory_points = {
 			911 1 # Toulon

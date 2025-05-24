@@ -5,7 +5,7 @@ state={
 		6741 9680 
 	}
 	history={
-		owner = SVI
+		owner = CVD
 		victory_points = {
 			9680 3
 		}
@@ -18,7 +18,7 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = HAM
+		add_core_of = CVD
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2

@@ -38,6 +38,10 @@ spriteTypes = {
 		name = "GFX_sp_event_lagoda_raspil"
 		textureFile = "/gfx/sp_events/Super_Event_lagoda_raspil.dds"
 	}
+	spriteType = {
+		name = "GFX_sp_event_stintler_returns"
+		textureFile = "/gfx/sp_events/Super_Event_stintler_returns.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_bruh"

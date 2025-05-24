@@ -1,0 +1,70 @@
+music = {
+	name = "SDO_POCHALOS"
+	file = "SP/sdo_start.ogg"
+}
+
+music = {
+	name = "mazokgrad_fall"
+	file = "SP/mazokgrad_fall.ogg"
+}
+
+music = {
+	name = "dayraid_fall"
+	file = "SP/dayraid_fall.ogg"
+}
+
+music = {
+	name = "blitzkrieg_zabuksoval"
+	file = "SP/blitzkrieg_zabuksoval.ogg"
+}
+
+music = {
+	name = "lagoda_raspil"
+	file = "SP/lagoda_raspil.ogg"
+}
+
+music = {
+	name = "the_great_war"
+	file = "SP/the_great_war.ogg"
+}
+music = {
+	name = "limuzin"
+	file = "SP/limuzin.ogg"
+}
+music = {
+	name = "top_squad"
+	file = "SP/the_great_war.ogg"
+}
+music = {
+	name = "HSU_war"
+	file = "SP/HSU_war.ogg"
+}
+music = {
+	name = "stintler_returns"
+	file = "SP/stintler_returns.ogg"
+}
+
+music = {
+	name = "army_bpl"
+	file = "SP/army_education_rework.ogg"
+}
+
+music = {
+	name = "mem_goda"
+	file = "SP/mem_of_the_year.ogg"
+}
+
+music = {
+	name = "amnam_march"
+	file = "SP/am_nam_march.ogg"
+}
+
+music = {
+	name = "tv_appeal"
+	file = "SP/tv_appeal.ogg"
+}
+
+music = {
+	name = "hamster_criminal"
+	file = "SP/hamster_criminal.ogg"
+}

@@ -12,8 +12,7 @@ state={
 	}
 
 	history={
-		owner = PBU
-		add_core_of = PBU
+		owner = GON
 		set_demilitarized_zone = yes
 		victory_points = {
 			9945 3

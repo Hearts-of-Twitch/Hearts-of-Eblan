@@ -1,14 +1,28 @@
-dvorets_building_cat = {
+dvorets_building_cat_1 = {
 	priority = 30
-	icon = GFX_decision_category_generic_economy
-	picture = GFX_decision_dvorets
-
+	icon = GFX_decision_category_icon_GON_palace
+	#picture = GFX_decision_dvorets
+	scripted_gui = GON_palace_top_1
 	allowed = {
 		original_tag = GON
 	}
 
 	visible = {
 		original_tag = GON
+	}
+}
+dvorets_building_cat_2 = {
+	priority = 35
+	icon = GFX_decision_category_icon_GON_palace
+	#picture = GFX_decision_dvorets
+	scripted_gui = GON_palace_top_2
+	allowed = {
+		original_tag = GON
+	}
+
+	visible = {
+		original_tag = GON
+		check_variable = { palace_builded = 2 }
 	}
 }
 

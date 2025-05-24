@@ -14,6 +14,10 @@ set_technology = {
 }
 
 recruit_character = universal_hype_dre
+recruit_character = sorrell
+recruit_character = alenakuz
+recruit_character = amnyam
+recruit_character = dre_donald_trump
 
 set_politics = {
 	ruling_party = hypecratia
@@ -25,6 +29,7 @@ add_ideas = {
 	disarmed_nation
 	DRE_treaty_of_triannon_aat
 	defeted_at_wwone
+	DRE_viplati_reparatiy
 }
 
 set_popularities = {

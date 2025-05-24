@@ -1,0 +1,626 @@
+focus_tree = {
+	id = GON
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GON
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1800 y = 1350 }
+	
+	focus = {
+		id = GON_unite_with_modders
+		icon = GFX_goal_generic_national_unity
+		cost = 0
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = GON_food_for_people
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = GON_develop_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		x = 18
+		y = 0
+
+	}
+	focus = {
+		id = GON_develop_army_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = GON_modernize_army
+		icon = GFX_goal_generic_army_doctrines
+		cost = 0
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = GON_form_national_guard
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = GON_unite_with_modders
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = GON_propagand_our_enemy
+		icon = GFX_goal_generic_propaganda
+		cost = 0
+		prerequisite = {
+			focus = GON_form_national_guard
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = GON_prepare_for_attack_on_capital
+		icon = GFX_goal_generic_military_deal
+		cost = 0
+		prerequisite = {
+			focus = GON_propagand_our_enemy
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = GON_precise_assault
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = GON_prepare_for_attack_on_capital
+		}
+		mutually_exclusive = {
+			focus = GON_Soviet_Union_attack
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = GON_Soviet_Union_attack
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0
+		prerequisite = {
+			focus = GON_prepare_for_attack_on_capital
+		}
+		mutually_exclusive = {
+			focus = GON_precise_assault
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = GON_law_n42
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = GON_Soviet_Union_attack
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = GON_TOTALSTURM
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = GON_law_n42
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = GON_victory
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 0
+		prerequisite = {
+			focus = GON_TOTALSTURM
+		}
+		mutually_exclusive = {
+			focus = GON_VOLLSTÄNDIGENIEDERLAGE
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = GON_VOLLSTÄNDIGENIEDERLAGE
+		icon = GFX_gon_VOLLSTÄNDIGENIEDERLAGE
+		cost = 0
+		prerequisite = {
+			focus = GON_TOTALSTURM
+		}
+		mutually_exclusive = {
+			focus = GON_victory
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = GON_blame_chatters
+		icon = GFX_gon_blame_chatters
+		cost = 0
+		prerequisite = {
+			focus = GON_VOLLSTÄNDIGENIEDERLAGE
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = GON_create_concetration_lagers
+		icon = GFX_goal_generic_CAS
+		cost = 0
+		prerequisite = {
+			focus = GON_blame_chatters
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = GON_summon_bombardino_crocodilo
+		icon = GFX_goal_generic_air_bomber
+		cost = 0
+		prerequisite = {
+			focus = GON_create_concetration_lagers
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = GON_create_Oreshnik
+		icon = GFX_focus_rocketry
+		cost = 0
+		prerequisite = {
+			focus = GON_summon_bombardino_crocodilo
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = GON_create_divisionsstrafe
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = GON_create_Oreshnik
+		}
+		mutually_exclusive = {
+			focus = GON_massive_sturm
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = GON_massive_sturm
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = GON_create_Oreshnik
+		}
+		mutually_exclusive = {
+			focus = GON_create_divisionsstrafe
+		}
+		x = 15
+		y = 12
+
+	}
+	focus = {
+		id = GON_wolfs_in_sky
+		icon = GFX_goal_generic_air_fighter
+		cost = 0
+		prerequisite = {
+			focus = GON_modernize_army
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = GON_bombini_gusini
+		icon = GFX_goal_generic_air_bomber
+		cost = 0
+		prerequisite = {
+			focus = GON_wolfs_in_sky
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = GON_air_xp
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0
+		prerequisite = {
+			focus = GON_bombini_gusini
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = GON_continue_our_plan
+		icon = GFX_goal_generic_construction2
+		cost = 0
+		prerequisite = {
+			focus = GON_develop_army_production
+		}
+		prerequisite = {
+			focus = GON_develop_infrastructure
+		}
+		prerequisite = {
+			focus = GON_food_for_people
+		}
+		x = 18
+		y = 1
+
+	}
+	focus = {
+		id = GON_develop_our_city
+		icon = GFX_goal_generic_construction
+		cost = 0
+		prerequisite = {
+			focus = GON_continue_our_plan
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = GON_food_for_people_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0
+		prerequisite = {
+			focus = GON_develop_our_city
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = GON_develop_infrastructure_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = GON_develop_our_city
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = GON_modernize_army_1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = GON_modernize_army
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = GON_use_artilery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0
+		prerequisite = {
+			focus = GON_modernize_army
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = GON_tanks_usage
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		prerequisite = {
+			focus = GON_use_artilery
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = GON_develop_army_production_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		prerequisite = {
+			focus = GON_develop_army_production
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = GON_develop_army_production_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		prerequisite = {
+			focus = GON_develop_army_production_2
+		}
+		prerequisite = {
+			focus = GON_develop_our_city
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = GON_finish_plan
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = GON_food_for_people_2
+		}
+		prerequisite = {
+			focus = GON_develop_army_production_3
+		}
+		prerequisite = {
+			focus = GON_develop_infrastructure_2
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = GON_precise_sturm
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 0
+		prerequisite = {
+			focus = GON_precise_assault
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = GON_sturm_capital
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = GON_precise_sturm
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = GON_our_best_victory
+		icon = GFX_goal_generic_demand_territory
+		cost = 0
+		prerequisite = {
+			focus = GON_sturm_capital
+		}
+		mutually_exclusive = {
+			focus = GON_ok
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = GON_ok
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = GON_sturm_capital
+		}
+		mutually_exclusive = {
+			focus = GON_our_best_victory
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = GON_deffend_our_sorveginy
+		icon = GFX_goal_generic_military_sphere
+		cost = 0
+		prerequisite = {
+			focus = GON_ok
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = GON_prepare_our_secret_weapon
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		prerequisite = {
+			focus = GON_deffend_our_sorveginy
+		}
+		mutually_exclusive = {
+			focus = GON_TOTALKRIEGE
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = GON_TOTALKRIEGE
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = GON_deffend_our_sorveginy
+		}
+		mutually_exclusive = {
+			focus = GON_prepare_our_secret_weapon
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = GON_continue_our_tactic
+		icon = GFX_goal_generic_cavalry
+		cost = 0
+		prerequisite = {
+			focus = GON_prepare_our_secret_weapon
+		}
+		mutually_exclusive = {
+			focus = GON_our_tactic
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = GON_prepare_final_attack
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = GON_our_best_victory
+		}
+		x = 2
+		y = 10
+
+	}
+	focus = {
+		id = GON_form_tank_divisions
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		prerequisite = {
+			focus = GON_continue_our_tactic
+		}
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = GON_research_better_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 0
+		prerequisite = {
+			focus = GON_form_tank_divisions
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = GON_unote_for_victory
+		icon = GFX_goal_generic_national_unity
+		cost = 0
+		prerequisite = {
+			focus = GON_prepare_final_attack
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = GON_law_n1488
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = GON_victory
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = GON_our_tactic
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = GON_law_n1488
+			focus = GON_prepare_our_secret_weapon
+		}
+		mutually_exclusive = {
+			focus = GON_continue_our_tactic
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = GON_Straffbaty
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0
+		prerequisite = {
+			focus = GON_our_tactic
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = GON_die_for_honor_of_your_country
+		icon = GFX_goal_generic_propaganda
+		cost = 0
+		prerequisite = {
+			focus = GON_Straffbaty
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = GON_deffeat_evil
+		icon = GFX_goal_generic_attack_allies
+		cost = 0
+		prerequisite = {
+			focus = GON_unote_for_victory
+			focus = GON_research_better_tanks
+			focus = GON_die_for_honor_of_your_country
+			focus = GON_create_divisionsstrafe
+			focus = GON_massive_sturm
+		}
+		x = 10
+		y = 13
+
+	}
+	focus = {
+		id = GON_modernize_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 0
+		prerequisite = {
+			focus = GON_modernize_army
+		}
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = GON_wolfs_in_water
+		icon = GFX_goal_generic_navy_submarine
+		cost = 0
+		prerequisite = {
+			focus = GON_modernize_navy
+		}
+		x = 21
+		y = 9
+
+	}
+}

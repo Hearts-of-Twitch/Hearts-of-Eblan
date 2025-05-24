@@ -34,6 +34,9 @@ set_technology = {
 }
 
 recruit_character = universal_hype_chb
+recruit_character = apppostol
+recruit_character = miramestinchortt
+recruit_character = filinnn
 
 set_convoys = 20
 

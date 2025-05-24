@@ -1,0 +1,55 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_GON_palace_blueprint_1"
+		texturefile = "gfx/interface/custom_gui/GON/palace_blueprint_noback.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_GON_palace_framed"
+		texturefile = "gfx/interface/custom_gui/GON/palace_framed.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_GON_palace_blueprint_2"
+		texturefile = "gfx/interface/custom_gui/GON/palace_blueprint_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GON_palace_state_0"
+		texturefile = "gfx/interface/custom_gui/GON/state_not_builded.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_GON_palace_state_1"
+		texturefile = "gfx/interface/custom_gui/GON/state_builded.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_GON_palace_state_2"
+		texturefile = "gfx/interface/custom_gui/GON/state_empty.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_GON_palace_floor_1_btn"
+		texturefile = "gfx/interface/custom_gui/GON/first_floor_btn.dds"
+	}	
+	spriteType = {
+		name = "GFX_GON_palace_floor_2_btn"
+		texturefile = "gfx/interface/custom_gui/GON/second_floor_btn.dds"
+	}	
+	spriteType = {
+		name = "GFX_GON_palace_empty"
+		texturefile = "gfx/interface/custom_gui/GON/palace_empty.dds"
+	}
+	
+	progressbartype = {
+		name = "GFX_GON_palace_state_progressbar"
+		textureFile1 = "gfx/interface/custom_gui/GON/GON_test_pb_full.png"
+		textureFile2 = "gfx/interface/custom_gui/GON/GON_test_pb_empty.png"
+		size = { x = 432 y = 70 }
+		effectFile = "gfx/FX/progress.lua"
+	} 
+
+}

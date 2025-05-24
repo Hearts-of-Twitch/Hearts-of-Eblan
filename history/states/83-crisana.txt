@@ -6,7 +6,7 @@ state={
 	state_category = town
 
 	history={
-		owner = CHD
+		owner = CHB
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -15,7 +15,7 @@ state={
 		victory_points = {
 			6682 1 
 		}
-		add_core_of = CHD
+		add_core_of = CHB
 		set_demilitarized_zone = yes
 		add_claim_by = CHB
 	}

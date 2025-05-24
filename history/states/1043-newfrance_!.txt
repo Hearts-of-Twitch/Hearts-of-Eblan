@@ -1,0 +1,22 @@
+state={
+	id=1043
+	name="STATE_1043"
+	provinces={
+		958 11849 
+	}
+	state_category = large_city
+	history={
+		victory_points = {
+			11849 5
+		}
+		owner = NEL
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = NEL
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

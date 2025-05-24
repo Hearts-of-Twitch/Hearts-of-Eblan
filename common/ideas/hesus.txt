@@ -1,0 +1,19 @@
+ideas = {
+
+	country = {
+		soplya_coin = {
+			allowed = {
+				always = no
+			}
+			
+			picture = soplya_coin
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.2
+				industry_air_damage_factor = 0.3
+			}
+		}
+	}
+	
+}

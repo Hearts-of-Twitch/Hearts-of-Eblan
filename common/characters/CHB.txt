@@ -25,4 +25,81 @@ characters = {
 			}
 		}
 	}
-	}
+	apppostol ={ 
+        name = "Apppostol"
+        portraits= {
+            army = {
+				small = "GFX_moder_small"
+                large = "GFX_chb_person_large"
+            }
+        }
+        field_marshal = {
+			traits = { aggressive_assaulter thorough_planner }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 1
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = apppostol
+           ledger = army
+           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           traits = { army_entrenchment_3 }
+       }
+    }
+
+    miramestinchortt ={ 
+        name = "Miramestinchortt"
+        portraits= {
+            army = {
+                large = "GFX_chb_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { organizer hill_fighter }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = high_command
+           idea_token = miramestinchortt
+           ledger = army
+           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           traits = { army_cavalry_2 }
+       }
+    }
+	
+    filinnn ={ 
+        name = "filinnnnnnn"
+        portraits= {
+            army = {
+                large = "GFX_chb_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = {  winter_specialist }
+            skill = 3
+            attack_skill = 1
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = high_command
+           idea_token = filinnn
+           ledger = army
+           allowed = { original_tag = CHB } # Optional, doesn't change anything.
+           traits = { army_CombinedArms_2 }
+       }
+    }
+}

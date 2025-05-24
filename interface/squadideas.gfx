@@ -15,10 +15,6 @@ spriteTypes = {
         texturefile = "gfx/interface/ideas/slay_2023.dds"
     }  
 	
-    spriteType = {
-        name = "GFX_idea_slay_2024"
-        texturefile = "gfx/interface/ideas/slay_2024.dds"
-    }  
 	
     spriteType = {
         name = "GFX_idea_slay_2023_award"
@@ -363,4 +359,210 @@ spriteTypes = {
 		name = "GFX_idea_stint_divided"
 		textureFile = "gfx/interface/ideas/stint_divided.dds"
 	}
+
+
+    spriteType = {
+        name = "GFX_idea_great_zolo"
+        texturefile = "gfx/interface/ideas/great_zolo.dds"
+    }  
+
+    spriteType = {
+        name = "GFX_idea_tabletki_ot_uma"
+        texturefile = "gfx/interface/ideas/tabletki_ot_uma.dds"
+    }     
+	
+	spriteType = {
+        name = "GFX_idea_dre_mrbeast"
+        texturefile = "gfx/interface/ideas/dre_mrbeast.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_dre_trump"
+        texturefile = "gfx/interface/ideas/dre_trump.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_baron_bills"
+        texturefile = "gfx/interface/ideas/baron_money.dds"
+    }     
+	
+	spriteType = {
+        name = "GFX_idea_drake_crisis"
+        texturefile = "gfx/interface/ideas/drake_dictatorship_crisis.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_soplya_coin"
+        texturefile = "gfx/interface/ideas/soplya_coin.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_DRE_act"
+        texturefile = "gfx/interface/ideas/DRE_act.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_democratic_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_democratic_gos_apparat.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_DRE_burger_deal"
+        texturefile = "gfx/interface/ideas/burger_deal.dds"
+    }	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_collectivist_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_collectivist_gos_apparat.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_hamster_economics"
+        texturefile = "gfx/interface/ideas/DRE_hamster_economics.dds"
+    }  
+	
+	
+	spriteType = {
+        name = "GFX_pushkin_small"
+        texturefile = "gfx/interface/ideas/pushkin_small.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_total_control"
+        texturefile = "gfx/interface/ideas/total_mind_control.dds"
+    } 	
+		
+	spriteType = {
+        name = "GFX_idea_internet_warfare"
+        texturefile = "gfx/interface/ideas/internet_warfare.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_where_is_president"
+        texturefile = "gfx/interface/ideas/where_is_president.dds"
+    }  
+	
+
+    spriteType = {
+        name = "GFX_stalin_small"
+        texturefile = "gfx/interface/ideas/stalin_small.dds"
+    } 
+	
+    spriteType = {
+        name = "GFX_idea_slay_2024"
+        texturefile = "gfx/interface/ideas/slay_2024.dds"
+    }      
+	
+	spriteType = {
+        name = "GFX_idea_ARA_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_gos_apparat.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_rebuild_gos_apparat"
+        texturefile = "gfx/interface/ideas/ARA_rebuild_gos_apparat.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_hype_ministers"
+        texturefile = "gfx/interface/ideas/ARA_hype_ministers.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_people_digitalization"
+        texturefile = "gfx/interface/ideas/people_digitalization.dds"
+    } 	
+	
+	spriteType = {
+        name = "GFX_idea_ARA_internet_cables"
+        texturefile = "gfx/interface/ideas/internet_cables.dds"
+    }  
+	
+	
+	
+	
+
+	spriteType = {
+        name = "GFX_dre_anman_small"
+        texturefile = "gfx/interface/ideas/dre_annam_small.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_moder_small"
+        texturefile = "gfx/interface/ideas/moder_small.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_svi_zrya_small"
+        texturefile = "gfx/interface/ideas/svi_zrya.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_gon_shabanov_com_small"
+        texturefile = "gfx/interface/ideas/gon_shabanov_com.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_state_atheism"
+        texturefile = "gfx/interface/ideas/idea_GON_state_atheism.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_idea_beer_problem"
+        texturefile = "gfx/interface/ideas/beer_problem.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_state_unions"
+        texturefile = "gfx/interface/ideas/idea_GON_state_unions.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_preparing_for_war"
+        texturefile = "gfx/interface/ideas/idea_GON_preparing_for_war.dds"
+    }  
+	
+	spriteType = {
+        name = "GFX_idea_GON_liberation_theology"
+        texturefile = "gfx/interface/ideas/idea_GON_liberation_theology.dds"
+    }  
+	
+    spriteType = {
+        name = "GFX_gon_person_large"
+        texturefile = "gfx/leaders/GON/person_gon.dds"
+    }          
+	
+	spriteType = {
+        name = "GFX_svi_zrya_large"
+        texturefile = "gfx/leaders/SVI/svi_zrya.dds"
+    }      
+	
+	spriteType = {
+        name = "GFX_chb_person_large"
+        texturefile = "gfx/leaders/CHB/person_chb.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_svi_person_large"
+        texturefile = "gfx/leaders/SVI/person_svi.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_dre_person_large"
+        texturefile = "gfx/leaders/DRE/person_dre.dds"
+    }  		
+	
+	spriteType = {
+        name = "GFX_dre_amnam_large"
+        texturefile = "gfx/leaders/DRE/dre_amnam.dds"
+    }  	
+	
+	spriteType = {
+        name = "GFX_ara_person_large"
+        texturefile = "gfx/leaders/ARA/person_ara.dds"
+    }  
+	
+    
+	
+	
 }

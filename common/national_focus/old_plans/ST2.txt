@@ -1,0 +1,448 @@
+focus_tree = {
+	id = ST2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ST2
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2200 y = 1000 }
+
+	default = no
+	focus = {
+		id = ST2_unite_with_chatters
+		icon = GFX_goal_generic_national_unity
+		cost = 0
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = ST2_develop_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = ST2_food_for_people
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = ST2_develop_army_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = ST2_form_national_guard
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = ST2_unite_with_chatters
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = ST2_propagand_our_enemy
+		icon = GFX_goal_generic_propaganda
+		cost = 0
+		prerequisite = {
+			focus = ST2_form_national_guard
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = ST2_attack_lisboa
+		icon = GFX_goal_generic_major_war
+		cost = 0
+		prerequisite = {
+			focus = ST2_propagand_our_enemy
+		}
+		mutually_exclusive = {
+			focus = ST2_attack_sevilia
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = ST2_our_victory
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = ST2_attack_lisboa
+		}
+		mutually_exclusive = {
+			focus = ST2_our_deffeat_chatters_lisboa
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = ST2_our_deffeat_chatters_lisboa
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = ST2_attack_lisboa
+		}
+		mutually_exclusive = {
+			focus = ST2_our_victory
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = ST2_enlist_the_support_of_the_navy
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0
+		prerequisite = {
+			focus = ST2_propagand_our_enemy
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = ST2_our_wolfs
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 0
+		prerequisite = {
+			focus = ST2_enlist_the_support_of_the_navy
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = ST2_our_dominance_of_sky
+		icon = GFX_goal_generic_air_fighter
+		cost = 0
+		prerequisite = {
+			focus = ST2_propagand_our_enemy
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = ST2_bombardino_crocodilo
+		icon = GFX_goal_generic_air_bomber
+		cost = 0
+		prerequisite = {
+			focus = ST2_our_dominance_of_sky
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = ST2_bombombini_gusini
+		icon = GFX_goal_generic_air_bomber
+		cost = 0
+		prerequisite = {
+			focus = ST2_our_wolfs
+		}
+		prerequisite = {
+			focus = ST2_bombardino_crocodilo
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = ST2_attack_sevilia
+		icon = GFX_goal_generic_major_war
+		cost = 0
+		prerequisite = {
+			focus = ST2_propagand_our_enemy
+		}
+		mutually_exclusive = {
+			focus = ST2_attack_lisboa
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = ST2_attack_neighborhoods_of_sevillia
+		icon = GFX_goal_generic_major_war
+		cost = 0
+		prerequisite = {
+			focus = ST2_attack_sevilia
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = ST2_total_raid_of_sevilia
+		icon = GFX_goal_generic_military_deal
+		cost = 0
+		prerequisite = {
+			focus = ST2_attack_neighborhoods_of_sevillia
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = ST2_total_win
+		icon = GFX_goal_generic_position_armies
+		cost = 0
+		prerequisite = {
+			focus = ST2_total_raid_of_sevilia
+		}
+		mutually_exclusive = {
+			focus = ST2_our_deffeat_chatters_sevilia
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = ST2_our_deffeat_chatters_sevilia
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = ST2_total_raid_of_sevilia
+		}
+		mutually_exclusive = {
+			focus = ST2_total_win
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = ST2_deffend_our_sorveginy_chatters_sevilia
+		icon = GFX_goal_generic_military_sphere
+		cost = 0
+		prerequisite = {
+			focus = ST2_our_deffeat_chatters_sevilia
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = ST2_countinue_our_develop
+		icon = GFX_goal_generic_construction2
+		cost = 0
+		prerequisite = {
+			focus = ST2_food_for_people
+		}
+		prerequisite = {
+			focus = ST2_develop_army_production
+		}
+		prerequisite = {
+			focus = ST2_develop_infrastructure
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = ST2_develop_cities
+		icon = GFX_goal_generic_construction
+		cost = 0
+		prerequisite = {
+			focus = ST2_countinue_our_develop
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = ST2_food_for_people_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0
+		prerequisite = {
+			focus = ST2_develop_cities
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = ST2_develop_infrastucture_2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0
+		prerequisite = {
+			focus = ST2_develop_cities
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = ST2_replace_our_command
+		icon = GFX_goal_generic_improve_relations
+		cost = 0
+		prerequisite = {
+			focus = ST2_deffend_our_sorveginy_chatters_sevilia
+		}
+		mutually_exclusive = {
+			focus = ST2_TOTALKRIEGE_chatters_sevilia
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = ST2_TOTALKRIEGE_chatters_sevilia
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = ST2_deffend_our_sorveginy_chatters_sevilia
+		}
+		mutually_exclusive = {
+			focus = ST2_replace_our_command
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = ST2_develop_army_production_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		prerequisite = {
+			focus = ST2_develop_army_production
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ST2_develop_army_production_3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0
+		prerequisite = {
+			focus = ST2_develop_army_production_2
+		}
+		prerequisite = {
+			focus = ST2_develop_cities
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ST2_complete_our_plan
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = ST2_food_for_people_2
+		}
+		prerequisite = {
+			focus = ST2_develop_infrastucture_2
+		}
+		prerequisite = {
+			focus = ST2_develop_army_production_3
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = ST2_attack_capital
+		icon = GFX_goal_generic_major_war
+		cost = 0
+		prerequisite = {
+			focus = ST2_form_attack_divisions
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = ST2_prepare_for_last_attack
+		icon = GFX_goal_generic_small_arms
+		cost = 0
+		prerequisite = {
+			focus = ST2_our_victory
+			focus = ST2_deffend_our_sovereigns_chatters_lisboa
+		}
+		mutually_exclusive = {
+			focus = ST2_deal_with_devil
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = ST2_deffend_our_sovereigns_chatters_lisboa
+		icon = GFX_goal_generic_military_sphere
+		cost = 0
+		prerequisite = {
+			focus = ST2_our_deffeat_chatters_lisboa
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = ST2_deal_with_devil
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 0
+		prerequisite = {
+			focus = ST2_deffend_our_sovereigns_chatters_lisboa
+		}
+		mutually_exclusive = {
+			focus = ST2_prepare_for_last_attack
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = ST2_peace_for_autonomy_chatters
+		icon = GFX_goal_generic_improve_relations
+		cost = 0
+		prerequisite = {
+			focus = ST2_deal_with_devil
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = ST2_TOTALKRIEGE_chatters
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0
+		prerequisite = {
+			focus = ST2_deal_with_devil
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = ST2_form_attack_divisions
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		prerequisite = {
+			focus = ST2_prepare_for_last_attack
+			focus = ST2_total_win
+		}
+		x = 10
+		y = 8
+
+	}
+}

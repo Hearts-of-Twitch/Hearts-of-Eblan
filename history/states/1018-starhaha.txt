@@ -12,12 +12,11 @@ state={
 		victory_points = {
 			11613 1
 		}
-		owner = MOY
-		set_demilitarized_zone = yes
+		owner = DPN
 		
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = MOY
+		add_core_of = DPN
 	}
 }

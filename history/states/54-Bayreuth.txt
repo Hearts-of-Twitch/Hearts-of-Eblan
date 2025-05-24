@@ -9,6 +9,7 @@ state = {
 
 		owner = JHF
 		add_core_of = JHF
+		add_core_of = BTK
 
 		victory_points = {
 			11544 10 # Nuremberg

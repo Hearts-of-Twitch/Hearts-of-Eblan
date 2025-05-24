@@ -37,3 +37,14 @@ BTK_council_cat = {
 		original_tag = BTK
 	}
 }
+BTK_reform89_cat = {
+	icon = GFX_decision_category_generic_political_actions
+	allowed = {
+		original_tag = BTK
+	}
+	visible_when_empty = yes
+
+	visible = {
+		original_tag = BTK
+	}
+}

@@ -1,0 +1,61 @@
+music_station = "events_music_bruh"
+
+music = {
+song = "SDO_POCHALOS"
+chance = { factor = 0 }}
+
+music = {
+song = "mazokgrad_fall"
+chance = { factor = 0 }}
+
+music = {
+song = "dayraid_fall"
+chance = { factor = 0 }}
+
+music = {
+song = "blitzkrieg_zabuksoval"
+chance = { factor = 0 }}
+
+music = {
+song = "lagoda_raspil"
+chance = { factor = 0 }}
+
+music = {
+song = "the_great_war"
+chance = { factor = 0 }}
+
+music = {
+song = "limuzin"
+chance = { factor = 0 }}
+
+music = {
+song = "top_squad"
+chance = { factor = 0 }}
+
+music = {
+song = "HSU_war"
+chance = { factor = 0 }}
+
+music = {
+song = "stintler_returns"
+chance = { factor = 0 }}
+
+music = {
+song = "army_bpl"
+chance = { factor = 0 }}
+
+music = {
+song = "mem_goda"
+chance = { factor = 0 }}
+
+music = {
+song = "amnam_march"
+chance = { factor = 0 }}
+
+music = {
+song = "tv_appeal"
+chance = { factor = 0 }}
+
+music = {
+song = "hamster_criminal"
+chance = { factor = 0 }}

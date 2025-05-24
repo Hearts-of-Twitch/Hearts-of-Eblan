@@ -27,6 +27,8 @@ form_BTK_89_cat = {
 				controls_state = 67
 				controls_state = 762
 				controls_state = 58
+				controls_state = 1021
+				controls_state = 909
 			}
 			custom_trigger_tooltip = {
 				tooltip = btk_control_terr_shd	
@@ -91,6 +93,8 @@ form_BTK_89_cat = {
 				state = 98
 				state = 763
 				state = 188
+				state = 1021
+				state = 909
 
 				state = 51
 				state = 55
@@ -104,6 +108,8 @@ form_BTK_89_cat = {
 				state = 54
 				state = 60
 				state = 65
+				state = 1020
+				state = 1022
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -117,6 +123,7 @@ form_BTK_89_cat = {
 		complete_effect = {
 			set_cosmetic_tag = BTK_89
 			mark_focus_tree_layout_dirty = yes
+			country_event = super.6
 			set_country_leader_portrait = {
 				ideology = fascism
 				portrait = GFX_BTK_89
@@ -359,6 +366,29 @@ BTK_council_cat = {
 				popularity = 0.07
 			}
 			add_stability = -0.06
+		}
+	}
+}
+BTK_reform89_cat = {
+	BTK_panel_start = {
+		icon = generic_form_nation
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 100
+	
+		allowed = {
+			original_tag = BTK
+		}
+		visible = {
+			original_tag = BTK
+		}
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
 		}
 	}
 }

@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 100
 			tag = DRE
 		}
 	}
@@ -16,12 +16,15 @@ focus_tree = {
 
 	############################
 	##### Fortification focuses#
-	############################ 
+	############################
 
 	focus = {
 		id = DRE_politics
 		icon = GFX_goal_drake_politics
-		x = 7
+		allow_branch = {
+			has_completed_focus = DRE_claims_on_bavaria
+		}
+		x = 6
 		y = 0
 
 		cost = 10
@@ -86,7 +89,7 @@ focus_tree = {
 		relative_position_id = DRE_politics
 		mutually_exclusive = { focus = DRE_svergnut_dreyka }
 		prerequisite = { focus = DRE_politics }
-		x = -4
+		x = -5
 		y = 1
 
 		cost = 10
@@ -109,7 +112,22 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = dre_strart_empire_tt
+			152 = {
+				set_demilitarized_zone = no
+			}
+			153 = {
+				set_demilitarized_zone = no
+			}
+			848 = {
+				set_demilitarized_zone = no
+			}
+			976 = {
+				set_demilitarized_zone = no
+			}
+			news_event = {
+				id = squad_news.4
+				days = 5
+			}
 		}
 	}
 
@@ -118,8 +136,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		relative_position_id = DRE_undemilitarisation_of_west_austria
 		prerequisite = { focus = DRE_undemilitarisation_of_west_austria }
-		mutually_exclusive = { focus = DRE_friendship_with_chickenbekon }
-		x = -1
+		x = 1
 		y = 1
 
 		cost = 10
@@ -151,10 +168,10 @@ focus_tree = {
 
 	focus = {
 		id = DRE_own_way
-		icon = GFX_goal_drake_expansion
+		icon = GFX_goal_DRE_own_way
 		relative_position_id = DRE_undemilitarisation_of_west_austria
 		prerequisite = { focus = DRE_anschluss }
-		x = -1
+		x = 1
 		y = 2
 
 		cost = 10
@@ -226,7 +243,7 @@ focus_tree = {
 		relative_position_id = DRE_anschluss
 		prerequisite = { focus = DRE_own_way }
 		mutually_exclusive = { focus = DRE_demand_alto_adidshe }
-		x = -5
+		x = -7
 		y = 2
 
 		cost = 10
@@ -278,7 +295,7 @@ focus_tree = {
 		relative_position_id = DRE_anschluss
 		prerequisite = { focus = DRE_own_way }
 		mutually_exclusive = { focus = DRE_befriend_vapers }
-		x = -2
+		x = -3
 		y = 2
 
 		cost = 10
@@ -484,8 +501,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			ZUS = {
-				country_event = { id = drek.5 days = 7 }
+			BTK = {
+				country_event = { id = drek.5 days = 3 }
 			}
 		}
 	}
@@ -542,11 +559,11 @@ focus_tree = {
 		}
 
 		available = {
-
+			
 		}
 
 		bypass = {
-
+			is_subject = yes
 		}
 
 		cancel_if_invalid = yes
@@ -720,6 +737,16 @@ focus_tree = {
 				capital = 4
 				states = { 848 153 152 4 }
 				keep_all_characters = yes
+			}
+
+			152 = {
+				set_demilitarized_zone = no
+			}
+			153 = {
+				set_demilitarized_zone = no
+			}
+			848 = {
+				set_demilitarized_zone = no
 			}
 			add_timed_idea = { idea = DRE_clamp_down_on_hypecratia days = 365}
 		}
@@ -932,7 +959,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_subject = yes
 		}
 
 		cancel_if_invalid = yes
@@ -1105,10 +1132,10 @@ focus_tree = {
 	focus = {
 		id = DRE_preparing_for_the_inevitable
 		icon = GFX_goal_dre_zakon
-		#relative_position_id = DRE_hungary_or_war_empire
-		prerequisite = { focus = DRE_hungary_or_war_empire focus = DRE_bavaria_or_war_empire focus = DRE_operation_tannenbaum }
-		x = 5
-		y = 10
+		relative_position_id = DRE_subjugate_zolo_economics
+		prerequisite = { focus = DRE_morphi_subordination_order focus = DRE_restore_african_estates}
+		x = 0
+		y = 2
 
 		cost = 10
 
@@ -1131,7 +1158,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_timed_idea = { idea = DRE_war_preparation days = 720 }
-			mark_focus_tree_layout_dirty = yes
+			custom_effect_tooltip = GER_sturmtruppe_battalion_tt
+			hidden_effect = {
+				set_technology = { sturmtruppe_battalion_tech = 1 popup = no }
+			}
 		}
 	}
 
@@ -1139,6 +1169,7 @@ focus_tree = {
 		id = DRE_svo_chb_1
 		icon = GFX_goal_dre_svo_chb
 		relative_position_id = DRE_preparing_for_the_inevitable
+		prerequisite = { focus = DRE_preparing_for_the_inevitable}
 		#mutually_exclusive = { focus = DRE_svo_btk_1 }
 		x = 0
 		y = 1
@@ -1156,9 +1187,6 @@ focus_tree = {
 				is_subject = no
 			}
 		}
-		allow_branch = {
-			has_completed_focus = DRE_preparing_for_the_inevitable
-		}
 
 		bypass = {
 
@@ -1174,7 +1202,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+focus = {
 		id = DRE_svo_chb_narodnie_respubliki_chb
 		icon = GFX_goal_dre_narodnie_respubliki
 		relative_position_id = DRE_svo_chb_1
@@ -1207,7 +1235,29 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			CHB = {
-				country_event = chicken.14
+				release_on_controlled = SNR
+				release_on_controlled = HNR
+				remove_ideas = CHB_hungary_problem
+			}
+
+			diplomatic_relation = { 
+				country = SNR 
+				relation = military_access 
+			}
+
+			diplomatic_relation = { 
+				country = HNR 
+				relation = military_access 
+			}
+
+			diplomatic_relation = { 
+				country = SNR 
+				relation = guarantee 
+			}
+
+			diplomatic_relation = { 
+				country = HNR 
+				relation = guarantee 
 			}
 		}
 	}
@@ -1370,7 +1420,24 @@ focus_tree = {
 				}
 			}
 
-			CHD = {
+			SNR = {
+				every_owned_state = {
+					limit = {
+						any_neighbor_state = { owner = CHB }
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						instant_build = yes
+						province = {
+							all_provinces = yes
+							limit_to_border = yes
+						}
+					}
+				}
+			}
+
+			HNR = {
 				every_owned_state = {
 					limit = {
 						any_neighbor_state = { owner = CHB }
@@ -1456,7 +1523,7 @@ focus_tree = {
 		relative_position_id = DRE_svo_chb_4_3
 		prerequisite = { focus = DRE_svo_chb_4_3}
 		x = 0
-		y = 1
+		y = 2
 
 		cost = 8
 
@@ -1492,7 +1559,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+		focus = {
 		id = DRE_svo_chb_3
 		icon = GFX_goal_dre_snr_and_hnr_help
 		relative_position_id = DRE_svo_chb_2
@@ -1508,18 +1575,18 @@ focus_tree = {
 
 		available = {
 			if = {
-				limit = {
+				AND = {
 					has_equipment = {
-    					infantry_equipment > 4000
+    					infantry_equipment > 1200
 					}
 					has_equipment = {
-    					support_equipment > 600
+    					support_equipment > 300
 					}
 					has_equipment = {
-    					artillery_equipment > 500
+    					artillery_equipment > 200
 					}
 					has_equipment = {
-    					motorized_equipment_1 > 500
+    					motorized_equipment_1 > 200
 					}
 				}
 			}
@@ -1537,46 +1604,46 @@ focus_tree = {
 		completion_reward = {
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 2000
-				target = CHD
+				amount = 500
+				target = SNR
 			}
 			send_equipment = {
 				equipment = support_equipment
-				amount = 300
-				target = CHD
+				amount = 150
+				target = SNR
 			}
 			send_equipment = {
 				equipment = artillery_equipment
-				amount = 250
-				target = CHD
+				amount = 100
+				target = SNR
 			}
 			send_equipment = {
 				equipment = motorized_equipment_1
-				amount = 250
-				target = CHD
+				amount = 100
+				target = SNR
 			}
 			send_equipment = {
 				equipment = infantry_equipment
-				amount = 2000
-				target = CHD
+				amount = 700
+				target = HNR
 			}
 			send_equipment = {
 				equipment = support_equipment
-				amount = 300
-				target = CHD
+				amount = 150
+				target = HNR
 			}
 			send_equipment = {
 				equipment = artillery_equipment
-				amount = 250
-				target = CHD
+				amount = 100
+				target = HNR
 			}
 			send_equipment = {
 				equipment = motorized_equipment_1
-				amount = 250
-				target = CHD
+				amount = 100
+				target = HNR
 			}
 
-			CHD = {
+			SNR = {
 				division_template = { 
 				name = "SNR_SDO_division"
 				division_names_group = SNR_SDO_01
@@ -1599,32 +1666,78 @@ focus_tree = {
 				random_owned_controlled_state = {
 					create_unit = { 
 						division = "name = \"1. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 					create_unit = { 
 						division = "name = \"2. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 					create_unit = { 
 						division = "name = \"3. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 					create_unit = { 
 						division = "name = \"4. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 					create_unit = { 
 						division = "name = \"5. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 					create_unit = { 
 						division = "name = \"6. Дивизия СНР\" division_template = \"SNR_SDO_division\" start_experience_factor = 0.5" 
-						owner = CHD
+						owner = SNR
 					}
 			}
 			}
 
-			
+			HNR = {
+				division_template = { 
+				name = "HNR_SDO_division"
+				division_names_group = SNR_SDO_01
+				is_locked = no
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+
+					infantry = { x = 2 y = 0 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1}
+				}
+				}
+				random_owned_controlled_state = {
+					create_unit = { 
+						division = "name = \"1. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+					create_unit = { 
+						division = "name = \"2. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+					create_unit = { 
+						division = "name = \"3. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+					create_unit = { 
+						division = "name = \"4. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+					create_unit = { 
+						division = "name = \"5. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+					create_unit = { 
+						division = "name = \"6. Дивизия ВНР\" division_template = \"HNR_SDO_division\" start_experience_factor = 0.5" 
+						owner = HNR
+					}
+			}
+			}
 		}
 	}
 
@@ -1738,6 +1851,9 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = DRE_false_flag_operations
 			people_support_development_improvement = yes
+			CHB = {
+				country_event = { id = svo.5 hours = 7 }
+			}
 		}
 	}
 
@@ -1838,8 +1954,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_manpower = -5000
-			CHD = {
+			add_manpower -5000
+			SNR = {
+				people_support_development_improvement = yes
+				add_manpower = 2500
+			}
+
+			HNR = {
 				people_support_development_improvement = yes
 				add_manpower = 2500
 			}
@@ -1894,12 +2015,56 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DRE_svo_chb_3_7
+		icon = GFX_goal_dre_edinstvo
+		relative_position_id = DRE_svo_chb_3_6
+		prerequisite = { focus = DRE_svo_chb_3_6 focus = DRE_svo_chb_3_5 }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			CHB = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			annex_country = {
+    			target = SNR
+    			transfer_troops = yes
+			}
+			annex_country = {
+    			target = HNR
+    			transfer_troops = yes
+			}
+			news_event = { id = squad_news.12 hours = 4 }
+		}
+	}
+
+	focus = {
 		id = DRE_svo_chb_start
 		icon = GFX_goal_dre_svo
 		relative_position_id = DRE_svo_chb_3_6
-		prerequisite = { focus = DRE_svo_chb_3_6 focus = DRE_svo_chb_3_5 focus = DRE_svo_chb_4_4 }
+		prerequisite = { focus = DRE_svo_chb_3_7 }
+		prerequisite = { focus = DRE_svo_chb_4_4 }
 		x = 1
-		y = 1
+		y = 2
 
 		cost = 5
 
@@ -1926,31 +2091,38 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			set_country_flag = SDO_started_chb
-			if = {
-				limit = {
-					CHD = {
-						exists = yes
-					}
-				}
-				puppet = {
-					target = CHD
-					end_wars = no
-				}
-				CHD = {
-					declare_war_on = {
-						target = CHB
-						type = annex_everything
-					}
-				}
-			}
 			declare_war_on = {
 				target = CHB
 				type = annex_everything
 			}
-			
+
+			SNR = {
+				declare_war_on = {
+					target = CHB
+					type = annex_everything
+				}
+			}
+
+			HNR = {
+				declare_war_on = {
+					target = CHB
+					type = annex_everything
+				}
+			}
 			#news_event = { id = svo.2 days = 1}
 			hidden_effect = {
 			every_country = { country_event = super.1 }
+			HAM = {
+				diplomatic_relation = {
+    				country = DRE
+    				relation = guarantee
+    				active = no
+				}
+			}
+			}
+
+			CHB = {
+				country_event = { id = svo.6 hours = 4 }
 			}
 		}
 	}
@@ -2127,6 +2299,7 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -2160,7 +2333,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = -0.05
-
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -2193,6 +2366,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = free_trade	
+			custom_effect_tooltip = in_development
 		}
 	}
 
@@ -2205,7 +2379,7 @@ focus_tree = {
 		id = DRE_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = DRE_befriend_vapers focus = DRE_demand_alto_adidshe }
-		x = -2
+		x = -3
 		y = 5
 		#relative_position_id = DRE_no_one_exept_drake
 
@@ -2337,7 +2511,7 @@ focus_tree = {
 	focus = {
 		id = DRE_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 27
+		x = 39
 		y = 0
 
 		cost = 10
@@ -2690,70 +2864,7 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				NOT = {
-					has_tech = fighter3
-					has_tech = heavy_fighter3
-				}
-			}
-			else = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_DRE = yes
-							is_available_heavy_fighter_DRE = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_DRE = yes
-							is_available_heavy_fighter_DRE = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_DRE = yes
-							is_available_heavy_fighter_DRE = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_DRE = yes
-							is_available_heavy_fighter_DRE = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_DRE = yes
-							is_available_heavy_fighter_DRE = yes
-						}
-					}
-				}
-			}
+
 		}
 
 		bypass = {
@@ -2766,7 +2877,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			country_event = DOD_DREgary.150 
 		}
 	}
 
@@ -2785,71 +2895,8 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				NOT = {
-					has_tech = CAS3
-					has_tech = tactical_bomber3
-				}
+
 			}
-			else = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_DRE = yes
-							is_available_tac_DRE = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_DRE = yes
-							is_available_tac_DRE = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_DRE = yes
-							is_available_tac_DRE = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_DRE = yes
-							is_available_tac_DRE = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = bomber_tt
-						OR = {
-							is_available_cas_DRE = yes
-							is_available_tac_DRE = yes
-						}
-					}
-				}
-			}
-		}
 
 		bypass = {
 
@@ -2861,7 +2908,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			country_event = DOD_DREgary.160
 		}
 	}
 
@@ -2901,16 +2947,6 @@ focus_tree = {
 					is_in_faction_with = DRE
 				}
 				add_to_tech_sharing_group = DRE_joint_air_development_group
-			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_equipment_subsidy = {
-					cic = 1000
-					equipment_type = small_plane_airframe
-					seller_trigger = is_allied_seller_trigger
-				}
 			}
 		}
 	}
@@ -3444,8 +3480,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		completion_reward = {
-			custom_effect_tooltip = DRE_light_infantry_divisions_doctrine_tech_tt
-			custom_effect_tooltip = DRE_light_infantry_divisions_doctrine_unit_tt
 			hidden_effect = {
 				if = {
 					limit = { has_tech = tech_engineers }
@@ -3578,29 +3612,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 15
-			add_ideas = DRE_naval_warfare
-
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				custom_effect_tooltip = invites_mio_tt
-				show_mio_tooltip = DRE_ganz_danubius_organization
-				mio:DRE_ganz_danubius_organization = {
-					add_mio_funds = 2500
-				}
-#					unlock_mio_trait_tooltip  = {
-#						department = DRE_mio_department_design_ship_capital_screen_weapons
-#						trait = DRE_mio_trait_naval_warfare
-#					}
-#				}
-
-			}
-
-			else = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = DRE_ganz_danubius
-			}
+			add_ideas = sea_advisor
 		}
 	}
 
@@ -4020,263 +4032,786 @@ focus_tree = {
 		}
 	}
 
+	##############
+	##INDUSTRIAL##
+	##############
 
 	focus = {
-		id = DRE_industrial_effort
-		icon = GFX_goal_generic_production
-		x = 19
-		y = 0
-		cost = 10
+    id = DRE_economics_effort
+    icon = GFX_goal_DRE_economics
+    x = 24
+    y = 0
+    cost = 10
 
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
 
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
+    completion_reward = {
+	  custom_effect_tooltip = DRE_hamster_criminal_deletion_tt
+      add_ideas = DRE_hamster_economics
+	  news_event = { id = squad_news.13 days = 4 }
+    }
 
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
+    ai_will_do = {
 
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
-			}
-		}
-	}
+    }
+  }
 
-	focus = {
-		id = DRE_construction_effort
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = DRE_industrial_effort }
-		x = -1
-		y = 1
-		relative_position_id = DRE_industrial_effort
-		cost = 10
+  focus = {
+    id = DRE_stop_payments
+    icon = GFX_focus_AUS_disregard_the_treaties
+    prerequisite = { focus = DRE_economics_effort}
+    relative_position_id = DRE_economics_effort
+    x = 0
+    y = 1
+    cost = 10
 
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		
-		available_if_capitulated = yes
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
 
+    completion_reward = {
+      remove_ideas = DRE_viplati_reparatiy
+    }
 
-		
-		ai_will_do = {
-			factor = 2
-		}
+    ai_will_do = {
 
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}					
+    }
+  }
+
+  focus = {
+    id = DRE_internet_money
+    icon = GFX_goal_ARA_people_digitalization
+    prerequisite = { focus = DRE_stop_payments}
+    relative_position_id = DRE_stop_payments
+    x = -2
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      add_timed_idea = { idea = DRE_internet_money days = 125}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_mr_beast
+    icon = GFX_goal_DRE_mrbeast
+    prerequisite = { focus = DRE_internet_money}
+    relative_position_id = DRE_internet_money
+    x = -1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+		add_timed_idea = { idea = DRE_mrbeast days = 365 }
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_donald_trump_gos_budget
+    icon = GFX_goal_DRE_trump
+    prerequisite = { focus = DRE_internet_money}
+    relative_position_id = DRE_internet_money
+    x = 1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+		set_country_flag = DRE_added_trump
+		custom_effect_tooltip = DRE_trump_avaliable_effect
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_burger_predlosheniye
+    icon = GFX_goal_DRE_burger
+    prerequisite = { focus = DRE_donald_trump_gos_budget focus = DRE_mr_beast }
+    relative_position_id = DRE_internet_money
+    x = 0
+    y = 2
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+		add_timed_idea = { idea = DRE_burger_deal days = 1222}
+
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 1
 				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}			
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
 								}
+								is_in_home_area = yes
 							}
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 1
 				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 1
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_cryptocurrency
+    icon = GFX_focus_DEN_no_regulations
+    prerequisite = { focus = DRE_burger_predlosheniye }
+    relative_position_id = DRE_burger_predlosheniye
+    x = -1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      custom_effect_tooltip = in_development
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_its_time_to_print_some_money
+    icon = GFX_goal_DRE_money_print
+    prerequisite = { focus = DRE_burger_predlosheniye }
+    relative_position_id = DRE_burger_predlosheniye
+    x = 1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      custom_effect_tooltip = in_development
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_novie_economic_vershini
+    icon = GFX_focus_generic_economic_recovery
+    prerequisite = { focus = DRE_its_time_to_print_some_money focus = DRE_cryptocurrency }
+    relative_position_id = DRE_burger_predlosheniye
+    x = 0
+    y = 2
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      custom_effect_tooltip = in_development
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_grand_sdelka
+    icon = GFX_focus_generic_currency_reforms
+    prerequisite = { focus = DRE_stop_payments}
+    relative_position_id = DRE_stop_payments
+    x = 2
+    y = 1
+    cost = 10
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      add_ideas = DRE_grand_deal
+	  custom_effect_tooltip = DRE_grand_deal_deletion_tt
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_oil
+    icon = GFX_focus_AUS_the_matzen_oil_fields
+    prerequisite = { focus = DRE_grand_sdelka}
+    relative_position_id = DRE_grand_sdelka
+    x = -1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      	4 = {
+			add_resource = {
+				type = oil
+				amount = 5
+			}
+			add_building_construction = {
+    			type = synthetic_refinery
+    			level = 1
+    			instant_build = yes
+			}
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_gaz
+    icon = GFX_focus_generic_tungsten
+    prerequisite = { focus = DRE_grand_sdelka}
+    relative_position_id = DRE_grand_sdelka
+    x = 1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+        70 = {
+			add_resource = {
+				type = tungsten
+				amount = 5
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_free_istochniki
+    icon = GFX_goal_DRE_rostov_deal
+    prerequisite = { focus = DRE_oil }
+    prerequisite = { focus = DRE_gaz }
+    relative_position_id = DRE_grand_sdelka
+    x = 0
+    y = 2
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    completion_reward = {
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_podkup_barona
+    icon = GFX_goal_DRE_baron_buy
+    prerequisite = { focus = DRE_free_istochniki }
+    mutually_exclusive = { focus =DRE_dogovornyak }
+    relative_position_id = DRE_free_istochniki
+    x = -1
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    available_if_capitulated = yes
+
+    completion_reward = {
+      	add_opinion_modifier = {
+    		target = ROS
+    		modifier = offered_support
+		}
+
+		ROS = {
+			add_opinion_modifier = {
+    			target = DRE
+    			modifier = offered_support
+			}
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_investizii_v_barona
+    icon = GFX_goal_DRE_money_for_baron
+    prerequisite = { focus = DRE_podkup_barona }
+    relative_position_id = DRE_podkup_barona
+    x = 0
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    completion_reward = {
+      add_timed_idea = { idea = DRE_investizii_into_baron days = 100 }
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_bolshe_zolota
+    icon = GFX_goal_DRE_extra_money_for_baron
+    prerequisite = { focus = DRE_investizii_v_barona }
+    relative_position_id = DRE_investizii_v_barona
+    x = 0
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    completion_reward = {
+      add_timed_idea = { idea = DRE_otkati_dlya_barona days = 150 }
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_kupit_otstavku
+    icon = GFX_goal_DRE_baron_otstavka
+    prerequisite = { focus = DRE_bolshe_zolota }
+    relative_position_id = DRE_bolshe_zolota
+    x = 0
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    completion_reward = {
+      ROS = { country_event = { id = drek.26 days = 3 }}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_dogovornyak
+    icon = GFX_goal_DRE_baron_deal
+    prerequisite = { focus = DRE_free_istochniki }
+    mutually_exclusive = { focus = DRE_podkup_barona}
+    relative_position_id = DRE_free_istochniki
+    x = 1
+    y = 1
+    cost = 10
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+		ROS = {
+			add_opinion_modifier = {
+    			target = DRE
+    			modifier = offered_support
+			}
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_delegatsiya_v_rostov
+    icon = GFX_goal_DRE_rostov_delegation
+    prerequisite = { focus = DRE_dogovornyak }
+    relative_position_id = DRE_dogovornyak
+    x = 0
+    y = 1
+    cost = 10
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+      custom_effect_tooltip = DRE_rostov_influence_focus
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_peregovory_start
+    icon = GFX_goal_DRE_baron_peregovory
+    prerequisite = { focus = DRE_delegatsiya_v_rostov }
+    relative_position_id = DRE_delegatsiya_v_rostov
+    x = 0
+    y = 1
+    cost = 10
+
+	bypass = {
+		ROS = { exists = no }
+	}
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+    
+    available_if_capitulated = yes
+
+	available = {
+		check_variable = {
+    		rostovskie_svyazi > 70
+		}
+		custom_trigger_tooltip = {
+			tooltip = DRE_rostov_peregovory_trigger_tt
+			check_variable = {
+    			rostovskie_svyazi > 70
+			}
+		}
+	}
+
+    completion_reward = {
+		country_event = { id = drek.33 hours = 1 }
+    }
+	ai_will_do = {
+
+    }
+  }
+
+  focus = {
+    id = DRE_vidvinut_ultimatum
+    icon = GFX_goal_DRE_rostov_ultimatum
+    prerequisite = { focus = DRE_peregovory_start }
+    relative_position_id = DRE_peregovory_start
+    x = 0
+    y = 1
+    cost = 10
+
+    search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+	bypass = {
+		ROS = { exists = no }
+	}
+    
+    available_if_capitulated = yes
+
+    completion_reward = {
+		ROS = {
+			country_event = { id = drek.34 days = 1 }
+		}
+    }
+
+    ai_will_do = {
+
+    }
+  }
+
+  #####################
+  ##REAL POLITIC TREE##
+  #####################
+
+  	focus = {
+		id = DRE_new_politics
+		icon = GFX_goal_drake_politics
+		x = 6
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = DRE_extraordinary_act
+		}
+	}
+
+	focus = {
+		id = DRE_remilitatize_west
+		icon = GFX_goal_DRE_own_way
+		relative_position_id = DRE_new_politics
+		prerequisite = { focus = DRE_new_politics}
+		mutually_exclusive = { focus = DRE_rally_the_opposition }
+		x = -6
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			152 = {
+				set_demilitarized_zone = no
+			}
+			153 = {
+				set_demilitarized_zone = no
+			}
+			848 = {
+				set_demilitarized_zone = no
+			}
+			976 = {
+				set_demilitarized_zone = no
+			}
+			news_event = {
+				id = squad_news.4
+				days = 5
 			}
 		}
 	}
 
 	focus = {
-		id = DRE_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DRE_industrial_effort }
+		id = DRE_am_nam_concerns
+		icon = GFX_goal_DRE_amnam_concerns
+		relative_position_id = DRE_remilitatize_west
+		prerequisite = { focus = DRE_remilitatize_west}
+		mutually_exclusive = { focus = DRE_sorell_tactics}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRE_amnam_concerns_idea
+		}
+	}
+
+	focus = {
+		id = DRE_enlist_people
+		icon = GFX_focus_generic_modernize_industry
+		relative_position_id = DRE_am_nam_concerns
+		prerequisite = { focus = DRE_am_nam_concerns}
 		x = 1
 		y = 1
-		relative_position_id = DRE_industrial_effort
+
 		cost = 10
 
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		
-		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2			
+			factor = 50
+		}
+
+		available = {
+
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
+
 		}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = DRE_construction_effort_2
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = DRE_construction_effort }
-		x = 0
-		y = 1
-		relative_position_id = DRE_construction_effort
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}		
-
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
+			random_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -4284,50 +4819,2086 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
-		id = DRE_production_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DRE_production_effort }
-		x = 0
+		id = DRE_uplift_an_nam
+		icon = GFX_focus_ger_reichskommisariats
+		relative_position_id = DRE_am_nam_concerns
+		prerequisite = { focus = DRE_am_nam_concerns}
+		x = 3
 		y = 1
-		relative_position_id = DRE_production_effort
+
 		cost = 10
-		
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
-		available_if_capitulated = yes
-
 
 		ai_will_do = {
-			factor = 2
+			factor = 50
+		}
+
+		available = {
+
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_command_power = 10
+			add_advisor_role = {
+    			character = amnyam
+    			activate = no
+    			advisor = {
+        			slot = political_advisor
+        			cost = 50
+					visible = { NOT = { has_country_flag = DRE_am_nam_march } }
+					allowed = { 
+						original_tag = DRE 
+					} 
+					available = { 
+						NOT = { has_country_flag = DRE_am_nam_march }
+					}
+        			idea_token = amnyam_advisor
+        			traits = {
+            		baron_of_terror
+					economic_organizer
+        			}
+    			}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_expand_am_nam_batalions
+		icon = GFX_focus_generic_welfare
+		relative_position_id = DRE_uplift_an_nam
+		prerequisite = { focus = DRE_uplift_an_nam}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = amnam_divisions_tt
+			if = {
+				limit = {
+					NOT = { has_template = "Дреффен-АМ" }
+				}
+				division_template = {
+					name = "Дреффен-АМ"
+					priority = 2
+					division_names_group = DRE_VS
+					template_counter = 101
+					is_locked = yes #Unlocked in Strengthen the Waffen-SS focus under Himmler
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+					
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					4 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				4 = {
+					hidden_effect = {
+						create_unit = {
+							division = "division_template =\"Дреффен-АМ\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+							owner = ROOT
+							count = 4
+						}
 					}
 				}
 			}
 		}
+	}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
+	focus = {
+		id = DRE_sorell_tactics
+		icon = GFX_goal_DRE_sorell_tactics
+		relative_position_id = DRE_remilitatize_west
+		prerequisite = { focus = DRE_remilitatize_west}
+		mutually_exclusive = { focus = DRE_am_nam_concerns }
+		x = -2
+		y = 1
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_ideas = DRE_sorell_tactics_idea
+		}
+	}
+
+	focus = {
+		id = DRE_optimize_services
+		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = DRE_sorell_tactics
+		prerequisite = { focus = DRE_sorell_tactics}
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRE_optimize_services_idea
+		}
+	}
+
+	focus = {
+		id = DRE_war_preparations
+		icon = GFX_goal_generic_allies_build_infantry
+		relative_position_id = DRE_sorell_tactics
+		prerequisite = { focus = DRE_sorell_tactics}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = DRE_war_preparations_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = DRE_strengthened_supply_lines
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_sorell_industries
+		icon = GFX_focus_generic_reorient_production
+		relative_position_id = DRE_sorell_tactics
+		prerequisite = { focus = DRE_war_preparations }
+		prerequisite = { focus = DRE_optimize_services }
+		x = -2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			swap_ideas = {
+				add_idea = DRE_optimize_services_idea_2
+				remove_idea = DRE_optimize_services_idea
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_kruglistan_anshlus
+		icon = GFX_goal_DRE_anschluss
+		relative_position_id = DRE_remilitatize_west
+		prerequisite = { focus = DRE_am_nam_concerns focus = DRE_sorell_tactics }
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			KRU = {
+				country_event = { id = drek.3 days = 3}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_military_parade
+		icon = GFX_focus_FIN_coastal_defense
+		relative_position_id = DRE_kruglistan_anshlus
+		prerequisite = { focus = DRE_kruglistan_anshlus }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = DRE_reportage_about_achivements
+		icon = GFX_focus_generic_radio_communication
+		relative_position_id = DRE_military_parade
+		prerequisite = { focus = DRE_military_parade }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_country_leader_trait = DRE_supreme_commander_armed_forces
+		}
+	}
+
+	focus = {
+		id = DRE_supreme_leader
+		icon = GFX_focus_GER_the_supreme_leader
+		relative_position_id = DRE_reportage_about_achivements
+		prerequisite = { focus = DRE_reportage_about_achivements }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					has_country_leader_with_trait = DRE_supreme_commander_armed_forces
+				}
+				random_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					swap_country_leader_traits = {
+						remove = DRE_supreme_commander_armed_forces
+						add = DRE_supreme_leader
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_reassert_emperial_estates
+		icon = GFX_goal_generic_forceful_treaty
+		relative_position_id = DRE_kruglistan_anshlus
+		prerequisite = { focus = DRE_kruglistan_anshlus }
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_state_claim = 155
+			add_state_claim = 154
+			add_state_claim = 43
+			add_state_claim = 973
+			add_state_claim = 974
+			add_state_claim = 53
+			add_state_claim = 52
+		}
+	}
+
+	focus = {
+		id = DRE_bavaria_or_war
+		icon = GFX_goal_generic_more_territorial_claims
+		relative_position_id = DRE_reassert_emperial_estates
+		prerequisite = { focus = DRE_reassert_emperial_estates }
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			BTK = {
+				country_event = { id = drek.5 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_lagoda_ultimatum
+		icon = GFX_goal_DRE_lagoda_deal
+		relative_position_id = DRE_supreme_leader
+		prerequisite = { focus = DRE_bavaria_or_war focus = DRE_fate_of_silashik }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = drek.13 hours = 3 }
+
+			SVI = {
+				country_event = {
+				id = svin.6
+				hours = 6
+				}
+			}
+
+			LAG = {
+				country_event = { id = drek.10 days = 3}
+			}
+		}
+	}
+
+
+	focus = {
+		id = DRE_demand_alto_adidshe_2
+		icon = GFX_focus_generic_annex_country
+		relative_position_id = DRE_kruglistan_anshlus
+		prerequisite = { focus = DRE_kruglistan_anshlus }
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SLA = {
+				country_event = {
+					id = drek.6
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_venezia_award
+		icon = GFX_goal_generic_dangerous_deal
+		relative_position_id = DRE_demand_alto_adidshe_2
+		prerequisite = { focus = DRE_demand_alto_adidshe_2 }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ZOL = {
+				add_opinion_modifier = {
+    				target = DRE
+    				modifier = first_venezia_award
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_fate_of_silashik
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		relative_position_id = DRE_venezia_award
+		prerequisite = { focus = DRE_venezia_award }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SLA = {
+				country_event = {
+					id = drek.8
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_subjugate_zolo_economics
+		icon = GFX_goal_DRE_zolo_economy
+		relative_position_id = DRE_bavaria_or_war
+		prerequisite = { focus = DRE_bavaria_or_war focus = DRE_fate_of_silashik }
+		x = -2
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			hidden_effect = {
+				swap_ideas ={
+					remove_idea = defeted_at_wwone
+					add_idea = defeted_at_wwone_2
+				}
+			}
+			ZOL = { add_ideas = DRE_development_of_economic_relations_ns}
+		}
+	}
+
+	focus = {
+		id = DRE_hametova_trade_deal
+		icon = GFX_goal_generic_positive_trade_relations
+		relative_position_id = DRE_subjugate_zolo_economics
+		prerequisite = { focus = DRE_subjugate_zolo_economics }
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = DRE_operation_sloth_throw
+		icon = GFX_focus_generic_naval_invasion
+		relative_position_id = DRE_subjugate_zolo_economics
+		prerequisite = { focus = DRE_subjugate_zolo_economics }
+		x = -4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_war_with = GON } }
+				create_wargoal = {
+					target = GON
+					type = annex_everything
+				}
+			}
+
+			add_timed_idea = { idea = DRE_sloth_throw days = 700 }
+		}
+	}
+
+	focus = {
+		id = DRE_upgrade_equipment
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		relative_position_id = DRE_operation_sloth_throw
+		prerequisite = { focus = DRE_operation_sloth_throw }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.65
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_terrifying_tanks
+		icon = GFX_focus_FIN_foreign_anti_air
+		relative_position_id = DRE_operation_sloth_throw
+		prerequisite = { focus = DRE_operation_sloth_throw }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				uses = 3
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_new_ships
+		icon = GFX_focus_BEL_better_than_maginot
+		relative_position_id = DRE_operation_sloth_throw
+		prerequisite = { focus = DRE_operation_sloth_throw }
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bc_tech
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_free_the_iberia
+		icon = GFX_focus_generic_free_iberia
+		relative_position_id = DRE_new_ships
+		prerequisite = { focus = DRE_new_ships }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = DRE_operation_neglotay
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = DRE_nekoglays_gold }
+		relative_position_id = DRE_hametova_trade_deal
+		prerequisite = { focus = DRE_hametova_trade_deal }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				target = NEK
+				type = annex_everything
+			}
+
+			add_ideas = DRE_operation_sprengungberge
+		}
+	}
+
+	focus = {
+		id = DRE_nekoglays_gold
+		icon = GFX_goal_DRE_nek_gold
+		mutually_exclusive = { focus = DRE_operation_neglotay }
+		relative_position_id = DRE_hametova_trade_deal
+		prerequisite = { focus = DRE_hametova_trade_deal }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			NEK = {
+				country_event = { id = drek.29 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_restore_african_estates
+		icon = GFX_goal_DRE_african_expansion
+		relative_position_id = DRE_subjugate_zolo_economics
+		prerequisite = { focus = DRE_subjugate_zolo_economics }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			ZUS = {
+				country_event = { id = drek.31 days = 2 }
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_morphi_subordination_order
+		icon = GFX_focus_generic_subjugation
+		relative_position_id = DRE_subjugate_zolo_economics
+		prerequisite = { focus = DRE_subjugate_zolo_economics }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			MOY = { country_event = { id = drek.24 days = 2 } }
+		}
+	}
+
+	focus = {
+		id = DRE_rally_the_opposition
+		icon = GFX_goal_DRE_rally_the_opposition
+		relative_position_id = DRE_new_politics
+		prerequisite = { focus = DRE_new_politics}
+		mutually_exclusive = { focus = DRE_remilitatize_west }
+		x = 6
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+    			popularity = 0.3
+			}
+			add_popularity = {
+				ideology = democratic
+    			popularity = 0.15
+			}
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = hypecratia
+				size = 0.2
+				capital = 4
+				states = { 848 153 152 4 }
+				keep_all_characters = yes
+			}
+
+			152 = {
+				set_demilitarized_zone = no
+			}
+			153 = {
+				set_demilitarized_zone = no
+			}
+			848 = {
+				set_demilitarized_zone = no
+			}
+			add_timed_idea = { idea = DRE_clamp_down_on_hypecratia days = 365}
+		}
+	}
+
+	focus = {
+		id = DRE_nation_rebuilding
+		icon = GFX_focus_generic_public_works
+		relative_position_id = DRE_rally_the_opposition
+		prerequisite = { focus = DRE_rally_the_opposition}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = { idea = DRE_national_rebuilding days = 365 }
+		}
+	}
+
+	focus = {
+		id = DRE_return_vitaliy_empire
+		icon = GFX_focus_GER_monarchy_compromise
+		mutually_exclusive = { focus = DRE_form_parlament }
+		relative_position_id = DRE_nation_rebuilding
+		prerequisite = { focus = DRE_nation_rebuilding}
+		x = -4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			neutrality > 0.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = { idea = DRE_reviving_monarchism days = 450 }
+			remove_ideas = DRE_extraordinary_act
+			add_popularity = {
+				ideology = neutrality
+    			popularity = 0.25
+			}
+			set_politics = {
+    			ruling_party = neutrality
+    			elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_reestablish_empire_divisions
+		icon = GFX_focus_generic_army_doctrines_2
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_return_vitaliy_empire }
+		x = 3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = DRE_strafbatalions_tt
+			hidden_effect = {
+				division_template = {
+					name = "Straf-Division"
+					division_names_group = GER_PEN_01
+					is_locked = yes
+					force_allow_recruiting = yes
+					override_model = GER_infantry_alt_0_entity
+					division_cap = 12
+
+					regiments = {
+						penal_battalion = { x = 0 y = 0 }
+						penal_battalion = { x = 0 y = 1 }
+						penal_battalion = { x = 0 y = 2 }
+						penal_battalion = { x = 1 y = 0 }
+						penal_battalion = { x = 1 y = 1 }
+						penal_battalion = { x = 1 y = 2 }
+						penal_battalion = { x = 2 y = 0 }
+						penal_battalion = { x = 2 y = 1 }
+						penal_battalion = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_template = \"Straf-Division\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = ROOT
+						count = 3
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					random_country_division = {
+						limit = {
+							division_has_battalion_in_template = penal_battalion
+						}
+						add_divisional_commander_xp = 2300
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_glory_to_army
+		icon = GFX_focus_CONGO_congo_army
+		relative_position_id = DRE_reestablish_empire_divisions
+		prerequisite = { focus = DRE_reestablish_empire_divisions }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRE_glory_to_army_idea
+		}
+	}
+
+	focus = {
+		id = DRE_restore_drake_empire
+		icon = GFX_focus_SOV_restore_cossack_units
+		relative_position_id = DRE_nation_rebuilding
+		prerequisite = { focus = DRE_nation_rebuilding }
+		x = 0
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_state_claim = 155
+			add_state_claim = 154
+			add_state_claim = 43
+			add_state_claim = 973
+			add_state_claim = 974
+			add_state_claim = 52
+			add_state_claim = 53
+		}
+	}
+
+	focus = {
+		id = DRE_adidshe_ultimatum
+		icon = GFX_goal_generic_demand_territory
+		relative_position_id = DRE_kruglistan_question
+		prerequisite = { focus = DRE_kruglistan_question }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SLA = {
+				country_event = {
+					id = drek.6
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_northern_expansion
+		icon = GFX_focus_FIN_finnish_supremacy_in_the_north
+		relative_position_id = DRE_adidshe_integration
+		prerequisite = { focus = DRE_adidshe_integration }
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = in_development
+		}
+	}
+
+	focus = {
+		id = DRE_secure_our_west
+		icon = GFX_goal_generic_attack_allies
+		relative_position_id = DRE_lagoda_fate
+		prerequisite = { focus = DRE_lagoda_fate }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				target = NEK
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_there_are_only_one_way
+		icon = GFX_goal_DRE_hungary_problem
+		relative_position_id = DRE_lagoda_fate
+		prerequisite = { focus = DRE_lagoda_fate focus = DRE_adidshe_integration }
+		x = -1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			CHB = {
+				exists = yes
+				has_capitulated = no
+				is_subject = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHB
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_kruglistan_question
+		icon = GFX_goal_DRE_kruglistan_question
+		relative_position_id = DRE_restore_drake_empire
+		prerequisite = { focus = DRE_restore_drake_empire }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			KRU = {
+				country_event = { id = drek.3 days = 3}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_adidshe_integration
+		icon = GFX_focus_generic_subjugation
+		relative_position_id = DRE_kruglistan_question
+		prerequisite = { focus = DRE_adidshe_ultimatum }
+		x = -1
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SLA = {
+				country_event = {
+					id = drek.8
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_return_bavaria
+		icon = GFX_focus_generic_annex_country
+		relative_position_id = DRE_kruglistan_question
+		prerequisite = { focus = DRE_kruglistan_question }
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			BTK = {
+				country_event = { id = drek.5 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_jilina_award
+		icon = GFX_goal_generic_military_deal
+		relative_position_id = DRE_return_bavaria
+		prerequisite = { focus = DRE_return_bavaria }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SVI = {
+				add_opinion_modifier = {
+					target = DRE
+					modifier = first_venezia_award
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_lagoda_fate
+		icon = GFX_focus_generic_annex_country_2
+		relative_position_id = DRE_jilina_award
+		prerequisite = { focus = DRE_jilina_award }
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = drek.13 hours = 3 }
+
+			SVI = {
+				country_event = {
+				id = svin.6
+				hours = 6
+				}
+			}
+
+			LAG = {
+				country_event = { id = drek.10 days = 3}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_drake_national_laboratories
+		icon = GFX_focus_generic_university_3
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_return_vitaliy_empire}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = DRE_prepare_supply_lines
+		icon = GFX_focus_AUS_raid_military_storages
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_return_vitaliy_empire}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = DRE_war_preparations_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = DRE_strengthened_supply_lines
+					days = 730
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_drekovia_millitary_production
+		icon = GFX_focus_generic_mass_production
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_drake_national_laboratories}
+		x = -1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_for_the_vaterland
+		icon = GFX_focus_SWI_establish_pro_helvetia
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_prepare_supply_lines}
+		x = 1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = DRE_all_to_front
+		}
+	}
+
+	focus = {
+		id = DRE_return_old_doctrine
+		icon = GFX_goal_generic_army_artillery
+		relative_position_id = DRE_return_vitaliy_empire
+		prerequisite = { focus = DRE_drake_national_laboratories focus = DRE_prepare_supply_lines }
+		x = 0
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = land_doctrine
+			}
+			add_ideas = DRE_old_doctrine
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_form_parlament
+		icon = GFX_focus_generic_democratic_europe
+		mutually_exclusive = { focus = DRE_return_vitaliy_empire }
+		relative_position_id = DRE_nation_rebuilding
+		prerequisite = { focus = DRE_nation_rebuilding}
+		x = 4
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			democratic > 0.35
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {			
+			set_rule = {
+				can_create_factions = yes
+			}
+			add_popularity = {
+				ideology = democratic
+    			popularity = 0.25
+			}
+			set_politics = {
+    			ruling_party = democratic
+    			elections_allowed = yes
+    			election_frequency = 48
+			}
+		}
+	}
+
+	focus = {
+		id = DRE_libirate_science
+		icon = GFX_focus_generic_university_2
+		relative_position_id = DRE_form_parlament
+		prerequisite = { focus = DRE_form_parlament}
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = DRE_army_of_liberators
+		icon = GFX_focus_generic_advanced_military_studies
+		relative_position_id = DRE_form_parlament
+		prerequisite = { focus = DRE_form_parlament}
+		x = -2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = DRE_arms_factories
+		icon = GFX_focus_generic_military_industry
+		relative_position_id = DRE_army_of_liberators
+		prerequisite = { focus = DRE_army_of_liberators}
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -4362,52 +6933,174 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DRE_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = DRE_production_effort_2 }
-		x = 0
+		id = DRE_mobilize_sturmers
+		icon = GFX_focus_generic_limited_social_mobilization
+		relative_position_id = DRE_army_of_liberators
+		prerequisite = { focus = DRE_army_of_liberators}
+		x = 1
 		y = 1
-		relative_position_id = DRE_production_effort_2
+
 		cost = 10
 
-		search_filters = { FOCUS_FILTER_INDUSTRY  }
-		
-		available_if_capitulated = yes
-
-
 		ai_will_do = {
-			factor = 2
+			factor = 50
+		}
+
+		available = {
+
 		}
 
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}					
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = { idea = DRE_sturmers days = 1200 }
+		}
+	}
+
+	focus = {
+		id = DRE_shoot_vips
+		icon = GFX_focus_GER_absorb_the_abwehr
+		relative_position_id = DRE_army_of_liberators
+		prerequisite = { focus = DRE_mobilize_sturmers focus = DRE_arms_factories}
+		x = 0
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = { id = drek.28 days = 3 }
+		}
+	}
+
+
+	focus = {
+		id = DRE_decline_act
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		relative_position_id = DRE_form_parlament
+		prerequisite = { focus = DRE_form_parlament}
+		x = 2
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			remove_ideas = DRE_extraordinary_act
+		}
+	}
+
+	focus = {
+		id = DRE_revoke_guaranties
+		icon = GFX_focus_spr_crush_the_revolution
+		relative_position_id = DRE_decline_act
+		prerequisite = { focus = DRE_decline_act}
+		x = 1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			is_guaranteed_by = HAM
+		}
+
+		bypass = {
+			NOT = { is_guaranteed_by = HAM }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			HAM = {
+				diplomatic_relation = {
+    				country = DRE
+    				relation = guarantee
+    				active = no
 				}
 			}
 		}
+	}
 
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}		
+	focus = {
+		id = DRE_build_new_homes
+		icon = GFX_focus_GER_autarky_ambitions
+		relative_position_id = DRE_decline_act
+		prerequisite = { focus = DRE_decline_act}
+		x = 0
+		y = 2
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
+						building = infrastructure
+						size > 1
 					}
 					OR = {
 						is_in_home_area = yes
@@ -4415,9 +7108,8 @@ focus_tree = {
 							owner = {
 								any_owned_state = {
 									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
+										building = infrastructure
+										size > 1
 									}
 									is_in_home_area = yes
 								}
@@ -4425,13 +7117,41 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 	}
+
+
 }

@@ -10,13 +10,12 @@ state={
 		victory_points = {
 			577 1 
 		}
-		owner = GVI
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 		}
-		add_core_of = GVI
-		add_core_of = UKR
+		owner = HAM
+		add_core_of = HAM
 	}
 	provinces={
 		577 9548

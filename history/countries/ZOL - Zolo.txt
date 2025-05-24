@@ -1,4 +1,4 @@
-capital = 117
+capital = 1039
 
 oob = "ZOL_1936"
 
@@ -21,6 +21,8 @@ set_technology = {
 }
 
 recruit_character = universal_hype_zol
+recruit_character = pushkin
+recruit_character = stalin
 
 if = {
 	limit = {

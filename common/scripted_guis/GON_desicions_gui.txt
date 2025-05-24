@@ -1,0 +1,108 @@
+scripted_gui = {
+
+	GON_palace_top_1 = {
+		context_type = decision_category
+		window_name = "GON_palace_1_floor_panel"
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			original_tag = GON
+		}
+		
+		effects = {
+		}
+		
+		properties = {
+			GON_akvadiskoteka = {
+				image = "GFX_GON_palace_state_[?akvadiskoteka]"
+			}			
+			GON_coctail_room = {
+				image = "GFX_GON_palace_state_[?coctail]"
+			}
+			GON_pool_room = {
+				image = "GFX_GON_palace_state_[?pool]"
+			}
+			GON_kinozal = {
+				image = "GFX_GON_palace_state_[?kino]"
+			}
+			GON_spa_1 = {
+				image = "GFX_GON_palace_state_[?spa_top]"
+			}
+			GON_spa_2 = {
+				image = "GFX_GON_palace_state_[?spa_bottom]"
+			}
+			GON_vine_pogreb = {
+				image = "GFX_GON_palace_state_[?vine_pogreb]"
+			}
+			GON_indoor = {
+				image = "GFX_GON_palace_state_[?indoor]"
+			}
+			GON_eggs_zeh = {
+				image = "GFX_GON_palace_state_[?eggs]"
+			}
+			GON_sklad_gryazi = {
+				image = "GFX_GON_palace_state_[?dirt]"
+			}
+			GON_palace_state_progressbar = {
+				frame = palace_ready_state
+			}
+			GON_palace_blueprint = {
+				frame = selected_floor
+			}
+		}
+	}
+
+	GON_palace_top_2 = {
+		context_type = decision_category
+		window_name = "GON_palace_2_floor_panel"
+		visible = {
+			always = yes
+		}
+		ai_enabled = {
+			original_tag = GON
+		}
+		
+		effects = {
+		}
+		
+		properties = {
+			GON_trenashorniy_zal = {
+				image = "GFX_GON_palace_state_[?sport]"
+			}			
+			GON_games_room = {
+				image = "GFX_GON_palace_state_[?games]"
+			}
+			GON_casino = {
+				image = "GFX_GON_palace_state_[?casino]"
+			}
+			GON_theatre = {
+				image = "GFX_GON_palace_state_[?theatre]"
+			}
+			GON_small_obed = {
+				image = "GFX_GON_palace_state_[?obed]"
+			}
+			GON_read_room = {
+				image = "GFX_GON_palace_state_[?read]"
+			}
+			GON_peregovornaya = {
+				image = "GFX_GON_palace_state_[?peregovornaya]"
+			}
+			GON_grimernie = {
+				image = "GFX_GON_palace_state_[?grim]"
+			}
+			GON_kalyan = {
+				image = "GFX_GON_palace_state_[?kalyan]"
+			}
+			GON_bilyard = {
+				image = "GFX_GON_palace_state_[?bilyard]"
+			}
+			GON_palace_state_progressbar = {
+				frame = palace_ready_state_2
+			}
+			GON_palace_blueprint = {
+				frame = selected_floor
+			}
+		}
+	}
+}

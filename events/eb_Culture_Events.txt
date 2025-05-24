@@ -4,8 +4,6 @@ country_event = {
     id = CTM.1
     immediate = {
         #Just Chatting
-        set_variable = { 60.nationality = 1 }
-        set_variable = { 59.nationality = 1 }
         set_variable = { 9.nationality = 1 }
         set_variable = { 75.nationality = 1 }
         set_variable = { 10.nationality = 1 }
@@ -101,6 +99,17 @@ country_event = {
         set_variable = { 922.nationality = 1 }
         set_variable = { 920.nationality = 1 }
 
+        set_variable = { 1047.nationality = 1 }
+        set_variable = { 1048.nationality = 1 }
+        set_variable = { 1049.nationality = 1 }
+        set_variable = { 1027.nationality = 1 }
+        
+        set_variable = { 31.nationality = 1 }
+        set_variable = { 25.nationality = 1 }
+        set_variable = { 22.nationality = 1 }
+        set_variable = { 1043.nationality = 1 }
+        set_variable = { 1044.nationality = 1 }
+
 
         #Likee
         set_variable = { 201.nationality = 2 }
@@ -111,13 +120,8 @@ country_event = {
         set_variable = { 802.nationality = 2 }
         set_variable = { 970.nationality = 2 }
         set_variable = { 211.nationality = 2 }
-        set_variable = { 21.nationality = 2 }
-        set_variable = { 851.nationality = 2 }
         set_variable = { 32.nationality = 2 }
-        set_variable = { 22.nationality = 2 }
         set_variable = { 26.nationality = 2 }
-        set_variable = { 31.nationality = 2 }
-        set_variable = { 25.nationality = 2 }
         set_variable = { 24.nationality = 2 }
         set_variable = { 33.nationality = 2 }
         set_variable = { 23.nationality = 2 }
@@ -145,6 +149,9 @@ country_event = {
         set_variable = { 260.nationality = 2 }
         set_variable = { 222.nationality = 2 }
         set_variable = { 133.nationality = 2 }
+        set_variable = { 1046.nationality = 2 }
+        set_variable = { 1045.nationality = 2 }
+        set_variable = { 1050.nationality = 2 }
 
         #TikTok
         set_variable = { 3.nationality = 3 }
@@ -186,8 +193,13 @@ country_event = {
         set_variable = { 100.nationality = 5 }
         set_variable = { 914.nationality = 5 }
 
+        set_variable = { 158.nationality = 5 }
+        set_variable = { 847.nationality = 5 }
+        set_variable = { 735.nationality = 5 }
+        set_variable = { 851.nationality = 5 }
+        set_variable = { 21.nationality = 5 }
+
         #YouTube
-        set_variable = { 158.nationality = 4 }
         set_variable = { 163.nationality = 4 }
 
         #Gamers
@@ -195,7 +207,6 @@ country_event = {
         set_variable = { 159.nationality = 6 }
         set_variable = { 846.nationality = 6 }
         set_variable = { 151.nationality = 6 }
-        set_variable = { 56.nationality = 6 }
         set_variable = { 911.nationality = 6 }
         set_variable = { 37.nationality = 6 }
         set_variable = { 99.nationality = 6 }
@@ -361,6 +372,9 @@ country_event = {
         set_variable = { 121.nationality = 13 }
         set_variable = { 1032.nationality = 13 }
         set_variable = { 1033.nationality = 13 }
+        
+        set_variable = { 52.nationality = 13 }
+        set_variable = { 53.nationality = 13 }
 
         #JS + TikTok
         set_variable = { 50.nationality = 12 }
@@ -381,11 +395,10 @@ country_event = {
         set_variable = { 916.nationality = 12 }
         set_variable = { 917.nationality = 12 }
         set_variable = { 915.nationality = 12 }
+        set_variable = { 56.nationality = 12 }
         
 
         #JS + Youtube
-        set_variable = { 735.nationality = 14 }
-        set_variable = { 847.nationality = 14 }
         set_variable = { 171.nationality = 14 }
         set_variable = { 180.nationality = 14 }
         set_variable = { 181.nationality = 14 }
@@ -403,7 +416,6 @@ country_event = {
         set_variable = { 736.nationality = 17 }
         set_variable = { 853.nationality = 17 }
         set_variable = { 103.nationality = 17 }
-        set_variable = { 59.nationality = 17 }
         set_variable = { 912.nationality = 17 }
         set_variable = { 106.nationality = 17 }
         set_variable = { 803.nationality = 17 }
@@ -468,6 +480,7 @@ country_event = {
         set_variable = { 62.nationality = 18 }
         set_variable = { 61.nationality = 18 }
         set_variable = { 58.nationality = 18 }
+        set_variable = { 60.nationality = 18 }
         
         #OkoloBratish
         set_variable = { 5.nationality = 16 }
@@ -483,11 +496,15 @@ country_event = {
         set_variable = { 69.nationality = 16 }
         set_variable = { 65.nationality = 16 }
         set_variable = { 909.nationality = 16 }
+        set_variable = { 59.nationality = 16 }
 
         #Drake
         set_variable = { 4.nationality = 19 }
         set_variable = { 975.nationality = 19 }
         set_variable = { 70.nationality = 19 }
+        set_variable = { 976.nationality = 19 }
+        set_variable = { 152.nationality = 19 }
+        set_variable = { 153.nationality = 19 }
 
         #OkoloDrake
         set_variable = { 155.nationality = 20 }
@@ -495,6 +512,7 @@ country_event = {
         set_variable = { 43.nationality = 20 }
         set_variable = { 39.nationality = 20 }
         set_variable = { 102.nationality = 20 }
+        set_variable = { 848.nationality = 20 }
 
     }   
     title = CULTURE.1776.t

@@ -5,11 +5,11 @@ state={
 		356 3199 3291 3318 3346 6230 6279 6317 6341 6369 6398 9339 9394 
 	}
 	history={
-		owner = HAM
+		owner = ZUS
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = HAM
+		add_core_of = ZUS
 		victory_points = {
 			6230 1
 		}

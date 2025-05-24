@@ -90,4 +90,80 @@ spriteTypes = {
 		name = "GFX_news_brat_5"
 		texturefile = "gfx/event_pictures/news_brat_5.dds"
 	}
+	
+
+	
+	spriteType = {
+		name = "GFX_report_event_rostov_baron"
+		texturefile = "gfx/event_pictures/report_event_baron.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_hamster_economy"
+		texturefile = "gfx/event_pictures/hamster_economy.dds"
+	}
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_report_event_tv_appeal"
+		texturefile = "gfx/event_pictures/ara_tv_appeal.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_kru_march"
+		texturefile = "gfx/event_pictures/report_event_kru_march.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_phone"
+		texturefile = "gfx/event_pictures/report_event_phone.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_drake_plan"
+		texturefile = "gfx/event_pictures/drake_plan.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_report_event_welcome_chb"
+		texturefile = "gfx/event_pictures/welcome_chb.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_chb_peace_deal"
+		texturefile = "gfx/event_pictures/chb_peace_deal.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_sdo_peace_deal_1"
+		texturefile = "gfx/event_pictures/sdo_peace_deal_1.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_sdo_peace_deal_2"
+		texturefile = "gfx/event_pictures/sdo_peace_deal_2.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_sdo_peace_deal_3"
+		texturefile = "gfx/event_pictures/sdo_peace_deal_3.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_sdo_peace_deal_quo"
+		texturefile = "gfx/event_pictures/sdo_peace_deal_quo.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_report_event_chb_education"
+		texturefile = "gfx/event_pictures/chb_education_rework.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_report_event_am_nam_march"
+		texturefile = "gfx/event_pictures/am_nam_march.dds"
+	}
 }

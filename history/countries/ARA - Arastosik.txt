@@ -9,9 +9,10 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 set_research_slots = 4
 
-add_ideas = { defeted_at_wwone }
-add_ideas = { ARA_national_catastrophe }
-add_ideas = { ARA_dicator_constitution }
+add_ideas = { defeted_at_wwone 
+	ARA_gos_apparat_idea 
+	ARA_massive_opposition 
+	ARA_slabie_zakoni }
 
 # Starting tech
 set_technology = {
@@ -38,7 +39,14 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+recruit_character = hypecratia_president
+recruit_character = hypecratia_parlament
 recruit_character = universal_hype_ara
+recruit_character = luckyAbob
+recruit_character = luckyAbobNavy
+recruit_character = jevolya
+recruit_character = polino
+recruit_character = aratoss_fuhrer
 
 if = {
 	limit = {
@@ -103,7 +111,7 @@ set_politics = {
 create_country_leader = {
 	name = "Аратосс-Гауптштурмфюрер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Aratoss.dds"
+	picture = "Aratoss_2.dds"
 	expire = "2000.1.1"
 	ideology = fascism_ideology
 	traits = {

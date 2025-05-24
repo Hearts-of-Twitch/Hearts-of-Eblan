@@ -13,7 +13,6 @@ state={
 			6533 1
 		}
 		owner = DPN
-		set_demilitarized_zone = yes
 		
 		buildings = {
 			infrastructure = 3

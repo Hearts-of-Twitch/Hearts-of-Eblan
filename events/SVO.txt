@@ -1,5 +1,6 @@
 add_namespace = svo
 
+
 news_event = {
 	id = svo.1
 	title = svo.1.t
@@ -76,26 +77,66 @@ country_event = {
 		}
 	}
 }
-news_event = {
-	id = svo.6
-	title = svo.6.t
-	desc = svo.6.d
-	picture = GFX_news_event_051
+
+country_event = {
+	id = svo.5
+	title = svo.5.t
+	desc = svo.5.d
+	picture = GFX_report_event_svo_for_chb
 	
-	major = yes
+	major = no
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = svo.6.a
+		name = svo.3.a
 		
 		hidden_effect = {
 			
 		}
 	}
 }
+
 country_event = {
-	id = svo.5
+	id = svo.6
+	title = svo.6.t
+	desc = svo.6.d
+	picture = GFX_report_event_phone
+	
+	major = no
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = svo.6.a
+		
+		hidden_effect = {
+			country_event = { id = svo.7 hours = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = svo.7
+	title = svo.7.t
+	desc = svo.7.d
+	picture = GFX_report_event_phone
+	
+	major = no
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = svo.7.a
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+country_event = {
+	id = svo.8
 	title = svo.5.t
 	desc = svo.5.d
 	picture = GFX_report_event_svo_for_chb
@@ -108,7 +149,6 @@ country_event = {
 		name = svo.5.a
 		custom_effect_tooltip = svo_end_tt
 		hidden_effect = {
-			country_event = { id = drek.14 days = 7 }
 			white_peace = {
 				tag = CHB
 				message = my_peace_tt

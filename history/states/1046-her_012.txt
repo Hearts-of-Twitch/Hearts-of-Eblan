@@ -1,0 +1,22 @@
+state={
+	id=1046
+	name="STATE_1046"
+	provinces={
+		11596 
+	}
+	state_category = large_city
+	history={
+		victory_points = {
+			11596 1
+		}
+		owner = MOY
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MOY
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

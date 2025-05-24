@@ -9,8 +9,8 @@ state={
 	}
 	history = { 
 
-		owner = GCH
-		add_core_of = GCH
+		owner = NEK
+		add_core_of = NEK
 
 		victory_points = {
 			9622 10 #Karlsruhe

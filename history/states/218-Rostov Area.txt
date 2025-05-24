@@ -5,7 +5,7 @@ state={
 		6445 9430 11418 11434 11450 
 	}
 	history={
-		owner = ZUS
+		owner = ROS
 		victory_points = {
 			11418 1 
 		}

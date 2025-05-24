@@ -5,7 +5,7 @@ state={
 		925 967 6926 11861 
 	}
 	history = {
-		owner = NEK
+		owner = ZOL
 		victory_points = {
 			6926 3 
 		}
@@ -22,7 +22,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = NEK
+		add_core_of = ZOL
 	}
 	manpower=2979335
 	buildings_max_level_factor=1.000

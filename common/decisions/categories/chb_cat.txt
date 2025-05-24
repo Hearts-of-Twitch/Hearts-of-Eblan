@@ -1,0 +1,19 @@
+CHB_peace_deals_category = {
+
+	priority = 150
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_decision_category_sdo_peace
+
+	allowed = {
+		original_tag = CHB
+	}
+
+	visible = {
+		original_tag = CHB
+		CHB = { NOT = { has_country_flag = peace_started }
+		DRE = {
+			has_country_flag = SDO_started_chb
+		}
+		has_war_with = DRE
+	}
+}}

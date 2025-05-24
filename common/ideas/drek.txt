@@ -15,6 +15,44 @@ ideas = {
 				army_speed_factor = -0.07
 			}
 		}
+
+		DRE_development_of_economic_relations_ns = { 
+			removal_cost = -1
+			picture = generic_license_production 
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					has_war_with = DRE
+					AND = {
+						is_subject = yes
+						NOT = { is_subject_of = DRE }
+					}
+				}
+			}
+
+			on_remove = {
+				if = {
+					limit = {
+						has_opinion_modifier = long_term_trade_partner
+					}
+					remove_opinion_modifier = {
+						target = DRE
+						modifier = long_term_trade_partner
+					}
+				}
+			}
+
+			targeted_modifier = { 
+				tag = DRE
+				license_purchase_cost = -0.5
+				license_production_speed = 0.25
+				license_tech_difference_speed = 0.25
+				trade_cost_for_target_factor = -0.3
+				trade_opinion_factor = 0.25
+			}
+		}
 		
 		DRE_real_blitzkrieg = {
 			picture = generic_acquire_tanks
@@ -27,6 +65,576 @@ ideas = {
 				war_support_factor = 0.15
 				army_speed_factor = 0.07
 				stability_factor = 0.1
+			}
+		}
+		
+		DRE_developed_drake_dictatorship_crisis = {
+			picture = drake_crisis
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+
+			modifier = {
+				war_support_factor = -0.15
+				political_advisor_cost_factor = 1
+				command_power_gain_mult = -0.3
+				political_power_factor = -0.6
+				drift_defence_factor = -0.3
+				stability_factor = -0.15
+			}
+		}
+
+		DRE_viplati_reparatiy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills_payment
+
+			cancel = {
+			    OR = {
+			    	has_war_with = CHB
+			    	CHB = {
+			    		is_subject = yes
+			    	}
+			    }
+			}
+
+			targeted_modifier = {
+				tag = CHB
+				cic_to_target_factor = 0.1
+				extra_trade_to_target_factor = 0.15
+			}
+		}
+
+
+		DRE_NEK_gold = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SPR_seize_the_gold_reserves
+
+			cancel = {
+			    OR = {
+			    	has_war_with = DRE
+			    	DRE = {
+			    		is_subject = yes
+			    	}
+			    }
+			}
+
+			targeted_modifier = {
+				tag = DRE
+				cic_to_target_factor = 0.35
+				extra_trade_to_target_factor = 0.35
+			}
+		}
+
+		DRE_national_rebuilding = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+
+			modifier ={
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		DRE_investizii_into_baron = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_invest_in_railways
+
+			cancel = {
+			    OR = {
+			    	has_war_with = ROS
+			    	ROS = {
+			    		is_subject = yes
+			    	}
+			    }
+			}
+
+			targeted_modifier = {
+				tag = ROS
+				cic_to_target_factor = 0.2
+				extra_trade_to_target_factor = 0.2
+			}
+		}
+
+		DRE_otkati_dlya_barona = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_economy_of_conquest
+
+			cancel = {
+			    OR = {
+			    	has_war_with = ROS
+			    	ROS = {
+			    		is_subject = yes
+			    	}
+			    }
+			}
+
+			targeted_modifier = {
+				tag = ROS
+				cic_to_target_factor = 0.25
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+
+		DRE_sodershanie_barona = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = baron_bills
+
+			cancel = {
+				OR = {
+			    has_war_with = ROS
+				ROS = { NOT = { is_subject_of = DRE } }
+				}
+			}
+
+			on_remove = {
+    			clr_country_flag = DRE_baron_bills
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.23
+			}
+		}
+
+		DRE_extra_baron_bills = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_civilian_economy_boost
+
+			on_add = {
+				set_country_flag = DRE_extra_baron_bills_paying
+			}
+
+			on_remove = {
+				clr_country_flag = DRE_extra_baron_bills_paying
+			}
+
+			cancel = {
+			    has_war_with = ROS
+			}
+
+			modifier = {
+			consumer_goods_factor = 0.3
+			}
+		}
+
+		DRE_sorell_tactics_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_interservice_rivalry_balanced
+
+
+			modifier = {
+				foreign_subversive_activites = -0.25
+				improve_relations_maintain_cost_factor = -0.5
+				trade_opinion_factor = 0.1
+				experience_gain_army_factor = 0.04
+				experience_gain_navy_factor = 0.02
+				experience_gain_air_factor = 0.02
+			}
+		}
+
+		DRE_burger_deal = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = DRE_burger_deal
+
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		DRE_amnam_concerns_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_spirit_of_the_conquistadors
+
+
+			modifier = {
+				justify_war_goal_time  = -0.05
+				drift_defence_factor  0.1
+				subversive_activites_upkeep = -0.15
+			}
+		}
+
+		DRE_strengthened_supply_lines = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_supply_line
+
+
+			modifier = {
+				attrition = -0.05
+				supply_factor = 0.05
+				supply_node_range = 0.1
+				naval_attrition = -0.05
+			}
+		}
+
+		DRE_optimize_services_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_hodgepodge_of_equipment
+
+
+			modifier = {
+				political_power_gain = 0.05
+				training_time_factor = -0.1
+				army_speed_factor = 0.05
+			}
+		}
+
+
+		DRE_optimize_services_idea_2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_hodgepodge_of_equipment
+
+
+			modifier = {
+				political_power_gain = 0.05
+				training_time_factor = -0.1
+				army_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15 
+			}
+		}
+
+
+		DRE_sloth_throw = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_naval_invasion
+
+
+			modifier = {
+				amphibious_invasion = 0.2
+				invasion_preparation = -0.05
+				naval_accidents_chance = -0.3
+				naval_damage_factor = 0.1
+			}
+		}
+
+		DRE_old_doctrine = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = hol_expand_the_colonial_army
+
+
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.1
+				max_planning_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+
+		DRE_extraordinary_act = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = DRE_act
+
+
+			modifier = {
+				hypecratia_drift = 0.007
+				drift_defence_factor = -0.03
+				stability_factor = 0.02
+				political_power_factor = 0.05
+			}
+		}
+
+		DRE_shoted_vips = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_neither_death_nor_dishonor
+
+
+			modifier = {
+				hypecratia_drift = -0.002
+				political_power_factor = -0.01
+				stability_factor = 0.03
+				political_advisor_cost_factor = 0.15
+			}
+		}
+
+		DRE_glory_to_army_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NORDIC_army_monarchist
+
+
+			modifier = {
+				training_time_factor = -0.03
+				experience_gain_army_factor = 0.04
+				army_speed_factor = 0.03
+				army_attack_factor = 0.02
+			}
+		}
+
+		DRE_all_to_front = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NORDIC_army_monarchist
+
+
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.05
+				defensive_war_stability_factor = 0.05
+			}
+		}
+
+		DRE_sturmers = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_aufrustung
+
+
+			modifier = {
+				army_core_defence_factor = 0.01
+				army_morale_factor = 0.03
+				army_attack_speed_factor = 0.03
+				army_breakthrough_against_major_factor = 0.03
+			}
+		}
+
+		DRE_grand_deal = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+
+			cancel = {
+			    DRE = {
+					OR = {
+					arms_factory > 25
+					industrial_complex > 30
+					}
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_arms_factory_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				production_speed_air_base_factor = 0.2
+				production_speed_anti_air_building_factor = 0.3
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+		}
+
+		DRE_internet_money = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		DRE_mrbeast = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = dre_mrbeast
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				equipment_capture_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
 
@@ -42,6 +650,24 @@ ideas = {
 			modifier = {
 				conscription = -0.005
 				production_speed_arms_factory_factor = -0.5
+			}
+		}
+
+		DRE_hamster_economics = {
+			picture = hamster_economics
+			allowed = {
+				original_tag = DRE
+				always = no
+			}
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.05
 			}
 		}
 		

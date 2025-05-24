@@ -11,8 +11,7 @@ state = {
 
 	history = {
 
-		owner = JHF
-		add_core_of = JHF
+		owner = BTK
 		add_core_of = BTK
 
 		buildings = {

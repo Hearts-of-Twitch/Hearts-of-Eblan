@@ -42,5 +42,21 @@ spriteTypes = {
 		name = "GFX_PYA_Great_popka"
 		texturefile = "gfx/interface/decisions/decision_PYA_Great_popka.dds"
 	}
+
+	spriteType = {
+		name = "GFX_decision_dre_rostov_infuence"
+		texturefile = "gfx/interface/decisions/dre_rostov_infuence.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_decision_category_icon_GON_palace"
+		texturefile = "gfx/interface/decisions/decision_category_GON_palace.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_decision_category_sdo_peace"
+		texturefile = "gfx/interface/decisions/sdo_peace_category.dds"
+	}
 	
 }

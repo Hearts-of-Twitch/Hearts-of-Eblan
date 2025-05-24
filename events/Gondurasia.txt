@@ -12,7 +12,22 @@ country_event = {
 	option = {
 		name = chicken.7.a #yes
 		ai_chance = {
-			factor = 20
+			base = 7
+			modifier = {
+				factor = 0.1
+				FROM = {
+					has_war = yes
+				}
+			}
+			modifier = { #more likely if Uruguay likes Argentina
+				factor = 10
+				NEL = {
+					has_opinion = {
+						target = GON
+						value > 29 
+					}
+				}
+			}
 		}
 		
 		hidden_effect = {
@@ -28,7 +43,17 @@ country_event = {
 	option = {
 		name = chicken.7.b #no
 		ai_chance = {
-			factor = 100
+			base = 10
+			modifier = {
+				factor = 100
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 5
+				FROM = {
+					has_war = yes
+				}
+			}
 		}
 		
 		hidden_effect = {
@@ -144,37 +169,196 @@ country_event = {
 			#add_to_variable = { pofig_na_opozitsiyu = 1 }
 		}
 	}
-}
 	
+	#option = {
+	#	name = gonduras.5.b #sleshka za alekseem
+	#	
+	#	add_ideas = GON_acf
+	#	
+	#	hidden_effect = {
+	#		add_to_variable = { aleksey_eblanov = 1 }
+	#	}
+	#}
+}
+
+#Annex morphi
 country_event = {
-	id = gonduras.10
-	title = gonduras.10.t
-	desc = gonduras.10.d
-	picture = GFX_report_event_picture_GON_1
+	id = gonduras.6
+	title = gonduras.1.t
+	desc = gonduras.1.d
+	picture = GFX_report_event_german_polish_border
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = gonduras.10.a 
+		name = chicken.7.a #yes
+		ai_chance = {
+			factor = 10
+			modifier = {
+				MOY = {
+					has_opinion = {
+						target = GON
+						value > 45
+					}
+				}
+				factor = 15
+			}
+		}
+		
 		hidden_effect = {
-			load_focus_tree = Gonduras_war
+			GON = {
+				annex_country = {
+					target = MOY
+					transfer_troops = yes
+				}
+			}
 		}
 	}
-}
-	
-country_event = {
-	id = gonduras.11
-	title = gonduras.11.t
-	desc = gonduras.11.d
-	picture = GFX_report_event_picture_GON_1
-	
-	is_triggered_only = yes
 	
 	option = {
-		name = gonduras.11.a 
+		name = chicken.7.b #no
+		ai_chance = {
+			factor = 12
+			modifier = {
+				factor = 100
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 30
+				GON = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				GON = {
+					has_army_manpower = {
+						size < 100000
+					}
+				}
+			}
+		}
+		
+		GON = {
+			country_event = { id = gonduras.7 hours = 6 }
+		}
+		
 		hidden_effect = {
-			load_focus_tree = Gonduras_fascism
+			GON = {
+				create_wargoal = {
+					target = MOY
+					type = annex_everything
+				}
+			}
 		}
 	}
 }
 
+#MOY reject
+country_event = {
+	id = gonduras.7
+	title = gonduras.7.t
+	desc = gonduras.7.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unfortunate
+		
+		hidden_effect = {
+		
+		}
+	}
+}
+
+#Annex ZOL
+country_event = {
+	id = gonduras.8
+	title = gonduras.1.t
+	desc = gonduras.1.d
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chicken.7.a #yes
+		ai_chance = {
+			factor = 10
+			modifier = {
+				ZOL = {
+					has_opinion = {
+						target = GON
+						value > 45
+					}
+				}
+				factor = 15
+			}
+		}
+		
+		hidden_effect = {
+			GON = {
+				annex_country = {
+					target = ZOL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = chicken.7.b #no
+		ai_chance = {
+			factor = 12
+			modifier = {
+				factor = 100
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 30
+				GON = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 50
+				GON = {
+					has_army_manpower = {
+						size < 100000
+					}
+				}
+			}
+		}
+		
+		GON = {
+			country_event = { id = gonduras.9 hours = 6 }
+		}
+		
+		hidden_effect = {
+			GON = {
+				create_wargoal = {
+					target = ZOL
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+#ZOL reject
+country_event = {
+	id = gonduras.9
+	title = gonduras.7.t
+	desc = gonduras.9.d
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = unfortunate
+		
+		hidden_effect = {
+		
+		}
+	}
+}

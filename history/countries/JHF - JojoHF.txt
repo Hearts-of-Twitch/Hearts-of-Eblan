@@ -1,6 +1,6 @@
 set_stability = 1
 set_war_support = 0.65
-capital=65
+capital=52
 
 oob = "JHF_1936"
 

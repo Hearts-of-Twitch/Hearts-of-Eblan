@@ -53,4 +53,107 @@ characters = {
 			}
 		}
 	}
+	evgeniyZryagoshin ={ 
+        name = "Зрягожин Женя"
+        portraits= {
+            army = {
+                large = "GFX_svi_zrya_large"
+				small = "GFX_svi_zrya_small"
+            }
+        }
+        field_marshal = {
+			traits = { scavenger ambusher desert_fox skilled_staffer }
+            skill = 5
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = GFX_svi_zrya_small
+           ledger = army
+           allowed = { original_tag = SVI } # Optional, doesn't change anything.
+           traits = { army_chief_offensive_3 army_chief_organizational_3 }
+       }
+    }
+	
+    relanit ={ 
+        name = "Relanit"
+        portraits= {
+            army = {
+                large = "GFX_svi_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { adaptable winter_specialist }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 1
+            planning_skill = 3
+            logistics_skill = 2
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = relanit
+           ledger = army
+           allowed = { original_tag = SVI } # Optional, doesn't change anything.
+           traits = { army_chief_morale_2 }
+       }
+    }
+	
+    manul ={ 
+        name = "manuuuuul"
+        portraits= {
+            army = {
+                large = "GFX_svi_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { trait_engineer }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = high_command
+           idea_token = manul
+           ledger = army
+           allowed = { original_tag = SVI } # Optional, doesn't change anything.
+           traits = { army_armored_1 }
+       }
+    }
+	
+    pelmy ={ 
+        name = "PelmyTYDF"
+        portraits= {
+            army = {
+                large = "GFX_svi_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        field_marshal = {
+			traits = { camouflage_expert unyielding_defender }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 1
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = pelmy
+           ledger = army
+           allowed = { original_tag = SVI } # Optional, doesn't change anything.
+           traits = { army_chief_reform_2 army_chief_planning_1 }
+       }
+    }
 }

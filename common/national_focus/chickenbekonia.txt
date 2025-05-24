@@ -1191,7 +1191,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			BTK = { country_event = { hours = 1 id = chicken.1 } }
+			BTK = { country_event = { hours = 1 id = chb.1 } }
 		}
 		x = -1
 		y = 1
@@ -1213,7 +1213,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			ARA = { country_event = { hours = 1 id = chicken.7 } }
+			ARA = { country_event = { hours = 1 id = chb.7 } }
 		}
 		x = 1
 		y = 1
@@ -1235,7 +1235,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			SVI = { country_event = { hours = 1 id = chicken.10 } }
+			SVI = { country_event = { hours = 1 id = chb.10 } }
 		}
 		x = 1
 		y = 1

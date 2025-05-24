@@ -73,6 +73,10 @@ if = {
 recruit_character = SVI_bigpig
 recruit_character = SVI_laki
 recruit_character = universal_hype_svi
+recruit_character = pelmy
+recruit_character = manul
+recruit_character = relanit
+recruit_character = evgeniyZryagoshin
 
 
 if = {

@@ -1,0 +1,102 @@
+ideas = {
+
+	country = {
+		ego_slaboumnoe_velichie_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = great_zolo
+
+			modifier = {
+				production_speed_buildings_factor = 0.03
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		ego_slaboumnoe_velichie_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = great_zolo
+
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				consumer_goods_factor = 0.1
+				political_power_cost = -0.05
+			}
+		}
+		
+		ego_slaboumnoe_velichie_3 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = great_zolo
+
+			modifier = {
+				production_speed_buildings_factor = 0.13
+				consumer_goods_factor = 0.2
+				political_power_cost = -0.1
+				stability_factor = 0.07
+			}
+		}		
+		
+		tabletki_ot_uma = {
+			allowed = {
+				always = no
+			}
+			
+			picture = tabletki_ot_uma
+
+			modifier = {
+				civilian_factory_use = 2
+				supply_factor = 0.05
+				stability_factor = -0.02
+			}
+		}		
+		
+		our_laboratorii = {
+			allowed = {
+				always = no
+			}
+			
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = -0.12
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		neuch = {
+			allowed = {
+				always = no
+			}
+			
+			picture = scraping_the_barrel
+
+			modifier = {
+				research_speed_factor = -0.05
+				industry_repair_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		mazeloff_dolg = {
+			allowed = {
+				always = no
+			}
+			
+			picture = SPR_relocate_the_gold_reserves
+
+			modifier = {
+				research_speed_factor = -0.1
+				consumer_goods_factor = 0.7
+				political_power_cost = 0.1
+			}
+		}
+	}
+	
+}

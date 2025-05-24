@@ -1,16 +1,14 @@
-
 state={
 	id=21
-	name="STATE_21" # Bouches-du-Rhône (Formerly Provence before Var split off)
-	manpower = 1670310 # 1224802 (Bouches-du-Rhône) + 245508 (Vaucluse) # was 2060400 before the Var split
+	name="STATE_21"
 	resources={
-		aluminium=60 # was: 120
+		aluminium=60.000
 	}
-
-	state_category = city
-
+	provinces={
+		3762 11834 11875 
+	}
 	history={
-		owner = KRY
+		owner = ZOL
 		victory_points = {
 			11834 10
 		}
@@ -26,17 +24,15 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = KRY
+		add_core_of = ZOL
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2
 			}
 		}
 	}
-
-	provinces={
-		958 3762 11834 11849 11875 
-	}
-
-	local_supplies=0.0 
+	manpower=1670310
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

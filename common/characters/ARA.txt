@@ -25,4 +25,155 @@ characters = {
 			}
 		}
 	}
+	luckyAbob ={ 
+        name = "luckyABOB"
+        portraits= {
+            army = {
+                large = "GFX_ara_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        field_marshal = {
+			traits = { naval_invader naval_liason }
+            skill = 5
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+            legacy_id = -1
+		}
+
+	    advisor = {
+           slot = army_chief
+           idea_token = luckyAbob
+           ledger = army
+           allowed = { original_tag = ARA } # Optional, doesn't change anything.
+           traits = { army_chief_reform_2 }
+        }
+    }
+	
+	luckyAbobNavy = {
+	    name = "luckyABOB"
+        portraits= {
+            army = {
+                large = "GFX_ara_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+		navy_leader = {
+			traits = { seawolf superior_tactician }
+			 skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = luckyAbobNavy
+            ledger = navy
+            allowed = { original_tag = ARA } # Optional, doesn't change anything.
+            traits = { navy_screen_3 navy_chief_maneuver_2 }
+		}
 	}
+	
+	jevolya ={ 
+        name = "JevOlya"
+        portraits= {
+            army = {
+                large = "GFX_ara_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { urban_assault_specialist ranger }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+            legacy_id = -1
+		}
+	    advisor = {
+           slot = high_command
+           idea_token = jevolya
+           ledger = army
+           allowed = { original_tag = ARA } # Optional, doesn't change anything.
+           traits = { army_regrouping_2 }
+        }
+    }
+	
+	polino ={ 
+        name = "polinoaoaoao"
+        portraits= {
+            army = {
+                large = "GFX_ara_person_large"
+				small = "GFX_moder_small"
+            }
+        }
+        corps_commander = {
+			traits = { commando scavenger }
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            legacy_id = -1
+		}
+	    advisor = {
+           slot = high_command
+           idea_token = polino
+           ledger = army
+           allowed = { original_tag = ARA } # Optional, doesn't change anything.
+           traits = { army_concealment_2 }
+        }
+    }
+	
+	aratoss_fuhrer = {
+		name = "Аратосс-Гауптштурмфюрер"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_fuhrer
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+	}
+
+	hypecratia_president = {
+		name = "Президент Аратоссик"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_fuhrer
+			}
+		}
+		country_leader = {
+			ideology = hypetiktok
+			traits = {
+				#
+			}
+			id=1234
+		}
+	}
+
+	hypecratia_parlament = {
+		name = "Хайпократический парламент"
+		portraits = {
+			civilian = {
+				large = GFX_portrait_aratoss_parlament
+			}
+		}
+		country_leader = {
+			ideology = hypetiktok
+			traits = {
+				#
+			}
+			id=1235
+		}
+	}
+}

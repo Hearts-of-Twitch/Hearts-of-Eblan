@@ -1,0 +1,48 @@
+on_actions = {
+	on_monthly_DRE = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = DRE_baron_bills
+					NOT = { has_country_flag = DRE_extra_baron_bills_paying }
+				}
+				random_list = {
+					25 = {
+						country_event = { id = drek.21 days = 1}
+					}				
+					25 = {
+						country_event = { id = drek.22 days = 1}
+					}				
+					20 = {
+						country_event = { id = drek.23 days = 1}
+					}				
+					30 = {
+	
+					}
+				}
+			}
+		}
+	}
+	
+	on_war = {
+
+		effect = {
+			if = { #If Drek has completed one of the necessary focuses, give them a timed National Spirit when the next war breaks out
+				limit = {
+					original_tag = DRE
+					NOT = { has_country_flag = DRE_has_war_preparations_flag }
+					OR = {
+					has_completed_focus = DRE_war_preparations
+					has_completed_focus = DRE_prepare_supply_lines
+					}
+				}
+				add_timed_idea = {
+					idea = DRE_strengthened_supply_lines
+					days = 730
+				}
+				set_country_flag = DRE_has_war_preparations_flag
+			}
+		}
+
+	}
+}

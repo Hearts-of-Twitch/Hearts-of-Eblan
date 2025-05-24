@@ -1,12 +1,12 @@
-dvorets_building_cat = {
+dvorets_building_cat_1 = {
 	build_akvadiskoteka = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -22,7 +22,7 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
+			check_variable = { palace_builded = 1 }
 			check_variable = { akvadiskoteka < 1 }
 		}
 		
@@ -32,19 +32,11 @@ dvorets_building_cat = {
 	
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			improve_stint_palace_idea = true
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
 			set_variable = { akvadiskoteka = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				set_variable = { afc_razoblachenie = 1 }
-			}
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -53,16 +45,16 @@ dvorets_building_cat = {
 				factor = 0
 			}
 		}
-	}
+	}	
 	
-	build_vinnie_zavodi = {
+	build_coctail_room = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -70,7 +62,7 @@ dvorets_building_cat = {
 	
 		available = {
 			AND = {
-				check_variable = { vinnie_zavodi < 1 }
+				check_variable = { coctail < 1 }
 				check_variable = { is_all_palace_decisions_blocked < 1 }
 			}
 		}
@@ -78,30 +70,21 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { vinnie_zavodi < 1 }
+			check_variable = { palace_builded = 1 }
+			check_variable = { coctail < 1 }
 		}
-	
+		
 		complete_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 1 }
 		}
 	
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { vinnie_zavodi = 1 }
-			improve_stint_palace_idea = true
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { coctail = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
-			}
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -110,16 +93,16 @@ dvorets_building_cat = {
 				factor = 0
 			}
 		}
-	}
+	}	
 	
-	build_zoloto_i_barhat = {
+	build_kino = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -127,7 +110,7 @@ dvorets_building_cat = {
 	
 		available = {
 			AND = {
-				check_variable = { zoloto_i_barhat < 1 }
+				check_variable = { kino < 1 }
 				check_variable = { is_all_palace_decisions_blocked < 1 }
 			}
 		}
@@ -135,8 +118,8 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { zoloto_i_barhat < 1 }
+			check_variable = { palace_builded = 1 }
+			check_variable = { kino < 1 }
 		}
 		
 		complete_effect = {
@@ -144,21 +127,12 @@ dvorets_building_cat = {
 		}
 	
 		remove_effect = {
-		set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { zoloto_i_barhat = 1 }
-			improve_stint_palace_idea = true
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { kino = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
-			}
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -167,16 +141,16 @@ dvorets_building_cat = {
 				factor = 0
 			}
 		}
-	}
+	}	
 	
-	build_zerkov = {
+	build_poolroom = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
+		fire_only_once = yes
 		cost = 50
-		days_remove = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -184,7 +158,7 @@ dvorets_building_cat = {
 	
 		available = {
 			AND = {
-				check_variable = { zerkov < 1 }
+				check_variable = { pool < 1 }
 				check_variable = { is_all_palace_decisions_blocked < 1 }
 			}
 		}
@@ -192,8 +166,8 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { zerkov < 1 }
+			check_variable = { palace_builded = 1 }
+			check_variable = { pool < 1 }
 		}
 		
 		complete_effect = {
@@ -202,20 +176,11 @@ dvorets_building_cat = {
 	
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { zerkov = 1 }
-			improve_stint_palace_idea = true
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { pool = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
-			}
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -224,20 +189,16 @@ dvorets_building_cat = {
 				factor = 0
 			}
 		}
-	}
+	}	
 	
-	build_ohrana = {
+	build_spa_top = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
-		days_remove = 50
-		
-		custom_cost_trigger = {
-			has_manpower > 1500
-			political_power > 50
-		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -245,65 +206,7 @@ dvorets_building_cat = {
 	
 		available = {
 			AND = {
-				check_variable = { ohrana < 1 }
-				check_variable = { is_all_palace_decisions_blocked < 1 }	
-			}
-		}
-		
-	
-		visible = {
-			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { ohrana < 1 }
-		}
-		
-		complete_effect = {
-			set_variable = { is_all_palace_decisions_blocked = 1 }
-		}
-	
-		remove_effect = {
-			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { ohrana = 1 }
-			improve_stint_palace_idea = true
-			man_power = -1500
-			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
-			}
-		}
-	
-		ai_will_do = {
-			factor = 200
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-	
-	build_propusknoy_regime = {
-	
-		icon = GFX_decision_SOV_place_hq
-		#picture = GFX_decision_cat_picture_form_greater_greece
-		
-		fire_only_once = true
-		cost = 100
-		days_remove = 50
-	
-		allowed = {
-			original_tag = GON
-		}
-	
-		available = {
-			AND = {
-				check_variable = { kpp < 1 }
+				check_variable = { spa_top < 1 }
 				check_variable = { is_all_palace_decisions_blocked < 1 }
 			}
 		}
@@ -311,8 +214,8 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { kpp < 1 }
+			check_variable = { palace_builded = 1 }
+			check_variable = { spa_top < 1 }
 		}
 		
 		complete_effect = {
@@ -321,20 +224,11 @@ dvorets_building_cat = {
 	
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { kpp = 1 }
-			improve_stint_palace_idea = true
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { spa_top = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
-			}
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -343,16 +237,16 @@ dvorets_building_cat = {
 				factor = 0
 			}
 		}
-	}
+	}	
 	
-	build_noair_area = {
+	build_spa_bottom = {
 	
 		icon = GFX_decision_SOV_place_hq
 		#picture = GFX_decision_cat_picture_form_greater_greece
 		
-		fire_only_once = true
-		cost = 55
-		days_remove = 50
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
 	
 		allowed = {
 			original_tag = GON
@@ -360,7 +254,7 @@ dvorets_building_cat = {
 	
 		available = {
 			AND = {
-				check_variable = { naa < 1 }
+				check_variable = { spa_bottom < 1 }
 				check_variable = { is_all_palace_decisions_blocked < 1 }
 			}
 		}
@@ -368,8 +262,8 @@ dvorets_building_cat = {
 	
 		visible = {
 			original_tag = GON
-			check_variable = { palace_builded > 0 }
-			check_variable = { naa < 1 }
+			check_variable = { palace_builded = 1 }
+			check_variable = { spa_bottom < 1 }
 		}
 		
 		complete_effect = {
@@ -378,20 +272,203 @@ dvorets_building_cat = {
 	
 		remove_effect = {
 			set_variable = { is_all_palace_decisions_blocked = 0 }
-			add_to_variable = { palace_ready_state = 1 }
-			set_variable = { naa = 1 }
-			improve_stint_palace_idea = true
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { spa_bottom = 1 }
 			add_to_variable = { anti_palace_oposition = 1 }
-			if = {
-				limit = { AND = { check_variable = { anti_palace_oposition > 6 } check_variable = { afc_razoblachenie < 1}}}
-				country_event = {
-					id = gonduras.5
-					days = 20
-					random_days = 50
-				}
-				news_event = { id = squad_news.8 days = 15 random_days = 25 }
-				set_variable = { afc_razoblachenie = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
 			}
+		}
+	}	
+	
+	build_vine_pogreb = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { vine_pogreb < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 1 }
+			check_variable = { vine_pogreb < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { vine_pogreb = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+	
+	build_indoor = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { indoor < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 1 }
+			check_variable = { indoor < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { indoor = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+	
+	build_eggs_zeh = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { eggs < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 1 }
+			check_variable = { eggs < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { eggs = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+	
+	build_sklad_gryazi = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { dirt < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 1 }
+			check_variable = { dirt < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { dirt = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
 		}
 	
 		ai_will_do = {
@@ -401,6 +478,395 @@ dvorets_building_cat = {
 			}
 		}
 	}
+	
+	#build_vinnie_zavodi = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 50
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { vinnie_zavodi < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { vinnie_zavodi < 1 }
+	#	}
+	#
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 10 }
+	#		set_variable = { vinnie_zavodi = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_zoloto_i_barhat = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 50
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { zoloto_i_barhat < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { zoloto_i_barhat < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#	set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { zoloto_i_barhat = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_zerkov = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 50
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { zerkov < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { zerkov < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { zerkov = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_ohrana = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	days_remove = 35
+	#	
+	#	custom_cost_trigger = {
+	#		has_manpower > 1500
+	#		political_power > 50
+	#	}
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { ohrana < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }	
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { ohrana < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { ohrana = 1 }
+	#		improve_stint_palace_idea = yes
+	#		man_power = -1500
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_propusknoy_regime = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 100
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { kpp < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { kpp < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { kpp = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_noair_area = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 55
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { naa < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { naa < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { naa = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_horomy = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 100
+	#	#days_remove = 65
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { horomy < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { horomy < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { horomy = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
+	
+	#build_games_rooms = {
+	#
+	#	icon = GFX_decision_SOV_place_hq
+	#	#picture = GFX_decision_cat_picture_form_greater_greece
+	#	
+	#	fire_only_once = yes
+	#	cost = 50
+	#	days_remove = 35
+	#
+	#	allowed = {
+	#		original_tag = GON
+	#	}
+	#
+	#	available = {
+	#		AND = {
+	#			check_variable = { games < 1 }
+	#			check_variable = { is_all_palace_decisions_blocked < 1 }
+	#		}
+	#	}
+	#	
+	#
+	#	visible = {
+	#		original_tag = GON
+	#		check_variable = { palace_builded = 1 }
+	#		check_variable = { games < 1 }
+	#	}
+	#	
+	#	complete_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 1 }
+	#	}
+	#
+	#	remove_effect = {
+	#		set_variable = { is_all_palace_decisions_blocked = 0 }
+	#		add_to_variable = { palace_ready_state = 12.5 }
+	#		set_variable = { games = 1 }
+	#		improve_stint_palace_idea = yes
+	#		add_to_variable = { anti_palace_oposition = 1 }
+	#		check_acf = yes
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 200
+	#		modifier = {
+	#			factor = 0
+	#		}
+	#	}
+	#}
 	
 	palace_building = {
 		activation = {
@@ -422,6 +888,488 @@ dvorets_building_cat = {
 		add_to_variable = { anti_palace_oposition = 1 }
 		}
 		
+	}
+}
+
+dvorets_building_cat_2 = {
+	build_trenashor = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { sport < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { sport < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { sport = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}	
+
+	build_games_rooms = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { games < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { games < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { games = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_casino = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { casino < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { casino < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { casino = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_theatre = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { theatre < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { theatre < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { theatre = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_small_obed = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { obed < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { obed < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { obed = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_read_room = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { read < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { read < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { read = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_peregovornaya = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { peregovornaya < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { peregovornaya < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { peregovornaya = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_grimernie = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { grim < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { grim < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { grim = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	build_kalyan = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { kalyan < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { kalyan < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { kalyan = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	
+	build_bilyard = {
+	
+		icon = GFX_decision_SOV_place_hq
+		#picture = GFX_decision_cat_picture_form_greater_greece
+		
+		fire_only_once = yes
+		cost = 50
+		days_remove = 35
+	
+		allowed = {
+			original_tag = GON
+		}
+	
+		available = {
+			AND = {
+				check_variable = { bilyard < 1 }
+				check_variable = { is_all_palace_decisions_blocked < 1 }
+			}
+		}
+		
+	
+		visible = {
+			original_tag = GON
+			check_variable = { palace_builded = 2 }
+			check_variable = { bilyard < 1 }
+		}
+		
+		complete_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 1 }
+		}
+	
+		remove_effect = {
+			set_variable = { is_all_palace_decisions_blocked = 0 }
+			add_to_variable = { palace_ready_state = 10 }
+			improve_stint_palace_idea = yes
+			set_variable = { bilyard = 1 }
+			add_to_variable = { anti_palace_oposition = 1 }
+			check_acf = yes
+		}
+	
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+			}
+		}
 	}
 }
 

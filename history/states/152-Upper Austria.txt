@@ -12,7 +12,7 @@ state = {
 
 	history = {
 
-		owner = ZUS
+		owner = DRE
 		add_core_of = DRE
 
 		buildings = {

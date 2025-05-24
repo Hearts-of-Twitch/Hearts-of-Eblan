@@ -16,9 +16,6 @@ ideas = {
 		}
 		
 		ARA_people_against_fascism = {
-			allowed = {
-				NOT = { has_government  = fascism }
-			}
 			
 			removal_cost = -1
 
@@ -29,10 +26,36 @@ ideas = {
 				drift_defence_factor = 0.3
 			}
 		}
+
+		ARA_arrested_opposition = {
+			allowed = {
+				NOT = { has_government = democratic }
+			}
+			
+			removal_cost = -1
+
+			picture = SPR_anti_fascist_crusade
+
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.3
+			}
+		}		
+		
+		ARA_never_defeat = {
+			
+			removal_cost = -1
+
+			picture = SPR_crush_the_revolution
+
+			modifier = {
+				surrender_limit = 1
+			}
+		}
 		
 		ARA_people_republick = {
 			allowed = {
-				has_government  = communism
+				has_government = communism
 			}
 			
 			removal_cost = -1
@@ -45,6 +68,486 @@ ideas = {
 				stability_factor = 0.15
 				enemy_justify_war_goal_time = 0.1
 				
+			}
+		}		
+
+		ARA_soviet_ministers_idea = {
+			allowed = {
+				has_government = communism
+			}
+			
+			removal_cost = -1
+
+			picture = saf_soviet_advisers
+
+			modifier = {
+				communism_drift = 0.05
+				political_power_cost = 0.05
+				political_power_gain = 0.1
+			}
+		}	
+
+		ARA_president_batalions_idea = {
+			
+			removal_cost = -1
+
+			picture = BEL_rexist_legion
+
+			modifier = {
+				fascism_drift = 0.025
+				stability_factor = -0.01
+				army_morale_factor = 0.1
+				dig_in_speed_factor = 0.1
+				defence = -0.01
+			}
+		}	
+
+		ARA_putch_divisions_idea = {
+			
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+
+			modifier = {
+				democratic_drift = -0.013
+				stability_factor = -0.007
+				war_support_factor = 0.03
+				army_morale_factor = 0.15
+				army_attack_factor  = 0.1
+				army_defence_factor = 0.02
+			}
+		}	
+
+		ARA_shadow_weapons_idea = {
+			
+			removal_cost = -1
+
+			picture = generic_supply_depot
+
+			modifier = {
+				production_oil_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}	
+
+		ARA_internet_army = {
+			
+			removal_cost = -1
+
+			picture = internet_warfare
+
+			modifier = {
+				experience_gain_army_factor = 0.05
+				army_attack_factor = 0.07
+				army_core_defence_factor = 0.1
+				army_org_factor = -0.08
+				army_org_regain = -0.05
+				army_fuel_consumption_factor = 0.06
+			}
+		}	
+		
+		ARA_gos_apparat_idea = {
+			removal_cost = -1
+
+			picture = ARA_gos_apparat
+
+			modifier = {
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.25
+				political_power_gain = -0.2
+			}
+		}
+
+		ARA_new_type_gos_apparat_idea = {
+			removal_cost = -1
+
+			picture = ARA_rebuild_gos_apparat
+
+			modifier = {
+				stability_factor = 0.15
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.05
+				war_support_factor = -0.035
+				drift_defence_factor = -0.05
+			}
+		}
+
+		ARA_destroyed_legislation = {
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = 0.12
+				#fascism_drift = 0.02
+				required_garrison_factor = 0.15
+				resistance_activity = 0.5
+			}
+		}				
+		
+		ARA_broken_democratic_principles = {
+			removal_cost = -1
+
+			picture = generic_democracy_banned
+
+			modifier = {
+				stability_factor = -0.15
+				democratic_drift = -0.07
+				research_speed_factor = -0.05
+				local_resources_factor = -0.08
+				surrender_limit = -0.05
+			}
+		}	
+
+		ARA_natinonal_bank = {
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+
+			modifier = {
+				consumer_goods_factor = -0.25
+				stability_factor = 0.05
+			}
+		}	
+
+		ARA_hype_chuma = {
+			removal_cost = -1
+
+			picture = hypecratia_ethos
+
+			modifier = {
+				hypecratia_drift = 0.06
+				
+			}
+		}			
+		
+		ARA_freedom_of_press = {
+			removal_cost = -1
+
+			picture = generic_radio_concern
+
+			modifier = {
+				foreign_subversive_activites = 0.15
+				war_support_factor = 0.045
+				stability_factor = -0.02
+			}
+		}		
+		
+		ARA_hype_ministers = {
+			removal_cost = -1
+
+			picture = ARA_hype_ministers
+
+			modifier = {
+				political_advisor_cost_factor = -0.2
+				political_power_gain = 0.1
+				stability_factor = 0.01
+			}
+		}		
+		
+		ARA_massive_opposition = {
+			removal_cost = -1
+
+			picture = EST_democratic_opposition
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				war_support_factor = -0.1
+				political_power_gain = -0.15
+				stability_factor = -0.3
+			}
+		}		
+		
+		ARA_slabie_zakoni = {
+			removal_cost = -1
+
+			picture = DEN_occupation_laws
+
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				political_power_gain = -0.15
+				stability_factor = -0.3
+			}
+		}			
+		
+		ARA_zhestkie_zakoni = {
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system_fascism
+
+			modifier = {
+				war_support_factor = -0.15
+				conscription = 0.05
+				political_power_gain = 0.15
+				stability_factor = 0.2
+			}
+		}		
+		
+		ARA_usilenie_vlasti = {
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_fascism
+
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.035
+				political_power_gain = 0.05
+			}
+		}			
+		
+		ARA_rally_around_president = {
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_fascism
+
+			modifier = {
+				war_support_factor = 0.025
+				conscription = 0.04
+				political_power_gain = 0.025
+			}
+		}			
+		
+		ARA_pro_government_media = {
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.05
+				intelligence_agency_defense = 0.03
+			}
+		}		
+		
+		ARA_only_government_media = {
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				stability_factor = 0.08
+				political_power_factor = -0.08
+				intelligence_agency_defense = 0.08
+			}
+		}			
+		
+		ARA_total_mind_control = {
+			removal_cost = -1
+
+			picture = total_control
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = -0.1
+				intelligence_agency_defense = 0.2
+				drift_defence_factor = 0.25
+			}
+		}		
+		
+		ARA_where_is_president = {
+			removal_cost = -1
+
+			picture = where_is_president
+
+			modifier = {
+				war_support_factor = -0.1
+				political_power_factor = -0.05
+				drift_defence_factor = -0.25
+			}
+		}			
+		
+		ARA_propaganda_manuals = {
+			removal_cost = -1
+
+			picture = generic_constitutional_guarantees
+
+			modifier = {
+				drift_defence_factor = 0.2
+				political_advisor_cost_factor = 0.25
+				stability_weekly = 0.005
+			}
+		}			
+		
+		ARA_homeland = {
+			removal_cost = -1
+
+			picture = POL_ideology_drift_defence
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}		
+		
+		ARA_renovation_project = {
+			removal_cost = -1
+
+			picture = generic_agrarian_reform
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.3
+				industry_repair_factor = 0.5
+			}
+		}			
+		
+		ARA_returned_money = {
+			removal_cost = -1
+
+			picture = SPR_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.15
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.15
+			}
+		}	
+
+		ARA_liquidate_corporations_idea = {
+			removal_cost = -1
+
+			picture = generic_shield_against_communism
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.03
+			}
+		}		
+		
+		ARA_patriotic_schools = {
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				monthly_population = 0.03
+				political_power_gain = 0.05
+				war_support_factor = 0.025
+			}
+		}			
+		
+		ARA_people_digitalization = {
+			removal_cost = -1
+
+			picture = GFX_idea_ARA_people_digitalization
+
+			modifier = {
+				foreign_subversive_activites = 0.1
+				stability_factor = -0.02
+				hypecratia_drift = 0.05
+			}
+		}			
+		
+		ARA_internet_cables = {
+			removal_cost = -1
+
+			picture = GFX_idea_ARA_internet_cables
+
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				hypecratia_drift = 0.03
+			}
+		}			
+		
+		ARA_president_focus_1 = {
+			removal_cost = -1
+
+			picture = ARG_military_government
+
+			modifier = {
+				power_balance_weekly = 0.003
+			}
+		}			
+		
+		ARA_parlament_focus_1 = {
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				power_balance_weekly = -0.001
+			}
+		}			
+		
+		ARA_parlament_focus_2 = {
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				power_balance_weekly = -0.003
+			}
+		}				
+		
+		ARA_rebuilding_gos_apparat_idea = {
+			removal_cost = -1
+
+			picture = ARA_rebuild_gos_apparat
+
+			modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}		
+
+		ARA_democratic_gos_apparat_idea = {
+			removal_cost = -1
+
+			picture = ARA_democratic_gos_apparat
+
+			modifier = {
+				stability_factor = 0.02
+				political_advisor_cost_factor = -0.1
+				political_power_gain = 0.05
+			}
+		}	
+
+		ARA_collectivist_gos_apparat_idea = {
+			removal_cost = -1
+
+			picture = ARA_collectivist_gos_apparat
+
+			modifier = {
+				war_support_factor = 0.015
+				conscription = 0.01
+				max_planning_factor = 0.12
+				political_advisor_cost_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}	
+		
+		ARA_president_v_isgnanii = {
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+
+			modifier = {
+				stability_factor = -0.025
+				political_power_gain = -0.05
+				foreign_subversive_activites = 0.15
+				resistance_decay = -0.3
+				power_balance_weekly = -0.003
+			}
+		}		
+		
+		ARA_president_isolation = {
+			removal_cost = -1
+
+			picture = saf_history_of_segregation_2
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				foreign_subversive_activites = 0.35
+				resistance_decay = -0.7
+				resistance_growth = 0.03
+				power_balance_weekly = -0.005
 			}
 		}
 		
@@ -61,6 +564,25 @@ ideas = {
 				neutrality_drift = -0.05
 			}
 		}
+		
+		ARA_gold_exports = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+
+		}
 
 		ARA_national_revitalization = {
 			allowed = {
@@ -74,6 +596,8 @@ ideas = {
 
 			modifier = {
 				industry_repair_factor = 0.20
+				consumer_goods_factor = -0.50
+				political_power_gain = 0.1
 			}
 		}
 
@@ -155,9 +679,32 @@ ideas = {
 			picture = POL_april_constitution
 
 			modifier = {
-				political_advisor_cost_factor = 0.25
+				stability_factor = 0.25
+				political_advisor_cost_factor = -0.25
 				research_speed_factor = -0.05
+				required_garrison_factor = -0.1
 				party_popularity_stability_factor = 0.3
+				power_balance_weekly = 0.01
+			}
+		}
+
+		ARA_jailed_officials = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = chi_incompetent_officers
+
+			modifier = {
+				political_advisor_cost_factor = 1
+				political_power_cost = 0.2
+				democratic_drift = -0.1
+				communism_drift = -0.1
+				fascism_drift = 0.1
+				neutrality_drift = -0.1
 			}
 		}
 	}

@@ -219,3 +219,11 @@ LID = {
 	color = rgb { 249 57 67 }
 	color_ui = rgb {  249 57 67 }
 }
+DOR = {
+	color = rgb { 255 73 158 }
+	color_ui = rgb { 255 73 158 }
+}
+AMN = {
+	color = rgb { 194 255 61 }
+	color_ui = rgb { 194 255 61 }
+}

@@ -8,8 +8,8 @@ state = {
 
 	history = {
 
-		owner = ZUS
-		add_core_of = ZUS
+		owner = PBU
+		add_core_of = PBU
 
 		victory_points = {
 			5074 2 # Aden 

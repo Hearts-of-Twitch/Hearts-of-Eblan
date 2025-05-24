@@ -1,0 +1,39 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BTK_reform89_panel"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height = 575 }
+		instantTextBoxType = {
+			name ="BTK_reform89_header"
+			position = { x = 10 y = 0 }
+			font = "hoi_24header"
+			text = "BTK_reform89"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}			
+		
+		instantTextBoxType = {
+			name ="BTK_reform89_description"
+			position = { x = 10 y = 20 }
+			font = "hoi_18"
+			text = "dvorets_building_cat_description_1"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}
+		
+		#buttonType = {
+		#	name = "GON_palace_first_floor"
+		#	position = { x = 0 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_1_btn"
+		#}
+		#
+		#buttonType = {
+		#	name = "GON_palace_second_floor"
+		#	position = { x = 435 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_2_btn"
+		#}
+		
+	}
+}

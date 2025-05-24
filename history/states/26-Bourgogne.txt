@@ -2,13 +2,9 @@ state={
 	id=26
 	name="STATE_26"
 	provinces={
-		590 769 3594 3754 6644 6773 6789 9593 9607 9609 9748 11576 
+		590 769 3594 6644 6789 9593 9607 9609 9748 11576 
 	}
 	manpower=877800
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=6.000  
-	state_category = large_city
 	history={
 		victory_points = {
 			6789 5
@@ -20,4 +16,7 @@ state={
 		}
 		add_core_of = MOY
 	}
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=6.000
 }

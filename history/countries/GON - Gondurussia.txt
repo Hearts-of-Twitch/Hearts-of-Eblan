@@ -8,12 +8,24 @@ add_ideas = {
 	stint_divided
 	GON_gamer
 	GON_Legalais
+	closed_economy
+	isolation
+	GON_kotel_shabanova
+	GON_legends_of_stintler
+	demografic_problems
+	GON_political_corruption
+	GON_infamous_decade
 }
 
 recruit_character = universal_hype_gon
 recruit_character = WizeBot
 recruit_character = ModBoty
 recruit_character = aFsQQ
+recruit_character = neketondi
+recruit_character = afsygga
+recruit_character = cherepaxa_o5
+recruit_character = maksim_iosif_shabanov
+recruit_character = universal_sea
 
 # Starting tech
 set_technology = {
@@ -90,18 +102,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Стинтэриус III"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "stint_comm.dds"
-	expire = "2000.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Максимильян Стинтлер"
+	name = "Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stintler.dds"
 	expire = "2000.1.1"
@@ -112,7 +113,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Стинтэриус II"
+	name = "Стинт"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "stint_neutrality.dds"
 	expire = "2000.1.1"
@@ -123,9 +124,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Макс Стинт"
+	name = "Абсолютно точно не Стинтлер"
 	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "stint_neutrality.dds"
+	picture = "stint_democratic.dds"
 	expire = "2000.1.1"
 	ideology = liberalism
 	traits = {
@@ -133,6 +134,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Стинтик"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "stint_hype.dds"
+	expire = "2000.1.1"
+	ideology = hypetiktok
+	traits = {
+		#
+	}
+}
 create_country_leader = {
 	name = "Стинтик"
 	desc = "POLITICS_PRINCE_PAUL_DESC"

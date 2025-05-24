@@ -10,8 +10,8 @@ state={
 	local_supplies=0.000
 
 	history = {
-		owner = ZUS
-		add_core_of = ZUS
+		owner = EVL
+		add_core_of = EVL
 		buildings = {
 			infrastructure = 1
 			air_base = 1

@@ -25,4 +25,66 @@ characters = {
 			}
 		}
 	}
+	pushkin = {
+		name = "Пушкин"
+		portraits={
+			civilian={
+				large=GFX_pushkin_small
+				small=GFX_unknown_char_small
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = pushkin
+			visible = {
+				has_country_flag = ZOL_pushkin
+			}
+			available = {
+				has_country_flag = ZOL_pushkin
+			}
+			traits  = {
+				ARG_university_rector
+			}	
+			cost = 100
+		}
 	}
+	
+	stalin ={ 
+        name = "Сталин Иосиф"
+		allowed = { has_country_flag = ZOL_stalin }
+        portraits= {
+            army = {
+				small = "GFX_stalin_small"
+                large = "GFX_unknown_char_small"
+            }
+        }
+        field_marshal = {
+			traits = { urban_assault_specialist thorough_planner }
+			visible = {
+				has_country_flag = ZOL_stalin
+			}
+			available = {
+				has_country_flag = ZOL_stalin
+			}
+            skill = 2
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 2
+            legacy_id = -1
+       }
+	   advisor = {
+           slot = army_chief
+           idea_token = stalin
+           ledger = army
+           	visible = {
+				has_country_flag = ZOL_stalin
+			}
+			available = {
+				has_country_flag = ZOL_stalin
+			}
+           traits = { army_entrenchment_2 }
+       }
+    }
+}

@@ -1,4 +1,4 @@
-capital = 218
+capital = 1034
 
 oob = "ROS_1936"
 set_stability = 1

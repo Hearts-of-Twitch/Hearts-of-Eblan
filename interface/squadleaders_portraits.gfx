@@ -50,5 +50,24 @@ SpriteTypes = {
 		name = "GFX_idea_GON_WizeBot_small"
 		texturefile = "gfx/interface/ideas/idea_GON_WizeBot_small.dds"
 	}
+	SpriteType = {
+		name = "GFX_portrait_maksim_stintlerev"
+		texturefile = "gfx/leaders/GON/stint_comm.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_stint"
+		texturefile = "gfx/leaders/GON/stint_neutrality.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_aratoss_fuhrer"
+		texturefile = "gfx/leaders/ARA/Aratoss.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_portrait_aratoss_parlament"
+		texturefile = "gfx/leaders/ARA/ara_parlament.dds"
+	}
 	
 }

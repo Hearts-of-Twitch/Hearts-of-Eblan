@@ -1,0 +1,214 @@
+guiTypes = {
+	containerWindowType = {
+		name = "GON_palace_1_floor_panel"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height = 575 }
+		instantTextBoxType = {
+			name ="GON_palace_1_header"
+			position = { x = 10 y = 0 }
+			font = "hoi_24header"
+			text = "GON_palace_for_stintler"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}			
+		
+		instantTextBoxType = {
+			name ="GON_palace_1_description"
+			position = { x = 10 y = 20 }
+			font = "hoi_18"
+			text = "dvorets_building_cat_description_1"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}
+		
+		#buttonType = {
+		#	name = "GON_palace_first_floor"
+		#	position = { x = 0 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_1_btn"
+		#}
+		#
+		#buttonType = {
+		#	name = "GON_palace_second_floor"
+		#	position = { x = 435 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_2_btn"
+		#}
+		
+		iconType = {
+			name = "GON_palace_blueprint"
+			position = { x = 0 y = 45 }
+			spriteType = "GFX_GON_palace_framed"
+		}	
+		
+		iconType = {
+			name = "GON_akvadiskoteka"
+			position = { x = 15 y = 190 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+		#1
+		iconType = {
+			name = "GON_coctail_room"
+			position = { x = 232 y = 305 }
+			spriteType = "GFX_GON_palace_state_0"
+		}		
+		iconType = {
+			name = "GON_pool_room"
+			position = { x = 115 y = 190 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_kinozal"
+			position = { x = 300 y = 305 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_spa_1"
+			position = { x = 90 y = 100 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_spa_2"
+			position = { x = 90 y = 295 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_vine_pogreb"
+			position = { x = 400 y = 290 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_indoor"
+			position = { x = 233 y = 177 }
+			spriteType = "GFX_GON_palace_state_0"
+		}			
+		iconType = {
+			name = "GON_eggs_zeh"
+			position = { x = 340 y = 175 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+		iconType = {
+			name = "GON_sklad_gryazi"
+			position = { x = 150 y = 120 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+		
+		
+		iconType = {
+			name = "GON_palace_state_progressbar"
+			position = { x = 35 y = 460 }
+			spriteType = "GFX_GON_palace_state_progressbar"
+		}	
+		
+	}
+
+	containerWindowType = {
+		name = "GON_palace_2_floor_panel"
+		position = { x = 50 y = 50 }
+		size = { width = 100% height = 575 }
+		instantTextBoxType = {
+			name ="GON_palace_1_header"
+			position = { x = 10 y = 0 }
+			font = "hoi_24header"
+			text = "GON_palace_for_stintler"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}			
+		
+		instantTextBoxType = {
+			name ="GON_palace_2_description"
+			position = { x = 10 y = 20 }
+			font = "hoi_18"
+			text = "dvorets_building_cat_description_2"
+			format = center
+			maxHeight = 80
+			maxWidth = 470
+		}
+		
+		#buttonType = {
+		#	name = "GON_palace_first_floor"
+		#	position = { x = 0 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_1_btn"
+		#}
+		#
+		#buttonType = {
+		#	name = "GON_palace_second_floor"
+		#	position = { x = 435 y = 10 }
+		#	spriteType = "GFX_GON_palace_floor_2_btn"
+		#}
+		
+		iconType = {
+			name = "GON_palace_blueprint"
+			position = { x = 0 y = 45 }
+			spriteType = "GFX_GON_palace_framed"
+		}	
+		
+		iconType = {
+			name = "GON_trenashorniy_zal"
+			position = { x = 25 y = 110 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_games_room"
+			position = { x = 265 y = 120 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_casino"
+			position = { x = 385 y = 115 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_theatre"
+			position = { x = 405 y = 240 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_small_obed"
+			position = { x = 390 y = 320 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_read_room"
+			position = { x = 115 y = 345 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_peregovornaya"
+			position = { x = 20 y = 310 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+
+		iconType = {
+			name = "GON_grimernie"
+			position = { x = 405 y = 180 }
+			spriteType = "GFX_GON_palace_state_0"
+		}	
+		
+		iconType = {
+			name = "GON_kalyan"
+			position = { x = 330 y = 180 }
+			spriteType = "GFX_GON_palace_state_0"
+		}
+
+		iconType = {
+			name = "GON_bilyard"
+			position = { x = 330 y = 120 }
+			spriteType = "GFX_GON_palace_state_0"
+		}		
+
+		iconType = {
+			name = "GON_palace_state_progressbar"
+			position = { x = 35 y = 460 }
+			spriteType = "GFX_GON_palace_state_progressbar"
+		}	
+	}
+
+}

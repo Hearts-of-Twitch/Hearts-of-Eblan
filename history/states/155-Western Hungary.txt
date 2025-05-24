@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = CHD
-		add_core_of = CHD
+		owner = CHB
+		add_core_of = CHB
 		add_claim_by = CHB
 		set_demilitarized_zone = yes
 

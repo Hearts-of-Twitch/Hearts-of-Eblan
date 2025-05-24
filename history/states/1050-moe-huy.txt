@@ -1,0 +1,21 @@
+state={
+	id=1050
+	name="STATE_1050"
+	provinces={
+		620 625 3598 6618 
+	}
+	state_category=large_town
+	history={
+		owner = MOY
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			620 5
+		}
+		add_core_of = MOY
+	}
+	manpower=6184548
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
